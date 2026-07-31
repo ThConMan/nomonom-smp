@@ -1,5 +1,5 @@
 #!/bin/bash
-# === Nomonom SMP Auto-Backup (fast + safe, on Hetzner volume) ===
+# === Nomonom SMP Auto-Backup (fast + safe, on mounted volume) ===
 # Backs up World-3, world, and plugins to your 200GB volume.
 # Uses pigz if available (parallel gzip). Low I/O priority so players don’t feel it.
 
