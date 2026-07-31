@@ -1,5 +1,0 @@
-MortalCrateKey_Use:
-  Cooldown: 1
-  Skills:
-    - command{c="pcrates key give %player_name% MortalKey 1";asConsole=true} @trigger
-    - consume{amount=1} @trigger

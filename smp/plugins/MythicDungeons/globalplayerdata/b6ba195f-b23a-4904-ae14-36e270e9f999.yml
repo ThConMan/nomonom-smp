@@ -1,8 +1,0 @@
-StoredExitLocation:
-  ==: org.bukkit.Location
-  world: mortal_realm
-  x: -96.3858370716544
-  y: 63.0
-  z: 2782.541281898804
-  pitch: 11.099958
-  yaw: 99.125

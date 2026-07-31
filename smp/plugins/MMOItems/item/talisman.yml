@@ -1,6 +1,0 @@
-B:
-  base:
-    material: TOTEM_OF_UNDYING
-    perm-effects:
-      BAD_OMEN: 10.0
-    hide-tooltip: true

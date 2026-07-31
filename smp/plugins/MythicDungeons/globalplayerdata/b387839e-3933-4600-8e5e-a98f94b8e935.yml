@@ -1,8 +1,0 @@
-StoredExitLocation:
-  ==: org.bukkit.Location
-  world: void
-  x: 49994.64515646767
-  y: 78.0
-  z: -50000.7631935559
-  pitch: 8.367891
-  yaw: 155.01338

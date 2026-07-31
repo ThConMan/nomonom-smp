@@ -14,15 +14,18 @@ the owner. Nothing was deleted from it to build this.
 
 ## Third-party content
 
-The configuration files under `smp/plugins/`, `hub/plugins/`, and `proxy/plugins/`
-belong to plugins written by other people, several of them **paid products**
-(see [PLUGINS.md](PLUGINS.md)). The *values* in those files — economy balance,
-permissions, menus, ranks, world rules — are our work. The file formats, default
-scaffolding, and any bundled assets are the vendors' work, under the vendors'
-terms.
+Config files for **paid plugins have been removed entirely** — 962 files across
+29 plugins. Their config formats and default scaffolding are the vendors'
+product, and separating our tuning from their defaults is not cleanly possible
+without the original jars. Rather than guess, they are out.
 
-Nothing here grants you rights to any third-party plugin. If a config references
-a paid plugin, you need to buy that plugin.
+Each of those folders keeps a `NOT-SHARED.md` naming the plugin, explaining that
+it is paid, and describing **what it actually did on Nomonom** — so the stack is
+still legible even where the configs are gone.
+
+What remains under `smp/plugins/`, `hub/plugins/` and `proxy/plugins/` is config
+for free and open-source plugins, plus our own tuning of them. Nothing here
+grants you rights to any third-party plugin.
 
 ## Deliberately excluded
 

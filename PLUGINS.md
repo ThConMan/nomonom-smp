@@ -25,8 +25,10 @@ These are ours. Source lives in separate repos.
 
 ## Paid / premium — explicitly licensed
 
-Jars and bundled assets for these are **excluded from this repo**. Buy them from
-the vendor; our configs assume the versions listed.
+Jars, bundled assets **and configs** for these are **excluded from this repo** —
+their config files are the vendor's product, not ours to redistribute. Each
+folder keeps a `NOT-SHARED.md` explaining what the plugin did on Nomonom and how
+load-bearing it was. Buy them from the vendor; the versions we ran are below.
 
 | Plugin | Version |
 |---|---|

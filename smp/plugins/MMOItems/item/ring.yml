@@ -1,5 +1,0 @@
-RING_OF_LIFE:
-  base:
-    material: EMERALD
-    max-health: 10.0
-    name: Ring of Life

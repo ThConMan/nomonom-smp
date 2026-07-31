@@ -1,9 +1,0 @@
-items: {}
-settings:
-  type: PLAYER_KIT
-  title: Kit Layout Editor
-  rows: 6
-  refresh:
-    enabled: false
-    rate: 60
-  on-open-actions: []

@@ -1,9 +1,0 @@
-DEMONWITCHRING:
-  base:
-    material: STICK
-    custom-model-data: 9919.0
-    ability:
-      ability1:
-        type: FIREBOLT
-        mode: RIGHT_CLICK
-    name: Demon Witch's Ring
