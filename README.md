@@ -1,7 +1,7 @@
 # Nomonom — server configuration archive
 
 The full configuration of the **Nomonom** Minecraft network, preserved from the
-Hetzner box it ran on before that box was reclaimed (2026-05-20).
+server it ran on before that box was reclaimed (2026-05-20).
 
 A Paper SMP behind a Velocity proxy, with a hub, Bedrock crossplay via Geyser,
 97 plugins, and a stack of in-house plugins. This repo is the *configuration* —
@@ -62,6 +62,6 @@ one rule worth carrying forward.
 
 ## Provenance
 
-Pulled from the `_BACKUP` tree of the decommissioned VDS. The original backup —
+Pulled from the `_BACKUP` tree of the decommissioned server. The original backup —
 worlds, jars, databases and all — is retained separately offline; nothing in this
 repo replaces it, and nothing was deleted from it to build this.
