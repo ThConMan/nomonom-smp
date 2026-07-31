@@ -1,0 +1,13 @@
+turquoise_block:
+  itemname: display-name-turquoise_block
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: turquoise_block
+      hardness: 2.0
+      custom_variation: 28
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/minerals/turquoise_block
+    custom_model_data: 1144

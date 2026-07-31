@@ -1,0 +1,6 @@
+raw_tin_and_copper_ingot_dust:
+  itemname: display-name-raw_tin_and_copper_ingot_dust
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/raw_tin_and_copper_ingot_dust
+    custom_model_data: 1014

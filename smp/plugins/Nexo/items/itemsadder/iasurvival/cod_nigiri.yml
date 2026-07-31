@@ -1,0 +1,6 @@
+cod_nigiri:
+  itemname: display-name-cod_nigiri
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/fishes/cod_nigiri
+    custom_model_data: 1006

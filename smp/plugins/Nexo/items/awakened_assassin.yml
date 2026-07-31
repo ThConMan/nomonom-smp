@@ -1,0 +1,58 @@
+awakened_assassin_duskblade:
+  Pack:
+    custom_model_data: 2083
+    model: awakened_assassin:awakened_assassin_model/awakened_assassin_duskblade
+  displayname: awakened_assassin_duskblade
+  material: STONE_SWORD
+  permission: awakened_assassin_duskblade
+icon_crimson_arc:
+  Pack:
+    custom_model_data: 2266
+    model: awakened_assassin:awakened_assassin_model/icon_crimson_arc
+  displayname: icon_crimson_arc
+  material: COAL
+  permission: icon_crimson_arc
+icon_deadly_calm:
+  Pack:
+    custom_model_data: 2267
+    model: awakened_assassin:awakened_assassin_model/icon_deadly_calm
+  displayname: icon_deadly_calm
+  material: COAL
+  permission: icon_deadly_calm
+icon_death_bloom:
+  Pack:
+    custom_model_data: 2268
+    model: awakened_assassin:awakened_assassin_model/icon_death_bloom
+  displayname: icon_death_bloom
+  material: COAL
+  permission: icon_death_bloom
+icon_last_dance:
+  Pack:
+    custom_model_data: 2269
+    model: awakened_assassin:awakened_assassin_model/icon_last_dance
+  displayname: icon_last_dance
+  material: COAL
+  permission: icon_last_dance
+icon_lethal_combo:
+  Pack:
+    custom_model_data: 2270
+    model: awakened_assassin:awakened_assassin_model/icon_lethal_combo
+  displayname: icon_lethal_combo
+  material: COAL
+  permission: icon_lethal_combo
+icon_ravaging_dash:
+  Pack:
+    custom_model_data: 2271
+    model: awakened_assassin:awakened_assassin_model/icon_ravaging_dash
+  displayname: icon_ravaging_dash
+  material: COAL
+  permission: icon_ravaging_dash
+icon_shadowquake:
+  Pack:
+    custom_model_data: 2272
+    model: awakened_assassin:awakened_assassin_model/icon_shadowquake
+  displayname: icon_shadowquake
+  material: COAL
+  permission: icon_shadowquake
+
+# 3387e0ec4476583186f8b561db0c31b9

@@ -1,0 +1,22 @@
+Keys: 0
+Gadgets-Enabled: true
+Third-Person-Morph-View: true
+Treasure-Notifications: true
+Filter-By-Owned: true
+Unlocked:
+- EFFECTS:CursedHalo
+- EFFECTS:Inferno
+- EFFECTS:VolcanicHalo
+- PETS:Ocelot
+- EMOTES:Love
+- PETS:Snowman
+- EMOTES:Happy
+- HATS:WhiteDonut
+- PROJECTILE_EFFECTS:Love
+- GADGETS:ColorBomb
+- EFFECTS:Notes
+enabled:
+  projectile_effects: love
+Pet-Names:
+  Snowman: Jack
+  Ocelot: Nyx

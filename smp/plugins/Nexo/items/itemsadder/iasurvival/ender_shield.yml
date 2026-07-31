@@ -1,0 +1,7 @@
+ender_shield:
+  itemname: display-name-ender_shield
+  material: SHIELD
+  Pack:
+    model: iasurvival:item/shields/ender_shield
+    blocking_model: iasurvival:item/shields/ender_shield_blocking
+    custom_model_data: 1007

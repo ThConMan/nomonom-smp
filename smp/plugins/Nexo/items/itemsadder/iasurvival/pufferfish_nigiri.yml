@@ -1,0 +1,6 @@
+pufferfish_nigiri:
+  itemname: display-name-pufferfish_nigiri
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/fishes/pufferfish_nigiri
+    custom_model_data: 1027

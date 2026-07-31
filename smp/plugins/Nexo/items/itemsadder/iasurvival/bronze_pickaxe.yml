@@ -1,0 +1,6 @@
+bronze_pickaxe:
+  itemname: display-name-bronze_pickaxe
+  material: DIAMOND_PICKAXE
+  Pack:
+    texture: iasurvival:item/tools/bronze_pickaxe
+    custom_model_data: 1001

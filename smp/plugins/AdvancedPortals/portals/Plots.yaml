@@ -1,0 +1,18 @@
+args:
+  name:
+  - Plots
+  triggerblock:
+  - WATER
+  - LAVA
+  command:
+  - warp Plots
+maxLoc:
+  posX: 49979
+  posY: 83
+  posZ: -49992
+  worldName: void
+minLoc:
+  posX: 49972
+  posY: 77
+  posZ: -49995
+  worldName: void

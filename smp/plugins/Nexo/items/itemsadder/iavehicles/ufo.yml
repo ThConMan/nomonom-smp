@@ -1,0 +1,6 @@
+ufo:
+  itemname: display-name-ufo
+  material: PAPER
+  Pack:
+    model: iavehicles:air/ufo
+    custom_model_data: 1147

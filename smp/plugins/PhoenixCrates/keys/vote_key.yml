@@ -1,0 +1,13 @@
+enabled: true
+identifier: vote_key
+virtual: false
+glow: true
+item:
+  material: TRIPWIRE_HOOK
+  display-name: '&3&lVote Key'
+  lore:
+  - '&7A key earned by voting'
+  - '&7for &bNomonom&7!'
+  - ''
+  - '&3Use at the &bVote Crate'
+  amount: 1

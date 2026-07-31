@@ -1,0 +1,60 @@
+vs_mmocorepackgui_waypoints_view_top:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_waypoints_view_top
+  ascent: 63
+  height: 256
+  char: ꘽
+vs_mmocorepackgui_waypoints_view_bottom:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_waypoints_view_bottom
+  ascent: 33
+  height: 256
+  char: ꘾
+vs_mmocorepackgui_skills_view_top:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_skills_view_top
+  ascent: 63
+  height: 256
+  char: ꘿
+vs_mmocorepackgui_skills_view_bottom:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_skills_view_bottom
+  ascent: 33
+  height: 256
+  char: Ꙁ
+vs_mmocorepackgui_attributes_view_top:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_attributes_view_top
+  ascent: 63
+  height: 256
+  char: ꙁ
+vs_mmocorepackgui_attributes_view_bottom:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_attributes_view_bottom
+  ascent: 33
+  height: 256
+  char: Ꙃ
+vs_mmocorepackgui_party_creation_view_top:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_party_creation_view_top
+  ascent: 63
+  height: 256
+  char: ꙃ
+vs_mmocorepackgui_party_creation_view_bottom:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_party_creation_view_bottom
+  ascent: 33
+  height: 256
+  char: Ꙅ
+vs_mmocorepackgui_party_view_top:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_party_view_top
+  ascent: 63
+  height: 256
+  char: ꙅ
+vs_mmocorepackgui_party_view_bottom:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_party_view_bottom
+  ascent: 33
+  height: 256
+  char: Ꙇ
+vs_mmocorepackgui_profile_view_top:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_profile_view_top
+  ascent: 63
+  height: 256
+  char: ꙇ
+vs_mmocorepackgui_profile_view_bottom:
+  texture: vs_mmocorepackgui/gui/vs_mmocorepackgui_profile_view_bottom
+  ascent: 33
+  height: 256
+  char: Ꙉ

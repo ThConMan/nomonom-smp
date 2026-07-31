@@ -1,0 +1,24 @@
+stone_pickaxe:
+  itemname: Stone Pickaxe
+  material: STONE_PICKAXE
+  Pack:
+    model: default_tools:stone/stone_pickaxe
+    custom_model_data: 1000
+stone_hoe:
+  itemname: Stone Hoe
+  material: STONE_HOE
+  Pack:
+    model: default_tools:stone/stone_hoe
+    custom_model_data: 1000
+stone_axe:
+  itemname: Stone Axe
+  material: STONE_AXE
+  Pack:
+    model: default_tools:stone/stone_axe
+    custom_model_data: 1000
+stone_shovel:
+  itemname: Stone Shovel
+  material: STONE_SHOVEL
+  Pack:
+    model: default_tools:stone/stone_shovel
+    custom_model_data: 1000

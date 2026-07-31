@@ -1,0 +1,6 @@
+cooked_black_moor_goldfish:
+  itemname: display-name-cooked_black_moor_goldfish
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/fishes/cooked_black_moor_goldfish
+    custom_model_data: 1007

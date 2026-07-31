@@ -1,0 +1,220 @@
+bug_medal:
+  itemname: display-name-bug_medal
+  material: STICK
+  lore:
+  - lore-1-bug_medal
+  - lore-2-bug_medal
+  - lore-3-bug_medal
+  Pack:
+    texture: iageneric:item/bug_medal
+    custom_model_data: 1016
+cute_medal:
+  itemname: display-name-cute_medal
+  material: STICK
+  lore:
+  - lore-1-cute_medal
+  - lore-2-cute_medal
+  Pack:
+    texture: iageneric:item/cute_medal
+    custom_model_data: 1017
+donator_medal:
+  itemname: display-name-donator_medal
+  material: STICK
+  lore:
+  - lore-1-donator_medal
+  - lore-2-donator_medal
+  Pack:
+    texture: iageneric:item/donator_medal
+    custom_model_data: 1018
+coin:
+  itemname: display-name-coin
+  material: STICK
+  Pack:
+    texture: iageneric:item/coin
+    custom_model_data: 1019
+banknote:
+  itemname: display-name-banknote
+  material: STICK
+  Pack:
+    texture: iageneric:item/banknote
+    custom_model_data: 1020
+sack_of_money:
+  itemname: display-name-sack_of_money
+  material: STICK
+  Pack:
+    texture: iageneric:item/sack_of_money
+    custom_model_data: 1021
+plastic_bag:
+  itemname: display-name-plastic_bag
+  material: STICK
+  Pack:
+    texture: iageneric:item/plastic_bag
+    custom_model_data: 1022
+light_blue_coupon:
+  itemname: display-name-light_blue_coupon
+  material: STICK
+  Pack:
+    texture: iageneric:item/light_blue_coupon
+    custom_model_data: 1023
+turquoise_coupon:
+  itemname: display-name-turquoise_coupon
+  material: STICK
+  Pack:
+    texture: iageneric:item/turquoise_coupon
+    custom_model_data: 1024
+purple_coupon:
+  itemname: display-name-purple_coupon
+  material: STICK
+  Pack:
+    texture: iageneric:item/purple_coupon
+    custom_model_data: 1025
+green_coupon:
+  itemname: display-name-green_coupon
+  material: STICK
+  Pack:
+    texture: iageneric:item/green_coupon
+    custom_model_data: 1026
+red_coupon:
+  itemname: display-name-red_coupon
+  material: STICK
+  Pack:
+    texture: iageneric:item/red_coupon
+    custom_model_data: 1027
+black_coupon:
+  itemname: display-name-black_coupon
+  material: STICK
+  Pack:
+    texture: iageneric:item/black_coupon
+    custom_model_data: 1028
+white_coupon:
+  itemname: display-name-white_coupon
+  material: STICK
+  Pack:
+    texture: iageneric:item/white_coupon
+    custom_model_data: 1029
+golden_coupon:
+  itemname: display-name-golden_coupon
+  material: STICK
+  Pack:
+    texture: iageneric:item/golden_coupon
+    custom_model_data: 1030
+blue_ring:
+  itemname: display-name-blue_ring
+  material: STICK
+  Pack:
+    texture: iageneric:item/blue_ring
+    custom_model_data: 1031
+light_blue_ring:
+  itemname: display-name-light_blue_ring
+  material: STICK
+  Pack:
+    texture: iageneric:item/light_blue_ring
+    custom_model_data: 1032
+turquoise_ring:
+  itemname: display-name-turquoise_ring
+  material: STICK
+  Pack:
+    texture: iageneric:item/turquoise_ring
+    custom_model_data: 1033
+purple_ring:
+  itemname: display-name-purple_ring
+  material: STICK
+  Pack:
+    texture: iageneric:item/purple_ring
+    custom_model_data: 1034
+green_ring:
+  itemname: display-name-green_ring
+  material: STICK
+  Pack:
+    texture: iageneric:item/green_ring
+    custom_model_data: 1035
+red_ring:
+  itemname: display-name-red_ring
+  material: STICK
+  Pack:
+    texture: iageneric:item/red_ring
+    custom_model_data: 1036
+black_ring:
+  itemname: display-name-black_ring
+  material: STICK
+  Pack:
+    texture: iageneric:item/black_ring
+    custom_model_data: 1037
+white_ring:
+  itemname: display-name-white_ring
+  material: STICK
+  Pack:
+    texture: iageneric:item/white_ring
+    custom_model_data: 1038
+golden_ring:
+  itemname: display-name-golden_ring
+  material: STICK
+  Pack:
+    texture: iageneric:item/golden_ring
+    custom_model_data: 1039
+marriage_ring:
+  itemname: display-name-marriage_ring
+  material: STICK
+  Pack:
+    texture: iageneric:item/marriage_ring
+    custom_model_data: 1040
+blue_key:
+  itemname: display-name-blue_key
+  material: STICK
+  Pack:
+    texture: iageneric:item/blue_key
+    custom_model_data: 1041
+light_blue_key:
+  itemname: display-name-light_blue_key
+  material: STICK
+  Pack:
+    texture: iageneric:item/light_blue_key
+    custom_model_data: 1042
+turquoise_key:
+  itemname: display-name-turquoise_key
+  material: STICK
+  Pack:
+    texture: iageneric:item/turquoise_key
+    custom_model_data: 1043
+purple_key:
+  itemname: display-name-purple_key
+  material: STICK
+  Pack:
+    texture: iageneric:item/purple_key
+    custom_model_data: 1044
+green_key:
+  itemname: display-name-green_key
+  material: STICK
+  Pack:
+    texture: iageneric:item/green_key
+    custom_model_data: 1045
+red_key:
+  itemname: display-name-red_key
+  material: STICK
+  Pack:
+    texture: iageneric:item/red_key
+    custom_model_data: 1046
+black_key:
+  itemname: display-name-black_key
+  material: STICK
+  Pack:
+    texture: iageneric:item/black_key
+    custom_model_data: 1047
+white_key:
+  itemname: display-name-white_key
+  material: STICK
+  Pack:
+    texture: iageneric:item/white_key
+    custom_model_data: 1048
+golden_key:
+  itemname: display-name-golden_key
+  material: STICK
+  Pack:
+    texture: iageneric:item/golden_key
+    custom_model_data: 1049
+carton_box:
+  itemname: display-name-carton_box
+  material: STICK
+  Pack:
+    model: iageneric:item/carton_box
+    custom_model_data: 1050

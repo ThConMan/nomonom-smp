@@ -1,0 +1,101 @@
+# Skeleton Warrior #
+
+Skeleton_Warrior_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=3.5} true
+  Skills:
+  - gcd{ticks=38}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=38} @self
+  - state{s=attack;li=2;lo=3} @self
+  - effect:sound{s=rms_skeleton_sounds:samus.skeleton_attack;volume=1;pitch=1} @self 0.5
+  - effect:sound{s=rms_skeleton_sounds:samus.sword_swing;volume=1;pitch=1;delay=15} @self
+  - delay 16
+  - totem{md=2;c=1;oH=Skeleton_Warrior_Attack_DAMAGE;hnp=false;hp=true;hR=3.25;vR=2.5;i=1} @forward{f=1}
+
+Skeleton_Warrior_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=8;pkb=false;hnp=false;hp=true}
+  # optional: makes turtling hurt without being a hard stun
+  - potion{type=WEAKNESS;duration=50;level=0;hasParticles=false} 0.35
+
+Skeleton_Warrior_Hit:
+  Cooldown: 0.6
+  Skills:
+  - effect:sound{s=entity.skeleton.hurt;volume=1;pitch=0.9} @self
+
+Skeleton_Warrior_Parry_Skill:
+  Conditions:
+  - offgcd
+  Skills:
+  - gcd{ticks=20}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=20} @self
+  - state{s=parry;li=2;lo=3} @self
+  - effect:sound{s=rms_skeleton_sounds:samus.warrior_parry;volume=1;pitch=1;delay=5} @self
+
+
+# Skeleton Archer #
+
+Skeleton_Archer_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=18} true
+  Skills:
+  - gcd{ticks=34}
+  - state{s=attack;li=10;lo=10} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=22} @self
+  - effect:sound{s=rms_skeleton_sounds:samus.skeleton_attack;volume=1;pitch=1;delay=6} @self 0.5
+  - effect:sound{s=item.crossbow.loading_start;volume=1;pitch=1;delay=8} @self
+  - effect:sound{s=item.crossbow.shoot;volume=1;pitch=1;delay=15} @self
+  - delay 15
+  - shoot{type=ARROW;velocity=0.9;damage=8;accuracy=0.6} @target{ignore=samefaction}
+
+
+# Skeleton Shaman #
+
+Skeleton_Shaman_Attack:
+  Conditions:
+  - offgcd
+  - targetwithin{d=10} true
+  Skills:
+  - gcd{ticks=40}
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=40} @self
+  - state{s=attack;li=2;lo=3} @self
+  - effect:sound{s=rms_skeleton_sounds:samus.skeleton_attack;volume=1;pitch=1} @self 0.5
+  - effect:sound{s=entity.evoker.cast_spell;volume=1;pitch=1.15;delay=14} @self
+  - delay 15
+  - projectile{onTick=Skeleton_Shaman_TICK;onHit=Skeleton_Shaman_Attack_DAMAGE;v=16;i=1;hR=1.25;vR=1.25;mr=16;hnp=true;hO=0;sE=false;sB=true;hs=false;hfs=0;syo=1;tyo=0.7} @target
+
+Skeleton_Shaman_TICK:
+  Skills:
+  - effect:particles{particle=redstone;color=#96f507;amount=20;hS=0.35;vS=0.12;y=0;speed=0;forwardOffset=0;sideOffset=0} @origin
+
+Skeleton_Shaman_Attack_DAMAGE:
+  TargetConditions:
+  - isblocking false
+  Skills:
+  - damage{a=5;pkb=false;hnp=false;hp=true} @PlayersNearOrigin{r=3}
+  # optional: makes shaman feel “cursed” instead of just small damage
+  - potion{type=POISON;duration=60;level=0;hasParticles=false} @PlayersNearOrigin{r=3} 0.30
+
+Skeleton_Shaman_Heal:
+  Conditions:
+  - offgcd
+  - targetwithin{d=22} true
+  - mobsInRadius{types=Skeleton_Warrior,Skeleton_Archer,Skeleton_Shaman;amount=1to100;radius=12} true
+  Skills:
+  - gcd{ticks=44}
+  - state{s=heal;li=2;lo=3} @self
+  - setAI{ai=false} @self
+  - setAI{ai=true;delay=44} @self
+  - effect:sound{s=rms_skeleton_sounds:samus.skeleton_attack;volume=1;pitch=1;delay=6} @self 0.5
+  - effect:sound{s=rms_skeleton_sounds:samus.shaman_heal;volume=1;pitch=1;delay=15} @self
+  - delay 15
+  - effect:particleline{particle=redstone;color=#96f507;amount=4;fromOrigin=false;syo=2.6;tyo=1;forwardOffset=0.5;repeat=5;repeatinterval=5;sso=-0.5} @MIR{r=12;t=Skeleton_Warrior,Skeleton_Archer,Skeleton_Shaman}
+  - heal{a=6;repeat=5;repeatinterval=5} @MIR{r=12;t=Skeleton_Warrior,Skeleton_Archer,Skeleton_Shaman}

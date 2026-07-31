@@ -1,0 +1,135 @@
+# ###############################################################################
+# # PerformanceSuite – Master Configuration
+# #
+# # Everything here is grouped by feature so you can skim and edit quickly.
+# # Feel free to keep the dividers and comments; they will be re-applied on
+# # updates so the layout always stays tidy while keeping your custom values.
+# ###############################################################################
+# 
+# # ---------------------------------------------------------------------------
+# # Licensing
+# # ---------------------------------------------------------------------------
+
+# ---------------------------------------------------------------------------
+# Licensing
+# ---------------------------------------------------------------------------
+license:
+  key: ed0abf3b-5c3b-4852-ba8f-9b1ae5a391ea # Issued for the "PerformanceSuite" scope
+
+
+# ---------------------------------------------------------------------------
+# Core server behavior
+# ---------------------------------------------------------------------------
+restart-command: stop # Command used when the plugin performs a restart
+
+diagnostics:
+  # Thresholds that trigger automated diagnostics warnings
+  entity-threshold: 1500
+  chunk-threshold: 600
+
+
+# ---------------------------------------------------------------------------
+# Update channel
+# ---------------------------------------------------------------------------
+updates:
+  check-on-startup: true
+  check-interval-minutes: 720
+  auto-download: false
+  # When true, only the console/log will be notified about available updates.
+  notify-console-only: false
+
+
+# ---------------------------------------------------------------------------
+# Scheduled automation
+# ---------------------------------------------------------------------------
+# Toggle recurring tasks and tune how loudly they announce themselves.
+schedules:
+  enabled: true
+  
+  # Announcement controls
+  announcements:
+    # Whether countdown messages like "Running PRESET in 10s" are shown.
+    show-countdown-messages: true
+    # Only broadcast at these countdown milestones (seconds remaining) to reduce chat spam.
+    countdown-intervals:
+    - 60
+    - 15
+    - 3
+    - 2
+    - 1
+    # Send announcements to player chat. Set to false for console-only updates.
+    broadcast-to-players: true
+    # Mirror announcements to console/logs for auditing even if players see them.
+    mirror-to-console: true
+  
+  # Define your recurring tasks. Types: diagnostics | preset | command
+  tasks:
+    nightly-diagnostics:
+      type: diagnostics
+      interval-minutes: 240
+      notify-discord: true
+    
+    ten-minute-clear-lag:
+      type: preset
+      preset: clear-lag
+      interval-minutes: 180
+      radius: -1 # -1 = global radius
+      announce: true
+    
+    hourly-webhook:
+      type: command
+      command: helpop Automatic performance upkeep ran.
+      interval-minutes: 120
+    three-hour-clear-text-displays:
+      type: command
+      command: killall text_display
+      interval-minutes: 180
+
+
+# ##############################################################################
+# Redstone Activity Guardrails
+# Protects the server from runaway clocks, pistons, and similar spikes.
+# Tweak only if you understand your server's redstone load profile.
+# ##############################################################################
+redstone-limiter:
+  enabled: true
+  
+  # --- Detection thresholds -------------------------------------------------
+  thresholds:
+    redstone_toggles_per_5s: 800
+    redstone_toggles_per_5s_hard: 1500
+    piston_moves_per_3s: 200
+    clock_min_period_ticks: 2
+    clock_min_events_for_flag: 40
+  
+  # --- Responses when thresholds are exceeded -------------------------------
+  actions:
+    # NONE: ignore soft spikes, WARN: notify staff, THROTTLE: slow block updates, FREEZE: stop activity
+    on_soft_exceed: WARN
+    on_hard_exceed: FREEZE
+    freeze_duration_ticks: 200
+    throttle_block_cooldown_ticks: 4
+  
+  # --- World scope controls -------------------------------------------------
+  worlds:
+    enabled:
+    - '*'
+    disabled_chunks: []
+  
+  # --- Bypasses -------------------------------------------------------------
+  bypass:
+    groups:
+    - staff
+    regions:
+    - spawn
+    - admin_farms
+    chunks: []
+  
+  # --- Logging --------------------------------------------------------------
+  logging:
+    console: true
+    staff_chat: true
+    discord_webhooks:
+      enabled: false
+      url: https://discord.com/api/webhooks/...
+      min_level: HARD

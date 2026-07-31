@@ -1,0 +1,81 @@
+#  ____   _                          _         ____                _      
+# |  _ \ | |__    ___    ___  _ __  (_)__  __ |  _ \  _   _   ___ | | ___ 
+# | |_) || '_ \  / _ \  / _ \| '_ \ | |\ \/ / | | | || | | | / _ \| |/ __|
+# |  __/ | | | || (_) ||  __/| | | || | >  <  | |_| || |_| ||  __/| |\__ \
+# |_|    |_| |_| \___/  \___||_| |_||_|/_/\_\ |____/  \__,_| \___||_||___/
+#                                                                         
+# This is a configuration file that allows you to configure an arena on PhoenixDuels plugin
+# Website: https://www.phoenixplugins.com
+
+sort-order: 0
+enabled: true
+type: FREE_MODE
+identifier: nether
+display-name: '&#660000&lNether Palace'
+display-icon: MAGMA_BLOCK
+template:
+  universal-region:
+    minimum:
+      x: -75.0
+      y: -120.0
+      z: -97.0
+    maximum:
+      x: 75.0
+      y: 120.0
+      z: 98.0
+  battle-region:
+    minimum:
+      x: -16.0
+      y: -120.0
+      z: -29.0
+    maximum:
+      x: 25.0
+      y: -1.0
+      z: 30.0
+  spectator-position:
+    x: 4.5
+    y: -18.0
+    z: 3.5
+    yaw: -17.834517
+    pitch: 85.649956
+  teams:
+    '0':
+      positions:
+        '0':
+          x: 4.439197032350421
+          y: -26.0
+          z: 20.07315637771444
+          yaw: 179.2656
+          pitch: 90.0
+    '1':
+      positions:
+        '0':
+          x: 4.4799631127825705
+          y: -26.0
+          z: -19.255093648730963
+          yaw: 1.3654929
+          pitch: 90.0
+  extras: {}
+regeneration: true
+teleport-to-lobby: false
+allowed-modes:
+- diamond
+- own_inventory
+- dia
+- crystal
+- uhc
+- soup
+- archer
+team-colors:
+- RED
+- BLUE
+arenas:
+  '0':
+    reference:
+      world: void
+      x: 10169
+      y: 122
+      z: 3187
+dont-edit:
+  assistance-stage: 4
+  blob-key: 3a02f9a737bd4fb78c82143b32130676

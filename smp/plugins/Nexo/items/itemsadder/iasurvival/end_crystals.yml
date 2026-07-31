@@ -1,0 +1,6 @@
+end_crystals:
+  itemname: display-name-end_crystals
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/end_crystals
+    custom_model_data: 1007

@@ -1,0 +1,157 @@
+pages:
+
+  page1:
+    title: "&d&lDecorator's Workshop &8- &7Interior & Detail"
+    items:
+      '1':
+        material: ITEM_FRAME
+        buy: 14
+        sell: 3.5
+      '2':
+        material: GLOW_ITEM_FRAME
+        buy: 34
+        sell: 8.5
+      '3':
+        material: PAINTING
+        buy: 25
+        sell: 6.25
+      '4':
+        material: ARMOR_STAND
+        buy: 60
+        sell: 15
+      '5':
+        material: FLOWER_POT
+        buy: 18
+        sell: 4.5
+      '6':
+        material: BOOKSHELF
+        buy: 120
+        sell: 30
+      '7':
+        material: CHISELED_BOOKSHELF
+        buy: 24
+        sell: 6
+      '8':
+        material: BARREL
+        buy: 10
+        sell: 2.5
+      '9':
+        material: JUKEBOX
+        buy: 75
+        sell: 18.75
+      '10':
+        material: BELL
+        buy: 160
+        sell: 40
+      '11':
+        material: ANVIL
+        buy: 280
+        sell: 70
+      '12':
+        material: CAULDRON
+        buy: 30
+        sell: 7.5
+
+  page2:
+    title: "&d&lDecorator's Workshop &8- &7Lighting & Atmosphere"
+    items:
+      '1':
+        material: LANTERN
+        buy: 18
+        sell: 4.5
+      '2':
+        material: SOUL_LANTERN
+        buy: 20
+        sell: 5
+      '3':
+        material: END_ROD
+        buy: 22
+        sell: 5.5
+      '4':
+        material: CANDLE
+        buy: 22
+        sell: 5.5
+      '5':
+        material: WHITE_CANDLE
+        buy: 22
+        sell: 5.5
+      '6':
+        material: BLACK_CANDLE
+        buy: 22
+        sell: 5.5
+      '7':
+        material: RED_CANDLE
+        buy: 22
+        sell: 5.5
+      '8':
+        material: BLUE_CANDLE
+        buy: 22
+        sell: 5.5
+      '9':
+        material: GREEN_CANDLE
+        buy: 22
+        sell: 5.5
+      '10':
+        material: SEA_LANTERN
+        buy: 48
+        sell: 12
+      '11':
+        material: GLOWSTONE
+        buy: 36
+        sell: 9
+      '12':
+        material: SHROOMLIGHT
+        buy: 34
+        sell: 8.5
+
+  page3:
+    title: "&d&lDecorator's Workshop &8- &7Nature, Texture & Trim"
+    items:
+      '1':
+        material: VINE
+        buy: 6
+        sell: 1.5
+      '2':
+        material: GLOW_LICHEN
+        buy: 6
+        sell: 1.5
+      '3':
+        material: OAK_LEAVES
+        buy: 4
+        sell: 1
+      '4':
+        material: SPRUCE_LEAVES
+        buy: 4
+        sell: 1
+      '5':
+        material: BIRCH_LEAVES
+        buy: 4
+        sell: 1
+      '6':
+        material: JUNGLE_LEAVES
+        buy: 4
+        sell: 1
+      '7':
+        material: AZALEA_LEAVES
+        buy: 4.5
+        sell: 1.12
+      '8':
+        material: FLOWERING_AZALEA_LEAVES
+        buy: 6
+        sell: 1.5
+      '9':
+        material: SPORE_BLOSSOM
+        buy: 45
+        sell: 11.25
+      '10':
+        material: BIG_DRIPLEAF
+        buy: 18
+        sell: 4.5
+      '11':
+        material: SMALL_DRIPLEAF
+        buy: 12
+        sell: 3
+      '12':
+        material: HANGING_ROOTS
+        buy: 14
+        sell: 3.5

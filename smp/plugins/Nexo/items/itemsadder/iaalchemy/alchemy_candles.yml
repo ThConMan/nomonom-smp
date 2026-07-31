@@ -1,0 +1,16 @@
+alchemy_candles:
+  itemname: display-name-alchemy_candles
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      lights:
+        lights:
+        - 0,1.0,0 8
+  Pack:
+    model: iaalchemy:item/alchemy_candles
+    custom_model_data: 1012

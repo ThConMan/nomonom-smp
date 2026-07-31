@@ -1,0 +1,439 @@
+pages:
+  page1:
+    title: "&2&l\uD83C\uDF3E Farmer's Market"
+    gui-rows: 6
+    items:
+
+      # =========================================================
+      # CROPS
+      # =========================================================
+      wheat:
+        material: WHEAT
+        buy: 12.0
+        sell: 5.00
+
+      carrot:
+        material: CARROT
+        buy: 14.0
+        sell: 6.00
+
+      potato:
+        material: POTATO
+        buy: 14.0
+        sell: 6.00
+
+      beetroot:
+        material: BEETROOT
+        buy: 16.0
+        sell: 7.00
+
+      melon_slice:
+        material: MELON_SLICE
+        buy: 8.0
+        sell: 3.50
+
+      pumpkin:
+        material: PUMPKIN
+        buy: 30.0
+        sell: 14.00
+
+      melon:
+        material: MELON
+        buy: 65.0
+        sell: 30.00
+
+      cocoa_beans:
+        material: COCOA_BEANS
+        buy: 18.0
+        sell: 8.00
+
+      dried_kelp:
+        material: DRIED_KELP
+        buy: 5.0
+        sell: 2.00
+
+      dried_kelp_block:
+        material: DRIED_KELP_BLOCK
+        buy: 40.0
+        sell: 18.00
+
+      sugar_cane:
+        material: SUGAR_CANE
+        buy: 4.0
+        sell: 1.50
+
+      cactus:
+        material: CACTUS
+        buy: 4.0
+        sell: 1.50
+
+      bamboo:
+        material: BAMBOO
+        buy: 3.0
+        sell: 1.00
+
+      sweet_berries:
+        material: SWEET_BERRIES
+        buy: 5.0
+        sell: 2.00
+
+      glow_berries:
+        material: GLOW_BERRIES
+        buy: 6.0
+        sell: 2.50
+
+      # =========================================================
+      # SEEDS & PLANTING
+      # =========================================================
+      wheat_seeds:
+        material: WHEAT_SEEDS
+        buy: 3.0
+        sell: 0.50
+
+      beetroot_seeds:
+        material: BEETROOT_SEEDS
+        buy: 4.0
+        sell: 0.75
+
+      pumpkin_seeds:
+        material: PUMPKIN_SEEDS
+        buy: 8.0
+        sell: 2.00
+
+      melon_seeds:
+        material: MELON_SEEDS
+        buy: 8.0
+        sell: 2.00
+
+      # =========================================================
+      # RAW MEATS
+      # =========================================================
+      beef:
+        material: BEEF
+        buy: 28.0
+        sell: 12.00
+
+      porkchop:
+        material: PORKCHOP
+        buy: 28.0
+        sell: 12.00
+
+      chicken:
+        material: CHICKEN
+        buy: 22.0
+        sell: 10.00
+
+      mutton:
+        material: MUTTON
+        buy: 25.0
+        sell: 11.00
+
+      rabbit:
+        material: RABBIT
+        buy: 25.0
+        sell: 11.00
+
+      salmon:
+        material: SALMON
+        buy: 20.0
+        sell: 8.00
+
+      # =========================================================
+      # ANIMAL PRODUCTS
+      # =========================================================
+      milk_bucket:
+        material: MILK_BUCKET
+        buy: 80.0
+        sell: 35.00
+
+      egg_farm:
+        material: EGG
+        buy: 6.0
+        sell: 2.00
+
+  page2:
+    title: "&2&l\uD83C\uDF3E Farmer's Market &8(2)"
+    gui-rows: 6
+    items:
+
+      # =========================================================
+      # WOOL (all colors)
+      # =========================================================
+      white_wool:
+        material: WHITE_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      orange_wool:
+        material: ORANGE_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      magenta_wool:
+        material: MAGENTA_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      light_blue_wool:
+        material: LIGHT_BLUE_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      yellow_wool:
+        material: YELLOW_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      lime_wool:
+        material: LIME_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      pink_wool:
+        material: PINK_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      gray_wool:
+        material: GRAY_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      light_gray_wool:
+        material: LIGHT_GRAY_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      cyan_wool:
+        material: CYAN_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      purple_wool:
+        material: PURPLE_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      blue_wool:
+        material: BLUE_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      brown_wool:
+        material: BROWN_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      green_wool:
+        material: GREEN_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      red_wool:
+        material: RED_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      black_wool:
+        material: BLACK_WOOL
+        buy: 18.0
+        sell: 8.00
+
+      # =========================================================
+      # MUSHROOMS & NETHER CROPS
+      # =========================================================
+      brown_mushroom:
+        material: BROWN_MUSHROOM
+        buy: 18.0
+        sell: 7.00
+
+      red_mushroom:
+        material: RED_MUSHROOM
+        buy: 18.0
+        sell: 7.00
+
+      mushroom_stew:
+        material: MUSHROOM_STEW
+        buy: 50.0
+        sell: 22.00
+
+      chorus_fruit:
+        material: CHORUS_FRUIT
+        buy: 35.0
+        sell: 15.00
+
+      popped_chorus_fruit:
+        material: POPPED_CHORUS_FRUIT
+        buy: 45.0
+        sell: 20.00
+
+      # =========================================================
+      # FLOWERS
+      # =========================================================
+      dandelion:
+        material: DANDELION
+        buy: 8.0
+        sell: 3.00
+
+      poppy:
+        material: POPPY
+        buy: 8.0
+        sell: 3.00
+
+      blue_orchid:
+        material: BLUE_ORCHID
+        buy: 14.0
+        sell: 5.00
+
+      allium:
+        material: ALLIUM
+        buy: 14.0
+        sell: 5.00
+
+      azure_bluet:
+        material: AZURE_BLUET
+        buy: 10.0
+        sell: 4.00
+
+      red_tulip:
+        material: RED_TULIP
+        buy: 10.0
+        sell: 4.00
+
+      oxeye_daisy:
+        material: OXEYE_DAISY
+        buy: 10.0
+        sell: 4.00
+
+      cornflower:
+        material: CORNFLOWER
+        buy: 10.0
+        sell: 4.00
+
+      lily_of_the_valley:
+        material: LILY_OF_THE_VALLEY
+        buy: 14.0
+        sell: 5.00
+
+      sunflower:
+        material: SUNFLOWER
+        buy: 18.0
+        sell: 7.00
+
+      lilac:
+        material: LILAC
+        buy: 18.0
+        sell: 7.00
+
+      rose_bush:
+        material: ROSE_BUSH
+        buy: 18.0
+        sell: 7.00
+
+      peony:
+        material: PEONY
+        buy: 18.0
+        sell: 7.00
+
+      wither_rose:
+        material: WITHER_ROSE
+        buy: 300.0
+        sell: 150.00
+
+      torchflower:
+        material: TORCHFLOWER
+        buy: 50.0
+        sell: 22.00
+
+      pitcher_plant:
+        material: PITCHER_PLANT
+        buy: 65.0
+        sell: 30.00
+
+  page3:
+    title: "&2&l\uD83C\uDF3E Farmer's Market &8(3)"
+    gui-rows: 6
+    items:
+
+      # =========================================================
+      # DYES
+      # =========================================================
+      white_dye:
+        material: WHITE_DYE
+        buy: 12.0
+        sell: 5.00
+
+      orange_dye:
+        material: ORANGE_DYE
+        buy: 12.0
+        sell: 5.00
+
+      magenta_dye:
+        material: MAGENTA_DYE
+        buy: 12.0
+        sell: 5.00
+
+      light_blue_dye:
+        material: LIGHT_BLUE_DYE
+        buy: 12.0
+        sell: 5.00
+
+      yellow_dye:
+        material: YELLOW_DYE
+        buy: 12.0
+        sell: 5.00
+
+      lime_dye:
+        material: LIME_DYE
+        buy: 12.0
+        sell: 5.00
+
+      pink_dye:
+        material: PINK_DYE
+        buy: 12.0
+        sell: 5.00
+
+      gray_dye:
+        material: GRAY_DYE
+        buy: 12.0
+        sell: 5.00
+
+      light_gray_dye:
+        material: LIGHT_GRAY_DYE
+        buy: 12.0
+        sell: 5.00
+
+      cyan_dye:
+        material: CYAN_DYE
+        buy: 12.0
+        sell: 5.00
+
+      purple_dye:
+        material: PURPLE_DYE
+        buy: 12.0
+        sell: 5.00
+
+      blue_dye:
+        material: BLUE_DYE
+        buy: 12.0
+        sell: 5.00
+
+      brown_dye:
+        material: BROWN_DYE
+        buy: 12.0
+        sell: 5.00
+
+      green_dye:
+        material: GREEN_DYE
+        buy: 12.0
+        sell: 5.00
+
+      red_dye:
+        material: RED_DYE
+        buy: 12.0
+        sell: 5.00
+
+      black_dye:
+        material: BLACK_DYE
+        buy: 12.0
+        sell: 5.00

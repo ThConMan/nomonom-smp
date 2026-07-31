@@ -1,0 +1,13 @@
+#SINTIA, DEFAULT ITEMS CONFIG
+sintiaBGStaff:
+  Id: netherite_sword
+  Display: "Sintia Staff"
+  Model: 68140
+sintiaBGHat:
+  Id: paper
+  Display: "Sintia Hat"
+  Model: 68141
+#88af4cc345bb94bc1df299916229be45
+#15c7c5a57ee5c99c69ca13066d87232e
+#8eab62b7f83a6b45238c62cfa089a1f3
+#59f1003fa9f7d4c610f4204f9144e9d4

@@ -1,0 +1,259 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Farmer
+open_command:
+  - jobs payouts farmer
+register_command: true
+size: 54
+items:
+  break:
+    material: DIAMOND_HOE
+    slot: 3
+    display_name: '%imc_primary-color_c%Break'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Break the following blocks'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_farmer_break'
+  place:
+    material: WHEAT
+    slot: 5
+    display_name: '%imc_primary-color_c%Place'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Place the following blocks'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_farmer_place'
+  break_tube_coral_fan:
+    material: tube_coral_fan
+    slot: 10
+    display_name: '%imc_primary-color_c%Sea Blocks'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tube Coral Fan'
+      - '%imc_dark-color_c% • %imc_text-color_c%Brain Coral Fan'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bubble Coral Fan'
+      - '%imc_dark-color_c% • %imc_text-color_c%Fire Coral Fan'
+      - '%imc_dark-color_c% • %imc_text-color_c%Horn Coral Fan'
+      - '%imc_dark-color_c% • %imc_text-color_c%Kelp'
+      - '%imc_dark-color_c% • %imc_text-color_c%Seagrass'
+      - '%imc_dark-color_c% • %imc_text-color_c%Sea Pickle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Lily Pad'
+      - '%imc_dark-color_c% • %imc_text-color_c%Lily of the Valley'
+  break_chorus_plant:
+    material: chorus_plant
+    slot: 11
+    display_name: '%imc_primary-color_c%Chorus Plant'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chorus Plant'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chorus Flower'
+  break_wheat:
+    material: wheat
+    slot: 12
+    display_name: '%imc_primary-color_c%Wheat Crops'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wheat Crops'
+  break_beetroot:
+    material: beetroot
+    slot: 13
+    display_name: '%imc_primary-color_c%Beetroots'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Beetroots'
+  break_carrot:
+    material: carrot
+    slot: 14
+    display_name: '%imc_primary-color_c%Carrots'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Carrots'
+  break_potato:
+    material: potato
+    slot: 15
+    display_name: '%imc_primary-color_c%Potatoes'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Potatoes'
+  break_pumpkin:
+    material: pumpkin
+    slot: 16
+    display_name: '%imc_primary-color_c%Pumpkin'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pumpkin'
+  break_sugar_cane:
+    material: sugar_cane
+    slot: 19
+    display_name: '%imc_primary-color_c%Sugar Cane'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Sugar Cane'
+  break_cocoa_beans:
+    material: cocoa_beans
+    slot: 20
+    display_name: '%imc_primary-color_c%Cocoa'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cocoa'
+  break_oak_sapling:
+    material: oak_sapling
+    slot: 21
+    display_name: '%imc_primary-color_c%Saplings'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Oak Sapling'
+      - '%imc_dark-color_c% • %imc_text-color_c%Spruce Sapling'
+      - '%imc_dark-color_c% • %imc_text-color_c%Birch Sapling'
+      - '%imc_dark-color_c% • %imc_text-color_c%Jungle Sapling'
+      - '%imc_dark-color_c% • %imc_text-color_c%Acacia Sapling'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dark Oak Sapling'
+  break_poppy:
+    material: poppy
+    slot: 22
+    display_name: '%imc_primary-color_c%Flowers'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dandelion'
+      - '%imc_dark-color_c% • %imc_text-color_c%Poppy'
+      - '%imc_dark-color_c% • %imc_text-color_c%Blue Orchid'
+      - '%imc_dark-color_c% • %imc_text-color_c%Allium'
+      - '%imc_dark-color_c% • %imc_text-color_c%Azure Bluet'
+      - '%imc_dark-color_c% • %imc_text-color_c%Red Tulip'
+      - '%imc_dark-color_c% • %imc_text-color_c%Orange Tulip'
+      - '%imc_dark-color_c% • %imc_text-color_c%White Tulip'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pink Tulip'
+      - '%imc_dark-color_c% • %imc_text-color_c%Oxeye Daisy'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cornflower'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wither Rose'
+      - '%imc_dark-color_c% • %imc_text-color_c%Sunflower'
+  break_brown_mushroom:
+    material: brown_mushroom
+    slot: 23
+    display_name: '%imc_primary-color_c%Mushrooms'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Brown Mushroom'
+      - '%imc_dark-color_c% • %imc_text-color_c%Red Mushroom'
+      - '%imc_dark-color_c% • %imc_text-color_c%Crimson Fungus'
+      - '%imc_dark-color_c% • %imc_text-color_c%Warped Fungus'
+  break_vine:
+    material: vine
+    slot: 24
+    display_name: '%imc_primary-color_c%Vines'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Vines'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cave Vines'
+      - '%imc_dark-color_c% • %imc_text-color_c%Twisting Vines'
+      - '%imc_dark-color_c% • %imc_text-color_c%Weeping Vines'
+  break_cactus:
+    material: cactus
+    slot: 25
+    display_name: '%imc_primary-color_c%Cactus'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cactus'
+  break_nether_wart:
+    material: nether_wart
+    slot: 28
+    display_name: '%imc_primary-color_c%Nether Wart'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Nether Wart'
+  break_oak_leaves:
+    material: oak_leaves
+    slot: 29
+    display_name: '%imc_primary-color_c%Leaves'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Oak Leaves'
+      - '%imc_dark-color_c% • %imc_text-color_c%Spruce Leaves'
+      - '%imc_dark-color_c% • %imc_text-color_c%Birch Leaves'
+      - '%imc_dark-color_c% • %imc_text-color_c%Jungle Leaves'
+      - '%imc_dark-color_c% • %imc_text-color_c%Acacia Leaves'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dark Oak Leaves'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Leaves'
+  break_bamboo:
+    material: bamboo
+    slot: 30
+    display_name: '%imc_primary-color_c%Bamboo'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bamboo'
+  break_warped_roots:
+    material: warped_roots
+    slot: 31
+    display_name: '%imc_primary-color_c%Roots'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Warped Roots'
+      - '%imc_dark-color_c% • %imc_text-color_c%Crimson Roots'
+      - '%imc_dark-color_c% • %imc_text-color_c%Hanging Roots'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_farmer_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: YELLOW_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

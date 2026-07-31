@@ -1,0 +1,80 @@
+conditionals:
+  'false': '&CFalse'
+  'true': '&aTrue'
+  closed: '&cClosed'
+  disabled: '&cDisabled'
+  enabled: '&aEnabled'
+  open: '&aOpen'
+error:
+  not a number: '&4%value% &cis not a valid number!'
+  no permission: '&cYou do not have enough permission!'
+  player offline: '&4%value% &cis not online currently!'
+  not enough money: '&cYou do not have enough money!'
+  player not found: '&4%value% &cwas not found!'
+  bans:
+    player already banned: '&4%player_name% &cis already banned!'
+gui:
+  player selector:
+    title: <GRADIENT:FE8295>&lAuction House</GRADIENT:FFAD96> &7> &eSelect Player
+    items:
+      player:
+        lore: '&e&lClick &8» &7To refresh menu'
+        name: <GRADIENT:FE8295>&l%player_name%</GRADIENT:FFAD96>
+  main:
+    title: <GRADIENT:FE8295>&lAuction House</GRADIENT:FFAD96>
+    items:
+      search:
+        lore:
+          - '&8Search Listings'
+          - '&7Used to search the entire auction house'
+          - '&7by name, lore, enchants, owner, etc.'
+          - ''
+          - '&e&lClick &8» &7To search listings'
+        name: <GRADIENT:FE8295>&LSearch</GRADIENT:FFAD96>
+      collection bin:
+        lore:
+          - '&7All of your expired or won items will be'
+          - '&7placed here for collection'
+          - ''
+          - ' &f» #FE8295%expired_listings% &bExpired/Won Items &f«'
+          - ''
+          - '&e&lClick &8» &7To view collection bin'
+        name: <GRADIENT:FE8295>&lCollection Bin</GRADIENT:FFAD96>
+      profile:
+        lore:
+          - '&8Profile Settings'
+          - '&7You can view your auction profile, as'
+          - '&7well as edit preferences from here.'
+          - ''
+          - '&e&lClick &8» &7To view profile'
+        name: <GRADIENT:FE8295>&LYour Profile</GRADIENT:FFAD96>
+      refresh:
+        lore:
+          - '&8Refresh Page'
+          - '&7Used to refresh the entire menu to'
+          - '&7view new and updated listings.'
+          - ''
+          - '&e&lClick &8» &7To refresh menu'
+        name: <GRADIENT:FE8295>&LRefresh</GRADIENT:FFAD96>
+      active listings:
+        lore:
+          - '&7All of your listings that you''ve'
+          - '&7placed will be found in here.'
+          - ''
+          - ' &f» #FE8295%active_listings% &bActive Listings &f«'
+          - ''
+          - '&e&lClick &8» &7To view active listings'
+        name: <GRADIENT:FE8295>&LActive Listings</GRADIENT:FFAD96>
+  ban:
+    title: <GRADIENT:FE8295>&lAuction House</GRADIENT:FFAD96> &7> &eBans
+    items:
+      player:
+        lore: '&7This is the selected user to be banned.'
+        name: <GRADIENT:FE8295>&l%player_name%</GRADIENT:FFAD96>
+button:
+  number key: 'Press # Key'
+  left click: Left Click
+  right click: Right Click
+  left shift click: Shift+Left Click
+  middle click: Middle Click
+  drop key: Press Drop Key

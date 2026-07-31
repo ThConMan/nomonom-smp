@@ -1,0 +1,91 @@
+menu_title: '<shift:-8><glyph:smelter>'
+open_command: smelter
+size: 54
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.admin
+      deny_commands:
+        - '[message] &cYou don''t have permission to do that!'
+
+items:
+  'job':
+    material: PAPER
+    model_data: 10031
+    slots: 
+    - 12
+    - 13
+    - 14
+    - 21
+    - 22
+    - 23
+    - 30
+    - 31
+    - 32
+    display_name: "&f&lSmelter"
+    lore:
+       - "&#F7AC37Max level: &l200"
+       - "&#F7AC37Earn money from smelting ores and meals"
+       - " "
+       - " &7Left-Click to join the job"
+       - " &7Right-Click to leave the job"
+    right_click_commands:
+       - '[player] jobs leave smelter'
+    left_click_commands:
+       - '[player] jobs join smelter'
+       
+  'arrow_left':
+    material: PAPER
+    model_data: 10033
+    slot: 45
+    display_name: "&f&l<"
+    lore: 
+       - "&7More jobs"
+    click_commands:
+       - '[openguimenu] miner'
+       
+  'hunter':
+    material: PAPER
+    model_data: 10043
+    slot: 46
+    display_name: "&f&lHunter"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] hunter'
+       
+  'lumberjack':
+    material: PAPER
+    model_data: 10044
+    slot: 47
+    display_name: "&f&lLumberjack"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] lumberjack'
+       
+  'miner':
+    material: PAPER
+    model_data: 10045
+    slot: 48
+    display_name: "&f&lMiner"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] miner'
+       
+  'smelter':
+    material: PAPER
+    model_data: 10048
+    slot: 49
+    display_name: "&f&lSmelter"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] smelter'
+       
+       
+       
+       
+#e29ca71d0fac9b60335518fc145c3237

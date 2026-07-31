@@ -1,0 +1,6 @@
+hand_gun:
+  itemname: display-name-hand_gun
+  material: GOLDEN_SWORD
+  Pack:
+    model: iaweapons:hand_gun
+    custom_model_data: 1001

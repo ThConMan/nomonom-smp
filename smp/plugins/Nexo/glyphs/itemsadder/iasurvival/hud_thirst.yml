@@ -1,0 +1,12 @@
+thirst_bar_positive:
+  texture: iasurvival:hud/thirst_bar/positive
+  ascent: -15
+  char: ꘭
+thirst_bar_negative:
+  texture: iasurvival:hud/thirst_bar/negative
+  ascent: -15
+  char: ꘮
+thirst_bar_half:
+  texture: iasurvival:hud/thirst_bar/half
+  ascent: -15
+  char: ꘯

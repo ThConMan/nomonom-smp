@@ -1,0 +1,17 @@
+args:
+  name:
+  - backupsumoend
+  triggerblock:
+  - END_PORTAL
+  command:
+  - cmi warp sumo
+maxLoc:
+  posX: 50039
+  posY: 58
+  posZ: -50010
+  worldName: void
+minLoc:
+  posX: 50029
+  posY: 58
+  posZ: -50020
+  worldName: void

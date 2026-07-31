@@ -1,0 +1,40 @@
+pages:
+  page1:
+    items:
+      nomonom-charm:
+        material: PAPER
+        CustomModelData: 1220
+        name: '&d&lNomonom Charm'
+        lore:
+        - '&aA powerful charm bound to'
+        - '&athe essence of the Ascended Realm.'
+        - ''
+        - '&6Grants:'
+        - '&7- &dRegeneration'
+        - '&7- &9Speed'
+        - ''
+        - '&eClick to purchase'
+        buy: 25000
+        sell: -1
+        slot: 4
+        
+        giveItem: false
+        buy-commands:
+        - mmoitems give ORNAMENT NOMONOM_CHARM %player%
+
+      vanishing-dust:
+        material: PAPER
+        CustomModelData: 1189
+        name: '<gradient:#3a1b44:#b21f3b:#b8b8bf><bold>Vanishing Dust'
+        lore:
+        - '&aA useful pouch of &9vanishing dust.'
+        - '&aRight Click to use!'
+        - ''
+        - '&eClick to purchase'
+        buy: 500
+        sell: -1
+        slot: 6
+        
+        giveItem: false
+        buy-commands:
+        - mmoitems give CONSUMABLE VANISHING_DUST %player%

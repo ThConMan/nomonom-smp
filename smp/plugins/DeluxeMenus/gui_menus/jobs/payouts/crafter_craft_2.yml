@@ -1,0 +1,93 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Crafter
+size: 54
+items:
+  craft:
+    material: CRAFTING_TABLE
+    slot: 4
+    display_name: '%imc_primary-color_c%Craft'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Craft the following items'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_crafter_craft'
+      - '[sound] UI_BUTTON_CLICK'
+  craft_tuff:
+    material: tuff
+    slot: 10
+    display_name: '%imc_primary-color_c%Tuff'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Tuff Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Tuff Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Tuff Wall'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Brick Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Brick Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Brick Wall'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Wall'
+  craft_resin_bricks:
+    material: resin_bricks
+    slot: 11
+    display_name: '%imc_primary-color_c%Block of Resin'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Resin Brick Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Resin Brick Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Resin Brick Wall'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chiseled Resin Bricks'
+  craft_pale_oak_planks:
+    material: pale_oak_planks
+    slot: 12
+    display_name: '%imc_primary-color_c%Pale Oak Wood'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Door'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Fence'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Fence Gate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Pressure Plate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Boat'
+  previous-page:
+    material: ARROW
+    slot: 48
+    display_name: '%imc_primary-color_c%Previous Page'
+    click_commands:
+      - '[openguimenu] jobs_payouts_crafter_craft'
+      - '[sound] ITEM_BOOK_PAGE_TURN'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_crafter_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: WHITE_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

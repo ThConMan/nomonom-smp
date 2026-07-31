@@ -1,0 +1,257 @@
+invisible_slot:
+  displayname: "Invisible Slot"
+  material: PAPER
+  Pack:
+    generate_model: true
+    parent_model: "item/generated"
+    textures:
+    - required/particle
+    custom_model_data: 11181
+vs_mmocorepackgui_previous_page:
+  displayname: "Previous Page"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_previous_page
+    custom_model_data: 11182
+vs_mmocorepackgui_next_page:
+  displayname: "Next Page"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_next_page
+    custom_model_data: 11183
+vs_mmocorepackgui_waypoints_unlocked:
+  displayname: "Unlocked Waypoint"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_waypoints_unlocked
+    custom_model_data: 10890
+vs_mmocorepackgui_waypoints_locked:
+  displayname: "Locked Waypoint"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_waypoints_locked
+    custom_model_data: 10894
+vs_mmocorepackgui_waypoints_current:
+  displayname: "Current Waypoint"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_waypoints_current
+    custom_model_data: 10892
+vs_mmocorepackgui_waypoints_unavailable:
+  displayname: "Unavailable Waypoint"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_waypoints_unavailable
+    custom_model_data: 10893
+vs_mmocorepackgui_skills_reset:
+  displayname: "Reset Skills"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_skills_reset
+    custom_model_data: 10900
+vs_mmocorepackgui_skills_upgrade:
+  displayname: "Upgrade Skill"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_skills_upgrade
+    custom_model_data: 10901
+vs_mmocorepackgui_skills_slot:
+  displayname: "Skill Slot"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_skills_slot
+    custom_model_data: 10902
+vs_mmocorepackgui_skills_level_one:
+  displayname: "Level One Skill"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_skills_level_one
+    custom_model_data: 10903
+vs_mmocorepackgui_skills_level_two:
+  displayname: "Level Two Skill"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_skills_level_two
+    custom_model_data: 10904
+vs_mmocorepackgui_skills_level_three:
+  displayname: "Level Three Skill"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_skills_level_three
+    custom_model_data: 10905
+vs_mmocorepackgui_attributes_reset:
+  displayname: "Reset Attributes"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_attributes_reset
+    custom_model_data: 10910
+vs_mmocorepackgui_attributes_strength:
+  displayname: "Strength Attribute"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_attributes_strength
+    custom_model_data: 10911
+vs_mmocorepackgui_attributes_dexterity:
+  displayname: "Dexterity Attribute"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_attributes_dexterity
+    custom_model_data: 10912
+vs_mmocorepackgui_attributes_intelligence:
+  displayname: "Intelligence Attribute"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_attributes_intelligence
+    custom_model_data: 10913
+vs_mmocorepackgui_party_invite:
+  displayname: "Invite Player"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_party_invite
+    custom_model_data: 10920
+vs_mmocorepackgui_party_leave:
+  displayname: "Leave Party"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_party_leave
+    custom_model_data: 10921
+vs_mmocorepackgui_profile_attribute_strength:
+  displayname: "Strength Attribute"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_attribute_strength
+    custom_model_data: 10930
+vs_mmocorepackgui_profile_attribute_dexterity:
+  displayname: "Dexterity Attribute"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_attribute_dexterity
+    custom_model_data: 10931
+vs_mmocorepackgui_profile_attribute_intelligence:
+  displayname: "Intelligence Attribute"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_attribute_intelligence
+    custom_model_data: 10932
+vs_mmocorepackgui_profile_character:
+  displayname: "Character"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_character
+    custom_model_data: 10933
+vs_mmocorepackgui_profile_booster:
+  displayname: "Booster"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_booster
+    custom_model_data: 10934
+vs_mmocorepackgui_profile_profession_mining:
+  displayname: "Mining Profession"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_mining
+    custom_model_data: 10935
+vs_mmocorepackgui_profile_profession_woodcutting:
+  displayname: "Woodcutting Profession"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_woodcutting
+    custom_model_data: 10936
+vs_mmocorepackgui_profile_profession_farming:
+  displayname: "Farming Profession"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_farming
+    custom_model_data: 10937
+vs_mmocorepackgui_profile_profession_fishing:
+  displayname: "Fishing Profession"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_fishing
+    custom_model_data: 10938
+vs_mmocorepackgui_profile_profession_smelting:
+  displayname: "Smelting Profession"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_smelting
+    custom_model_data: 10939
+vs_mmocorepackgui_profile_profession_enchanting:
+  displayname: "Enchanting Profession"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_enchanting
+    custom_model_data: 10940
+vs_mmocorepackgui_profile_profession_alchemy:
+  displayname: "Alchemy Profession"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_alchemy
+    custom_model_data: 10941
+vs_mmocorepackgui_profile_profession_smithing:
+  displayname: "Smithing Profession"
+  material: PAPER
+  Pack:
+    generate_model: true
+    textures:
+      - vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_smithing
+    custom_model_data: 10942

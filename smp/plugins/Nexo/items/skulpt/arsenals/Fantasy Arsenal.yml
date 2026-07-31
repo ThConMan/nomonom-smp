@@ -1,0 +1,398 @@
+# ####################
+# Created By Skulpt #
+# ####################
+
+# Looking for More? : https://linktr.ee/WeSkulpt #
+
+# Uniques #
+colossal_sword:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/colossal_sword
+    custom_model_data: 1001
+  itemname: <white>Colossal Sword
+
+core_hammer:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/core_hammer
+    custom_model_data: 1002
+  itemname: <white>Core Hammer
+
+cursed_spear:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/cursed_spear
+    custom_model_data: 1003
+  itemname: <white>Cursed Spear
+
+dark_destroyer:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/dark_destroyer
+    custom_model_data: 1004
+  itemname: <white>Dark Destroyer
+
+death_hand:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/death_hand
+    custom_model_data: 1005
+  itemname: <white>Death Hand
+
+enchanted_dagger:
+  material: STONE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/enchanted_dagger
+    custom_model_data: 1006
+  itemname: <white>Enchanted Dagger
+
+enchanted_silver_sword:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/enchanted_silver_sword
+    custom_model_data: 1007
+  itemname: <white>Enchanted Silver Sword
+
+engine_blade:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/engine_blade
+    custom_model_data: 1008
+  itemname: <white>Engine Blade
+
+great_mace:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/great_mace
+    custom_model_data: 1009
+  itemname: <white>Great Mace
+
+great_scythe:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/great_scythe
+    custom_model_data: 1010
+  itemname: <white>Great Scythe
+
+halberd:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/halberd
+    custom_model_data: 1011
+  itemname: <white>Halberd
+
+heavy_greatsword:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/heavy_greatsword
+    custom_model_data: 9797
+  itemname: <white>Heavy Greatsword
+
+jade_glaive:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/jade_glaive
+    custom_model_data: 1013
+  itemname: <white>Jade Glaive
+
+hell_bringer:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/hell_bringer
+    custom_model_data: 1014
+  itemname: <white>Hell Bringer
+
+honored_greatsword:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/honored_greatsword
+    custom_model_data: 1015
+  itemname: <white>Honored Greatsword
+
+ktanazul:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/ktanazul
+    custom_model_data: 1016
+  itemname: <white>Ktanazul
+
+lantern_scythe:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/lantern_scythe
+    custom_model_data: 1017
+  itemname: <white>Lantern Scythe
+
+moonlight:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/moonlight
+    custom_model_data: 1018
+  itemname: <white>Moonlight
+
+poison_dagger:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/poison_dagger
+    custom_model_data: 1019
+  itemname: <white>Poison Dagger
+
+prismarine_greataxe:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/prismarine_greataxe
+    custom_model_data: 1020
+  itemname: <white>Prismarine Greataxe
+
+silver_halberd:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/silver_halberd
+    custom_model_data: 1021
+  itemname: <white>Silver Halberd
+
+storm_axe:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/storm_axe
+    custom_model_data: 1022
+  itemname: <white>Storm Axe
+
+twisted_greatsword:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/twisted_greatsword
+    custom_model_data: 1023
+  itemname: <white>Twisted Greatsword
+
+violet_splitter:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/violet_splitter
+    custom_model_data: 1024
+  itemname: <white>Violet Splitter
+
+void_sword:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/void_sword
+    custom_model_data: 1025
+  itemname: <white>Ascended Sword
+void_sword_fire:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/void_sword_fire
+    custom_model_data: 1719
+  itemname: <white>Ascended Fire Sword
+void_sword_wind:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/void_sword_wind
+    custom_model_data: 1720
+  itemname: <white>Ascended Wind Sword
+void_sword_water:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/void_sword_water
+    custom_model_data: 1721
+  itemname: <white>Ascended Water Sword
+void_sword_earth:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/void_sword_earth
+    custom_model_data: 1722
+  itemname: <white>Ascended Earth Sword
+
+# Varients #
+
+duality:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/duality
+    custom_model_data: 1026
+  itemname: <white>Duality
+
+yin:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/yin
+    custom_model_data: 1027
+  itemname: <white>Yin
+
+yang:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/yang
+    custom_model_data: 1028
+  itemname: <white>Yang
+
+scissor_dual_blade:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/scissor_dual_blade
+    custom_model_data: 1029
+  itemname: <white>Scissor Dual Blade
+
+scissor_light_blade:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/scissor_light_blade
+    custom_model_data: 1030
+  itemname: <white>Scissor Light Blade
+
+scissor_dark_blade:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/scissor_dark_blade
+    custom_model_data: 1031
+  itemname: <white>Scissor Dark Blade
+
+# Animated Varients #
+
+blood_gladius:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/blood_gladius
+    custom_model_data: 1032
+  itemname: <white>Blood Gladius
+
+blood_gladius_awakened:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/blood_gladius_awakened
+    custom_model_data: 1033
+  itemname: <white>Blood Gladius Awakened
+
+celestial_sword:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/celestial_sword
+    custom_model_data: 1034
+  itemname: <white>Celestial Blade
+
+celestial_morning_blade:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/celestial_morning_blade
+    custom_model_data: 1035
+  itemname: <white>Celestial Morning Blade
+
+celestial_sunset_blade:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/celestial_sunset_blade
+    custom_model_data: 1036
+  itemname: <white>Celestial Sunset Blade
+
+celestial_night_blade:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/celestial_night_blade
+    custom_model_data: 1037
+  itemname: <white>Celestial Night Blade
+
+combustion:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/combustion
+    custom_model_data: 1038
+  itemname: <white>Combustion
+
+combustion_awakened:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/combustion_awakened
+    custom_model_data: 1039
+  itemname: <white>Combustion Awakened
+
+conductive_spear:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/conductive_spear
+    custom_model_data: 1040
+  itemname: <white>Conductive Spear
+
+conductive_spear_awakened:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/conductive_spear_awakened
+    custom_model_data: 1041
+  itemname: <white>Conductive Spear Awakened
+
+resistance_greatsword:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/resistance_greatsword
+    custom_model_data: 1042
+  itemname: <white>Resistance Greatsword
+
+resistance_greatsword_awakened:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/resistance_greatsword_awakened
+    custom_model_data: 1043
+  itemname: <white>Resistance Greatsword Awakened
+
+royal_greatsword:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/royal_greatsword
+    custom_model_data: 1044
+  itemname: <white>Royal Greatsword
+
+royal_greatsword_awakened:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/royal_greatsword_awakened
+    custom_model_data: 1045
+  itemname: <white>Royal Greatsword Awakened
+
+singularity_hammer:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/singularity_hammer
+    custom_model_data: 1046
+  itemname: <white>Singularity Hammer
+
+singularity_hammer_awakened:
+  material: NETHERITE_SWORD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/singularity_hammer_awakened
+    custom_model_data: 1047
+  itemname: <white>Singularity Hammer Awakened
+
+# Shields #
+
+buckler_shield:
+  material: SHIELD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/buckler_shield
+    blocking_model: skulpt:arsenals/fantasy_arsenal/buckler_shield
+    custom_model_data: 1001
+  itemname: Buckler Shield
+
+cursed_shield:
+  material: SHIELD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/cursed_shield
+    blocking_model: skulpt:arsenals/fantasy_arsenal/cursed_shield
+    custom_model_data: 1002
+  itemname: Cursed Shield
+
+great_shield:
+  material: SHIELD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/great_shield
+    blocking_model: skulpt:arsenals/fantasy_arsenal/great_shield
+    custom_model_data: 1003
+  itemname: Great Shield
+
+storm_shield:
+  material: SHIELD
+  Pack:
+    model: skulpt:arsenals/fantasy_arsenal/storm_shield
+    blocking_model: skulpt:arsenals/fantasy_arsenal/storm_shield
+    custom_model_data: 1004
+  itemname: Storm Shield
+# db867c2d39afcaf4229ee2796945f81b

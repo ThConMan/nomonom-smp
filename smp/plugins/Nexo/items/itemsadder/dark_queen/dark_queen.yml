@@ -1,0 +1,34 @@
+dark_queen_axe:
+  itemname: Dark Queen Axe
+  material: DIAMOND_AXE
+  Pack:
+    model: dark_queen:dark_queen/axe_dark_queen
+    custom_model_data: 1004
+dark_queen_bow:
+  itemname: Dark Queen Bow
+  material: BOW
+  Pack:
+    model: dark_queen:dark_queen/bow_dark_queen
+    pulling_models:
+    - dark_queen:dark_queen/bow_dark_queen_0
+    - dark_queen:dark_queen/bow_dark_queen_1
+    - dark_queen:dark_queen/bow_dark_queen_2
+    custom_model_data: 1007
+dark_queen_spear:
+  itemname: Dark Queen Spear
+  material: DIAMOND_SWORD
+  Pack:
+    model: dark_queen:dark_queen/spear_dark_queen
+    custom_model_data: 1004
+dark_queen_staff:
+  itemname: Dark Queen Staff
+  material: DIAMOND_SWORD
+  Pack:
+    model: dark_queen:dark_queen/staff_dark_queen
+    custom_model_data: 1008
+dark_queen_sword:
+  itemname: Dark Queen Sword
+  material: DIAMOND_SWORD
+  Pack:
+    model: dark_queen:dark_queen/sword_dark_queen
+    custom_model_data: 1009

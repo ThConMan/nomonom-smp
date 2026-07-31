@@ -1,0 +1,6 @@
+banana:
+  itemname: §eBanana
+  material: APPLE
+  Pack:
+    texture: iasurvival:item/food/vegetable_and_fruit/banana
+    custom_model_data: 1000

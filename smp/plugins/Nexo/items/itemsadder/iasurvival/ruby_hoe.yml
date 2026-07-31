@@ -1,0 +1,24 @@
+ruby_hoe:
+  itemname: display-name-ruby_hoe
+  material: DIAMOND_HOE
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  AttributeModifiers:
+  - amount: 1.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: ea704c21-855b-4b46-9eaf-679f1c6f1cdf
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 3.3
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: f20701c1-bd02-4a40-b190-3262a6e7eb6b
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iasurvival:item/tools/ruby_hoe
+    custom_model_data: 1002

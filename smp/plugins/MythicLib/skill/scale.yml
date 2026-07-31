@@ -1,0 +1,26 @@
+SCALE_UP:
+  mythicmobs-skill-id: ScaleUp
+  name: Scale Up
+  modifiers: []
+  extra-skills:
+    ScaleUp:
+      Skills:
+      - command{c="cmi scale add <trigger.name> 0.5"} @self
+
+SCALE_DOWN:
+  mythicmobs-skill-id: ScaleDown
+  name: Scale Down
+  modifiers: []
+  extra-skills:
+    ScaleDown:
+      Skills:
+      - command{c="cmi scale take <trigger.name> 0.5"} @self
+
+SCALE_RESET:
+  mythicmobs-skill-id: ScaleReset
+  name: Scale Reset
+  modifiers: []
+  extra-skills:
+    ScaleReset:
+      Skills:
+      - command{c="cmi scale clear <trigger.name>"} @self

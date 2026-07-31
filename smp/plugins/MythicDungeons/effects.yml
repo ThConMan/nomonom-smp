@@ -1,0 +1,32 @@
+Effects:
+  EffectLib:
+    vortex:
+      class: VortexEffect
+      iterations: 1
+      particle: smoke
+      helixes: 16
+      circles: 1
+      grow: 0.0
+      radius: 1
+      period: 10
+      pitch: 90
+    equation:
+      class: EquationEffect
+      xEquation: 0
+      yEquation: "0.5t"
+      zEquation: 0
+      duration: 10000
+      particles: 10
+      cycle: true
+      x2Equation: "sin((0.3141) * t2)"
+      y2Equation: 0
+      z2Equation: "cos((0.3141) * t2)"
+      particles2: 20
+    equation2:
+      class: EquationEffect
+      xEquation: "sin(0.3141 * t)"
+      yEquation: "0.5t"
+      zEquation: "cos(0.3141 * t)"
+      duration: 10000
+      particles: 20
+      cycle: true

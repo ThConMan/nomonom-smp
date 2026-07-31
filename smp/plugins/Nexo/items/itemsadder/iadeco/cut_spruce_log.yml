@@ -1,0 +1,6 @@
+cut_spruce_log:
+  itemname: display-name-cut_spruce_log
+  material: STICK
+  Pack:
+    model: iadeco:item/cut_spruce_log
+    custom_model_data: 1004

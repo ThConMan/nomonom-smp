@@ -1,0 +1,159 @@
+items: {}
+settings:
+  type: DUEL_PLAYER
+  title: '&8ᴄʀᴇᴀᴛᴇ ᴅᴜᴇʟ - %player%'
+  rows: 3
+  refresh:
+    enabled: false
+    rate: 20
+  on-open-actions: []
+mode:
+  selected:
+    slot: '11'
+    material: IRON_CHESTPLATE
+    amount: 1
+    custom-model-data: 0
+    glow: true
+    hide-attributes: false
+    display-name: '&aᴍᴏᴅᴇ'
+    lore:
+    - '&7Use this option to define'
+    - '&7the mode you will play.'
+    - ''
+    - '&fMode: &7%name%'
+    - '&7%description%'
+    - ''
+    - '&6ʟᴇꜰᴛ-ᴄʟɪᴄᴋ: &eꜱᴇʟᴇᴄᴛ ᴍᴏᴅᴇ.'
+    actions:
+    - '[SOUND] UI_BUTTON_CLICK;0.1;1'
+  empty:
+    slot: '11'
+    material: IRON_CHESTPLATE
+    amount: 1
+    custom-model-data: 0
+    glow: false
+    hide-attributes: true
+    display-name: '&aᴍᴏᴅᴇ'
+    lore:
+    - '&7Use this option to define'
+    - '&7the mode you will play.'
+    - ''
+    - '&fMode:'
+    - '&8(Not Selected)'
+    - ''
+    - '&6ʟᴇꜰᴛ-ᴄʟɪᴄᴋ: &eꜱᴇʟᴇᴄᴛ ᴍᴏᴅᴇ.'
+    actions:
+    - '[SOUND] UI_BUTTON_CLICK;0.1;1'
+map:
+  slot: '12'
+  material: CHEST_MINECART
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: true
+  display-name: '&aᴍᴀᴘ'
+  lore:
+  - '&7By clicking here you will be able'
+  - '&7to define which map you want to play.'
+  - ''
+  - '&fMap: &7%map%'
+  - ''
+  - '&6ʟᴇꜰᴛ-ᴄʟɪᴄᴋ: &eꜱᴇʟᴇᴄᴛ ᴍᴀᴘ.'
+  actions:
+  - '[SOUND] UI_BUTTON_CLICK;0.1;1'
+rounds:
+  slot: '13'
+  material: FIRE_CHARGE
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&aʀᴏᴜɴᴅꜱ ᴛᴏ ᴡɪɴ'
+  lore:
+  - '&7Click here to define how many rounds'
+  - '&7you will be playing in this match.'
+  - ''
+  - '&fRounds: &7%rounds%'
+  - ''
+  - '&6ʟᴇꜰᴛ-ᴄʟɪᴄᴋ: &eᴀᴅᴅ 1.'
+  - '&6ʀɪɢʜᴛ-ᴄʟɪᴄᴋ: &eʀᴇᴍᴏᴠᴇ 1.'
+  actions:
+  - '[SOUND] UI_BUTTON_CLICK;0.1;1'
+external-spectator:
+  slot: '-1'
+  material: ENDER_EYE
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&aᴇxᴛᴇʀɴᴀʟ ꜱᴘᴇᴄᴛᴀᴛᴏʀ'
+  lore:
+  - '&7Click here to toggle where this game'
+  - '&7accepts external spectators who are'
+  - '&7not playing in the match or not.'
+  - ''
+  - '&fIs Enabled: &7%state%'
+  - ''
+  - '&6ʟᴇꜰᴛ-ᴄʟɪᴄᴋ: &eꜱᴡɪᴛᴄʜ ꜱᴛᴀᴛᴇ.'
+  actions:
+  - '[SOUND] UI_BUTTON_CLICK;0.1;1'
+money-wage:
+  slot: '14'
+  material: GOLD_INGOT
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&aᴍᴏɴᴇʏ ᴡᴀɢᴇ'
+  lore:
+  - '&7Click here to set the amount'
+  - '&7of money that a player will have to pay'
+  - '&7to play this match.'
+  - ''
+  - '&fMoney Betting: &7%money%$'
+  - ''
+  - '&6ʟᴇꜰᴛ-ᴄʟɪᴄᴋ: &eᴄʜᴀɴɢᴇ.'
+  - '&6ʀɪɢʜᴛ-ᴄʟɪᴄᴋ: &eᴅɪꜱᴀʙʟᴇ.'
+  actions:
+  - '[SOUND] UI_BUTTON_CLICK;0.1;1'
+items-betting:
+  slot: '15'
+  material: LEATHER
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&aɪᴛᴇᴍꜱ ʙᴇᴛᴛɪɴɢ'
+  lore:
+  - '&7Click here to toggle wheither this match'
+  - '&7will accept items betting.'
+  - ''
+  - '&fIs Enabled: &7%state%'
+  - ''
+  - '&6ʟᴇꜰᴛ-ᴄʟɪᴄᴋ: &eꜱᴡɪᴛᴄʜ ꜱᴛᴀᴛᴇ.'
+  actions:
+  - '[SOUND] UI_BUTTON_CLICK;0.1;1'
+cancel-request:
+  slot: '10'
+  material: RED_STAINED_GLASS_PANE
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&cᴄᴀɴᴄᴇʟ'
+  lore:
+  - '&7Click to cancel request.'
+  actions:
+  - '[SOUND] UI_BUTTON_CLICK;0.1;1'
+send-request:
+  slot: '16'
+  material: LIME_STAINED_GLASS_PANE
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&aꜱᴇɴᴅ'
+  lore:
+  - '&7Click to send request.'
+  actions:
+  - '[SOUND] UI_BUTTON_CLICK;0.1;1'

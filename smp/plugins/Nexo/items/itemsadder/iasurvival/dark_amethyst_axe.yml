@@ -1,0 +1,6 @@
+dark_amethyst_axe:
+  itemname: display-name-dark_amethyst_axe
+  material: DIAMOND_AXE
+  Pack:
+    texture: iasurvival:item/tools/dark_amethyst_axe
+    custom_model_data: 1001

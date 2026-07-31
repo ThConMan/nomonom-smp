@@ -1,0 +1,6 @@
+flour:
+  itemname: display-name-flour
+  material: STICK
+  Pack:
+    texture: iasurvival:item/food/various/flour
+    custom_model_data: 1011

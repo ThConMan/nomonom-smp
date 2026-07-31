@@ -1,0 +1,36 @@
+e_spawn:
+  Cooldown: 240
+  Conditions:
+  - playerwithin{d=10} true
+  Skills:
+  - state{s=e_spawn} @self 
+  - delay 111
+  - summon{t=DungeonSkeleton} @self
+  - remove @self
+  - effect:particlering{particle=flame;a=1;y=0.2;r=3;points=32:s=0.1} @self ~onTimer:5
+e_attack_1:
+  Cooldown: 1
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to6} true
+  Skills:
+  - effect:particles{p=Sweep_Attack;amount=2;hs=3;vs=1;y=0.2} 
+  - damage{a=4} @self @onAttack
+  - gcd{ticks=8} @self
+  - state{s=e_attack_1;lo=10} @self
+  - effect:sound{s=entity.player.attack.nodamage;v=1.7;p=1.1} @self
+  - delay 30
+  
+e_attack_2:
+  Cooldown: 3
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to6} true
+  Skills:
+  - effect:particles{p=Sweep_Attack;amount=2;hs=3;vs=1;y=0.2} 
+  - damage{a=4} @self @onAttack
+  - gcd{ticks=8} @self
+  - state{s=e_attack_2;lo=10} @self
+  - effect:sound{s=entity.player.attack.nodamage;v=1.7;p=1.1} @self

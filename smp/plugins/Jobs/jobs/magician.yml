@@ -1,0 +1,898 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+magician:
+  fullname: "Magician"
+  shortname: M
+  description: 'Wield magic to enhance items and concoct mystical brews.'
+  ChatColour: LIGHT_PURPLE
+  BossBarColour: LIGHT_PURPLE
+  chat-display: shortfull
+  max-level: 48
+  vip-max-level: 250
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*50)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: "Magician - Easy"
+      Objectives:
+      - Enchant;wooden_sword;1
+      - Enchant;leather_helmet;1
+      - Enchant;leather_chestplate;1
+      - Enchant;leather_leggings;1
+      - Enchant;leather_boots;1
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '2':
+      Name: "Magician - Medium"
+      Objectives:
+      - Enchant;iron_sword;1
+      - Enchant;iron_helmet;1
+      - Enchant;iron_chestplate;1
+      - Enchant;iron_leggings;1
+      - Enchant;iron_boots;1
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '3':
+      Name: "Magician - Medium"
+      Objectives:
+      - Enchant;golden_sword;1
+      - Enchant;golden_helmet;1
+      - Enchant;golden_chestplate;1
+      - Enchant;golden_leggings;1
+      - Enchant;golden_boots;1
+      RewardAmount: 250
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_250%'
+    '4':
+      Name: "Magician - Hard"
+      Objectives:
+      - Enchant;diamond_sword;1
+      - Enchant;diamond_helmet;1
+      - Enchant;diamond_chestplate;1
+      - Enchant;diamond_leggings;1
+      - Enchant;diamond_boots;1
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+    '5':
+      Name: "Magician - Easy"
+      Objectives:
+      - Enchant;wooden_pickaxe;1
+      - Enchant;wooden_axe;1
+      - Enchant;wooden_shovel;1
+      - Enchant;wooden_hoe;1
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '6':
+      Name: "Magician - Easy"
+      Objectives:
+      - Enchant;iron_pickaxe;1
+      - Enchant;iron_axe;1
+      - Enchant;iron_shovel;1
+      - Enchant;iron_hoe;1
+      RewardAmount: 175
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_175%'
+    '7':
+      Name: "Magician - Medium"
+      Objectives:
+      - Enchant;golden_pickaxe;1
+      - Enchant;golden_axe;1
+      - Enchant;golden_shovel;1
+      - Enchant;golden_hoe;1
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '8':
+      Name: "Magician - Medium"
+      Objectives:
+      - Enchant;diamond_pickaxe;1
+      - Enchant;diamond_axe;1
+      - Enchant;diamond_shovel;1
+      - Enchant;diamond_hoe;1
+      RewardAmount: 250
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_250%'
+    '9':
+      Name: "Magician - Easy"
+      Objectives:
+      - Enchant;bow;3
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '10':
+      Name: "Magician - Easy"
+      Objectives:
+      - Enchant;wooden_sword;3
+      - Enchant;leather_helmet;3
+      - Enchant;leather_chestplate;3
+      - Enchant;leather_leggings;3
+      - Enchant;leather_boots;3
+      RewardAmount: 175
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_175%'
+    '11':
+      Name: "Magician - Medium"
+      Objectives:
+      - Enchant;iron_sword;3
+      - Enchant;iron_helmet;3
+      - Enchant;iron_chestplate;3
+      - Enchant;iron_leggings;3
+      - Enchant;iron_boots;3
+      RewardAmount: 275
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_275%'
+    '12':
+      Name: "Magician - Hard"
+      Objectives:
+      - Enchant;golden_sword;3
+      - Enchant;golden_helmet;3
+      - Enchant;golden_chestplate;3
+      - Enchant;golden_leggings;3
+      - Enchant;golden_boots;3
+      RewardAmount: 350
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_350%'
+    '13':
+      Name: "Magician - Hard"
+      Objectives:
+      - Enchant;diamond_sword;3
+      - Enchant;diamond_helmet;3
+      - Enchant;diamond_chestplate;3
+      - Enchant;diamond_leggings;3
+      - Enchant;diamond_boots;3
+      RewardAmount: 500
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_500%'
+    '14':
+      Name: "Magician - Easy"
+      Objectives:
+      - Enchant;wooden_pickaxe;3
+      - Enchant;wooden_axe;3
+      - Enchant;wooden_shovel;3
+      - Enchant;wooden_hoe;3
+      RewardAmount: 150
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_150%'
+    '15':
+      Name: "Magician - Medium"
+      Objectives:
+      - Enchant;iron_pickaxe;3
+      - Enchant;iron_axe;3
+      - Enchant;iron_shovel;3
+      - Enchant;iron_hoe;3
+      RewardAmount: 275
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_275%'
+    '16':
+      Name: "Magician - Hard"
+      Objectives:
+      - Enchant;golden_pickaxe;3
+      - Enchant;golden_axe;3
+      - Enchant;golden_shovel;3
+      - Enchant;golden_hoe;3
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+    '17':
+      Name: "Magician - Hard"
+      Objectives:
+      - Enchant;diamond_pickaxe;3
+      - Enchant;diamond_axe;3
+      - Enchant;diamond_shovel;3
+      - Enchant;diamond_hoe;3
+      RewardAmount: 400
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_400%'
+    '18':
+      Name: "Magician - Medium"
+      Objectives:
+      - Enchant;bow;6
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '19':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;nether_wart;10
+      - Brew;redstone;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '20':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;nether_wart;10
+      - Brew;glowstone_dust;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '21':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;dragon_breath;10
+      - Brew;gunpowder;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '22':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;fermented_spider_eye;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '23':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;sugar;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '24':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;rabbit_foot;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '25':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;glistering_melon_slice;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '26':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;spider_eye;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '27':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;pufferfish;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '28':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;magma_cream;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '29':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;golden_carrot;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '30':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;blaze_powder;10
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '31':
+      Name: "Magician - Easy"
+      Objectives:
+      - Brew;ghast_tear;10
+      RewardAmount: 150
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_150%'
+    '32':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;nether_wart;30
+      - Brew;redstone;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '33':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;nether_wart;30
+      - Brew;glowstone_dust;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '34':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;dragon_breath;30
+      - Brew;gunpowder;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '35':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;fermented_spider_eye;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '36':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;sugar;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '37':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;rabbit_foot;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '38':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;glistering_melon_slice;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '39':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;spider_eye;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '40':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;pufferfish;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '41':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;magma_cream;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '42':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;golden_carrot;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '43':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;blaze_powder;30
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '44':
+      Name: "Magician - Medium"
+      Objectives:
+      - Brew;ghast_tear;30
+      RewardAmount: 250
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_250%'
+  Gui:
+    ItemStack: ENCHANTING_TABLE
+  Enchant:
+    wooden_sword:
+      income: 1.5
+      points: 0.1
+      experience: 3.0
+    stone_sword:
+      income: 2.0
+      points: 0.5
+      experience: 3.5
+    iron_sword:
+      income: 3.0
+      points: 1.0
+      experience: 6.0
+    golden_sword:
+      income: 4.5
+      points: 2.0
+      experience: 15.0
+    diamond_sword:
+      income: 9.0
+      points: 3.0
+      experience: 30.0
+    netherite_sword:
+      income: 12.0
+      points: 4.0
+      experience: 50.0
+    wooden_axe:
+      income: 1.75
+      points: 0.15
+      experience: 3.25
+    stone_axe:
+      income: 2.5
+      points: 0.5
+      experience: 3.5
+    iron_axe:
+      income: 3.5
+      points: 1.5
+      experience: 6.5
+    golden_axe:
+      income: 5.0
+      points: 2.5
+      experience: 15.5
+    diamond_axe:
+      income: 10.0
+      points: 3.5
+      experience: 30.0
+    netherite_axe:
+      income: 12.0
+      points: 4.0
+      experience: 50.0
+    wooden_pickaxe:
+      income: 1.75
+      points: 0.15
+      experience: 3.25
+    stone_pickaxe:
+      income: 2.5
+      points: 0.5
+      experience: 3.5
+    iron_pickaxe:
+      income: 3.5
+      points: 1.5
+      experience: 6.5
+    golden_pickaxe:
+      income: 5.0
+      points: 2.5
+      experience: 15.5
+    diamond_pickaxe:
+      income: 10.0
+      points: 3.5
+      experience: 30.0
+    netherite_pickaxe:
+      income: 12.0
+      points: 4.0
+      experience: 50.0
+    wooden_shovel:
+      income: 1.5
+      points: 0.1
+      experience: 3.0
+    stone_shovel:
+      income: 2.0
+      points: 0.5
+      experience: 3.5
+    iron_shovel:
+      income: 3.0
+      points: 1.0
+      experience: 6.0
+    golden_shovel:
+      income: 4.5
+      points: 2.0
+      experience: 15.0
+    diamond_shovel:
+      income: 5.0
+      points: 3.0
+      experience: 30.0
+    netherite_shovel:
+      income: 7.0
+      points: 4.0
+      experience: 50.0
+    wooden_hoe:
+      income: 1.5
+      points: 0.1
+      experience: 3.0
+    stone_hoe:
+      income: 2.0
+      points: 0.5
+      experience: 3.5
+    iron_hoe:
+      income: 3.0
+      points: 1.0
+      experience: 6.0
+    golden_hoe:
+      income: 4.5
+      points: 2.0
+      experience: 15.0
+    diamond_hoe:
+      income: 6.0
+      points: 3.0
+      experience: 30.0
+    netherite_hoe:
+      income: 8.0
+      points: 4.0
+      experience: 50.0
+    leather_helmet:
+      income: 1.0
+      points: 0.5
+      experience: 6.0
+    iron_helmet:
+      income: 2.5
+      points: 1.0
+      experience: 9.0
+    golden_helmet:
+      income: 2.5
+      points: 2.0
+      experience: 15.0
+    diamond_helmet:
+      income: 6.0
+      points: 3.0
+      experience: 30.0
+    netherite_helmet:
+      income: 8.0
+      points: 4.0
+      experience: 50.0
+    leather_chestplate:
+      income: 2.0
+      points: 0.5
+      experience: 6.0
+    iron_chestplate:
+      income: 4.5
+      points: 2.0
+      experience: 9.0
+    golden_chestplate:
+      income: 5.5
+      points: 3.0
+      experience: 15.0
+    diamond_chestplate:
+      income: 12.0
+      points: 4.0
+      experience: 50.0
+    netherite_chestplate:
+      income: 15.0
+      points: 5.0
+      experience: 100.0
+    leather_leggings:
+      income: 2.0
+      points: 0.5
+      experience: 6.0
+    iron_leggings:
+      income: 4.5
+      points: 1.5
+      experience: 9.0
+    golden_leggings:
+      income: 5.5
+      points: 2.5
+      experience: 15.0
+    diamond_leggings:
+      income: 12.0
+      points: 3.5
+      experience: 50.0
+    netherite_leggings:
+      income: 15.0
+      points: 4.0
+      experience: 100.0
+    leather_boots:
+      income: 1.0
+      points: 0.5
+      experience: 6.0
+    iron_boots:
+      income: 2.5
+      points: 1.0
+      experience: 9.0
+    golden_boots:
+      income: 2.5
+      points: 2.0
+      experience: 15.0
+    diamond_boots:
+      income: 6.0
+      points: 3.0
+      experience: 30.0
+    netherite_boots:
+      income: 8.0
+      points: 4.0
+      experience: 50.0
+    bow:
+      income: 2.5
+      points: 0.1
+      experience: 15
+    crossbow:
+      income: 2.5
+      points: 0.1
+      experience: 15
+    mace:
+      income: 2.5
+      points: 0.7
+      experience: 3.0
+  Brew:
+    nether_wart:
+      income: 1.0
+      points: 0.1
+      experience: 1.0
+    redstone:
+      income: 1.0
+      points: 0.1
+      experience: 1.0
+    glowstone_dust:
+      income: 1.0
+      points: 0.1
+      experience: 1.0
+    fermented_spider_eye:
+      income: 9.0
+      points: 1.0
+      experience: 7.0
+    gunpowder:
+      income: 5.0
+      points: 0.7
+      experience: 5.0
+    dragon_breath:
+      income: 4.0
+      points: 0.7
+      experience: 4.0
+    sugar:
+      income: 2.5
+      points: 0.3
+      experience: 2.5
+    rabbit_foot:
+      income: 4.0
+      points: 0.5
+      experience: 3.5
+    glistering_melon_slice:
+      income: 6.0
+      points: 0.7
+      experience: 5.5
+    spider_eye:
+      income: 3.0
+      points: 0.3
+      experience: 2.5
+    pufferfish:
+      income: 5.0
+      points: 0.3
+      experience: 3.0
+    magma_cream:
+      income: 10.0
+      points: 1.0
+      experience: 9.5
+    golden_carrot:
+      income: 4.5
+      points: 0.5
+      experience: 3.5
+    blaze_powder:
+      income: 7.0
+      points: 0.8
+      experience: 5.5
+    ghast_tear:
+      income: 6.0
+      points: 0.7
+      experience: 5.0
+    turtle_helmet:
+      income: 4.0
+      points: 0.3
+      experience: 4.0
+    phantom_membrane:
+      income: 3.0
+      points: 0.3
+      experience: 3.0

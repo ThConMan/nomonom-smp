@@ -1,0 +1,1106 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+explorer:
+  fullname: "Explorer"
+  shortname: Ex
+  description: 'Explore vast lands, dig up hidden relics, and trade with villagers.'
+  ChatColour: DARK_AQUA
+  BossBarColour: DARK_AQUA
+  chat-display: shortfull
+  max-level: 48
+  vip-max-level: 250
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*50)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: "Explorer - Easy"
+      Objectives:
+      - Explore;1;30
+      RewardAmount: 175
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_175%'
+    '2':
+      Name: "Explorer - Easy"
+      Objectives:
+      - Explore;2;30
+      RewardAmount: 175
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_150%'
+    '3':
+      Name: "Explorer - Easy"
+      Objectives:
+      - Explore;3;30
+      RewardAmount: 175
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_125%'
+    '4':
+      Name: "Explorer - Easy"
+      Objectives:
+      - Explore;4;30
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '5':
+      Name: "Explorer - Medium"
+      Objectives:
+      - Explore;1;60
+      RewardAmount: 275
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_275%'
+    '6':
+      Name: "Explorer - Medium"
+      Objectives:
+      - Explore;2;60
+      RewardAmount: 250
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_250%'
+    '7':
+      Name: "Explorer - Medium"
+      Objectives:
+      - Explore;3;60
+      RewardAmount: 225
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_225%'
+    '8':
+      Name: "Explorer - Medium"
+      Objectives:
+      - Explore;4;60
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '9':
+      Name: "Explorer - Hard"
+      Objectives:
+      - Explore;1;100
+      RewardAmount: 400
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_400%'
+    '10':
+      Name: "Explorer - Hard"
+      Objectives:
+      - Explore;2;100
+      RewardAmount: 375
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_375%'
+    '11':
+      Name: "Explorer - Hard"
+      Objectives:
+      - Explore;3;100
+      RewardAmount: 350
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_350%'
+    '12':
+      Name: "Explorer - Hard"
+      Objectives:
+      - Explore;4;100
+      RewardAmount: 325
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_325%'
+  Gui:
+    ItemStack: GOLDEN_BOOTS
+  Explore:
+    '1':
+      income: 1.0
+      points: 0.3
+      experience: 1.0
+    '2':
+      income: 0.8
+      points: 0.2
+      experience: 1.0
+    '3':
+      income: 0.6
+      points: 0.15
+      experience: 0.8
+    '4':
+      income: 0.4
+      points: 0.1
+      experience: 0.5
+    '5':
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+  VTrade:
+
+### Emerald
+
+    emerald:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+
+### Armorer
+
+    IRON_HELMET:
+      income: 0.1
+      points: 0.02
+      experience: 0.25
+    IRON_CHESTPLATE:
+      income: 0.1
+      points: 0.02
+      experience: 0.25
+    IRON_LEGGINGS:
+      income: 0.1
+      points: 0.02
+      experience: 0.25
+    IRON_BOOTS:
+      income: 0.1
+      points: 0.02
+      experience: 0.25
+    CHAINMAIL_HELMET:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    CHAINMAIL_CHESTPLATE:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    CHAINMAIL_LEGGINGS:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    CHAINMAIL_BOOTS:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    DIAMOND_HELMET:
+      income: 0.2
+      points: 0.05
+      experience: 0.5
+    DIAMOND_CHESTPLATE:
+      income: 0.2
+      points: 0.05
+      experience: 0.5
+    DIAMOND_LEGGINGS:
+      income: 0.2
+      points: 0.05
+      experience: 0.5
+    DIAMOND_BOOTS:
+      income: 0.2
+      points: 0.05
+      experience: 0.5
+
+### Butcher
+
+    RABBIT_STEW:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    COOKED_PORKCHOP:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    COOKED_CHICKEN:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+
+### Cartographer
+
+    MAP:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    WHITE_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    YELLOW_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    PURPLE_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    RED_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    ORANGE_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    PINK_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    LIME_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    MAGENTA_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    LIGHT_BLUE_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    LIGHT_GRAY_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    GRAY_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    GREEN_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    CYAN_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    BLUE_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    BROWN_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    BLACK_BANNER:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+
+### Cleric
+
+    REDSTONE:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    LAPIS_LAZULI:
+      income: 0.03
+      points: 0.01
+      experience: 0.03
+    GLOWSTONE:
+      income: 0.05
+      points: 0.01
+      experience: 0.05
+    ENDER_PEARL:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    EXPERIENCE_BOTTLE:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+
+### Farmer
+
+    BREAD:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    PUMPKIN_PIE:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    APPLE:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    COOKIE:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    CAKE:
+      income: 0.05
+      points: 0.02
+      experience: 0.1
+    SUSPICIOUS_STEW:
+      income: 0.01
+      points: 0.01
+      experience: 0.05
+    GOLDEN_CARROT:
+      income: 0.03
+      points: 0.01
+      experience: 0.1
+    GLISTERING_MELON_SLICE:
+      income: 0.03
+      points: 0.01
+      experience: 0.1
+
+### Fisherman
+
+    COOKED_COD:
+      income: 0.1
+      points: 0.01
+      experience: 0.25
+    COD_BUCKET:
+      income: 0.1
+      points: 0.01
+      experience: 0.30
+    COOKED_SALMON:
+      income: 0.15
+      points: 0.02
+      experience: 0.30
+    CAMPFIRE:
+      income: 0.1
+      points: 0.01
+      experience: 0.25
+    FISHING_ROD:
+      income: 0.05
+      points: 0.01
+      experience: 0.01
+
+### Fletcher
+
+    ARROW:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    FLINT:
+      income: 0.03
+      points: 0.01
+      experience: 0.1
+    BOW:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    CROSSBOW:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    TIPPED_ARROW:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+
+### Leatherworker
+
+    LEATHER_HELMET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LEATHER_CHESTPLATE:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LEATHER_LEGGINGS:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LEATHER_BOOTS:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    SADDLE:
+      income: 0.05
+      points: 0.01
+      experience: 0.05
+
+### Librarian
+
+    ENCHANTED_BOOK:
+      income: 0.1
+      points: 0.01
+      experience: 1.0
+    BOOKSHELF:
+      income: 0.03
+      points: 0.01
+      experience: 0.5
+    LANTERN:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    GLASS:
+      income: 0.01
+      points: 0.01
+      experience: 0.05 
+    CLOCK:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    COMPASS:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    NAME_TAG:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+
+### Mason
+
+
+    BRICK:
+      income: 0.02
+      points: 0.03
+      experience: 0.03
+    CHISELED_STONE_BRICKS:
+      income: 0.02
+      points: 0.03
+      experience: 0.03
+    POLISHED_ANDESITE:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    POLISHED_DIORITE:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    POLISHED_GRANITE:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    DRIPSTONE_BLOCK:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    WHITE_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    YELLOW_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    RED_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    PURPLE_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    PINK_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    ORANGE_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    MAGENTA_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    LIME_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    LIGHT_GRAY_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    LIGHT_BLUE_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    GREEN_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    GRAY_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    CYAN_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    BROWN_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    BLUE_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    BLACK_TERRACOTTA:
+      income: 0.01
+      points: 0.01
+      experience: 0.02
+    QUARTZ_PILLAR:
+      income: 0.05
+      points: 0.02
+      experience: 0.1
+    QUARTZ_BLOCK:
+      income: 0.05
+      points: 0.02
+      experience: 0.1
+
+### Shepherd
+ 
+    WHITE_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    YELLOW_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    PURPLE_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    RED_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    ORANGE_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    PINK_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LIME_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    MAGENTA_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LIGHT_BLUE_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LIGHT_GRAY_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    GRAY_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    GREEN_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    CYAN_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    BLUE_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    BROWN_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    BLACK_WOOL:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    WHITE_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    YELLOW_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    PURPLE_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    RED_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    ORANGE_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    PINK_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LIME_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    MAGENTA_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LIGHT_BLUE_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LIGHT_GRAY_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    GRAY_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    GREEN_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    CYAN_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    BLUE_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    BROWN_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    BLACK_BED:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    WHITE_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    YELLOW_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    PURPLE_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    RED_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    ORANGE_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    PINK_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LIME_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    MAGENTA_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LIGHT_BLUE_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    LIGHT_GRAY_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    GRAY_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    GREEN_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    CYAN_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    BLUE_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    BROWN_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    BLACK_CARPET:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+
+### Toolsmith
+
+    STONE_AXE:
+      income: 0.02
+      points: 0.01
+      experience: 0.1
+    STONE_HOE:
+      income: 0.02
+      points: 0.01
+      experience: 0.1
+    STONE_PICKAXE:
+      income: 0.02
+      points: 0.01
+      experience: 0.1
+    STONE_SHOVEL:
+      income: 0.02
+      points: 0.01
+      experience: 0.1
+    IRON_AXE:
+      income: 0.05
+      points: 0.02
+      experience: 0.2
+    IRON_PICKAXE:
+      income: 0.05
+      points: 0.02
+      experience: 0.2
+    IRON_SHOVEL:
+      income: 0.05
+      points: 0.02
+      experience: 0.2
+    DIAMOND_AXE:
+      income: 0.1
+      points: 0.03
+      experience: 0.3
+    DIAMOND_SHOVEL:
+      income: 0.1
+      points: 0.03
+      experience: 0.3
+    DIAMOND_PICKAXE:
+      income: 0.1
+      points: 0.03
+      experience: 0.3
+    DIAMOND_HOE:
+      income: 0.1
+      points: 0.03
+      experience: 0.3
+
+### Weaponsmith
+
+    IRON_SWORD:
+      income: 0.05
+      points: 0.02
+      experience: 0.2
+    DIAMOND_SWORD:
+      income: 0.1
+      points: 0.03
+      experience: 0.3
+
+### Wandering Trader
+
+    PACKED_ICE:
+      income: 0.1
+      points: 0.03
+      experience: 0.15
+    BLUE_ICE:
+      income: 0.1
+      points: 0.03
+      experience: 0.15
+    ICE:
+      income: 0.1
+      points: 0.03
+      experience: 0.15 
+    RED_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    CYAN_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    GRAY_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    PINK_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    LIME_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    BLUE_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    GREEN_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    BROWN_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1 
+    BLACK_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    WHITE_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    PURPLE_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    ORANGE_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    YELLOW_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    MAGENTA_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    LIGHT_GRAY_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    LIGHT_BLUE_DYE:
+      income: 0.01
+      points: 0.01
+      experience: 0.1
+    ALLIUM:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    AZURE_BLUET:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    BLUE_ORCHID:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    CORNFLOWER:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    DANDELION:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    LILY_PAD:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    ORANGE_TULIP:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    OXEYE_DAISY:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    PINK_TULIP:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    POPPY:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    RED_TULIP:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    WHITE_TULIP:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    FERN:
+      income: 0.01
+      points: 0.001
+      experience: 0.1
+    BROWN_MUSHROOM:
+      income: 0.02
+      points: 0.005
+      experience: 0.1
+    RED_MUSHROOM:
+      income: 0.02
+      points: 0.005
+      experience: 0.1
+    BEETROOT_SEEDS:
+      income: 0.01
+      points: 0.005
+      experience: 0.1
+    MELON_SEEDS:
+      income: 0.01
+      points: 0.005
+      experience: 0.1
+    PUMPKIN_SEEDS:
+      income: 0.01
+      points: 0.005
+      experience: 0.1
+    WHEAT_SEEDS:
+      income: 0.01
+      points: 0.005
+      experience: 0.1
+    PUMPKIN:
+      income: 0.02
+      points: 0.01
+      experience: 0.5
+    SUGAR_CANE:
+      income: 0.02
+      points: 0.01
+      experience: 0.5
+    VINE:
+      income: 0.02
+      points: 0.01
+      experience: 0.5
+    MOSS_BLOCK:
+      income: 0.005
+      points: 0.001
+      experience: 0.1
+    POINTED_DRIPSTONE:
+      income: 0.005
+      points: 0.001
+      experience: 0.1
+    ROOTED_DIRT:
+      income: 0.005
+      points: 0.001
+      experience: 0.1
+    SMALL_DRIPLEAF:
+      income: 0.005
+      points: 0.001
+      experience: 0.1
+    RED_SAND:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    SAND:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    SEA_PICKLE:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    CACTUS:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    BRAIN_CORAL_BLOCK:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    BUBBLE_CORAL_BLOCK:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    FIRE_CORAL_BLOCK:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    HORN_CORAL_BLOCK:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    TUBE_CORAL_BLOCK:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    KELP:
+      income: 0.01
+      points: 0.001
+      experience: 0.01
+    SLIME_BALL:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    ACACIA_SAPLING:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    BIRCH_SAPLING:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    DARK_OAK_SAPLING:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    JUNGLE_SAPLING:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    OAK_SAPLING:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    SPRUCE_SAPLING:
+      income: 0.02
+      points: 0.01
+      experience: 0.05
+    MANGROVE_PROPAGULE:
+      income: 0.02
+      points: 0.01
+      experience: 0.05

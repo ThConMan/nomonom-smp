@@ -1,0 +1,714 @@
+miner:
+  fullname: "Miner"
+  shortname: M
+  description: 'Dig through the depths to uncover valuable resources.'
+  ChatColour: AQUA
+  BossBarColour: AQUA
+  chat-display: shortfull
+
+  # Slightly higher cap + easier leveling so Miner actually progresses
+  max-level: 60
+  vip-max-level: 250
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*35)
+
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01)) * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01)) * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+
+  rejoinCooldown: 5
+
+  # Buff: more dailies
+  maxDailyQuests: 2
+
+  Quests:
+    '1':
+      Name: "Miner - Easy"
+      Objectives:
+      - Break;stone;200
+      RewardAmount: 150
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_150%'
+
+    '2':
+      Name: "Miner - Easy"
+      Objectives:
+      - Break;stone;50
+      - Break;andesite;50
+      - Break;granite;50
+      - Break;diorite;50
+      RewardAmount: 225
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_225%'
+
+    '3':
+      Name: "Miner - Easy"
+      Objectives:
+      - Break;andesite;150
+      RewardAmount: 225
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_225%'
+
+    '4':
+      Name: "Miner - Easy"
+      Objectives:
+      - Break;granite;150
+      - Break;diorite;50
+      RewardAmount: 260
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_260%'
+
+    '5':
+      Name: "Miner - Medium"
+      Objectives:
+      - Break;stone;256
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+
+    '6':
+      Name: "Miner - Medium"
+      Objectives:
+      - Break;andesite;192
+      - Break;granite;128
+      RewardAmount: 375
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_375%'
+
+    '7':
+      Name: "Miner - Medium"
+      Objectives:
+      - Break;granite;192
+      - Break;diorite;128
+      RewardAmount: 375
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_375%'
+
+    '8':
+      Name: "Miner - Medium"
+      Objectives:
+      - Break;diorite;192
+      - Break;sandstone;64
+      RewardAmount: 400
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_400%'
+
+    '9':
+      Name: "Miner - Medium"
+      Objectives:
+      - Break;stone;384
+      - Break;sandstone;128
+      RewardAmount: 450
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_450%'
+
+    '10':
+      Name: "Miner - Hard"
+      Objectives:
+      - Break;stone;512
+      RewardAmount: 600
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_600%'
+
+    '11':
+      Name: "Miner - Hard"
+      Objectives:
+      - Break;andesite;192
+      - Break;diorite;192
+      - Break;granite;192
+      RewardAmount: 750
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_750%'
+
+    '12':
+      Name: "Miner - Hard"
+      Objectives:
+      - Break;sandstone;428
+      RewardAmount: 750
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_750%'
+
+    '13':
+      Name: "Miner - Easy"
+      Objectives:
+      - Break;coal_ore;64
+      RewardAmount: 225
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_225%'
+
+    '14':
+      Name: "Miner - Easy"
+      Objectives:
+      - Break;iron_ore;64
+      RewardAmount: 260
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_260%'
+
+    '15':
+      Name: "Miner - Medium"
+      Objectives:
+      - Break;redstone_ore;128
+      RewardAmount: 340
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_340%'
+
+    '16':
+      Name: "Miner - Medium"
+      Objectives:
+      - Break;gold_ore;96
+      RewardAmount: 375
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_375%'
+
+    '17':
+      Name: "Miner - Medium"
+      Objectives:
+      - Break;lapis_ore;64
+      RewardAmount: 450
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_450%'
+
+    '18':
+      Name: "Miner - Hard"
+      Objectives:
+      - Break;diamond_ore;48
+      RewardAmount: 650
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_650%'
+
+    '19':
+      Name: "Miner - Hard"
+      Objectives:
+      - Break;emerald_ore;32
+      RewardAmount: 650
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_650%'
+
+    '20':
+      Name: "Miner - Hard"
+      Objectives:
+      - Break;nether_quartz_ore;192
+      RewardAmount: 725
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_725%'
+
+    '21':
+      Name: "Miner - Impossible"
+      Objectives:
+      - Break;coal_ore;192
+      - Break;iron_ore;128
+      - Break;gold_ore;96
+      - Break;diamond_ore;64
+      - Break;emerald_ore;32
+      RewardAmount: 1500
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_1500%'
+
+    # NEW: makes your upcoming blocks shop feel relevant (deep blocks)
+    '22':
+      Name: "Miner - Deep Haul"
+      Objectives:
+      - Break;deepslate;512
+      - Break;tuff;128
+      - Break;calcite;128
+      RewardAmount: 600
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_600%'
+
+  Gui:
+    ItemStack: GOLDEN_PICKAXE
+
+  Break:
+    # Keep stone low-ish so mining is the money, not cobble generators
+    stone:
+      income: 0.02
+      points: 0.015
+      experience: 0.025
+
+    andesite:
+      income: 0.12
+      points: 0.06
+      experience: 0.12
+    granite:
+      income: 0.12
+      points: 0.06
+      experience: 0.12
+    diorite:
+      income: 0.12
+      points: 0.06
+      experience: 0.12
+
+    mossy_cobblestone:
+      income: 0.03
+      points: 0.015
+      experience: 0.04
+
+    sandstone:
+      income: 0.18
+      points: 0.12
+      experience: 0.24
+    red_sandstone:
+      income: 0.18
+      points: 0.12
+      experience: 0.24
+
+    coal_ore:
+      income: 0.25
+      points: 0.18
+      experience: 0.25
+    deepslate_coal_ore:
+      income: 0.30
+      points: 0.21
+      experience: 0.30
+
+    iron_ore:
+      income: 0.40
+      points: 0.26
+      experience: 0.45
+    deepslate_iron_ore:
+      income: 0.46
+      points: 0.30
+      experience: 0.52
+
+    copper_ore:
+      income: 0.38
+      points: 0.25
+      experience: 0.42
+    deepslate_copper_ore:
+      income: 0.44
+      points: 0.29
+      experience: 0.50
+
+    gold_ore:
+      income: 0.60
+      points: 0.40
+      experience: 0.60
+    deepslate_gold_ore:
+      income: 0.70
+      points: 0.46
+      experience: 0.70
+
+    nether_gold_ore:
+      income: 0.40
+      points: 0.26
+      experience: 0.45
+
+    redstone_ore:
+      income: 0.45
+      points: 0.32
+      experience: 0.45
+    deepslate_redstone_ore:
+      income: 0.52
+      points: 0.38
+      experience: 0.50
+
+    lapis_ore:
+      income: 0.55
+      points: 0.40
+      experience: 0.55
+    deepslate_lapis_ore:
+      income: 0.65
+      points: 0.46
+      experience: 0.65
+
+    diamond_ore:
+      income: 1.50
+      points: 1.10
+      experience: 2.00
+    deepslate_diamond_ore:
+      income: 1.80
+      points: 1.30
+      experience: 2.40
+
+    # Emerald was insanely high; still premium, just not nuclear
+    emerald_ore:
+      income: 6.0
+      points: 3.0
+      experience: 9.0
+    deepslate_emerald_ore:
+      income: 7.5
+      points: 3.75
+      experience: 11.25
+
+    nether_quartz_ore:
+      income: 0.32
+      points: 0.24
+      experience: 0.32
+
+    obsidian:
+      income: 2.25
+      points: 1.30
+      experience: 4.00
+
+    netherrack:
+      income: 0.03
+      points: 0.03
+      experience: 0.04
+    nether_bricks:
+      income: 0.10
+      points: 0.05
+      experience: 0.10
+
+    ancient_debris:
+      income: 7.5
+      points: 3.5
+      experience: 11.0
+
+    prismarine:
+      income: 0.12
+      points: 0.10
+      experience: 0.12
+    prismarine_bricks:
+      income: 0.12
+      points: 0.10
+      experience: 0.12
+    dark_prismarine:
+      income: 0.12
+      points: 0.10
+      experience: 0.12
+
+    end_stone:
+      income: 0.07
+      points: 0.05
+      experience: 0.07
+    end_stone_bricks:
+      income: 0.12
+      points: 0.09
+      experience: 0.18
+
+    purpur_block:
+      income: 0.18
+      points: 0.12
+      experience: 0.24
+    purpur_pillar:
+      income: 0.30
+      points: 0.12
+      experience: 0.36
+
+    magma_block:
+      income: 0.07
+      points: 0.05
+      experience: 0.07
+
+    basalt:
+      income: 0.03
+      points: 0.03
+      experience: 0.04
+    blackstone:
+      income: 0.04
+      points: 0.04
+      experience: 0.05
+    gilded_blackstone:
+      income: 0.18
+      points: 0.12
+      experience: 0.24
+
+    # Terracotta stays “nice” but not insane
+    terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    white_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    orange_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    magenta_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    light_blue_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    yellow_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    lime_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    pink_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    gray_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    light_gray_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    cyan_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    purple_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    blue_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    brown_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    green_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    red_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+    black_terracotta:
+      income: 0.12
+      points: 0.03
+      experience: 0.20
+
+    packed_ice:
+      income: 0.35
+      points: 0.10
+      experience: 0.65
+
+    amethyst_cluster:
+      income: 1.00
+      points: 0.55
+      experience: 1.20
+
+    calcite:
+      income: 0.22
+      points: 0.10
+      experience: 0.30
+    tuff:
+      income: 0.22
+      points: 0.10
+      experience: 0.30
+
+    # Deepslate is “the miner block” now
+    deepslate:
+      income: 0.04
+      points: 0.03
+      experience: 0.05
+
+    pointed_dripstone:
+      income: 0.30
+      points: 0.12
+      experience: 0.36
+
+  Place:
+    iron_ore:
+      income: -1.5
+      points: -1
+      experience: -1
+    gold_ore:
+      income: -2.0
+      points: -1
+      experience: -1
+    diamond_ore:
+      income: -2.5
+      points: -1
+      experience: -2
+    emerald_ore:
+      income: -5
+      points: -2.5
+      experience: -7.5
+    stonecutter:
+      income: 1.0
+      points: 0.2
+      experience: 1.75
+
+  TNTBreak:
+    # Keep TNT weaker so it’s not the best money method
+    stone:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    granite:
+      income: 0.02
+      points: 0.02
+      experience: 0.02
+    diorite:
+      income: 0.02
+      points: 0.02
+      experience: 0.02
+    andesite:
+      income: 0.02
+      points: 0.02
+      experience: 0.02
+    coal_ore:
+      income: 0.12
+      points: 0.08
+      experience: 0.12
+    redstone_ore:
+      income: 0.20
+      points: 0.14
+      experience: 0.18
+    iron_ore:
+      income: 0.18
+      points: 0.12
+      experience: 0.18
+    gold_ore:
+      income: 0.24
+      points: 0.17
+      experience: 0.24
+    lapis_ore:
+      income: 0.24
+      points: 0.17
+      experience: 0.24
+    diamond_ore:
+      income: 0.60
+      points: 0.45
+      experience: 0.90
+    emerald_ore:
+      income: 3.0
+      points: 1.5
+      experience: 4.5
+    nether_quartz_ore:
+      income: 0.14
+      points: 0.12
+      experience: 0.14
+    deepslate_coal_ore:
+      income: 0.12
+      points: 0.08
+      experience: 0.12
+    deepslate_redstone_ore:
+      income: 0.20
+      points: 0.14
+      experience: 0.20
+    deepslate_iron_ore:
+      income: 0.18
+      points: 0.12
+      experience: 0.20
+    deepslate_gold_ore:
+      income: 0.24
+      points: 0.17
+      experience: 0.24
+    deepslate_lapis_ore:
+      income: 0.24
+      points: 0.17
+      experience: 0.24
+    deepslate_diamond_ore:
+      income: 0.60
+      points: 0.45
+      experience: 0.90
+    deepslate_emerald_ore:
+      income: 3.0
+      points: 1.5
+      experience: 4.5

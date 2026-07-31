@@ -1,0 +1,6 @@
+sliced_baguette:
+  itemname: display-name-sliced_baguette
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/sliced_baguette
+    custom_model_data: 1030

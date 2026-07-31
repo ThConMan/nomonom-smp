@@ -1,0 +1,6 @@
+shopping_cart:
+  itemname: display-name-shopping_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/shopping_cart
+    custom_model_data: 1138

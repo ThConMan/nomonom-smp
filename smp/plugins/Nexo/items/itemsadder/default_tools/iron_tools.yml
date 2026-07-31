@@ -1,0 +1,24 @@
+iron_pickaxe:
+  itemname: Iron Pickaxe
+  material: IRON_PICKAXE
+  Pack:
+    model: default_tools:iron/iron_pickaxe
+    custom_model_data: 1001
+iron_hoe:
+  itemname: Iron Hoe
+  material: IRON_HOE
+  Pack:
+    model: default_tools:iron/iron_hoe
+    custom_model_data: 1000
+iron_axe:
+  itemname: Iron Axe
+  material: IRON_AXE
+  Pack:
+    model: default_tools:iron/iron_axe
+    custom_model_data: 1000
+iron_shovel:
+  itemname: Iron Shovel
+  material: IRON_SHOVEL
+  Pack:
+    model: default_tools:iron/iron_shovel
+    custom_model_data: 1000

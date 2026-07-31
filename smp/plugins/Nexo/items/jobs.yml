@@ -1,0 +1,98 @@
+jobs_blank:
+  material: PAPER
+  Pack:
+    custom_model_data: 10031
+    model: default/jobs_blank
+  itemname: blank
+jobs_arrow_right:
+  material: PAPER
+  Pack:
+    custom_model_data: 10034
+    model: default/jobs_arrow_right
+  itemname: arrow right
+jobs_arrow_left:
+  material: PAPER
+  Pack:
+    custom_model_data: 10033
+    model: default/jobs_arrow_left
+  itemname: arrow left
+jobs_alchemist:
+  material: PAPER
+  Pack:
+    custom_model_data: 10032
+    model: default/jobs_alchemist
+  itemname: alchemist
+jobs_assassin:
+  material: PAPER
+  Pack:
+    custom_model_data: 10049
+    model: default/jobs_assassin
+  itemname: assassin
+jobs_blacksmith:
+  material: PAPER
+  Pack:
+    custom_model_data: 10036
+    model: default/jobs_blacksmith
+  itemname: blacksmith
+jobs_builder:
+  material: PAPER
+  Pack:
+    custom_model_data: 10037
+    model: default/jobs_builder
+  itemname: builder
+jobs_crafter:
+  material: PAPER
+  Pack:
+    custom_model_data: 10038
+    model: default/jobs_crafter
+  itemname: crafter
+jobs_digger:
+  material: PAPER
+  Pack:
+    custom_model_data: 10039
+    model: default/jobs_digger
+  itemname: digger
+jobs_enchanter:
+  material: PAPER
+  Pack:
+    custom_model_data: 10040
+    model: default/jobs_enchanter
+  itemname: enchanter
+jobs_farmer:
+  material: PAPER
+  Pack:
+    custom_model_data: 10041
+    model: default/jobs_farmer
+  itemname: farmer
+jobs_fisherman:
+  material: PAPER
+  Pack:
+    custom_model_data: 10042
+    model: default/jobs_fisherman
+  itemname: fisherman
+jobs_hunter:
+  material: PAPER
+  Pack:
+    custom_model_data: 10043
+    model: default/jobs_hunter
+  itemname: hunter
+jobs_lumberjack:
+  material: PAPER
+  Pack:
+    custom_model_data: 10044
+    model: default/jobs_lumberjack
+  itemname: lumberjack
+jobs_miner:
+  material: PAPER
+  Pack:
+    custom_model_data: 10045
+    model: default/jobs_miner
+  itemname: miner
+jobs_smelter:
+  material: PAPER
+  Pack:
+    custom_model_data: 10046
+    model: default/jobs_smelter
+  itemname: smelter
+
+# e29ca71d0fac9b60335518fc145c3237

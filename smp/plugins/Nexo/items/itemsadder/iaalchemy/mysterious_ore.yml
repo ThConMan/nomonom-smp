@@ -1,0 +1,13 @@
+mysterious_ore:
+  itemname: display-name-mysterious_ore
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: mysterious_ore
+      hardness: 2.0
+      custom_variation: 19
+  Pack:
+    parent_model: block/cube_all
+    texture: iaalchemy:block/mysterious_ore
+    custom_model_data: 1117

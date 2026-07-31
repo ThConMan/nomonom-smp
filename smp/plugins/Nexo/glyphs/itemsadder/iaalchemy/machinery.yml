@@ -1,0 +1,16 @@
+energy_extractor_left:
+  texture: iaalchemy:gui/energy_extractor_left
+  ascent: 12
+  char: ꘶
+energy_extractor_right:
+  texture: iaalchemy:gui/energy_extractor_right
+  ascent: 12
+  char: ꘷
+energy_converter_left:
+  texture: iaalchemy:gui/energy_converter_left
+  ascent: 12
+  char: ꘸
+energy_converter_right:
+  texture: iaalchemy:gui/energy_converter_right
+  ascent: 12
+  char: ꘹

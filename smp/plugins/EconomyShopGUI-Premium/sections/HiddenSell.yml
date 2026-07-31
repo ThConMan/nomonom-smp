@@ -1,0 +1,16 @@
+enable: true
+slot: 0
+title: ''
+hidden: true
+sub-section: false
+display-item: false
+
+fill-item:
+  material: AIR
+
+nav-bar:
+  mode: INHERIT
+
+item:
+  material: BARRIER
+  displayname: '&8Hidden Sell'

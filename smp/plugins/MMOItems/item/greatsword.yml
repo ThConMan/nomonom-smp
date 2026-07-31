@@ -1,0 +1,32 @@
+VOZ:
+  base:
+    material: NETHERITE_SWORD
+    enchants:
+      fire_aspect: 2.0
+      sharpness: 150.0
+      looting: 10.0
+      sweeping_edge: 3.0
+    unbreakable: true
+    ability:
+      ability1: {}
+    custom-model-data: 1019.0
+    hide-tooltip: true
+V:
+  base:
+    material: DIAMOND_SWORD
+    attack-damage: 999.0
+    model: air
+    enchants:
+      sharpness: 999.0
+PAPER:
+  base:
+    material: SHULKER_BOX
+    model: ender_chest
+    displayed-type: '&m'
+    name: Ender Chest
+    custom-model-data-strings:
+    - ender chest
+    custom-model-data-floats:
+    - ender chest
+    max-stack-size: 69.0
+    unstackable: true

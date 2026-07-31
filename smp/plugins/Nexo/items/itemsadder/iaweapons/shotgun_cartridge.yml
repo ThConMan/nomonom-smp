@@ -1,0 +1,10 @@
+shotgun_cartridge:
+  itemname: display-name-shotgun_cartridge
+  material: STICK
+  lore:
+  - lore-1-shotgun_cartridge
+  - lore-2-shotgun_cartridge
+  - lore-3-shotgun_cartridge
+  Pack:
+    texture: iaweapons:shotgun_cartridge
+    custom_model_data: 1062

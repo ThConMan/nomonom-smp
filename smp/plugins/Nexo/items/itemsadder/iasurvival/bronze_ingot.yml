@@ -1,0 +1,6 @@
+bronze_ingot:
+  itemname: display-name-bronze_ingot
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/bronze_ingot
+    custom_model_data: 1001

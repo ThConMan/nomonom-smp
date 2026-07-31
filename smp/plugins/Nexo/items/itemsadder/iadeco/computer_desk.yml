@@ -1,0 +1,14 @@
+computer_desk:
+  itemname: display-name-computer_desk
+  material: PAPER
+  lore:
+  - lore-decorative-item
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        barriers: 0,0,0
+  Pack:
+    model: iadeco:computer_desk
+    custom_model_data: 1046

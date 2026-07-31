@@ -1,0 +1,13 @@
+forgotten_crying_obsidian:
+  itemname: display-name-forgotten_crying_obsidian
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: forgotten_crying_obsidian
+      hardness: 2.0
+      custom_variation: 13
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/ores/forgotten_crying_obsidian
+    custom_model_data: 1057

@@ -1,0 +1,36 @@
+oak_wood_plane:
+  itemname: display-name-oak_wood_plane
+  material: PAPER
+  Pack:
+    model: iavehicles:air/oak_wood_plane
+    custom_model_data: 1166
+spruce_wood_plane:
+  itemname: display-name-spruce_wood_plane
+  material: PAPER
+  Pack:
+    model: iavehicles:air/spruce_wood_plane
+    custom_model_data: 1167
+birch_wood_plane:
+  itemname: display-name-birch_wood_plane
+  material: PAPER
+  Pack:
+    model: iavehicles:air/birch_wood_plane
+    custom_model_data: 1168
+jungle_wood_plane:
+  itemname: display-name-jungle_wood_plane
+  material: PAPER
+  Pack:
+    model: iavehicles:air/jungle_wood_plane
+    custom_model_data: 1169
+acacia_wood_plane:
+  itemname: display-name-acacia_wood_plane
+  material: PAPER
+  Pack:
+    model: iavehicles:air/acacia_wood_plane
+    custom_model_data: 1170
+dark_oak_wood_plane:
+  itemname: display-name-dark_oak_wood_plane
+  material: PAPER
+  Pack:
+    model: iavehicles:air/dark_oak_wood_plane
+    custom_model_data: 1171

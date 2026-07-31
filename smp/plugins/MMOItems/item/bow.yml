@@ -1,0 +1,71 @@
+ASCENDED_BOW:
+  base:
+    material: BOW
+    name: '&5&lAscended Bow'
+    lore:
+    - '&bPinnacle of the Mortal Realm.'
+    max-item-damage: 500.0
+    ability:
+      ability1:
+        type: LEAP
+        cooldown: 5.0
+        mode: LEFT_CLICK
+        force: 2.0
+    attack-damage: 15.0
+    arrow-velocity: 1.5
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|v bow - 1.0..|m material ascended_ingot 1.0..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+    custom-model-data: 9183.0
+MOONBOW:
+  base:
+    material: BOW
+    name: <gradient:#7a00ff:#ff3df2:#00cfff><bold><italic>Moonbow
+    lore:
+    - '&7Legendary drop.'
+    - '&7Built to punish heavy armor.'
+    custom-model-data: 1007.0
+    
+    # keep utility only
+    enchants:
+      infinity: 1.0
+      mending: 1.0
+    
+    # projectile feel
+    arrow-velocity: 3.1
+    
+    # THIS is the big one for bows
+    # (start here; it’s meant to drive arrow damage)
+    attack-damage: 22.0
+    
+    # % bonus to projectile damage (scales, not flat)
+    projectile-damage: 60.0
+    
+    # keep your abilities, but don’t rely on them for all damage
+    ability:
+      ability1:
+        type: CHAINS_OF_VOID
+        cooldown: 8.0
+        damage: 15.0
+        mode: SHIFT_LEFT_CLICK
+      ability2:
+        type: LIGHTNING_BEAM
+        mode: ARROW_HIT
+        cooldown: 6.0
+        damage: 25.0
+    hide-enchants: true
+    item-particles:
+      type: FIREFLIES
+      particle: ENCHANT
+      amount: 2.0
+      rotation-speed: 1.0
+      height: 1.5
+      speed: 1.0
+    arrow-particles:
+      particle: END_ROD
+      amount: 2
+      speed: 0.5

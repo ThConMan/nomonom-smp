@@ -1,0 +1,6 @@
+dark_amethyst_hoe:
+  itemname: display-name-dark_amethyst_hoe
+  material: NETHERITE_HOE
+  Pack:
+    texture: iasurvival:item/tools/dark_amethyst_hoe
+    custom_model_data: 1001

@@ -1,0 +1,1542 @@
+alarmclock:
+  texture: twitteremojis:font/emoji/alarmclock
+  height: 9
+  ascent: 8
+  permission: twitteremojis.alarmclock
+  char: ꐕ
+alien:
+  texture: twitteremojis:font/emoji/alien
+  height: 9
+  ascent: 8
+  permission: twitteremojis.alien
+  char: ꐖ
+angry:
+  texture: twitteremojis:font/emoji/angry
+  height: 9
+  ascent: 8
+  permission: twitteremojis.angry
+  char: ꐗ
+angry1:
+  texture: twitteremojis:font/emoji/angry1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.angry1
+  char: ꐘ
+angry2:
+  texture: twitteremojis:font/emoji/angry2
+  height: 9
+  ascent: 8
+  permission: twitteremojis.angry2
+  char: ꐙ
+angry3:
+  texture: twitteremojis:font/emoji/angry3
+  height: 9
+  ascent: 8
+  permission: twitteremojis.angry3
+  char: ꐚ
+anxious:
+  texture: twitteremojis:font/emoji/anxious
+  height: 9
+  ascent: 8
+  permission: twitteremojis.anxious
+  char: ꐛ
+aquarius:
+  texture: twitteremojis:font/emoji/aquarius
+  height: 9
+  ascent: 8
+  permission: twitteremojis.aquarius
+  char: ꐜ
+aries:
+  texture: twitteremojis:font/emoji/aries
+  height: 9
+  ascent: 8
+  permission: twitteremojis.aries
+  char: ꐝ
+asterisk:
+  texture: twitteremojis:font/emoji/asterisk
+  height: 9
+  ascent: 8
+  permission: twitteremojis.asterisk
+  char: ꐞ
+atm:
+  texture: twitteremojis:font/emoji/atm
+  height: 9
+  ascent: 8
+  permission: twitteremojis.atm
+  char: ꐟ
+avocado:
+  texture: twitteremojis:font/emoji/avocado
+  height: 9
+  ascent: 8
+  permission: twitteremojis.avocado
+  char: ꐠ
+bacon:
+  texture: twitteremojis:font/emoji/bacon
+  height: 9
+  ascent: 8
+  permission: twitteremojis.bacon
+  char: ꐡ
+baguette:
+  texture: twitteremojis:font/emoji/baguette
+  height: 9
+  ascent: 8
+  permission: twitteremojis.baguette
+  char: ꐢ
+bandage:
+  texture: twitteremojis:font/emoji/bandage
+  height: 9
+  ascent: 8
+  permission: twitteremojis.bandage
+  char: ꐣ
+bat:
+  texture: twitteremojis:font/emoji/bat
+  height: 9
+  ascent: 8
+  permission: twitteremojis.bat
+  char: ꐤ
+biceps:
+  texture: twitteremojis:font/emoji/biceps
+  height: 9
+  ascent: 8
+  permission: twitteremojis.biceps
+  char: ꐥ
+biohazard:
+  texture: twitteremojis:font/emoji/biohazard
+  height: 9
+  ascent: 8
+  permission: twitteremojis.biohazard
+  char: ꐦ
+blocked:
+  texture: twitteremojis:font/emoji/blocked
+  height: 9
+  ascent: 8
+  permission: twitteremojis.blocked
+  char: ꐧ
+blood:
+  texture: twitteremojis:font/emoji/blood
+  height: 9
+  ascent: 8
+  permission: twitteremojis.blood
+  char: ꐨ
+blush:
+  texture: twitteremojis:font/emoji/blush
+  height: 9
+  ascent: 8
+  permission: twitteremojis.blush
+  char: ꐩ
+bye:
+  texture: twitteremojis:font/emoji/bye
+  height: 9
+  ascent: 8
+  permission: twitteremojis.bye
+  char: ꐪ
+callme:
+  texture: twitteremojis:font/emoji/callme
+  height: 9
+  ascent: 8
+  permission: twitteremojis.callme
+  char: ꐫ
+cancel:
+  texture: twitteremojis:font/emoji/cancel
+  height: 9
+  ascent: 8
+  permission: twitteremojis.cancel
+  char: ꐬ
+cancer:
+  texture: twitteremojis:font/emoji/cancer
+  height: 9
+  ascent: 8
+  permission: twitteremojis.cancer
+  char: ꐭ
+capricorn:
+  texture: twitteremojis:font/emoji/capricorn
+  height: 9
+  ascent: 8
+  permission: twitteremojis.capricorn
+  char: ꐮ
+carrot:
+  texture: twitteremojis:font/emoji/carrot
+  height: 9
+  ascent: 8
+  permission: twitteremojis.carrot
+  char: ꐯ
+chair:
+  texture: twitteremojis:font/emoji/chair
+  height: 9
+  ascent: 8
+  permission: twitteremojis.chair
+  char: ꐰ
+chick:
+  texture: twitteremojis:font/emoji/chick
+  height: 9
+  ascent: 8
+  permission: twitteremojis.chick
+  char: ꐱ
+chick1:
+  texture: twitteremojis:font/emoji/chick1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.chick1
+  char: ꐲ
+chick2:
+  texture: twitteremojis:font/emoji/chick2
+  height: 9
+  ascent: 8
+  permission: twitteremojis.chick2
+  char: ꐳ
+clap:
+  texture: twitteremojis:font/emoji/clap
+  height: 9
+  ascent: 8
+  permission: twitteremojis.clap
+  char: ꐴ
+coffin:
+  texture: twitteremojis:font/emoji/coffin
+  height: 9
+  ascent: 8
+  permission: twitteremojis.coffin
+  char: ꐵ
+cold:
+  texture: twitteremojis:font/emoji/cold
+  height: 9
+  ascent: 8
+  permission: twitteremojis.cold
+  char: ꐶ
+confirm:
+  texture: twitteremojis:font/emoji/confirm
+  height: 9
+  ascent: 8
+  permission: twitteremojis.confirm
+  char: ꐷ
+confused:
+  texture: twitteremojis:font/emoji/confused
+  height: 9
+  ascent: 8
+  permission: twitteremojis.confused
+  char: ꐸ
+confused1:
+  texture: twitteremojis:font/emoji/confused1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.confused1
+  char: ꐹ
+couple:
+  texture: twitteremojis:font/emoji/couple
+  height: 9
+  ascent: 8
+  permission: twitteremojis.couple
+  char: ꐺ
+cowboy:
+  texture: twitteremojis:font/emoji/cowboy
+  height: 9
+  ascent: 8
+  permission: twitteremojis.cowboy
+  char: ꐻ
+crab:
+  texture: twitteremojis:font/emoji/crab
+  height: 9
+  ascent: 8
+  permission: twitteremojis.crab
+  char: ꐼ
+croissant:
+  texture: twitteremojis:font/emoji/croissant
+  height: 9
+  ascent: 8
+  permission: twitteremojis.croissant
+  char: ꐽ
+crossedfingers:
+  texture: twitteremojis:font/emoji/crossedfingers
+  height: 9
+  ascent: 8
+  permission: twitteremojis.crossedfingers
+  char: ꐾ
+cry:
+  texture: twitteremojis:font/emoji/cry
+  height: 9
+  ascent: 8
+  permission: twitteremojis.cry
+  char: ꐿ
+cry1:
+  texture: twitteremojis:font/emoji/cry1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.cry1
+  char: ꑀ
+crycat:
+  texture: twitteremojis:font/emoji/crycat
+  height: 9
+  ascent: 8
+  permission: twitteremojis.crycat
+  char: ꑁ
+cucumber:
+  texture: twitteremojis:font/emoji/cucumber
+  height: 9
+  ascent: 8
+  permission: twitteremojis.cucumber
+  char: ꑂ
+dead:
+  texture: twitteremojis:font/emoji/dead
+  height: 9
+  ascent: 8
+  permission: twitteremojis.dead
+  char: ꑃ
+dead1:
+  texture: twitteremojis:font/emoji/dead1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.dead1
+  char: ꑄ
+dollar:
+  texture: twitteremojis:font/emoji/dollar
+  height: 9
+  ascent: 8
+  permission: twitteremojis.dollar
+  char: ꑅ
+doubleexclamation:
+  texture: twitteremojis:font/emoji/doubleexclamation
+  height: 9
+  ascent: 8
+  permission: twitteremojis.doubleexclamation
+  char: ꑆ
+down:
+  texture: twitteremojis:font/emoji/down
+  height: 9
+  ascent: 8
+  permission: twitteremojis.down
+  char: ꑇ
+drops:
+  texture: twitteremojis:font/emoji/drops
+  height: 9
+  ascent: 8
+  permission: twitteremojis.drops
+  char: ꑈ
+drumstick:
+  texture: twitteremojis:font/emoji/drumstick
+  height: 9
+  ascent: 8
+  permission: twitteremojis.drumstick
+  char: ꑉ
+duck:
+  texture: twitteremojis:font/emoji/duck
+  height: 9
+  ascent: 8
+  permission: twitteremojis.duck
+  char: ꑊ
+eagle:
+  texture: twitteremojis:font/emoji/eagle
+  height: 9
+  ascent: 8
+  permission: twitteremojis.eagle
+  char: ꑋ
+eggplant:
+  texture: twitteremojis:font/emoji/eggplant
+  height: 9
+  ascent: 8
+  permission: twitteremojis.eggplant
+  char: ꑌ
+eject:
+  texture: twitteremojis:font/emoji/eject
+  height: 9
+  ascent: 8
+  permission: twitteremojis.eject
+  char: ꑍ
+evil:
+  texture: twitteremojis:font/emoji/evil
+  height: 9
+  ascent: 8
+  permission: twitteremojis.evil
+  char: ꑎ
+explodehead:
+  texture: twitteremojis:font/emoji/explodehead
+  height: 9
+  ascent: 8
+  permission: twitteremojis.explodehead
+  char: ꑏ
+eyes:
+  texture: twitteremojis:font/emoji/eyes
+  height: 9
+  ascent: 8
+  permission: twitteremojis.eyes
+  char: ꑐ
+facemask:
+  texture: twitteremojis:font/emoji/facemask
+  height: 9
+  ascent: 8
+  permission: twitteremojis.facemask
+  char: ꑑ
+fastdown:
+  texture: twitteremojis:font/emoji/fastdown
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fastdown
+  char: ꑒ
+fastforward:
+  texture: twitteremojis:font/emoji/fastforward
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fastforward
+  char: ꑓ
+fastreverse:
+  texture: twitteremojis:font/emoji/fastreverse
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fastreverse
+  char: ꑔ
+fastup:
+  texture: twitteremojis:font/emoji/fastup
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fastup
+  char: ꑕ
+fbowing:
+  texture: twitteremojis:font/emoji/fbowing
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fbowing
+  char: ꑖ
+fear:
+  texture: twitteremojis:font/emoji/fear
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fear
+  char: ꑗ
+fear1:
+  texture: twitteremojis:font/emoji/fear1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fear1
+  char: ꑘ
+fear3:
+  texture: twitteremojis:font/emoji/fear3
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fear3
+  char: ꑙ
+featcat:
+  texture: twitteremojis:font/emoji/featcat
+  height: 9
+  ascent: 8
+  permission: twitteremojis.featcat
+  char: ꑚ
+ffacepalm:
+  texture: twitteremojis:font/emoji/ffacepalm
+  height: 9
+  ascent: 8
+  permission: twitteremojis.ffacepalm
+  char: ꑛ
+fidk:
+  texture: twitteremojis:font/emoji/fidk
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fidk
+  char: ꑜ
+finger:
+  texture: twitteremojis:font/emoji/finger
+  height: 9
+  ascent: 8
+  permission: twitteremojis.finger
+  char: ꑝ
+fire:
+  texture: twitteremojis:font/emoji/fire
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fire
+  char: ꑞ
+fish:
+  texture: twitteremojis:font/emoji/fish
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fish
+  char: ꑟ
+flamingo:
+  texture: twitteremojis:font/emoji/flamingo
+  height: 9
+  ascent: 8
+  permission: twitteremojis.flamingo
+  char: ꑠ
+fmage:
+  texture: twitteremojis:font/emoji/fmage
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fmage
+  char: ꑡ
+fno:
+  texture: twitteremojis:font/emoji/fno
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fno
+  char: ꑢ
+fok:
+  texture: twitteremojis:font/emoji/fok
+  height: 9
+  ascent: 8
+  permission: twitteremojis.fok
+  char: ꑣ
+frown:
+  texture: twitteremojis:font/emoji/frown
+  height: 9
+  ascent: 8
+  permission: twitteremojis.frown
+  char: ꑤ
+frown2:
+  texture: twitteremojis:font/emoji/frown2
+  height: 9
+  ascent: 8
+  permission: twitteremojis.frown2
+  char: ꑥ
+frown3:
+  texture: twitteremojis:font/emoji/frown3
+  height: 9
+  ascent: 8
+  permission: twitteremojis.frown3
+  char: ꑦ
+frown4:
+  texture: twitteremojis:font/emoji/frown4
+  height: 9
+  ascent: 8
+  permission: twitteremojis.frown4
+  char: ꑧ
+frown5:
+  texture: twitteremojis:font/emoji/frown5
+  height: 9
+  ascent: 8
+  permission: twitteremojis.frown5
+  char: ꑨ
+frown6:
+  texture: twitteremojis:font/emoji/frown6
+  height: 9
+  ascent: 8
+  permission: twitteremojis.frown6
+  char: ꑩ
+gemini:
+  texture: twitteremojis:font/emoji/gemini
+  height: 9
+  ascent: 8
+  permission: twitteremojis.gemini
+  char: ꑪ
+giraffe:
+  texture: twitteremojis:font/emoji/giraffe
+  height: 9
+  ascent: 8
+  permission: twitteremojis.giraffe
+  char: ꑫ
+halo:
+  texture: twitteremojis:font/emoji/halo
+  height: 9
+  ascent: 8
+  permission: twitteremojis.halo
+  char: ꑬ
+hamburger:
+  texture: twitteremojis:font/emoji/hamburger
+  height: 9
+  ascent: 8
+  permission: twitteremojis.hamburger
+  char: ꑭ
+handshake:
+  texture: twitteremojis:font/emoji/handshake
+  height: 9
+  ascent: 8
+  permission: twitteremojis.handshake
+  char: ꑮ
+hashtag:
+  texture: twitteremojis:font/emoji/hashtag
+  height: 9
+  ascent: 8
+  permission: twitteremojis.hashtag
+  char: ꑯ
+heart:
+  texture: twitteremojis:font/emoji/heart
+  height: 9
+  ascent: 8
+  permission: twitteremojis.heart
+  char: ꑰ
+heart1:
+  texture: twitteremojis:font/emoji/heart1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.heart1
+  char: ꑱ
+heart2:
+  texture: twitteremojis:font/emoji/heart2
+  height: 9
+  ascent: 8
+  permission: twitteremojis.heart2
+  char: ꑲ
+heart3:
+  texture: twitteremojis:font/emoji/heart3
+  height: 9
+  ascent: 8
+  permission: twitteremojis.heart3
+  char: ꑳ
+heart4:
+  texture: twitteremojis:font/emoji/heart4
+  height: 9
+  ascent: 8
+  permission: twitteremojis.heart4
+  char: ꑴ
+heart5:
+  texture: twitteremojis:font/emoji/heart5
+  height: 9
+  ascent: 8
+  permission: twitteremojis.heart5
+  char: ꑵ
+heart6:
+  texture: twitteremojis:font/emoji/heart6
+  height: 9
+  ascent: 8
+  permission: twitteremojis.heart6
+  char: ꑶ
+hehe:
+  texture: twitteremojis:font/emoji/hehe
+  height: 9
+  ascent: 8
+  permission: twitteremojis.hehe
+  char: ꑷ
+hot:
+  texture: twitteremojis:font/emoji/hot
+  height: 9
+  ascent: 8
+  permission: twitteremojis.hot
+  char: ꑸ
+hourglass:
+  texture: twitteremojis:font/emoji/hourglass
+  height: 9
+  ascent: 8
+  permission: twitteremojis.hourglass
+  char: ꑹ
+hourglass1:
+  texture: twitteremojis:font/emoji/hourglass1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.hourglass1
+  char: ꑺ
+hug:
+  texture: twitteremojis:font/emoji/hug
+  height: 9
+  ascent: 8
+  permission: twitteremojis.hug
+  char: ꑻ
+ice:
+  texture: twitteremojis:font/emoji/ice
+  height: 9
+  ascent: 8
+  permission: twitteremojis.ice
+  char: ꑼ
+ill:
+  texture: twitteremojis:font/emoji/ill
+  height: 9
+  ascent: 8
+  permission: twitteremojis.ill
+  char: ꑽ
+inlove:
+  texture: twitteremojis:font/emoji/inlove
+  height: 9
+  ascent: 8
+  permission: twitteremojis.inlove
+  char: ꑾ
+inlove1:
+  texture: twitteremojis:font/emoji/inlove1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.inlove1
+  char: ꑿ
+inlovecat:
+  texture: twitteremojis:font/emoji/inlovecat
+  height: 9
+  ascent: 8
+  permission: twitteremojis.inlovecat
+  char: ꒀ
+jackolantern:
+  texture: twitteremojis:font/emoji/jackolantern
+  height: 9
+  ascent: 8
+  permission: twitteremojis.jackolantern
+  char: ꒁ
+kebab:
+  texture: twitteremojis:font/emoji/kebab
+  height: 9
+  ascent: 8
+  permission: twitteremojis.kebab
+  char: ꒂ
+kiss:
+  texture: twitteremojis:font/emoji/kiss
+  height: 9
+  ascent: 8
+  permission: twitteremojis.kiss
+  char: ꒃ
+kiss1:
+  texture: twitteremojis:font/emoji/kiss1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.kiss1
+  char: ꒄ
+kiss2:
+  texture: twitteremojis:font/emoji/kiss2
+  height: 9
+  ascent: 8
+  permission: twitteremojis.kiss2
+  char: ꒅ
+kiss3:
+  texture: twitteremojis:font/emoji/kiss3
+  height: 9
+  ascent: 8
+  permission: twitteremojis.kiss3
+  char: ꒆ
+lasttrack:
+  texture: twitteremojis:font/emoji/lasttrack
+  height: 9
+  ascent: 8
+  permission: twitteremojis.lasttrack
+  char: ꒇ
+laugh:
+  texture: twitteremojis:font/emoji/laugh
+  height: 9
+  ascent: 8
+  permission: twitteremojis.laugh
+  char: ꒈ
+laugh2:
+  texture: twitteremojis:font/emoji/laugh2
+  height: 9
+  ascent: 8
+  permission: twitteremojis.laugh2
+  char: ꒉ
+laugh3:
+  texture: twitteremojis:font/emoji/laugh3
+  height: 9
+  ascent: 8
+  permission: twitteremojis.laugh3
+  char: ꒊ
+laugh4:
+  texture: twitteremojis:font/emoji/laugh4
+  height: 9
+  ascent: 8
+  permission: twitteremojis.laugh4
+  char: ꒋ
+laughcat:
+  texture: twitteremojis:font/emoji/laughcat
+  height: 9
+  ascent: 8
+  permission: twitteremojis.laughcat
+  char: ꒌ
+left:
+  texture: twitteremojis:font/emoji/left
+  height: 9
+  ascent: 8
+  permission: twitteremojis.left
+  char: ꒍
+leftcurve:
+  texture: twitteremojis:font/emoji/leftcurve
+  height: 9
+  ascent: 8
+  permission: twitteremojis.leftcurve
+  char: ꒎
+leo:
+  texture: twitteremojis:font/emoji/leo
+  height: 9
+  ascent: 8
+  permission: twitteremojis.leo
+  char: ꒏
+lion:
+  texture: twitteremojis:font/emoji/lion
+  height: 9
+  ascent: 8
+  permission: twitteremojis.lion
+  char: ꒐
+lock:
+  texture: twitteremojis:font/emoji/lock
+  height: 9
+  ascent: 8
+  permission: twitteremojis.lock
+  char: ꒑
+luck:
+  texture: twitteremojis:font/emoji/luck
+  height: 9
+  ascent: 8
+  permission: twitteremojis.luck
+  char: ꒒
+lying:
+  texture: twitteremojis:font/emoji/lying
+  height: 9
+  ascent: 8
+  permission: twitteremojis.lying
+  char: ꒓
+m:
+  texture: twitteremojis:font/emoji/m
+  height: 9
+  ascent: 8
+  permission: twitteremojis.m
+  char: ꒔
+mad:
+  texture: twitteremojis:font/emoji/mad
+  height: 9
+  ascent: 8
+  permission: twitteremojis.mad
+  char: ꒕
+mbowing:
+  texture: twitteremojis:font/emoji/mbowing
+  height: 9
+  ascent: 8
+  permission: twitteremojis.mbowing
+  char: ꒖
+medal:
+  texture: twitteremojis:font/emoji/medal
+  height: 9
+  ascent: 8
+  permission: twitteremojis.medal
+  char: ꒗
+mfacepalm:
+  texture: twitteremojis:font/emoji/mfacepalm
+  height: 9
+  ascent: 8
+  permission: twitteremojis.mfacepalm
+  char: ꒘
+midk:
+  texture: twitteremojis:font/emoji/midk
+  height: 9
+  ascent: 8
+  permission: twitteremojis.midk
+  char: ꒙
+mmage:
+  texture: twitteremojis:font/emoji/mmage
+  height: 9
+  ascent: 8
+  permission: twitteremojis.mmage
+  char: ꒚
+mmh:
+  texture: twitteremojis:font/emoji/mmh
+  height: 9
+  ascent: 8
+  permission: twitteremojis.mmh
+  char: ꒛
+mno:
+  texture: twitteremojis:font/emoji/mno
+  height: 9
+  ascent: 8
+  permission: twitteremojis.mno
+  char: ꒜
+mok:
+  texture: twitteremojis:font/emoji/mok
+  height: 9
+  ascent: 8
+  permission: twitteremojis.mok
+  char: ꒝
+money:
+  texture: twitteremojis:font/emoji/money
+  height: 9
+  ascent: 8
+  permission: twitteremojis.money
+  char: ꒞
+moneyface:
+  texture: twitteremojis:font/emoji/moneyface
+  height: 9
+  ascent: 8
+  permission: twitteremojis.moneyface
+  char: ꒟
+monkey1:
+  texture: twitteremojis:font/emoji/monkey1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.monkey1
+  char: ꒠
+monkey2:
+  texture: twitteremojis:font/emoji/monkey2
+  height: 9
+  ascent: 8
+  permission: twitteremojis.monkey2
+  char: ꒡
+monkey3:
+  texture: twitteremojis:font/emoji/monkey3
+  height: 9
+  ascent: 8
+  permission: twitteremojis.monkey3
+  char: ꒢
+monocle:
+  texture: twitteremojis:font/emoji/monocle
+  height: 9
+  ascent: 8
+  permission: twitteremojis.monocle
+  char: ꒣
+moon:
+  texture: twitteremojis:font/emoji/moon
+  height: 9
+  ascent: 8
+  permission: twitteremojis.moon
+  char: ꒤
+moon1:
+  texture: twitteremojis:font/emoji/moon1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.moon1
+  char: ꒥
+moon2:
+  texture: twitteremojis:font/emoji/moon2
+  height: 9
+  ascent: 8
+  permission: twitteremojis.moon2
+  char: ꒦
+moon3:
+  texture: twitteremojis:font/emoji/moon3
+  height: 9
+  ascent: 8
+  permission: twitteremojis.moon3
+  char: ꒧
+moon4:
+  texture: twitteremojis:font/emoji/moon4
+  height: 9
+  ascent: 8
+  permission: twitteremojis.moon4
+  char: ꒨
+moon5:
+  texture: twitteremojis:font/emoji/moon5
+  height: 9
+  ascent: 8
+  permission: twitteremojis.moon5
+  char: ꒩
+nausea:
+  texture: twitteremojis:font/emoji/nausea
+  height: 9
+  ascent: 8
+  permission: twitteremojis.nausea
+  char: ꒪
+nerd:
+  texture: twitteremojis:font/emoji/nerd
+  height: 9
+  ascent: 8
+  permission: twitteremojis.nerd
+  char: ꒫
+neutral:
+  texture: twitteremojis:font/emoji/neutral
+  height: 9
+  ascent: 8
+  permission: twitteremojis.neutral
+  char: ꒬
+nexttrack:
+  texture: twitteremojis:font/emoji/nexttrack
+  height: 9
+  ascent: 8
+  permission: twitteremojis.nexttrack
+  char: ꒭
+no1:
+  texture: twitteremojis:font/emoji/no1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.no1
+  char: ꒮
+noexpression:
+  texture: twitteremojis:font/emoji/noexpression
+  height: 9
+  ascent: 8
+  permission: twitteremojis.noexpression
+  char: ꒯
+nomouth:
+  texture: twitteremojis:font/emoji/nomouth
+  height: 9
+  ascent: 8
+  permission: twitteremojis.nomouth
+  char: ꒰
+ok:
+  texture: twitteremojis:font/emoji/ok
+  height: 9
+  ascent: 8
+  permission: twitteremojis.ok
+  char: ꒱
+ok1:
+  texture: twitteremojis:font/emoji/ok1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.ok1
+  char: ꒲
+owl:
+  texture: twitteremojis:font/emoji/owl
+  height: 9
+  ascent: 8
+  permission: twitteremojis.owl
+  char: ꒳
+pan:
+  texture: twitteremojis:font/emoji/pan
+  height: 9
+  ascent: 8
+  permission: twitteremojis.pan
+  char: ꒴
+party:
+  texture: twitteremojis:font/emoji/party
+  height: 9
+  ascent: 8
+  permission: twitteremojis.party
+  char: ꒵
+party1:
+  texture: twitteremojis:font/emoji/party1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.party1
+  char: ꒶
+pause:
+  texture: twitteremojis:font/emoji/pause
+  height: 9
+  ascent: 8
+  permission: twitteremojis.pause
+  char: ꒷
+peace:
+  texture: twitteremojis:font/emoji/peace
+  height: 9
+  ascent: 8
+  permission: twitteremojis.peace
+  char: ꒸
+peach:
+  texture: twitteremojis:font/emoji/peach
+  height: 9
+  ascent: 8
+  permission: twitteremojis.peach
+  char: ꒹
+pencil:
+  texture: twitteremojis:font/emoji/pencil
+  height: 9
+  ascent: 8
+  permission: twitteremojis.pencil
+  char: ꒺
+person:
+  texture: twitteremojis:font/emoji/person
+  height: 9
+  ascent: 8
+  permission: twitteremojis.person
+  char: ꒻
+pick:
+  texture: twitteremojis:font/emoji/pick
+  height: 9
+  ascent: 8
+  permission: twitteremojis.pick
+  char: ꒼
+pig:
+  texture: twitteremojis:font/emoji/pig
+  height: 9
+  ascent: 8
+  permission: twitteremojis.pig
+  char: ꒽
+pisces:
+  texture: twitteremojis:font/emoji/pisces
+  height: 9
+  ascent: 8
+  permission: twitteremojis.pisces
+  char: ꒾
+pizza:
+  texture: twitteremojis:font/emoji/pizza
+  height: 9
+  ascent: 8
+  permission: twitteremojis.pizza
+  char: ꒿
+play:
+  texture: twitteremojis:font/emoji/play
+  height: 9
+  ascent: 8
+  permission: twitteremojis.play
+  char: ꓀
+playpause:
+  texture: twitteremojis:font/emoji/playpause
+  height: 9
+  ascent: 8
+  permission: twitteremojis.playpause
+  char: ꓁
+please:
+  texture: twitteremojis:font/emoji/please
+  height: 9
+  ascent: 8
+  permission: twitteremojis.please
+  char: ꓂
+poo:
+  texture: twitteremojis:font/emoji/poo
+  height: 9
+  ascent: 8
+  permission: twitteremojis.poo
+  char: ꓃
+potato:
+  texture: twitteremojis:font/emoji/potato
+  height: 9
+  ascent: 8
+  permission: twitteremojis.potato
+  char: ꓄
+puke:
+  texture: twitteremojis:font/emoji/puke
+  height: 9
+  ascent: 8
+  permission: twitteremojis.puke
+  char: ꓅
+punch:
+  texture: twitteremojis:font/emoji/punch
+  height: 9
+  ascent: 8
+  permission: twitteremojis.punch
+  char: ꓆
+question:
+  texture: twitteremojis:font/emoji/question
+  height: 9
+  ascent: 8
+  permission: twitteremojis.question
+  char: ꓇
+radioactive:
+  texture: twitteremojis:font/emoji/radioactive
+  height: 9
+  ascent: 8
+  permission: twitteremojis.radioactive
+  char: ꓈
+raisedfist:
+  texture: twitteremojis:font/emoji/raisedfist
+  height: 9
+  ascent: 8
+  permission: twitteremojis.raisedfist
+  char: ꓉
+raisedhand:
+  texture: twitteremojis:font/emoji/raisedhand
+  height: 9
+  ascent: 8
+  permission: twitteremojis.raisedhand
+  char: ꓊
+record:
+  texture: twitteremojis:font/emoji/record
+  height: 9
+  ascent: 8
+  permission: twitteremojis.record
+  char: ꓋
+redcircle:
+  texture: twitteremojis:font/emoji/redcircle
+  height: 9
+  ascent: 8
+  permission: twitteremojis.redcircle
+  char: ꓌
+reverse:
+  texture: twitteremojis:font/emoji/reverse
+  height: 9
+  ascent: 8
+  permission: twitteremojis.reverse
+  char: ꓍
+riceball:
+  texture: twitteremojis:font/emoji/riceball
+  height: 9
+  ascent: 8
+  permission: twitteremojis.riceball
+  char: ꓎
+rightarrow:
+  texture: twitteremojis:font/emoji/rightarrow
+  height: 9
+  ascent: 8
+  permission: twitteremojis.rightarrow
+  char: ꓏
+rightcurve:
+  texture: twitteremojis:font/emoji/rightcurve
+  height: 9
+  ascent: 8
+  permission: twitteremojis.rightcurve
+  char: ꓐ
+robot:
+  texture: twitteremojis:font/emoji/robot
+  height: 9
+  ascent: 8
+  permission: twitteremojis.robot
+  char: ꓑ
+rock:
+  texture: twitteremojis:font/emoji/rock
+  height: 9
+  ascent: 8
+  permission: twitteremojis.rock
+  char: ꓒ
+rolling:
+  texture: twitteremojis:font/emoji/rolling
+  height: 9
+  ascent: 8
+  permission: twitteremojis.rolling
+  char: ꓓ
+rooster:
+  texture: twitteremojis:font/emoji/rooster
+  height: 9
+  ascent: 8
+  permission: twitteremojis.rooster
+  char: ꓔ
+sad:
+  texture: twitteremojis:font/emoji/sad
+  height: 9
+  ascent: 8
+  permission: twitteremojis.sad
+  char: ꓕ
+sagittarius:
+  texture: twitteremojis:font/emoji/sagittarius
+  height: 9
+  ascent: 8
+  permission: twitteremojis.sagittarius
+  char: ꓖ
+salad:
+  texture: twitteremojis:font/emoji/salad
+  height: 9
+  ascent: 8
+  permission: twitteremojis.salad
+  char: ꓗ
+salt:
+  texture: twitteremojis:font/emoji/salt
+  height: 9
+  ascent: 8
+  permission: twitteremojis.salt
+  char: ꓘ
+scorpio:
+  texture: twitteremojis:font/emoji/scorpio
+  height: 9
+  ascent: 8
+  permission: twitteremojis.scorpio
+  char: ꓙ
+scorpion:
+  texture: twitteremojis:font/emoji/scorpion
+  height: 9
+  ascent: 8
+  permission: twitteremojis.scorpion
+  char: ꓚ
+shark:
+  texture: twitteremojis:font/emoji/shark
+  height: 9
+  ascent: 8
+  permission: twitteremojis.shark
+  char: ꓛ
+shh:
+  texture: twitteremojis:font/emoji/shh
+  height: 9
+  ascent: 8
+  permission: twitteremojis.shh
+  char: ꓜ
+shrimp:
+  texture: twitteremojis:font/emoji/shrimp
+  height: 9
+  ascent: 8
+  permission: twitteremojis.shrimp
+  char: ꓝ
+sleeping:
+  texture: twitteremojis:font/emoji/sleeping
+  height: 9
+  ascent: 8
+  permission: twitteremojis.sleeping
+  char: ꓞ
+sleepy:
+  texture: twitteremojis:font/emoji/sleepy
+  height: 9
+  ascent: 8
+  permission: twitteremojis.sleepy
+  char: ꓟ
+small:
+  texture: twitteremojis:font/emoji/small
+  height: 9
+  ascent: 8
+  permission: twitteremojis.small
+  char: ꓠ
+smile:
+  texture: twitteremojis:font/emoji/smile
+  height: 9
+  ascent: 8
+  permission: twitteremojis.smile
+  char: ꓡ
+smile2:
+  texture: twitteremojis:font/emoji/smile2
+  height: 9
+  ascent: 8
+  permission: twitteremojis.smile2
+  char: ꓢ
+smile3:
+  texture: twitteremojis:font/emoji/smile3
+  height: 9
+  ascent: 8
+  permission: twitteremojis.smile3
+  char: ꓣ
+smile4:
+  texture: twitteremojis:font/emoji/smile4
+  height: 9
+  ascent: 8
+  permission: twitteremojis.smile4
+  char: ꓤ
+smile5:
+  texture: twitteremojis:font/emoji/smile5
+  height: 9
+  ascent: 8
+  permission: twitteremojis.smile5
+  char: ꓥ
+smile6:
+  texture: twitteremojis:font/emoji/smile6
+  height: 9
+  ascent: 8
+  permission: twitteremojis.smile6
+  char: ꓦ
+smilecat:
+  texture: twitteremojis:font/emoji/smilecat
+  height: 9
+  ascent: 8
+  permission: twitteremojis.smilecat
+  char: ꓧ
+sneeze:
+  texture: twitteremojis:font/emoji/sneeze
+  height: 9
+  ascent: 8
+  permission: twitteremojis.sneeze
+  char: ꓨ
+soccerball:
+  texture: twitteremojis:font/emoji/soccerball
+  height: 9
+  ascent: 8
+  permission: twitteremojis.soccerball
+  char: ꓩ
+sparkles:
+  texture: twitteremojis:font/emoji/sparkles
+  height: 9
+  ascent: 8
+  permission: twitteremojis.sparkles
+  char: ꓪ
+squid:
+  texture: twitteremojis:font/emoji/squid
+  height: 9
+  ascent: 8
+  permission: twitteremojis.squid
+  char: ꓫ
+star:
+  texture: twitteremojis:font/emoji/star
+  height: 9
+  ascent: 8
+  permission: twitteremojis.star
+  char: ꓬ
+starcrescent:
+  texture: twitteremojis:font/emoji/starcrescent
+  height: 9
+  ascent: 8
+  permission: twitteremojis.starcrescent
+  char: ꓭ
+stareyes:
+  texture: twitteremojis:font/emoji/stareyes
+  height: 9
+  ascent: 8
+  permission: twitteremojis.stareyes
+  char: ꓮ
+stop:
+  texture: twitteremojis:font/emoji/stop
+  height: 9
+  ascent: 8
+  permission: twitteremojis.stop
+  char: ꓯ
+stopsign:
+  texture: twitteremojis:font/emoji/stopsign
+  height: 9
+  ascent: 8
+  permission: twitteremojis.stopsign
+  char: ꓰ
+sun:
+  texture: twitteremojis:font/emoji/sun
+  height: 9
+  ascent: 8
+  permission: twitteremojis.sun
+  char: ꓱ
+sunglasses:
+  texture: twitteremojis:font/emoji/sunglasses
+  height: 9
+  ascent: 8
+  permission: twitteremojis.sunglasses
+  char: ꓲ
+surprised:
+  texture: twitteremojis:font/emoji/surprised
+  height: 9
+  ascent: 8
+  permission: twitteremojis.surprised
+  char: ꓳ
+sushi:
+  texture: twitteremojis:font/emoji/sushi
+  height: 9
+  ascent: 8
+  permission: twitteremojis.sushi
+  char: ꓴ
+sweat:
+  texture: twitteremojis:font/emoji/sweat
+  height: 9
+  ascent: 8
+  permission: twitteremojis.sweat
+  char: ꓵ
+taurus:
+  texture: twitteremojis:font/emoji/taurus
+  height: 9
+  ascent: 8
+  permission: twitteremojis.taurus
+  char: ꓶ
+think:
+  texture: twitteremojis:font/emoji/think
+  height: 9
+  ascent: 8
+  permission: twitteremojis.think
+  char: ꓷ
+think1:
+  texture: twitteremojis:font/emoji/think1
+  height: 9
+  ascent: 8
+  permission: twitteremojis.think1
+  char: ꓸ
+think2:
+  texture: twitteremojis:font/emoji/think2
+  height: 9
+  ascent: 8
+  permission: twitteremojis.think2
+  char: ꓹ
+think3:
+  texture: twitteremojis:font/emoji/think3
+  height: 9
+  ascent: 8
+  permission: twitteremojis.think3
+  char: ꓺ
+think4:
+  texture: twitteremojis:font/emoji/think4
+  height: 9
+  ascent: 8
+  permission: twitteremojis.think4
+  char: ꓻ
+think5:
+  texture: twitteremojis:font/emoji/think5
+  height: 9
+  ascent: 8
+  permission: twitteremojis.think5
+  char: ꓼ
+think6:
+  texture: twitteremojis:font/emoji/think6
+  height: 9
+  ascent: 8
+  permission: twitteremojis.think6
+  char: ꓽ
+tongue:
+  texture: twitteremojis:font/emoji/tongue
+  height: 9
+  ascent: 8
+  permission: twitteremojis.tongue
+  char: ꓾
+tree:
+  texture: twitteremojis:font/emoji/tree
+  height: 9
+  ascent: 8
+  permission: twitteremojis.tree
+  char: ꓿
+trex:
+  texture: twitteremojis:font/emoji/trex
+  height: 9
+  ascent: 8
+  permission: twitteremojis.trex
+  char: ꔀ
+turkey:
+  texture: twitteremojis:font/emoji/turkey
+  height: 9
+  ascent: 8
+  permission: twitteremojis.turkey
+  char: ꔁ
+twofingers:
+  texture: twitteremojis:font/emoji/twofingers
+  height: 9
+  ascent: 8
+  permission: twitteremojis.twofingers
+  char: ꔂ
+unamused:
+  texture: twitteremojis:font/emoji/unamused
+  height: 9
+  ascent: 8
+  permission: twitteremojis.unamused
+  char: ꔃ
+unicorn:
+  texture: twitteremojis:font/emoji/unicorn
+  height: 9
+  ascent: 8
+  permission: twitteremojis.unicorn
+  char: ꔄ
+unlock:
+  texture: twitteremojis:font/emoji/unlock
+  height: 9
+  ascent: 8
+  permission: twitteremojis.unlock
+  char: ꔅ
+up:
+  texture: twitteremojis:font/emoji/up
+  height: 9
+  ascent: 8
+  permission: twitteremojis.up
+  char: ꔆ
+upsidedown:
+  texture: twitteremojis:font/emoji/upsidedown
+  height: 9
+  ascent: 8
+  permission: twitteremojis.upsidedown
+  char: ꔇ
+virgo:
+  texture: twitteremojis:font/emoji/virgo
+  height: 9
+  ascent: 8
+  permission: twitteremojis.virgo
+  char: ꔈ
+voltage:
+  texture: twitteremojis:font/emoji/voltage
+  height: 9
+  ascent: 8
+  permission: twitteremojis.voltage
+  char: ꔉ
+warning:
+  texture: twitteremojis:font/emoji/warning
+  height: 9
+  ascent: 8
+  permission: twitteremojis.warning
+  char: ꔊ
+wc:
+  texture: twitteremojis:font/emoji/wc
+  height: 9
+  ascent: 8
+  permission: twitteremojis.wc
+  char: ꔋ
+what:
+  texture: twitteremojis:font/emoji/what
+  height: 9
+  ascent: 8
+  permission: twitteremojis.what
+  char: ꔌ
+wink:
+  texture: twitteremojis:font/emoji/wink
+  height: 9
+  ascent: 8
+  permission: twitteremojis.wink
+  char: ꔍ
+woozy:
+  texture: twitteremojis:font/emoji/woozy
+  height: 9
+  ascent: 8
+  permission: twitteremojis.woozy
+  char: ꔎ
+write:
+  texture: twitteremojis:font/emoji/write
+  height: 9
+  ascent: 8
+  permission: twitteremojis.write
+  char: ꔏ
+xd:
+  texture: twitteremojis:font/emoji/xd
+  height: 9
+  ascent: 8
+  permission: twitteremojis.xd
+  char: ꔐ
+yawn:
+  texture: twitteremojis:font/emoji/yawn
+  height: 9
+  ascent: 8
+  permission: twitteremojis.yawn
+  char: ꔑ
+yinyang:
+  texture: twitteremojis:font/emoji/yinyang
+  height: 9
+  ascent: 8
+  permission: twitteremojis.yinyang
+  char: ꔒ
+yum:
+  texture: twitteremojis:font/emoji/yum
+  height: 9
+  ascent: 8
+  permission: twitteremojis.yum
+  char: ꔓ
+zebra:
+  texture: twitteremojis:font/emoji/zebra
+  height: 9
+  ascent: 8
+  permission: twitteremojis.zebra
+  char: ꔔ
+zip:
+  texture: twitteremojis:font/emoji/zip
+  height: 9
+  ascent: 8
+  permission: twitteremojis.zip
+  char: ꔕ

@@ -1,0 +1,40 @@
+diamonds_finder_potion:
+  itemname: display-name-diamonds_finder_potion
+  material: POTION
+  lore:
+  - lore-1-diamonds_finder_potion
+  ItemFlags:
+  - HIDE_POTION_EFFECTS
+  Pack:
+    texture: iaalchemy:item/diamonds_finder_potion
+    custom_model_data: 1004
+emeralds_finder_potion:
+  itemname: display-name-emeralds_finder_potion
+  material: POTION
+  lore:
+  - lore-1-emeralds_finder_potion
+  ItemFlags:
+  - HIDE_POTION_EFFECTS
+  Pack:
+    texture: iaalchemy:item/emeralds_finder_potion
+    custom_model_data: 1005
+strange_potion:
+  itemname: display-name-strange_potion
+  material: POTION
+  lore:
+  - lore-1-strange_potion
+  ItemFlags:
+  - HIDE_POTION_EFFECTS
+  Pack:
+    texture: iaalchemy:item/strange_potion
+    custom_model_data: 1006
+antidote:
+  itemname: display-name-antidote
+  material: POTION
+  lore:
+  - lore-1-antidote
+  ItemFlags:
+  - HIDE_POTION_EFFECTS
+  Pack:
+    texture: iaalchemy:item/antidote
+    custom_model_data: 1007

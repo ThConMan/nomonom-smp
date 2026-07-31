@@ -1,0 +1,28 @@
+mysterious_sword:
+  itemname: display-name-mysterious_sword
+  material: DIAMOND_SWORD
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-all
+  AttributeModifiers:
+  - amount: 13.5
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 1a99107c-805a-4519-955f-3874e879558a
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.0
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 98ee7145-55ef-4b97-87cd-eaff434396c2
+    name: nexo:modifier
+    key: nexo:modifier
+  PersistentData:
+  - key: RepairCost
+    type: FLOAT
+    value: 8.0
+  Pack:
+    texture: iaalchemy:item/swords/mysterious_sword
+    custom_model_data: 1014

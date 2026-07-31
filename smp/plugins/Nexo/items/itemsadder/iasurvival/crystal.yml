@@ -1,0 +1,6 @@
+crystal:
+  itemname: display-name-crystal
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/crystal
+    custom_model_data: 10004

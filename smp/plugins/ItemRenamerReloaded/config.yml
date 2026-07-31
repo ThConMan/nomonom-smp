@@ -1,0 +1,55 @@
+#ItemRenamerReloaded Config file - Xdlob9
+# - You can use RGB/HTML color codes in your messages. (ex; &#FFFFFFMessage in white)
+#   - ONLY AVAILABLE in Minecraft 1.16 or higher.
+# - Touch the plugin placeholders only if you know what you are doing!
+
+# Plugin options
+options:
+  # This option allows you to set up the maximum lines of lore that a player can set to an item
+  # NOTE: Players with 'itemrenamer.setlore.maxbypass' permission won't have this limit
+  #
+  # Take into account that if you want to limit the lines to, for example, 5 lines, you must write "4", since the plugin starts counting the lines from 0. (example; max_setlore_lines: 4)
+  # (Default; this will limit the lore lines to 6) max_setlore_lines: 5
+  max_setlore_lines: 5
+  # Play a custom sound when a player renames or adds a lore to an item! (Full sounds list: https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Sound.html#enum-constant-summary)
+  # The format follows like this: SOUND_ID;VOLUME;PITCH
+  # If you don't want to use sounds, just replace it with "none" (ex.; name_set_sound: none)
+  name_set_sound: ENTITY_EXPERIENCE_ORB_PICKUP;100;1
+  lore_set_sound: ENTITY_EXPERIENCE_ORB_PICKUP;100;1
+
+# Economy setup
+# NOTE: You should have Vault and an economy plugin that uses it
+economy:
+  # Should the plugin use the "Economy" functionality?
+  enabled: true
+
+  # Specify the "Rename" and "Set lore" price/cost here
+  # Float numbers are compatible (ex.; 100.5)
+  rename_cost: 100
+  setlore_cost: 100
+
+  # %irr_price% is the cost of the transaction (renaming or lore set)
+  insufficient_funds: "%irr_prefix% &cYou don't have the sufficient funds to afford this! You need at least &e%irr_price% &cfrom your balance"
+  purchase_confirmed: "%irr_prefix% &e%irr_price% &agot taken from your account. Check your balance anytime with &6/money"
+
+# Main plugin messages
+messages:
+  prefix: "&8[&bItemRenamerReloaded&8]"
+
+  no_permission: "%irr_prefix% &cYou don't have the permissions to run this command."
+  no_permission_removecustom_name: "%irr_prefix% &cYou can't remove the custom name from this item. Use an anvil!"
+
+  no_item_hand: "%irr_prefix% &cYou must have an item in your hand!"
+  custom_name_removed: "%irr_prefix% &eThe custom name has been successfully removed."
+  custom_name_applied: "%irr_prefix% &aThe custom name &f'%irr_new_name%&f' &ahas been successfully applied!"
+
+  incorrect_setlore_arguments: "%irr_prefix% &cIncorrect command usage! Try it like this: /setlore 1 Hi there! (if you only specify the lore line number, that line will be deleted)"
+  lore_setted: "%irr_prefix% &aThe lore &f'%irr_new_lore%&f' &ahas been setted!"
+  lore_unsetted: "%irr_prefix% &aThe lore line &f'%irr_removed_lore%&f' &ahas been removed!"
+  lore_fully_removed: "%irr_prefix% &aAll the lore lines have been removed from this item!"
+  out_of_bounds_lore: "%irr_prefix% &cThe lore line you are trying to access does not exist. (start counting the first line as 0)"
+  max_itemlore_lines_reached: "%irr_prefix% &cYou reached the maximum lore lines for this item."
+
+# Other
+other:
+  plugin_reloaded: "%irr_prefix% &aThe plugin has been successfully &ereloaded&a."

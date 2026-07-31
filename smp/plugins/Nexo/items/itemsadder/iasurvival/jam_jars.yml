@@ -1,0 +1,75 @@
+jar:
+  itemname: display-name-jar
+  material: STICK
+  Pack:
+    texture: iasurvival:item/food/various/jar
+    custom_model_data: 1051
+sweet_berries_jam_jar:
+  itemname: display-name-sweet_berries_jam_jar
+  material: IRON_SWORD
+  AttributeModifiers:
+  - amount: 0.1
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: af23fa00-f2c0-4301-ad02-2a27a90041e5
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 2.0
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 1ddc6a6c-1c4f-4d73-a61c-f37170342699
+    name: nexo:modifier
+    key: nexo:modifier
+  ItemFlags:
+  - HIDE_ATTRIBUTES
+  Pack:
+    texture: iasurvival:item/food/various/sweet_berries_jam_jar
+    custom_model_data: 1001
+pear_jam_jar:
+  itemname: display-name-pear_jam_jar
+  material: IRON_SWORD
+  AttributeModifiers:
+  - amount: 0.1
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: ea913875-817d-4624-85e6-d747e4883deb
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 2.0
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 0f095410-0c76-4e18-92e7-6fb86f6cfd0e
+    name: nexo:modifier
+    key: nexo:modifier
+  ItemFlags:
+  - HIDE_ATTRIBUTES
+  Pack:
+    texture: iasurvival:item/food/various/pear_jam_jar
+    custom_model_data: 1002
+apple_jam_jar:
+  itemname: display-name-apple_jam_jar
+  material: IRON_SWORD
+  AttributeModifiers:
+  - amount: 0.1
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 797fba23-1ecb-45c4-a149-9b81d72afcba
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 2.0
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 4043dbfd-d9f3-47f0-841a-01b9a5c838e9
+    name: nexo:modifier
+    key: nexo:modifier
+  ItemFlags:
+  - HIDE_ATTRIBUTES
+  Pack:
+    texture: iasurvival:item/food/various/apple_jam_jar
+    custom_model_data: 1003

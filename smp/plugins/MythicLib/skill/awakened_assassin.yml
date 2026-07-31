@@ -1,0 +1,38 @@
+DEADLY_CALM:
+    mythicmobs-skill-id: Deadly_Calm
+    passive-type: TIMER
+
+LETHAL_COMBO:
+    mythicmobs-skill-id: Lethal_Combo
+    modifiers:
+    - damage
+    
+RAVAGING_DASH:
+    mythicmobs-skill-id: Ravaging_Dash
+    modifiers:
+    - damage
+
+DEATH_BLOOM:
+    mythicmobs-skill-id: Death_Bloom
+    modifiers:
+    - damage
+    - skillcooldown
+
+SHADOWQUAKE:
+    mythicmobs-skill-id: Shadowquake
+    passive-type: TIMER
+    modifiers:
+    - duration
+    - damage
+    - skillcooldown
+    
+CRIMSON_ARC:
+    mythicmobs-skill-id: Crimson_Arc
+    modifiers:
+    - damage
+    
+LAST_DANCE:
+    mythicmobs-skill-id: Last_Dance
+    modifiers:
+    - damage
+#3387e0ec4476583186f8b561db0c31b9

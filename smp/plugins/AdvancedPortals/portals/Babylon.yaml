@@ -1,0 +1,17 @@
+args:
+  name:
+  - Babylon
+  triggerblock:
+  - NETHER_PORTAL
+  command:
+  - dungeon play BabylonGardens
+maxLoc:
+  posX: 3
+  posY: 81
+  posZ: -20
+  worldName: void
+minLoc:
+  posX: 2
+  posY: 80
+  posZ: -20
+  worldName: void

@@ -1,0 +1,6 @@
+pink_donut:
+  itemname: display-name-pink_donut
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/pink_donut
+    custom_model_data: 1024

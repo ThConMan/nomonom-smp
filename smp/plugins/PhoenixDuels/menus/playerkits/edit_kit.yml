@@ -1,0 +1,104 @@
+items:
+  top-filler:
+    slot: 0-8
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    custom-model-data: 0
+    glow: false
+    hide-attributes: false
+    display-name: '&a'
+    lore: []
+    actions: []
+  bottom-filler:
+    slot: 45-53
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    custom-model-data: 0
+    glow: false
+    hide-attributes: false
+    display-name: '&a'
+    lore: []
+    actions: []
+  go-back:
+    slot: '49'
+    material: FEATHER
+    amount: 1
+    custom-model-data: 0
+    glow: false
+    hide-attributes: false
+    display-name: '&aGo Back'
+    lore: []
+    actions:
+    - '[MENU] manage_player_kits'
+settings:
+  type: EDIT_PLAYER_KIT
+  title: Editing Player Kit
+  rows: 6
+  refresh:
+    enabled: false
+    rate: 20
+  on-open-actions: []
+hotbar-slots:
+  slot: 36-44
+  material: LIGHT_GRAY_STAINED_GLASS_PANE
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&7Empty &8(Hotbar Slot)'
+  lore:
+  - ''
+  - '&6Left-Click: &eAdd item.'
+content-slots:
+  slot: 9-35
+  material: LIGHT_GRAY_STAINED_GLASS_PANE
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&7Empty &8(Content Slot)'
+  lore:
+  - ''
+  - '&6Left-Click: &eAdd item.'
+armor-slots:
+  slot: 1-4
+  material: LIGHT_BLUE_STAINED_GLASS_PANE
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&7Empty &8(Armor Slot)'
+  lore:
+  - ''
+  - '&6Left-Click: &eAdd item.'
+extra-slot:
+  slot: 7
+  material: ORANGE_STAINED_GLASS_PANE
+  custom-model-data: 0
+  glow: false
+  display-name: '&7Empty &8(Extra Slot)'
+  lore:
+  - ''
+  - '&6Left-Click: &eAdd item.'
+clear-kit:
+  slot: '51'
+  material: GUNPOWDER
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&aClear Kit'
+  lore:
+  - '&7By clicking here you will'
+  - '&7clear this custom kit.'
+  - ''
+  - '&6Left-Click: &eClear kit.'
+  actions:
+  - '[SOUND] UI_BUTTON_CLICK;0.1;1'
+kit-item:
+  display-name: '%display_name%'
+  lore:
+  - '%lore%'
+  - ''
+  - '&6Left-Click: &eEdit item.'
+  - '&6Right-Click: &eDelete item.'

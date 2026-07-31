@@ -1,0 +1,13 @@
+nether_alchemy_ore:
+  itemname: display-name-nether_alchemy_ore
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: nether_alchemy_ore
+      hardness: 2.0
+      custom_variation: 20
+  Pack:
+    parent_model: block/cube_all
+    texture: iaalchemy:block/nether_alchemy_ore
+    custom_model_data: 1119

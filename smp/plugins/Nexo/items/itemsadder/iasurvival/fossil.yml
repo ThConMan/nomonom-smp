@@ -1,0 +1,6 @@
+fossil:
+  itemname: display-name-fossil
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/fossil
+    custom_model_data: 1010

@@ -1,0 +1,2 @@
+&aWelcome, [playerName]&6!
+&aUse the portal to enter the game!

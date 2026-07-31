@@ -1,0 +1,8 @@
+coffee:
+  itemname: display-name-coffee
+  material: POTION
+  ItemFlags:
+  - HIDE_POTION_EFFECTS
+  Pack:
+    texture: iasurvival:item/thirst/coffee
+    custom_model_data: 1001

@@ -1,0 +1,623 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+farmer:
+  fullname: "Farmer"
+  shortname: Fa
+  description: 'Work the fields to produce food and resources.'
+  ChatColour: YELLOW
+  BossBarColour: YELLOW
+  chat-display: shortfull
+  max-level: 48
+  vip-max-level: 250
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*50)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: "Farmer - Easy"
+      Objectives:
+      - Break;wheat-7;64
+      - Break;carrots-7;32
+      - Break;potatoes-7;32
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '2':
+      Name: "Farmer - Easy"
+      Objectives:
+      - Break;pumpkin;96
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '3':
+      Name: "Farmer - Easy"
+      Objectives:
+      - Break;beetroots-3;64
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '4':
+      Name: "Farmer - Easy"
+      Objectives:
+      - Break;seagrass;64
+      - Break;kelp_plant;32
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '5':
+      Name: "Farmer - Easy"
+      Objectives:
+      - Break;chorus_plant;32
+      - Break;chorus_flower;16
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '6':
+      Name: "Farmer - Easy"
+      Objectives:
+      - Break;sugar_cane;96
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '7':
+      Name: "Farmer - Easy"
+      Objectives:
+      - Break;red_mushroom;16
+      - Break;brown_mushroom;16
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '8':
+      Name: "Farmer - Medium"
+      Objectives:
+      - Break;wheat-7;128
+      - Break;carrots-7;64
+      - Break;potatoes-7;64
+      RewardAmount: 250
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_250%'
+    '9':
+      Name: "Farmer - Medium"
+      Objectives:
+      - Break;pumpkin;192
+      RewardAmount: 250
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_250%'
+    '10':
+      Name: "Farmer - Medium"
+      Objectives:
+      - Break;beetroots-3;128
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '11':
+      Name: "Farmer - Medium"
+      Objectives:
+      - Break;seagrass;128
+      - Break;kelp_plant;64
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '12':
+      Name: "Farmer - Medium"
+      Objectives:
+      - Break;chorus_plant;64
+      - Break;chorus_flower;32
+      RewardAmount: 250
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_250%'
+    '13':
+      Name: "Farmer - Medium"
+      Objectives:
+      - Break;sugar_cane;192
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+    '14':
+      Name: "Farmer - Medium"
+      Objectives:
+      - Break;red_mushroom;32
+      - Break;brown_mushroom;32
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '15':
+      Name: "Farmer - Hard"
+      Objectives:
+      - Break;cocoa-2;256
+      - Break;cactus;192
+      RewardAmount: 350
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_350%'
+    '16':
+      Name: "Farmer - Hard"
+      Objectives:
+      - Break;nether_wart;320
+      - Break;melon;128
+      RewardAmount: 400
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_400%'
+    '17':
+      Name: "Farmer - Hard"
+      Objectives:
+      - Break;wheat-7;448
+      RewardAmount: 400
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_400%'
+    '18':
+      Name: "Farmer - Hard"
+      Objectives:
+      - Break;carrots-7;448
+      RewardAmount: 450
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_450%'
+    '19':
+      Name: "Farmer - Hard"
+      Objectives:
+      - Break;potatoes-7;448
+      RewardAmount: 450
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_450%'
+    '20':
+      Name: "Farmer - Hard"
+      Objectives:
+      - Break;sugar_cane;640
+      RewardAmount: 500
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_500%'
+  Gui:
+    ItemStack: golden_hoe
+  Break:
+
+### Sea Blocks
+    tube_coral_fan:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    brain_coral_fan:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    bubble_coral_fan:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    fire_coral_fan:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    horn_coral_fan:
+      income: 0.2
+      points: 0.1
+      experience: 0.1
+    kelp_plant:
+      income: 0.3
+      points: 0.1
+      experience: 0.4
+    kelp:
+      income: 0.3
+      points: 0.1
+      experience: 0.4
+    seagrass:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    tall_seagrass:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    sea_pickle:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    lily_pad:
+      income: 0.25
+      points: 0.03
+      experience: 0.3
+    lily_of_the_valley:
+      income: 0.1
+      points: 0.02
+      experience: 0.2
+
+### Chorus
+    chorus_plant:
+      income: 0.4
+      points: 0.2
+      experience: 0.4
+    chorus_flower:
+      income: 0.4
+      points: 0.2
+      experience: 0.4
+
+### Beetroots
+    beetroots-3:
+      income: 0.4
+      points: 0.05
+      experience: 0.4
+    wheat-7:
+      income: 0.1
+      points: 0.02
+      experience: 0.1
+    carrots-7:
+      income: 0.3
+      points: 0.05
+      experience: 0.25
+    potatoes-7:
+      income: 0.3
+      points: 0.05
+      experience: 0.25
+    pumpkin:
+      income: 0.4
+      points: 0.08
+      experience: 0.4
+    sugar_cane:
+      income: 0.2
+      points: 0.08
+      experience: 0.2
+    cocoa-2:
+      income: 0.2
+      points: 0.08
+      experience: 0.2
+
+### Sapplign
+    oak_sapling:
+      income: 0.3
+      points: 0.1
+      experience: 0.2
+    spruce_sapling:
+      income: 0.3
+      points: 0.1
+      experience: 0.2
+    birch_sapling:
+      income: 0.3
+      points: 0.1
+      experience: 0.2
+    jungle_sapling:
+      income: 0.3
+      points: 0.1
+      experience: 0.2
+    acacia_sapling:
+      income: 0.3
+      points: 0.1
+      experience: 0.2
+    dark_oak_sapling:
+      income: 0.3
+      points: 0.1
+      experience: 0.2
+
+### Flowers
+    dandelion:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    poppy:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    blue_orchid:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    allium:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    azure_bluet:
+      income: 0.05
+      points: 0.01
+      experience: 0.1
+    red_tulip:
+      income: 0.1
+      points: 0.02
+      experience: 0.2
+    orange_tulip:
+      income: 0.1
+      points: 0.02
+      experience: 0.2
+    white_tulip:
+      income: 0.1
+      points: 0.02
+      experience: 0.2
+    pink_tulip:
+      income: 0.1
+      points: 0.02
+      experience: 0.2
+    oxeye_daisy:
+      income: 0.1
+      points: 0.02
+      experience: 0.2
+    cornflower:
+      income: 0.1
+      points: 0.02
+      experience: 0.2
+    wither_rose:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    sunflower:
+      income: 0.1
+      points: 0.02
+      experience: 0.2  
+
+### Mushroom
+    brown_mushroom:
+      income: 0.5
+      points: 0.1
+      experience: 0.4
+    red_mushroom:
+      income: 0.5
+      points: 0.1
+      experience: 0.4
+    crimson_fungus:
+      income: 0.5
+      points: 0.2
+      experience: 0.4
+    warped_fungus:
+      income: 0.5
+      points: 0.2
+      experience: 0.4
+### Vines
+    vine:
+      income: 0.5
+      points: 0.08
+      experience: 0.4
+    twisting_vines:
+      income: 0.5
+      points: 0.16
+      experience: 0.4
+    weeping_vines:
+      income: 0.5
+      points: 0.16
+      experience: 0.4
+    cave_vines_plant:
+      income: 0.5
+      points: 0.16
+      experience: 0.4
+
+    cactus:
+      income: 0.2
+      points: 0.08
+      experience: 0.2
+    nether_wart:
+      income: 0.45
+      points: 0.08
+      experience: 0.35
+    melon:
+      income: 0.4
+      points: 0.08
+      experience: 0.4
+
+### Leaves
+    oak_leaves:
+      income: 0.015
+      points: 0.05
+      experience: 0.02
+    spruce_leaves:
+      income: 0.015
+      points: 0.005
+      experience: 0.02
+    birch_leaves:
+      income: 0.015
+      points: 0.005
+      experience: 0.02
+    jungle_leaves:
+      income: 0.015
+      points: 0.005
+      experience: 0.02
+    acacia_leaves:
+      income: 0.015
+      points: 0.005
+      experience: 0.02
+    dark_oak_leaves:
+      income: 0.015
+      points: 0.005
+      experience: 0.02
+    mangrove_leaves:
+      income: 0.015
+      points: 0.005
+      experience: 0.02
+    bamboo:
+      income: 0.15
+      points: 0.08
+      experience: 0.2
+
+### Roots
+    warped_roots:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    crimson_roots:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    hanging_roots:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+           
+  Place:
+    dead_tube_coral_fan:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    dead_brain_coral_fan:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    dead_bubble_coral_fan:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    dead_fire_coral_fan:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    dead_horn_coral_fan:
+      income: 0.1
+      points: 0.05
+      experience: 0.1
+    wheat:
+      income: 0.075
+      points: 0.01
+      experience: 0.1
+    potatoes:
+      income: 0.2
+      points: 0.03
+      experience: 0.2
+    carrots:
+      income: 0.2
+      points: 0.03
+      experience: 0.2
+    beetroots:
+      income: 0.2
+      points: 0.05
+      experience: 0.3
+    sugar_cane:
+      income: -0.075
+      points: -0.02
+      experience: -0.05
+    cactus:
+      income: -0.075
+      points: -0.02
+      experience: -0.05
+    vine:
+      income: -0.2
+      points: -0.04
+      experience: -0.15
+    bamboo:
+      income: -0.05
+      points: -0.02
+      experience: -0.08
+    pumpkin_stem:
+      income: 0.2
+      points: 0.04
+      experience: 0.2
+    melon_stem:
+      income: 0.2
+      points: 0.04
+      experience: 0.2
+    sweet_berry_bush:
+      income: 0.15
+      points: 0.01
+      experience: 0.2
+    mangrove_propagule:
+      income: 0.3
+      points: 0.05
+      experience: 0.2
+    torchflower:
+      income: 0.1
+      points: 0.01
+      experience: 0.1
+    pitcher_crop:
+      income: 0.15
+      points: 0.03
+      experience: 0.2

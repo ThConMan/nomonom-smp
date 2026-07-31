@@ -1,0 +1,6 @@
+sausage:
+  itemname: display-name-sausage
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/sausage
+    custom_model_data: 1029

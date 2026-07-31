@@ -1,0 +1,48 @@
+# Guilds v2.1.0 made by [itz_leoo].
+# Dependencies: [PixelLibs].
+# SoftDependencies: [BedWars1058, BedWarsProxy, PlaceholderAPI, Vault].
+# Read the wiki for more info: https://wiki.pixelstudios.dev/guilds
+# Join my discord for support: https://pixelstudios.dev/discord
+
+tags:
+  bronze:
+    color: GOLD
+    display-name: Bronze
+    conditions:
+    - GUILD_LEVEL:10
+  
+  silver:
+    color: GRAY
+    display-name: Silver
+    conditions:
+    - GUILD_LEVEL:25
+  
+  gold:
+    color: YELLOW
+    display-name: Gold
+    conditions:
+    - GUILD_LEVEL:50
+  
+  emerald:
+    color: GREEN
+    display-name: Emerald
+    conditions:
+    - GUILD_LEVEL:80
+  
+  mythic:
+    color: LIGHT_PURPLE
+    display-name: Mythic
+    conditions:
+    - GUILD_LEVEL:120
+  
+  legend:
+    color: RED
+    display-name: Legend
+    conditions:
+    - GUILD_LEVEL:150
+  
+  orange:
+    color: ORANGE
+    display-name: Orange
+    conditions:
+    - MC_PERMISSION:guilds.mvp++

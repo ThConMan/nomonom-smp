@@ -1,0 +1,7 @@
+ruby_shield:
+  itemname: display-name-ruby_shield
+  material: SHIELD
+  Pack:
+    model: iasurvival:item/shields/ruby_shield
+    blocking_model: iasurvival:item/shields/ruby_shield_blocking
+    custom_model_data: 1009

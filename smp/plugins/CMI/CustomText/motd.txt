@@ -1,0 +1,4 @@
+&aWelcome, %cmi_user_nickname%&r&a.
+&aType &c/help&a for a list of commands.
+&aType &c/list&a to see who else is online.
+&aPlayers online:&c %cmi_server_online%

@@ -1,0 +1,24 @@
+end_sword:
+  itemname: display-name-end_sword
+  material: DIAMOND_SWORD
+  lore:
+  - lore-1-end_sword
+  - lore-2-end_sword
+  AttributeModifiers:
+  - amount: 6.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: f966f033-1837-4bea-9f3d-11a269667b2f
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.1
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: c992880a-2733-476a-8e2e-fd9810c9e302
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iasurvival:item/swords/end_sword
+    custom_model_data: 1006

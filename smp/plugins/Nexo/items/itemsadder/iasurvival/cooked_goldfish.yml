@@ -1,0 +1,6 @@
+cooked_goldfish:
+  itemname: display-name-cooked_goldfish
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/fishes/cooked_goldfish
+    custom_model_data: 1010

@@ -1,0 +1,6 @@
+rice:
+  itemname: display-name-rice
+  material: APPLE
+  Pack:
+    texture: iasurvival:item/food/vegetable_and_fruit/rice
+    custom_model_data: 1005

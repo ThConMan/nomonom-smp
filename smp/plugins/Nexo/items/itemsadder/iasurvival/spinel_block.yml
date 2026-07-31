@@ -1,0 +1,13 @@
+spinel_block:
+  itemname: display-name-spinel_block
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: spinel_block
+      hardness: 2.0
+      custom_variation: 26
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/minerals/spinel_block
+    custom_model_data: 1141

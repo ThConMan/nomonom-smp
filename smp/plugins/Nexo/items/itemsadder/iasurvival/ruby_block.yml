@@ -1,0 +1,13 @@
+ruby_block:
+  itemname: display-name-ruby_block
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: ruby_block
+      hardness: 2.0
+      custom_variation: 24
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/minerals/ruby_block
+    custom_model_data: 1134

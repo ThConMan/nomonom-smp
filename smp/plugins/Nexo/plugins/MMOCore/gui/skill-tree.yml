@@ -1,0 +1,413 @@
+# GUI display name
+name: '&f&f<shift_-18>:gui:'
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+  up:
+    function: up
+    item: PAPER
+    custom-model-data: 2
+    name: "&6Up"
+    slots: [ 47 ]
+  down:
+    function: down
+    item: PAPER
+    custom-model-data: 2
+    name: "&6Down"
+    slots: [ 51 ]
+  right:
+    function: right
+    item: PAPER
+    custom-model-data: 2
+    name: "&6Right"
+    slots: [ 50 ]
+  left:
+    function: left
+    item: PAPER
+    custom-model-data: 2
+    name: "&6Left"
+    slots: [ 48 ]
+
+  skill-tree:
+    name: '&6Information'
+    function: skill-tree
+    custom-model-data: 2
+    slots: [ 53 ]
+    lore:
+      - ''
+      - '&7◆ Points: &b{max-point-spent}&7/&b{point-spent}'
+      - '&7◆ Current Points: &b{skill-tree-points}'
+      - '&7◆ Current Global Points: &b{global-points}'
+
+  next-tree-list-page:
+    function: 'next-tree-list-page'
+    item: PLAYER_HEAD
+    texture: "REPLACE_ME_TOKEN"
+    slots: [  ]
+
+  previous-tree-list-page:
+    function: 'previous-tree-list-page'
+    item: PLAYER_HEAD
+    texture: "REPLACE_ME_TOKEN"
+    slots: [  ]
+
+  reallocation:
+    function: reallocation
+    item: PAPER
+    custom-model-data: 2
+    slots: [ 45 ]
+    name: '&6Reallocate Skill Tree Points'
+    lore:
+      - ''
+      - '&7You have spent a total of &6{point-spent}&7 skill tree points.'
+      - '&7The maximum points that can be spent is: &6{max-point-spent}'
+      - '&7Right click to reallocate them.'
+      - ''
+      - '&eCosts 1 attribute reallocation point.'
+      - '&e◆ Skill Tree Reallocation Points: &6{realloc-points}'
+
+  skill-tree-node:
+
+    function: 'skill-tree-node'
+    slots: [ 0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44 ]
+    name: '&a{name}'
+    #The lore that will be displayed after the lore of the node.
+    #The {node-lore} placeholder will be replaced by the lore specified in the skill tree node config.
+    #All the placeholders you see here can also be used in the node lore.
+    #For debugging custom display you can use the {display-type} placeholder.
+    lore:
+      - '{node-lore}'
+      - '&f'
+      - '&7State: &6{current-state}'
+      - '&7Level: &6{current-level}/{max-level}'
+    path-lore: []
+
+#This is the name that will be displayed for each status.
+status-names:
+  unlocked: 'Unlocked'
+  unlockable: 'Unlockable'
+  locked: 'Locked'
+  fully-locked: 'Fully Locked'
+
+
+
+display:
+  paths:
+    unlocked:
+      up:
+        item: "PAPER"
+        custom-model-data: 2007
+      up-right:
+        item: "PAPER"
+        custom-model-data: 2009
+      up-left:
+        item: "PAPER"
+        custom-model-data: 2008
+      down-right:
+        item: "PAPER"
+        custom-model-data: 2011
+      down-left:
+        item: "PAPER"
+        custom-model-data: 2010
+      right:
+        item: "PAPER"
+        custom-model-data: 2006
+      default:
+        item: "PAPER"
+        custom-model-data: 2
+    unlockable:
+      up:
+        item: "PAPER"
+        custom-model-data: 2001
+      up-right:
+        item: "PAPER"
+        custom-model-data: 2003
+      up-left:
+        item: "PAPER"
+        custom-model-data: 2002
+      down-right:
+        item: "PAPER"
+        custom-model-data: 2005
+      down-left:
+        item: "PAPER"
+        custom-model-data: 2004
+      right:
+        item: "PAPER"
+        custom-model-data: 2000
+      default:
+        item: "PAPER"
+        custom-model-data: 2
+    locked:
+      up:
+        item: "PAPER"
+        custom-model-data: 2001
+      up-right:
+        item: "PAPER"
+        custom-model-data: 2003
+      up-left:
+        item: "PAPER"
+        custom-model-data: 2002
+      down-right:
+        item: "PAPER"
+        custom-model-data: 2005
+      down-left:
+        item: "PAPER"
+        custom-model-data: 2004
+      right:
+        item: "PAPER"
+        custom-model-data: 2000
+      default:
+        item: "PAPER"
+        custom-model-data: 2
+    fully-locked:
+      up:
+        item: "PAPER"
+        custom-model-data: 2001
+      up-right:
+        item: "PAPER"
+        custom-model-data: 2003
+      up-left:
+        item: "PAPER"
+        custom-model-data: 2002
+      down-right:
+        item: "PAPER"
+        custom-model-data: 2005
+      down-left:
+        item: "PAPER"
+        custom-model-data: 2004
+      right:
+        item: "PAPER"
+        custom-model-data: 2000
+      default:
+        item: "PAPER"
+        custom-model-data: 2
+  nodes:
+    unlocked:
+      up-right-down-left:
+        item: "PAPER"
+        custom-model-data: 2014
+      up-right-down:
+        item: "PAPER"
+        custom-model-data: 2014
+      up-right-left:
+        item: "PAPER"
+        custom-model-data: 2014
+      up-down-left:
+        item: "PAPER"
+        custom-model-data: 2014
+      down-right-left:
+        item: "PAPER"
+        custom-model-data: 2014
+      up-right:
+        item: "PAPER"
+        custom-model-data: 2014
+      up-down:
+        item: "PAPER"
+        custom-model-data: 2014
+      up-left:
+        item: "PAPER"
+        custom-model-data: 2014
+      down-right:
+        item: "PAPER"
+        custom-model-data: 2014
+      down-left:
+        item: "PAPER"
+        custom-model-data: 2014
+      right-left:
+        item: "PAPER"
+        custom-model-data: 2014
+      right:
+        item: "PAPER"
+        custom-model-data: 2014
+      left:
+        item: "PAPER"
+        custom-model-data: 2014
+      up:
+        item: "PAPER"
+        custom-model-data: 2014
+      down:
+        item: "PAPER"
+        custom-model-data: 2014
+      no-path:
+        item: "PAPER"
+        custom-model-data: 2014
+    locked:
+      up-right-down-left:
+        item: "PAPER"
+        custom-model-data: 2012
+      up-right-down:
+        item: "PAPER"
+        custom-model-data: 2012
+      up-right-left:
+        item: "PAPER"
+        custom-model-data: 2012
+      up-down-left:
+        item: "PAPER"
+        custom-model-data: 2012
+      down-right-left:
+        item: "PAPER"
+        custom-model-data: 2012
+      up-right:
+        item: "PAPER"
+        custom-model-data: 2012
+      up-down:
+        item: "PAPER"
+        custom-model-data: 2012
+      up-left:
+        item: "PAPER"
+        custom-model-data: 2012
+      down-right:
+        item: "PAPER"
+        custom-model-data: 2012
+      down-left:
+        item: "PAPER"
+        custom-model-data: 2012
+      right-left:
+        item: "PAPER"
+        custom-model-data: 2012
+      right:
+        item: "PAPER"
+        custom-model-data: 2012
+      left:
+        item: "PAPER"
+        custom-model-data: 2012
+      up:
+        item: "PAPER"
+        custom-model-data: 2012
+      down:
+        item: "PAPER"
+        custom-model-data: 2012
+      no-path:
+        item: "PAPER"
+        custom-model-data: 2012
+    unlockable:
+      up-right-down-left:
+        item: "PAPER"
+        custom-model-data: 2015
+      up-right-down:
+        item: "PAPER"
+        custom-model-data: 2015
+      up-right-left:
+        item: "PAPER"
+        custom-model-data: 2015
+      up-down-left:
+        item: "PAPER"
+        custom-model-data: 2015
+      down-right-left:
+        item: "PAPER"
+        custom-model-data: 2015
+      up-right:
+        item: "PAPER"
+        custom-model-data: 2015
+      up-down:
+        item: "PAPER"
+        custom-model-data: 2015
+      up-left:
+        item: "PAPER"
+        custom-model-data: 2015
+      down-right:
+        item: "PAPER"
+        custom-model-data: 2015
+      down-left:
+        item: "PAPER"
+        custom-model-data: 2015
+      right-left:
+        item: "PAPER"
+        custom-model-data: 2015
+      right:
+        item: "PAPER"
+        custom-model-data: 2015
+      left:
+        item: "PAPER"
+        custom-model-data: 2015
+      up:
+        item: "PAPER"
+        custom-model-data: 2015
+      down:
+        item: "PAPER"
+        custom-model-data: 2015
+      no-path:
+        item: "PAPER"
+        custom-model-data: 2015
+    fully-locked:
+      up-right-down-left:
+        item: "PAPER"
+        custom-model-data: 2013
+      up-right-down:
+        item: "PAPER"
+        custom-model-data: 2013
+      up-right-left:
+        item: "PAPER"
+        custom-model-data: 2013
+      up-down-left:
+        item: "PAPER"
+        custom-model-data: 2013
+      down-right-left:
+        item: "PAPER"
+        custom-model-data: 2013
+      up-right:
+        item: "PAPER"
+        custom-model-data: 2013
+      up-down:
+        item: "PAPER"
+        custom-model-data: 2013
+      up-left:
+        item: "PAPER"
+        custom-model-data: 2013
+      down-right:
+        item: "PAPER"
+        custom-model-data: 2013
+      down-left:
+        item: "PAPER"
+        custom-model-data: 2013
+      right-left:
+        item: "PAPER"
+        custom-model-data: 2013
+      right:
+        item: "PAPER"
+        custom-model-data: 2013
+      left:
+        item: "PAPER"
+        custom-model-data: 2013
+      up:
+        item: "PAPER"
+        custom-model-data: 2013
+      down:
+        item: "PAPER"
+        custom-model-data: 2013
+      no-path:
+        item: "PAPER"
+        custom-model-data: 2013
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#267999
+#c7a50091efcd1e46baa0a3858098fe6d
+# bbb-true

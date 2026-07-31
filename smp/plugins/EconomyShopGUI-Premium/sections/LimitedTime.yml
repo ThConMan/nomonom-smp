@@ -1,0 +1,10 @@
+enable: true
+title: '&0&lLimited Time'
+fill-item:
+  material: MAGENTA_STAINED_GLASS_PANE
+  
+item:
+  material: PAPER
+  CustomModelData: 1191
+  displayname: '&6&lLimited Time'
+slot: 14

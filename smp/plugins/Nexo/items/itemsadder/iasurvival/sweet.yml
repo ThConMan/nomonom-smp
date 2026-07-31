@@ -1,0 +1,6 @@
+sweet:
+  itemname: display-name-sweet
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/sweet
+    custom_model_data: 1038

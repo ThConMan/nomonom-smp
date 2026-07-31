@@ -1,0 +1,48 @@
+white_chandeliers:
+  itemname: display-name-white_chandeliers
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      lights:
+        lights:
+        - 0,1.0,0 12
+  Pack:
+    model: iadeco:white_chandeliers
+    custom_model_data: 1037
+black_chandeliers:
+  itemname: display-name-black_chandeliers
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      lights:
+        lights:
+        - 0,1.0,0 12
+  Pack:
+    model: iadeco:black_chandeliers
+    custom_model_data: 1038
+black_and_red_chandeliers:
+  itemname: display-name-black_and_red_chandeliers
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      lights:
+        lights:
+        - 0,1.0,0 12
+  Pack:
+    model: iadeco:black_and_red_chandeliers
+    custom_model_data: 1039

@@ -1,0 +1,19 @@
+restoration_table:
+  itemname: display-name-restoration_table
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: restoration_table
+      hardness: 2.0
+      custom_variation: 23
+  Pack:
+    parent_model: block/cube_all
+    textures:
+    - iasurvival:block/machinery/restoration_table/bottom
+    - iasurvival:block/machinery/restoration_table/side
+    - iasurvival:block/machinery/restoration_table/front
+    - iasurvival:block/machinery/restoration_table/front
+    - iasurvival:block/machinery/restoration_table/top
+    - iasurvival:block/machinery/restoration_table/side
+    custom_model_data: 1133

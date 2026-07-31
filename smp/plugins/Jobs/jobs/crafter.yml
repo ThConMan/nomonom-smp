@@ -1,0 +1,1103 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+crafter:
+  fullname: "Crafter"
+  shortname: Cr
+  description: 'Shape raw materials into crafted items.'
+  ChatColour: WHITE
+  BossBarColour: WHITE
+  chat-display: shortfull
+  max-level: 48
+  vip-max-level: 250
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*50)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01))
+    * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: "Crafter - Easy"
+      Objectives:
+      - Craft;stick;64
+      - Craft;crafting_table;5
+      - Craft;chest;4
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '2':
+      Name: "Crafter - Easy"
+      Objectives:
+      - Craft;rail;32
+      - Craft;powered_rail;16
+      - Craft;detector_rail;16
+      RewardAmount: 125
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_125%'
+    '3':
+      Name: "Crafter - Easy"
+      Objectives:
+      - Craft;note_block;4
+      - Craft;jukebox;4
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '4':
+      Name: "Crafter - Easy"
+      Objectives:
+      - Craft;furnace;16
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '5':
+      Name: "Crafter - Easy"
+      Objectives:
+      - Craft;enchanting_table;1
+      - Craft;anvil;2
+      RewardAmount: 150
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_150%'
+    '6':
+      Name: "Crafter - Easy"
+      Objectives:
+      - Craft;dropper;16
+      - Craft;dispenser;16
+      RewardAmount: 150
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_150%'
+    '7':
+      Name: "Crafter - Impossible"
+      Objectives:
+      - Craft;beacon;1
+      RewardAmount: 1500
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_1500%'
+    '8':
+      Name: "Crafter - Easy"
+      Objectives:
+      - Craft;brewing_stand;8
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '9':
+      Name: "Crafter - Medium"
+      Objectives:
+      - Craft;ender_chest;1
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '10':
+      Name: "Crafter - Easy"
+      Objectives:
+      - Craft;bed;3
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '11':
+      Name: "Crafter - Medium"
+      Objectives:
+      - Craft;chest;64
+      RewardAmount: 225
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_225%'
+    '12':
+      Name: "Crafter - Medium"
+      Objectives:
+      - Craft;hopper;16
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '13':
+      Name: "Crafter - Hard"
+      Objectives:
+      - Craft;tnt;64
+      RewardAmount: 350
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_350%'
+    '14':
+      Name: "Crafter - Easy"
+      Objectives:
+      - Craft;oak_fence;64
+      RewardAmount: 175
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_175%'
+    '15':
+      Name: "Crafter - Medium"
+      Objectives:
+      - Craft;oak_door;4
+      - Craft;spruce_door;4
+      - Craft;birch_door;4
+      - Craft;jungle_door;4
+      - Craft;acacia_door;4
+      - Craft;dark_oak_door;4
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '16':
+      Name: "Crafter - Easy"
+      Objectives:
+      - Craft;glass;64
+      RewardAmount: 150
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_150%'
+  Gui:
+    ItemStack: crafting_table
+  Craft:
+
+  ### Wood
+
+    stick:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    chest:
+      income: 0.2
+      points: 0.025
+      experience: 0.3
+    crafting_table:
+      income: 0.05
+      points: 0.01
+      experience: 0.05
+    ladder:
+      income: 0.06
+      points: 0.03
+      experience: 0.08
+    lectern:
+      income: 1.0
+      points: 0.05
+      experience: 1.0
+    scaffolding:
+      income: 0.1
+      points: 0.01
+      experience: 0.1
+    campfire:
+      income: 0.4
+      points: 0.1
+      experience: 0.3
+    soul_campfire:
+      income: 0.5
+      points: 0.3
+      experience: 0.4
+    composter:
+      income: 0.5
+      points: 0.3
+      experience: 0.5
+    barrel:
+      income: 0.3
+      points: 0.2
+      experience: 0.3
+    beehive:
+      income: 1.0
+      points: 0.2
+      experience: 1.0
+    cartography_table: 
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    fletching_table: 
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    loom:
+      income: 0.1
+      points: 0.1
+      experience: 0.1
+    item_frame:
+      income: 0.2
+      points: 0.01
+      experience: 0.2
+    glow_item_frame:
+      income: 0.3
+      points: 0.01
+      experience: 0.2
+
+### Redstone 
+
+    dispenser:
+      income: 0.5
+      points: 0.1
+      experience: 0.5
+    note_block:
+      income: 0.6
+      points: 0.3
+      experience: 0.6
+    sticky_piston:
+      income: 0.8
+      points: 0.2
+      experience: 0.7
+    trapped_chest:
+      income: 0.2
+      points: 0.025
+      experience: 0.3
+    light_weighted_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    heavy_weighted_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    daylight_detector:
+      income: 0.7
+      points: 0.1
+      experience: 0.5
+    dropper:
+      income: 0.5
+      points: 0.1
+      experience: 0.5
+    observer:
+      income: 0.8
+      points: 0.2
+      experience: 0.7
+    target:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+
+### Rail
+
+    powered_rail:
+      income: 0.7
+      points: 0.1
+      experience: 1.0
+    detector_rail:
+      income: 0.7
+      points: 0.1
+      experience: 1.0
+    rail:
+      income: 0.5
+      points: 0.05
+      experience: 0.7
+    activator_rail:
+      income: 0.7
+      points: 0.1
+      experience: 1.0
+
+### Utility Block
+      
+    tnt:
+      income: 1.5
+      points: 0.3
+      experience: 1.2
+    furnace:
+      income: 0.05
+      points: 0.01
+      experience: 0.05
+    jukebox:
+      income: 0.6
+      points: 0.3
+      experience: 0.6
+    enchanting_table:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    beacon:
+      income: 15
+      points: 8
+      experience: 10
+    sea_lantern:
+      income: 0.7
+      points: 0.15
+      experience: 0.5
+    bed:
+      income: 1.5
+      points: 0.1
+      experience: 1.2
+    brewing_stand:
+      income: 2.0
+      points: 0.1
+      experience: 1.5
+    ender_chest:
+      income: 0.75
+      points: 0.75
+      experience: 1
+    smoker:
+      income: 0.2
+      points: 0.2
+      experience: 0.2
+    blast_furnace:
+      income: 0.3
+      points: 0.2
+      experience: 0.3
+    grindstone:
+      income: 1.5
+      points: 1.5
+      experience: 2
+    smithing_table:
+      income: 0.2
+      points: 0.2
+      experience: 0.2
+    stonecutter:
+      income: 0.6
+      points: 0.3
+      experience: 0.5
+    bell:
+      income: 0.2
+      points: 0.1
+      experience: 0.2
+    respawn_anchor:
+      income: 10
+      points: 5
+      experience: 8
+    lodestone:
+      income: 5
+      points: 3
+      experience: 4
+    lightning_rod:
+      income: 0.1
+      points: 0.05
+      experience: 0.2
+    candle:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+
+### Glass
+
+    glass:
+      income: 0.2
+      points: 0.1
+      experience: 0.2
+    white_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    orange_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    magenta_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    light_blue_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    yellow_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    lime_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    pink_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    gray_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    light_gray_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    cyan_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    purple_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    blue_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    brown_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    green_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    red_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+    black_stained_glass:
+      income: 0.3
+      points: 0.1
+      experience: 0.3
+
+### Cobblestone 
+
+    cobblestone_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+
+### Acaica
+
+    acacia_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    acacia_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    acacia_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    acacia_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    acacia_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+    acacia_boat:
+      income: 0.05
+      points: 0.025
+      experience: 0.05 
+
+### Birch
+
+    birch_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    birch_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    birch_fence:
+      income: 0.2
+      points: 0.1
+      experience: 0.2
+    birch_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    birch_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+    birch_boat:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+
+### Dark Oak Stairs
+
+    dark_oak_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    dark_oak_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    dark_oak_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    dark_oak_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    dark_oak_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+  
+    dark_oak_boat:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+
+### Jungle
+
+    jungle_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    jungle_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    jungle_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    jungle_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    jungle_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+    jungle_boat:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+
+### Oak
+
+    oak_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    oak_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    oak_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    oak_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    oak_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+    oak_boat:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+
+### Bricks
+
+    brick_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+
+### Prismarine
+    
+  
+    prismarine:
+      income: 0.4
+      points: 0.1
+      experience: 0.3
+    prismarine_bricks:
+      income: 0.6
+      points: 0.2
+      experience: 0.5
+    dark_prismarine:
+      income: 0.8
+      points: 0.2
+      experience: 0.7
+    dark_prismarine_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    prismarine_brick_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    prismarine_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+
+### Nether bricks
+
+    nether_brick_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+
+### Purpur
+
+    purpur_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+
+### Quartz
+
+    quartz_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+
+### Sandstone
+
+    red_sandstone_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    sandstone_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+
+### Spruce 
+
+    spruce_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    spruce_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    spruce_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    spruce_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    spruce_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+    spruce_boat:
+      income: 0.05
+      points: 0.025
+      experience: 0.05 
+
+### Stone bricks
+
+    stone_brick_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+
+### Stone
+    stone_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+
+### Terracotta
+
+    terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    white_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    orange_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    magenta_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    light_blue_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    yellow_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    lime_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    pink_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    gray_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    light_gray_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    cyan_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    purple_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    blue_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    brown_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    green_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    red_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+    black_terracotta:
+      income: 0.4
+      points: 0.02
+      experience: 0.2
+  
+### Iron
+
+    iron_door:
+      income: 0.5
+      points: 0.3
+      experience: 0.4
+    anvil:
+      income: 10
+      points: 1
+      experience: 8
+    hopper:
+      income: 1.0
+      points: 0.1
+      experience: 1
+    cauldron:
+      income: 2.0
+      points: 0.1
+      experience: 1.5
+    lantern:
+      income: 0.2
+      points: 0.1
+      experience: 0.2
+    soul_lantern:
+      income: 0.3
+      points: 0.2
+      experience: 0.3
+
+### Utility Items
+  
+    book:
+      income: 0.3
+      points: 0.01
+      experience: 0.2
+    compass:
+      income: 1.0
+      points: 0.05
+      experience: 0.9
+    clock:
+      income: 1.0
+      points: 0.05
+      experience: 0.9
+    recovery_compass:
+      income: 20.0
+      points: 8.0
+      experience: 25
+    brush:
+      income: 0.02
+      points: 0.01
+      experience: 0.02
+
+### Warped
+
+    warped_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    warped_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    warped_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    warped_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    warped_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+
+### Crimson
+    crimson_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    crimson_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    crimson_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    crimson_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    crimson_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+
+### Bamboo
+    bamboo_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    bamboo_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    bamboo_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    bamboo_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    bamboo_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+    bamboo_raft:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+
+### Cherry
+    cherry_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    cherry_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    cherry_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    cherry_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    cherry_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+    cherry_boat:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+    
+### Mangrove
+    mangrove_stairs:
+      income: 0.03
+      points: 0.01
+      experience: 0.04
+    mangrove_pressure_plate:
+      income: 0.01
+      points: 0.01
+      experience: 0.01
+    mangrove_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    mangrove_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.1
+    mangrove_door:
+      income: 0.1
+      points: 0.08
+      experience: 0.15
+    mangrove_boat:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+    
+    chiseled_copper:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    copper_door:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    copper_grate:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    copper_trapdoor:
+      income: 0.05
+      points: 1
+      experience: 0.025
+
+    polished_tuff_slab:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    polished_tuff_stairs:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    polished_tuff_wall:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    tuff_brick_stairs:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    tuff_bricks:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    tuff_brick_slab:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    tuff_brick_wall:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    tuff_slab:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    tuff_stairs:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    tuff_wall:
+      income: 0.05
+      points: 1
+      experience: 0.025
+    chiseled_resin_bricks:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+    resin_brick_slab:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+    resin_brick_stairs:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+    resin_brick_wall:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+
+    pale_oak_boat:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+    pale_oak_door:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+    pale_oak_fence:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+    pale_oak_fence_gate:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+    pale_oak_pressure_plate:
+      income: 0.05
+      points: 0.025
+      experience: 0.05
+    pale_oak_stairs:
+      income: 0.05
+      points: 0.025
+      experience: 0.05

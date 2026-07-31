@@ -1,0 +1,55 @@
+title: "ʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ʙᴏᴜɴᴛɪᴇꜱ (Page %page%)"
+size: 54
+items:
+  bounty_entry:
+    material: PLAYER_HEAD
+    name: "&#FBC308&l%player_name%"
+    lore:
+      - "&8Your Investment"
+      - ""
+      - "&#FBC308♦ &fYour Contribution: &#FBC308$%amount%"
+      - "&#FF0000♦ &fTotal Bounty: &#FF0000$%total_bounty%"
+      - ""
+      - "&cShift + Right Click to remove your bounty"
+      - ""
+      - "&e➡ &l&nYOUR&e Investment"
+    slots: [0-44]
+  next_page:
+    material: ARROW
+    name: "&#34eb9b&lɴᴇxᴛ ᴘᴀɢᴇ →"
+    lore:
+      - "&8Navigation"
+      - ""
+      - "&fGo forward to view"
+      - "&fmore investments!"
+      - ""
+      - "&e➡ &l&nCLICK&e to go Forward"
+    slot: 50
+  previous_page:
+    material: ARROW
+    name: "&#ff0000&l← ᴘʀᴇᴠɪᴏᴜꜱ ᴘᴀɢᴇ"
+    lore:
+      - "&8Navigation"
+      - ""
+      - "&fGo back to view"
+      - "&fprevious investments!"
+      - ""
+      - "&e➡ &l&nCLICK&e to go Back"
+    slot: 48
+  back_to_menu:
+    material: ARROW
+    name: "&#34eb9b&lʙᴀᴄᴋ ᴛᴏ ᴍᴀɪɴ ᴍᴇɴᴜ"
+    lore:
+      - "&8Navigation"
+      - ""
+      - "&fReturn to the main"
+      - "&fbounty hunter menu!"
+      - ""
+      - "&e➡ &l&nCLICK&e to Return"
+    slot: 49
+  fill:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+    slots:
+      - 45-47
+      - 51-53

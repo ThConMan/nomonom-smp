@@ -1,0 +1,97 @@
+# Shroud — Paper anti-vision plugin
+# Most settings are passed through to Paper's built-in obfuscator and
+# entity tracker via PaperAntiXrayConfigurator at plugin enable. You do
+# NOT need to edit paper-world.yml separately — Shroud overwrites the
+# relevant fields with what's here every time the plugin loads.
+
+filters:
+
+  anti-xray:
+    enabled: true
+    # 1 = HIDE (replace unexposed ores with stone)
+    # 2 = OBFUSCATE (flood every unexposed solid with random fakes)
+    # 3 = SMART-BITMAP (hide real ores AND insert fake decoys at positions
+    #     ≥2 blocks deep from any transparent neighbour. No artifacts,
+    #     density-defeat, lighter on client palette than mode 2.)
+    # 4 = SMART-BITMAP + CAVE DECOYS (mode 3 plus fake cave_air pockets at
+    #     deep positions. Defeats cave-finder cheats by flooding chunk data
+    #     with fake caves.)
+    engine-mode: 4
+    # Mode 3 + 4: probability that a non-ore deep position becomes a fake ore.
+    # 0.03 ≈ Mojang's natural ore frequency below sea level.
+    mode-3-fake-density: 0.03
+    # Mode 4 only: probability that a non-ore deep position becomes fake cave_air.
+    # Lower than ore density — sparse fake pockets are enough to confuse
+    # cave-finder cheats without making the underground look surreal.
+    mode-4-cave-density: 0.005
+    # Sections whose bottom-Y exceeds this are not obfuscated.
+    # 320 covers the full overworld build range; lower to skip surface
+    # mountains only if you're sure no ores live above the cap.
+    max-block-height: 64
+    # How far block-update reveals propagate when a player mines a block.
+    update-radius: 2
+    # Treat stationary lava as opaque (so ores submerged in lava obfuscate).
+    lava-obscures: false
+    # Blocks to obfuscate. Empty = use built-in defaults (every ore +
+    # ancient_debris + raw_*_block).
+    hidden-blocks: []
+    # Per-dimension replacement palettes. Engine-mode 2 picks randomly from
+    # this list + hidden-blocks for every unexposed block. Mixing hidden
+    # blocks with replacements is what defeats client-side ore-only filters.
+    replacement-blocks:
+      overworld: [stone, deepslate, granite, diorite, andesite]
+      nether: [netherrack, basalt, blackstone]
+      the_end: [end_stone]
+    # Player aura: a sphere around each player where Shroud overrides Paper's
+    # obfuscation with the real block data, so the player's immediate
+    # surroundings always render as actual terrain. Paper's natural exposure
+    # rule produces a 1-block-thick boundary between real and obfuscated;
+    # this widens that boundary to the configured radius for the local
+    # player only. Long-range obfuscation is unchanged — that's where actual
+    # xray cheating happens.
+    # radius 4 = ~30KB/chunk-cross per player. Trivial network cost.
+    # radius 8 = ~24KB per player per chunk-cross. Still fine.
+    # radius 16 = ~480 block lookups, ~4KB net. Heaviest but workable.
+    player-aura:
+      enabled: true
+      radius-blocks: 4
+
+  anti-freecam:
+    enabled: true
+    # Extra blocks beyond (view-distance + 1) * 16 to allow. Acts as the
+    # always-visible bubble radius around each player. Bigger = less likely
+    # to flash void chunks when panning fast / high-ping turn.
+    safety-margin-blocks: 48
+    # Hide chunks outside the player's forward-cone (in addition to range).
+    frustum-check:
+      enabled: true
+      horizontal-degrees: 110
+    # Per-player ping-aware margin expansion. A player with N ms of ping above
+    # 100 gets (N / ms-per-block) extra blocks of bubble, capped at cap-blocks.
+    # Default: 100ms ping → +0 blocks, 200ms → +20, 300ms → +40, 500ms+ → +80.
+    ping-scaling:
+      enabled: true
+      ms-per-block: 5
+      cap-blocks: 80
+
+  hide-structures:
+    enabled: true
+    # Structures explicitly allowed to be revealed. Resource keys, e.g.
+    # `minecraft:village`. Default empty = hide every structure.
+    allow: []
+    # Block-entity types whose NBT is scrubbed from outgoing chunk data.
+    # Bare keys are namespaced to "minecraft:" automatically.
+    scrub-block-entities: [trial_spawner, vault, decorated_pot]
+
+  hide-entity:
+    enabled: true
+    # Hide entities farther than this from the player's eye (blocks).
+    max-distance-blocks: 64
+    # Raycast occlusion (entities behind walls are hidden).
+    occlusion-check: true
+    raycast-cache-ttl-ms: 200
+    # Spectator-mode admins see everything regardless of filters.
+    spectator-bypass: true
+
+debug: false
+log-perf-warnings: true

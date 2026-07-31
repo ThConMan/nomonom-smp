@@ -1,0 +1,19 @@
+args:
+  name:
+  - mortalrealm
+  destination:
+  - mortal_realm_hub
+  triggerblock:
+  - WATER
+  command:
+  - '#cmi effect [playerName] blindness 2 1 -s'
+maxLoc:
+  posX: 49980
+  posY: 83
+  posZ: -50021
+  worldName: void
+minLoc:
+  posX: 49975
+  posY: 77
+  posZ: -50025
+  worldName: void

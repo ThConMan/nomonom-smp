@@ -1,0 +1,6 @@
+donut_base:
+  itemname: display-name-donut_base
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/donut_base
+    custom_model_data: 1014

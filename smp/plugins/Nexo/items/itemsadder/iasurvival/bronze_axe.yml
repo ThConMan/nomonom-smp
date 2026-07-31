@@ -1,0 +1,6 @@
+bronze_axe:
+  itemname: display-name-bronze_axe
+  material: DIAMOND_AXE
+  Pack:
+    texture: iasurvival:item/tools/bronze_axe
+    custom_model_data: 1000

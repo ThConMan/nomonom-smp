@@ -1,0 +1,6 @@
+knowledge_fragment:
+  itemname: display-name-knowledge_fragment
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/knowledge_fragment
+    custom_model_data: 1011

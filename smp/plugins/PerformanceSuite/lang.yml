@@ -1,0 +1,394 @@
+# ###############################################################################
+# # PerformanceSuite – Language Pack
+# #
+# # Keep messages organized just like config.yml so updates stay tidy.
+# # Grouped by feature with clear dividers for quick skimming and editing.
+# ###############################################################################
+
+messages:
+  prefix: §7
+  
+  # ---------------------------------------------------------------------------
+  # Dashboard + snapshots
+  # ---------------------------------------------------------------------------
+  dashboard:
+    refreshed: '%prefix%§aDashboard refreshed.'
+  
+  snapshots:
+    opened: '%prefix%§aOpened snapshot context in chat.'
+    header: §bSnapshot » §f%timestamp%
+    reason: '§7Reason: §f%reason%'
+    metrics: §7MSPT §f%mspt% §8| TPS §f%tps% §8| CPU §f%cpu%
+    chunk: §b%chunk% §8| Entities §f%entities% §8(§c%hostile% hostile§8)
+    chunk-players: '§7 » Players nearby: §f%players%'
+    captured-age: §8Captured %age%s ago.
+  
+  lag-fix:
+    radius: '%prefix%§aClear radius set to §f%radius%'
+    refreshed: '%prefix%§eRefreshed lag preset list.'
+    executed: '%prefix%§aExecuted preset §f%preset% §7(§fradius %radius%§7).'
+  
+  schedule:
+    triggered: '%prefix%§aTriggered scheduled task §e%task%'
+    countdown:
+      seconds: 10
+      tick: '%prefix%§dRunning §e%preset% §din §e%seconds%s.'
+      execute: '%prefix%§dExecuting §e%preset%§d.'
+  
+  world:
+    refresh: '%prefix%§aWorld overview refreshed.'
+    sorting: '%prefix%§bSorting by %mode%.'
+  
+  chunks:
+    world-missing: '%prefix%§cWorld is no longer loaded.'
+    teleport: '%prefix%§aTeleported to chunk §f%x%§7, §f%z%§7 in §f%world%§7.'
+    refreshed: '%prefix%§aChunk metrics refreshed.'
+    none: '%prefix%§cNo loaded worlds to inspect.'
+  
+  impact:
+    refreshed: '%prefix%§eRe-loaded plugin impact data.'
+  
+  chunk-actions:
+    unloaded: '%prefix%§cChunk is no longer loaded.'
+    removed: '%prefix%§aChunk %chunk% removed §f%removed% §aentities.'
+  
+  diagnostics:
+    completed: '%prefix%§aDiagnostics scan completed.'
+    sent: '%prefix%§dDiagnostics sent to Discord.'
+  
+  command:
+    open-in-game: '%prefix%§7Open this in-game to view the dashboard.'
+    no-permission: '%prefix%§cNo permission.'
+    license-invalid: '%prefix%§cLicense validation failed. Disabling PerformanceSuite.'
+    reloaded: '%prefix%§aConfiguration reloaded.'
+    scan:
+      header: '%prefix%§6Diagnostics found %count% issue(s):'
+      item: §7- %issue%
+    fix:
+      usage: '%prefix%§7Usage: /psuite fix <preset>'
+      not-found: '%prefix%§cPreset not found.'
+      executed: '%prefix%§aExecuted preset §f%preset%§a, removed %removed% entities.'
+    redstone:
+      usage: '%prefix%§eUsage: /psuite redstone <add|remove>'
+  
+  updates:
+    checking: '%prefix%§eAlready checking for updates.'
+    failed: '%prefix%§cFailed to check for updates. See console for details.'
+    no-metadata: '%prefix%§cUpdate metadata unavailable. Check configuration or network
+      connectivity.'
+    latest: '%prefix%§aYou are running the latest version (%version%)'
+    downloading: '%prefix%§eAn update is already downloading. Please wait.'
+    available: '%prefix%§bUpdate ready §7» §fPerformanceSuite v%version% §7(§eClick
+      to download§7)'
+    available-hover: §7Download PerformanceSuite v%version% now.
+    download-success: '%prefix%§aDownloaded PerformanceSuite v%version% (§f%file%§a).
+      Restart your server to apply the update.'
+    download-failed: '%prefix%§c%reason%'
+    download-failed-console: '%prefix%§c%reason%'
+
+# ##############################################################################
+# GUI titles, item names, lore, and slots.
+# Customize as needed; layout stays grouped per menu for easier editing.
+# ##############################################################################
+
+gui:
+  # ---------------------------------------------------------------------------
+  # Main dashboard
+  # ---------------------------------------------------------------------------
+  main:
+    title: §x§f§f§6§f§9§1Performance Suite
+    items:
+      placeholder:
+        material: BLACK_STAINED_GLASS_PANE
+        name: ' '
+      accent:
+        material: RED_STAINED_GLASS_PANE
+        name: ' '
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 5
+        - 6
+        - 7
+        - 8
+        - 45
+        - 46
+        - 47
+        - 48
+        - 49
+        - 50
+        - 51
+        - 52
+        - 53
+        - 9
+        - 17
+        - 18
+        - 26
+        - 27
+        - 35
+        - 36
+        - 44
+      insight:
+        material: NETHER_STAR
+      tps:
+        material: LIME_DYE
+        name: §aTPS
+        lore:
+        - '§7Current: §f%tps%'
+        - §8> §7Stay above 19.5 for stable play
+        slot: 10
+      mspt:
+        material: CLOCK
+        name: §eMSPT
+        lore:
+        - '§7Average: §f%mspt%'
+        - '%mspt_state%'
+        slot: 11
+      cpu:
+        material: REDSTONE
+        name: §cCPU
+        lore:
+        - '§7Load: §f%cpu_load%%'
+        - §8Higher usage = risk of lag
+        slot: 12
+      memory:
+        material: CHEST
+        name: §6Memory
+        lore:
+        - '§7Usage: §f%used_ram%MB / %max_ram%MB'
+        - §8Keep headroom above 20%
+        slot: 13
+      players:
+        material: EMERALD
+        name: §aPlayers
+        lore:
+        - '§7Online: §f%players%'
+        - §8Track load alongside TPS
+        slot: 14
+      entities:
+        material: SLIME_BALL
+        name: §aEntities
+        lore:
+        - '§7Total: §f%entities%'
+        - §8Use world & chunk hotspots
+        slot: 15
+      chunks:
+        material: GRASS_BLOCK
+        name: §aChunks
+        lore:
+        - '§7Loaded: §f%chunks%'
+        - §8Look for high-density worlds
+        slot: 16
+      plugin-impact:
+        material: NETHERITE_SWORD
+        slot: 28
+      world-hotspots:
+        material: SPYGLASS
+        slot: 29
+      chunk-hotspots:
+        material: LODESTONE
+        slot: 30
+      diagnostics:
+        material: BOOK
+        slot: 31
+      lag-fix:
+        material: TNT
+        slot: 32
+      toggles:
+        material: LEVER
+        slot: 33
+      restart:
+        material: RED_BED
+        slot: 34
+      schedule:
+        slot: 39
+        name: §eScheduled events
+        lore:
+        - §7View automatic cleanups
+        - §7and run them instantly.
+      refresh:
+        slot: 40
+        name: §x§f§f§6§f§9§1Refresh dashboard
+        lore:
+        - §7Pull the latest live metrics
+        - §7without closing the menu.
+      snapshots:
+        slot: 49
+        name: §x§f§f§6§f§9§1Snapshot history
+        lore:
+        - §7Jump into lag-aware timeline
+        - §7with chunk + player evidence.
+  
+  # ---------------------------------------------------------------------------
+  # Lag fix presets menu
+  # ---------------------------------------------------------------------------
+  lag-fix:
+    title: §x§f§7§0§0§0§0Lag Fix Presets
+    items:
+      header:
+        name: §bPreset library
+        lore:
+        - §7Pick the cleanup strength you need
+        - §7and run it near your hotspot.
+      back:
+        slot: 45
+        name: §7Back
+        lore:
+        - §8Return to dashboard
+      radius:
+        slot: 49
+        name: '§aRadius: %radius%'
+        lore:
+        - §7Click to cycle cleanup range
+        - §8Affects where presets apply
+      refresh:
+        slot: 53
+        name: §aRefresh presets
+        lore:
+        - §7Reload menu data
+        - §8Keeps current radius
+      schedule:
+        slot: 50
+        name: §eScheduled runs
+        lore:
+        - §7Review automatic tasks
+        - §7or trigger them early
+  
+  # ---------------------------------------------------------------------------
+  # Scheduled automation menu
+  # ---------------------------------------------------------------------------
+  schedule:
+    title: §x§f§a§c§7§0§0Scheduled automations
+    items:
+      placeholder:
+        material: GRAY_STAINED_GLASS_PANE
+        name: ' '
+      header:
+        slot: 4
+        material: NOTE_BLOCK
+        name: §x§f§a§c§7§0§0Scheduled automations
+        lore:
+        - §7Review automated cleanups
+        - §7and run them instantly.
+      task:
+        material: NOTE_BLOCK
+        name: §e%id%
+        lore:
+        - '§7Type: §f%type%'
+        - '§7Interval: §f%interval%m'
+        - §eClick to run now
+      task-grid:
+        slots:
+        - 0
+        - 1
+        - 2
+        - 3
+        - 4
+        - 5
+        - 6
+        - 7
+        - 8
+        - 9
+        - 10
+        - 11
+        - 12
+        - 13
+        - 14
+        - 15
+        - 16
+        - 17
+        - 18
+        - 19
+        - 20
+        - 21
+        - 22
+        - 23
+        - 24
+        - 25
+        - 26
+        - 27
+        - 28
+        - 29
+        - 30
+        - 31
+        - 32
+        - 33
+        - 34
+        - 35
+        - 36
+        - 37
+        - 38
+        - 39
+        - 40
+        - 41
+      back:
+        slot: 49
+        name: §7Back
+        lore:
+        - §8Return
+  
+  # ---------------------------------------------------------------------------
+  # Restart scheduler menu
+  # ---------------------------------------------------------------------------
+  restart:
+    title: §x§f§6§7§0§0§0Restart Scheduler
+    items:
+      placeholder:
+        material: GRAY_STAINED_GLASS_PANE
+        name: ' '
+      header:
+        material: RED_BED
+        name: §cRestart scheduler
+        lore:
+        - §7Plan soft restarts for quieter
+        - §7times or force one instantly.
+      schedule-5m:
+        material: PAPER
+        name: Schedule 5m
+        lore:
+        - Click to schedule
+        slot: 10
+      schedule-10m:
+        material: PAPER
+        name: Schedule 10m
+        lore:
+        - Click to schedule
+        slot: 11
+      schedule-15m:
+        material: PAPER
+        name: Schedule 15m
+        lore:
+        - Click to schedule
+        slot: 12
+      schedule-30m:
+        material: PAPER
+        name: Schedule 30m
+        lore:
+        - Click to schedule
+        slot: 13
+      schedule-60m:
+        material: PAPER
+        name: Schedule 60m
+        lore:
+        - Click to schedule
+        slot: 14
+      cancel:
+        material: BARRIER
+        name: Cancel
+        lore:
+        - Cancel restart
+        slot: 16
+      force:
+        material: REDSTONE_BLOCK
+        name: Force Restart
+        lore:
+        - Immediate
+        slot: 22
+      back:
+        material: ARROW
+        name: §7Back
+        lore:
+        - §8Return to dashboard
+        slot: 18

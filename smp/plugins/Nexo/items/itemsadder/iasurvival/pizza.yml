@@ -1,0 +1,6 @@
+pizza:
+  itemname: Pizza
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/pizza
+    custom_model_data: 1025

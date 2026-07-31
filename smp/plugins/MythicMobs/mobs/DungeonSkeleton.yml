@@ -1,0 +1,54 @@
+DungeonSkeletonspawn:
+  Type: ARMOR_STAND
+  Display: '&fDungeonSkeleton'
+  AITargetSelectors:
+  - 0 clear
+  AIGoalSelectors:
+  - 0 clear
+  Options:
+    NoAI: true
+    Invisible: true
+    Despawn: false
+    Persistent: true
+  Skills:
+  - model{mid=DungeonSkeletonspawn} @self ~onSpawn
+  - bodyclamp{m=DungeonSkeletonspawn;mb=0;mh=0} @self ~onSpawn
+  - skill{s=e_spawn} @self ~onTimer:30
+  
+DungeonSkeleton:
+  Type: SKELETON
+  Display: '&fDungeonSkeleton'
+  Health: 20
+  Damage: 0
+  AIGoalsSelector:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  - 2 attacker
+  Modules:
+    ImmunityTable: true
+  Options:
+    Collidable: false
+    PreventSunburn: true
+    PreventOtherDrops: true
+    Silent: false
+    FollowRange: 30
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    MovementSpeed: 0.16
+    PreventJockeyMounts: true
+    Despawn: false
+    NoAI: True
+    Experience: 40
+  Drops:
+  - BONE{display="Bone"} 1to2 0.5
+  Skills:
+  - model{mid=DungeonSkeleton;n=false} @self ~onSpawn
+  - randomskill{s=e_attack_1,e_attack_2,;sync=true} @self ~onAttack 
+  - CancelEvent{sync=false} @self ~onAttack
+  - setAI{ai=true;delay=70} @self ~onSpawn
+  - gcd{ticks=90} @self ~onSpawn
+  - skill{s=death} @self ~onDeath

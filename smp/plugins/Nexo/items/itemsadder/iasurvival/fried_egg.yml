@@ -1,0 +1,6 @@
+fried_egg:
+  itemname: display-name-fried_egg
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/fried_egg
+    custom_model_data: 1016

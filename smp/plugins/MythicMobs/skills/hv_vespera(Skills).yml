@@ -1,0 +1,335 @@
+#-------------------------
+#     Made by helove 
+#     Discord helove
+#-------------------------
+
+hv_vespera_talks:
+  Cooldown: 30
+  Conditions:
+  - playerwithin{d=16} true
+  Skills:
+  - randomskill{s=hv_vespera_talk1,hv_vespera_talk2,hv_vespera_talk3}
+  
+hv_vespera_talk1:
+  Conditions:
+  - hasaura{n=hv_vespera_stun_aura} false
+  - hasaura{n=hv_vespera_talk1_aura} false
+  Skills:
+  - Aura{auraName=hv_vespera_talk1_aura;interval=1;duration=2400} @self
+  - sound{s=hv_vespera.doom;v=5;p=0.9} @self
+  
+hv_vespera_talk2:
+  Conditions:
+  - hasaura{n=hv_vespera_stun_aura} false
+  - hasaura{n=hv_vespera_talk2_aura} false
+  Skills:
+  - Aura{auraName=hv_vespera_talk2_aura;interval=1;duration=2400} @self
+  - sound{s=hv_vespera.shackles;v=5;p=0.9} @self
+    
+hv_vespera_talk3:
+  Conditions:
+  - hasaura{n=hv_vespera_stun_aura} false
+  - hasaura{n=hv_vespera_talk3_aura} false
+  Skills:
+  - Aura{auraName=hv_vespera_talk3_aura;interval=1;duration=2400} @self
+  - sound{s=hv_vespera.born;v=5;p=0.9} @self
+  
+hv_vespera_spawn:
+  Cooldown: 99999
+  Conditions:
+  - playerwithin{d=12} true
+  Skills:
+  - effect:sound{s=ambient.cave;v=1.4;p=2} @PIR{r=40}
+  - effect:sound{s=entity.wither.spawn;v=1;p=0.7} @PIR{r=40}
+  - delay 20
+  - summon{t=hv_vespera} @self
+  - remove @self
+  
+hv_vespera_spawn2:
+  Skills:
+  - delay 24
+  - sound{s=hv_vespera.chains_break;v=5;p=0.5} @self
+  - delay 4
+  - sound{s=hv_vespera.chains_break;v=5;p=0.5} @self
+
+hv_vespera_death:
+  Skills:
+  - sound{s=hv_vespera.death;v=5;p=0.9} @self
+  - partvis{mid=hv_vespera;p=spirit_projectile;v=false;child=true} @self
+  - partvis{mid=hv_vespera;p=spirits;v=false;child=true} @self
+  - partvis{mid=hv_vespera;p=stars;v=false;child=true} @self 
+  - partvis{mid=hv_vespera;p=blades_right_main;v=false;child=true} @self
+  - partvis{mid=hv_vespera;p=blade2;v=false;child=true} @self 
+  - partvis{mid=hv_vespera;p=shadow_ring;v=false;child=true} @self 
+  - delay 17
+  - sound{s=hv_vespera.chains_break;v=5;p=1} @self
+  - delay 11
+  - sound{s=block.grass.step;v=5;p=0.3} @self
+
+hv_vespera_grab_try:
+  Cooldown: 16
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to3} true
+  Skills:
+  - gcd{ticks=40} @self
+  - state{s=grab_try} @self
+  - delay 4
+  - setspeed{s=2} @self
+  - delay 4
+  - setspeed{s=0} @self
+  - setAI{ai=false} @self
+  - lockmodel{l=true} @self
+  - totem{md=6;oH=hv_vespera_grab;hr=2;vr=2;drawhitbox=false;ti=25} @modelpart{pid=grab}
+  - delay 4
+  - skill{s=check_passengers_hv_vespera_grab_try} @modelpart{pid=grab}
+  
+check_passengers_hv_vespera_grab_try:
+  Conditions:
+  - ModelHasPassenger{p=grab} false
+  Skills:
+  - lockmodel{l=false} @self
+  - setspeed{s=1} @self
+   
+hv_vespera_grab:
+  Skills:
+  - gcd{ticks=100} @self
+  - damage{a=6}
+  - mountmodel{mid=hv_vespera;driver=false;pbone=grab;dmg=false}
+  - state{s=grab_try;r=true} @self
+  - state{s=grab} @self
+  - delay 25
+  - partvis{mid=hv_vespera;p=blade2;v=true;child=true} @self
+  - delay 10
+  - sound{s=hv_vespera.dagger_hit;v=2;p=1} @self
+  - delay 5
+  - damage{a=30;pk=true;pi=true} @ModelPassengers{p=grab}
+  - shieldbreak{duration=200} @ModelPassengers{p=grab}
+  - delay 30
+  - partvis{mid=hv_vespera;p=blade2;v=false;child=true} @self
+  - dismountall{mid=hv_vespera;p=grab} @self
+  - delay 25
+  - setAI{ai=true} @self
+  - lockmodel{l=false} @self
+  - setspeed{s=1} @self
+  
+hv_vespera_shoot:
+  Cooldown: 10
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=4to16} true
+  Skills:
+  - gcd{ticks=90} @self
+  - state{s=shoot} @self
+  - setspeed{s=0} @self
+  - delay 10
+  - partvis{mid=hv_vespera;p=spirit_projectile;v=true;child=true} @self
+  - delay 36
+  - sound{s=hv_vespera.magic_projectile;v=2;p=1} @self
+  - delay 11
+  - projectile{b=MOB;mm=hv_vespera_projectile;ti=25;v=35;syo=4;tyo=1.5;oH=hv_vespera_shoot_damage}
+  - partvis{mid=hv_vespera;p=spirit_projectile;v=false;child=true} @self
+  - delay 43
+  - setspeed{s=1} @self
+
+hv_vespera_shoot_damage:
+  Skills:
+  - damage{a=16;pi=true}
+  - shieldbreak{duration=40}
+  - effect:particles{p=smoke;hs=1;vs=1;a=6}
+
+hv_vespera_shadow_storm:
+  Cooldown: 32
+  Conditions:
+  - offgcd
+  - health{h=<450} true
+  TargetConditions:
+  - distance{d=0to8} true
+  Skills:
+  - gcd{ticks=230} @self
+  - state{s=shadow_storm} @self
+  - setspeed{s=0} @self
+  - delay 5
+  - partvis{mid=hv_vespera;p=spirits;v=true;child=true} @self
+  - delay 2
+  - Aura{auraName=hv_vespera_shadow_storm_aura2;onTick=hv_vespera_shadow_storm_aura2_tick;interval=5;duration=170} @self
+  - delay 18
+  - setAI{ai=false} @self
+  - lockmodel{l=true} @self
+  - Aura{auraName=hv_vespera_shadow_storm_totem;onTick=hv_vespera_shadow_storm_totem_tick;interval=2;duration=180} @self
+  - Aura{auraName=hv_vespera_shadow_storm_aura;onTick=hv_vespera_shadow_storm_aura_tick;interval=1;duration=170} @self
+  - delay 160
+  - sound{s=hv_vespera.magic_projectile;v=2;p=0.6} @self
+  - delay 10
+  - sound{s=hv_vespera.magic_projectile;v=2;p=1.5} @self
+  - delay 30
+  - partvis{mid=hv_vespera;p=spirits;v=false;child=true} @self
+  - setAI{ai=true} @self
+  - lockmodel{l=false} @self
+  - setspeed{s=1} @self
+
+hv_vespera_shadow_storm_totem_tick:
+  Skills:
+  - totem{md=1;oH=hv_vespera_shadow_storm_totem_damage;hr=1;vr=1;drawhitbox=false;ti=25} @modelpart{pid=spirit_projectile2}
+  - effect:particles{p=smoke;hs=1;vs=1;a=1} @modelpart{pid=spirit_projectile2}
+  - totem{md=1;oH=hv_vespera_shadow_storm_totem_damage;hr=1;vr=1;drawhitbox=false;ti=25} @modelpart{pid=spirit_projectile3}
+  - effect:particles{p=smoke;hs=1;vs=1;a=1} @modelpart{pid=spirit_projectile3}
+  - totem{md=1;oH=hv_vespera_shadow_storm_totem_damage;hr=1;vr=1;drawhitbox=false;ti=25} @modelpart{pid=spirit_projectile4}
+  - effect:particles{p=smoke;hs=1;vs=1;a=1} @modelpart{pid=spirit_projectile4}
+  - totem{md=1;oH=hv_vespera_shadow_storm_totem_damage;hr=1;vr=1;drawhitbox=false;ti=25} @modelpart{pid=spirit_projectile5}
+  - effect:particles{p=smoke;hs=1;vs=1;a=1} @modelpart{pid=spirit_projectile5}
+  - totem{md=1;oH=hv_vespera_shadow_storm_totem_damage;hr=1;vr=1;drawhitbox=false;ti=25} @modelpart{pid=spirit_projectile6}
+  - effect:particles{p=smoke;hs=1;vs=1;a=1} @modelpart{pid=spirit_projectile6}
+  - totem{md=1;oH=hv_vespera_shadow_storm_totem_damage;hr=1;vr=1;drawhitbox=false;ti=25} @modelpart{pid=spirit_projectile7}
+  - effect:particles{p=smoke;hs=1;vs=1;a=1} @modelpart{pid=spirit_projectile7}
+  - totem{md=1;oH=hv_vespera_shadow_storm_totem_damage;hr=1;vr=1;drawhitbox=false;ti=25} @modelpart{pid=spirit_projectile8}
+  - effect:particles{p=smoke;hs=1;vs=1;a=1} @modelpart{pid=spirit_projectile8}
+  - totem{md=1;oH=hv_vespera_shadow_storm_totem_damage;hr=1;vr=1;drawhitbox=false;ti=25} @modelpart{pid=spirit_projectile9}
+  - effect:particles{p=smoke;hs=1;vs=1;a=1} @modelpart{pid=spirit_projectile9}
+  
+hv_vespera_shadow_storm_totem_damage:
+  Skills:
+  - damage{a=1;pk=true;pi=true}
+  - shieldbreak{duration=5}
+  - effect:particles{p=smoke;hs=1;vs=1;a=6}
+  
+hv_vespera_shadow_storm_aura_tick:
+  Skills:
+  - pull{velocity=1.6} @EIR{r=16}
+  - throw{velocity=10;velocityY=0} @EIR{r=3}
+  
+hv_vespera_shadow_storm_aura2_tick:
+  Skills:
+  - sound{s=hv_vespera.magic_projectile;v=2;p=2} @self
+  - delay 2
+  - sound{s=hv_vespera.magic_projectile;v=2;p=1.5} @self
+  
+ 
+hv_vespera_summon_bat:
+  Cooldown: 32
+  Conditions:
+  - offgcd
+  - health{h=<400} true
+  TargetConditions:
+  - distance{d=0to12} true
+  Skills:
+  - gcd{ticks=60} @self
+  - state{s=summon_bat} @self
+  - setspeed{s=0} @self
+  - delay 15
+  - sound{s=hv_vespera.animals;v=5;p=0.9} @self
+  - lockmodel{l=true} @self
+  - delay 10
+  - summon{type=hv_vespera_bat;amount=1} @modelpart{pid=left_arm2;o=model;z=-3;y=1}
+  - summon{type=hv_vespera_bat;amount=1} @modelpart{pid=right_arm2;o=model;z=-3;y=1}
+  - effect:particles{p=smoke;hs=1;vs=1;a=10} @modelpart{pid=left_arm2}
+  - effect:particles{p=smoke;hs=1;vs=1;a=10} @modelpart{pid=right_arm2}
+  - delay 35
+  - lockmodel{l=false} @self
+  - setspeed{s=1} @self
+  
+hv_vespera_bat_attack:
+  Cooldown: 4
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to3} true
+  Skills:
+  - gcd{ticks=20} @self
+  - state{s=wing_hit} @self
+  - delay 4
+  - damage{a=6;pk=true;pi=true}
+  - potion{type=darkness;duration=160;level=4}
+  - shieldbreak{duration=10}
+  - effect:particles{p=smoke;hs=1;vs=1;a=2}
+  
+hv_vespera_stun:
+  Cooldown: 32
+  Conditions:
+  - offgcd
+  - chance{chance=0.6} true
+  - health{h=<400} true
+  Skills:
+  - gcd{ticks=120} @self
+  - Aura{auraName=hv_vespera_stun_aura;interval=1;duration=120} @self
+  - state{s=stun} @self
+  - setspeed{s=0} @self
+  - delay 5
+  - lockmodel{l=true} @self
+  - setAI{ai=false} @self
+  - partvis{mid=hv_vespera;p=stars;v=true;child=true} @self
+  - delay 114
+  - partvis{mid=hv_vespera;p=stars;v=false;child=true} @self
+  - lockmodel{l=false} @self 
+  - setAI{ai=true} @self
+  - setspeed{s=1} @self
+  
+hv_vespera_blades:
+  Cooldown: 10
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to10} true
+  Skills:
+  - gcd{ticks=60} @self
+  - state{s=blades} @self
+  - setspeed{s=0} @self
+  - delay 10
+  - partvis{mid=hv_vespera;p=blades_right_main;v=true;child=true} @self
+  - lockmodel{l=true} @self
+  - setAI{ai=false} @self
+  - delay 16
+  - sound{s=hv_vespera.dagger_throw;v=2;p=1} @self
+  - partvis{mid=hv_vespera;p=blades_right_main;v=false;child=true} @self
+  - projectile{b=MOB;mm=hv_vespera_blade;ti=25;v=30;syo=4;se=false;tyo=0.5;oH=hv_vespera_blade_damage} @modelpart{pid=target;o=model;x=-6}
+  - projectile{b=MOB;mm=hv_vespera_blade;ti=25;v=30;syo=4;se=false;tyo=0.5;oH=hv_vespera_blade_damage} @modelpart{pid=target;o=model;x=-3}
+  - projectile{b=MOB;mm=hv_vespera_blade;ti=25;v=30;syo=4;se=false;tyo=0.5;oH=hv_vespera_blade_damage} @modelpart{pid=target;o=model}
+  - projectile{b=MOB;mm=hv_vespera_blade;ti=25;v=30;syo=4;se=false;tyo=0.5;oH=hv_vespera_blade_damage} @modelpart{pid=target;o=model;x=3}
+  - projectile{b=MOB;mm=hv_vespera_blade;ti=25;v=30;syo=4;se=false;tyo=0.5;oH=hv_vespera_blade_damage} @modelpart{pid=target;o=model;x=6}
+  - delay 30
+  - lockmodel{l=false} @self
+  - setAI{ai=true} @self
+  - setspeed{s=1} @self
+  
+hv_vespera_blade_damage:
+  Skills:
+  - damage{a=8;pi=true}
+  - shieldbreak{duration=100}
+  - effect:particles{p=smoke;hs=1;vs=1;a=6}
+
+hv_vespera_shadow_ring:
+  Cooldown: 16
+  Conditions:
+  - offgcd
+  TargetConditions:
+  - distance{d=0to4} true
+  Skills:
+  - gcd{ticks=90} @self
+  - state{s=shadow_ring} @self
+  - setspeed{s=0} @self
+  - delay 10
+  - sound{s=hv_vespera.away;v=5;p=0.9} @self
+  - lockmodel{l=true} @self
+  - setAI{ai=false} @self
+  - delay 30
+  - partvis{mid=hv_vespera;p=shadow_ring;v=true;child=true} @self
+  - delay 4
+  - sound{s=hv_vespera.shadow_ring;v=2;p=1} @self
+  - throw{velocity=20;velocityY=0} @EIR{r=6}
+  - potion{type=darkness;duration=160;level=4}
+  - delay 37
+  - lockmodel{l=false} @self
+  - partvis{mid=hv_vespera;p=shadow_ring;v=false;child=true} @self
+  - setAI{ai=true} @self
+  - setspeed{s=1} @self
+  
+#-------------------------
+#     Made by helove 
+#     Discord helove
+#-------------------------
+  
+
+
+  

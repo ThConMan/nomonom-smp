@@ -1,0 +1,12 @@
+Boss_Test:
+  Type: ZOMBIE
+  Display: '&5&lAscended Construct'
+  Health: 1500
+  Damage: 18
+  Options:
+    Silent: true
+    PreventOtherDrops: true
+    Despawn: false
+    MovementSpeed: 0.25
+  Skills:
+  - model{mid=boss_test} @self ~onSpawn

@@ -1,0 +1,9 @@
+diamond_hammer:
+  itemname: display-name-diamond_hammer
+  material: DIAMOND_PICKAXE
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  Pack:
+    texture: iasurvival:item/tools/diamond_hammer
+    custom_model_data: 1005

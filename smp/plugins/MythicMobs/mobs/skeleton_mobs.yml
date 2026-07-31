@@ -1,0 +1,247 @@
+# ####### created by samus2002 #########
+
+# Skeleton Warrior #
+
+Skeleton_Warrior:
+  Type: ZOMBIE
+  Display: '&fSkeleton Warrior'
+  Health: 200
+  Damage: '2'
+  Faction: Skeleton
+  Options:
+    MovementSpeed: 0.25
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 20
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  Drops:
+  - skeleton_sword 1 1
+  - skeleton_shield 1 1
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Skills:
+  - model{mid=skeleton_warrior;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_skeleton_sounds:samus.skeleton_idle;volume=0.7;pitch=1} @self
+    ~onTimer:140 0.35
+  - effect:sound{s=rms_skeleton_sounds:samus.skeleton_idle;volume=0.7;pitch=1.2} @self
+    ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Skeleton_Warrior_Attack} ~onTimer:20 0.7
+  - skill{s=Skeleton_Warrior_Parry} ~onDamaged 0.4
+  - skill{s=Skeleton_Warrior_Hit} ~onDamaged
+
+# Skeleton Archer #
+
+Skeleton_Archer:
+  Type: SKELETON
+  Display: '&fSkeleton Archer'
+  Health: 175
+  Damage: 2
+  Faction: Skeleton
+  Options:
+    MovementSpeed: 0.25
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 20
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Equipment:
+  - bow:HAND
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  Drops:
+  - skeleton_bow 1 1
+  - skeleton_arrow 3 1
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Skills:
+  - model{mid=skeleton_archer;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_skeleton_sounds:samus.skeleton_idle;volume=0.7;pitch=1} @self
+    ~onTimer:140 0.35
+  - effect:sound{s=rms_skeleton_sounds:samus.skeleton_idle;volume=0.7;pitch=1.2} @self
+    ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - bodyclamp{c=30} @self ~onSpawn
+  - skill{s=Cancelattack;sync=true} ~onShoot
+  - skill{s=Skeleton_Archer_Attack} ~onTimer:60 0.7
+  - skill{s=Skeleton_Archer_Attack} ~onTimer:40 0.3
+  - skill{s=Skeleton_Warrior_Hit} ~onDamaged
+
+# Skeleton Shaman #
+
+Skeleton_Shaman:
+  Type: SKELETON
+  Display: '&fSkeleton Shaman'
+  Health: 250
+  Damage: 2
+  Faction: Skeleton
+  Options:
+    MovementSpeed: 0.25
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 20
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Equipment:
+  - bow:HAND
+  Drops:
+  - skeleton_staff 1 1
+  Modules:
+    ThreatTable: true
+  AIGoalSelectors:
+  - 0 clear
+  - 1 lookatplayers
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Skills:
+  - model{mid=skeleton_shaman;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_skeleton_sounds:samus.skeleton_idle;volume=0.7;pitch=1} @self
+    ~onTimer:140 0.35
+  - effect:sound{s=rms_skeleton_sounds:samus.skeleton_idle;volume=0.7;pitch=1.2} @self
+    ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - bodyclamp{c=30} @self ~onSpawn
+  - skill{s=Cancelattack;sync=true} ~onShoot
+  - skill{s=Skeleton_Shaman_Attack} ~onTimer:50 0.7
+  - skill{s=Skeleton_Shaman_Heal} ~onTimer:40 0.4
+  - skill{s=Skeleton_Warrior_Hit} ~onDamaged
+
+# Lich King #
+
+Lich_King:
+  Type: ZOMBIE
+  Display: '&4Lich King'
+  Health: 1000
+  Damage: 6
+  BossBar:
+    Enabled: true
+    Title: '&4Lich King'
+    Range: 25
+    Color: RED
+    Style: SEGMENTED_12
+    DarkenSky: false
+  Options:
+    MovementSpeed: 0.2
+    ShowHealth: false
+    PreventRandomEquipment: true
+    AlwaysShowName: false
+    Persistent: true
+    Despawn: true
+    PreventOtherDrops: true
+    FollowRange: 50
+    Silent: true
+    KnockbackResistance: 1
+    PreventSunburn: true
+  Modules:
+    ThreatTable: true
+  Drops:
+  - lich_king_scythe 1 1
+  DamageModifiers:
+  - FALL 0
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 movetowardstarget
+  - 3 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 players
+  Skills:
+  - model{mid=lich_king;n=false;step=1} @self ~onSpawn
+  - effect:sound{s=rms_skeleton_sounds:samus.lich_king_idle;volume=1.5;pitch=1} @self
+    ~onTimer:140 0.35
+  - effect:sound{s=rms_skeleton_sounds:samus.lich_king_idle;volume=1.5;pitch=1.1}
+    @self ~onDeath
+  - skill{s=Changetarget} ~onTimer:160 <99%
+  - skill{s=Cancelattack;sync=true} ~onAttack
+  - skill{s=Lich_King_Attack} ~onTimer:40 0.7
+  - skill{s=Lich_King_Skill} ~onTimer:60
+  - skill{s=Lich_King_Hit} @self ~onDamaged
+
+Lich_King_Shadow:
+  Type: ARMOR_STAND
+  Pose:
+    Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=shadow_fx;n=false} @self ~onSpawn
+  - effect:particles{particle=smoke_large;amount=25;hS=0.6;vS=0.3;y=1;speed=0;forwardOffset=0;sideOffset=0}
+    @self ~onSpawn
+  - state{s=skill} @self ~onSpawn
+  - remove{delay=12} @self ~onSpawn
+
+Lich_King_Scythe:
+  Type: ARMOR_STAND
+  Pose:
+    Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=lich_king_scythe;n=false} @self ~onSpawn
+  - effect:sound{s=rms_skeleton_sounds:samus.lich_king_scythe_spin;volume=1;pitch=1}
+    @self ~onTimer:20
+
+Lich_King_Scythe_Back:
+  Type: ARMOR_STAND
+  Pose:
+    Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - remove{delay=80} @self ~onSpawn
+  - effect:sound{s=rms_skeleton_sounds:samus.lich_king_scythe_spin;volume=1;pitch=1}
+    @self ~onTimer:20
+
+Lich_King_Shadow_Tornado:
+  Type: ARMOR_STAND
+  Pose:
+    Head: 0,0,0
+  Options:
+    Marker: true
+    Small: false
+    Invisible: true
+    Invincible: true
+  Skills:
+  - model{mid=shadow_fx;n=false} @self ~onSpawn
+  - effect:sound{s=entity.illusioner.mirror_move;volume=1;pitch=0.9} @self ~onTimer:15
+# e2ff5d74a4388bf51bbd7b70abc99d65

@@ -1,0 +1,149 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Culinarian
+size: 54
+items:
+  craft:
+    material: CRAFTING_TABLE
+    slot: 3
+    display_name: '%imc_primary-color_c%Craft'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Craft the following items'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_culinarian_craft'
+      - '[sound] UI_BUTTON_CLICK'
+  smelt:
+    material: BLAST_FURNACE
+    slot: 4
+    display_name: '%imc_primary-color_c%Smelt'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Smelt to obtain the following'
+      - '%imc_dark-color_c%items to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_culinarian_smelt'
+      - '[sound] UI_BUTTON_CLICK'
+  eat:
+    material: APPLE
+    slot: 5
+    display_name: '%imc_primary-color_c%Eat'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Eat the following foods'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_culinarian_eat'
+      - '[sound] UI_BUTTON_CLICK'
+  smelt_cooked_beef:
+    material: cooked_beef
+    slot: 10
+    display_name: '%imc_primary-color_c%Steak'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Steak'
+  smelt_cooked_porkchop:
+    material: cooked_porkchop
+    slot: 11
+    display_name: '%imc_primary-color_c%Cooked Porkchop'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cooked Porkchop'
+  smelt_cooked_cod:
+    material: cooked_cod
+    slot: 12
+    display_name: '%imc_primary-color_c%Cooked Cod'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cooked Cod'
+  smelt_cooked_salmon:
+    material: cooked_salmon
+    slot: 13
+    display_name: '%imc_primary-color_c%Cooked Salmon'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cooked Salmon'
+  smelt_cooked_chicken:
+    material: cooked_chicken
+    slot: 14
+    display_name: '%imc_primary-color_c%Cooked Chicken'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cooked Chicken'
+  smelt_cooked_mutton:
+    material: cooked_mutton
+    slot: 15
+    display_name: '%imc_primary-color_c%Cooked Mutton'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cooked Mutton'
+  smelt_cooked_rabbit:
+    material: cooked_rabbit
+    slot: 16
+    display_name: '%imc_primary-color_c%Cooked Rabbit'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cooked Rabbit'
+  smelt_baked_potato:
+    material: baked_potato
+    slot: 19
+    display_name: '%imc_primary-color_c%Baked Potato'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Baked Potato'
+  smelt_popped_chorus_fruit:
+    material: popped_chorus_fruit
+    slot: 20
+    display_name: '%imc_primary-color_c%Popped Chorus Fruit'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Popped Chorus Fruit'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_culinarian_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: BLUE_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

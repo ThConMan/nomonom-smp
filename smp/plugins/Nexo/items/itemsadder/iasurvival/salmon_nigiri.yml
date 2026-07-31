@@ -1,0 +1,6 @@
+salmon_nigiri:
+  itemname: §cSalmon Nigiri
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/fishes/salmon_nigiri
+    custom_model_data: 1028

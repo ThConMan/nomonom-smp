@@ -1,0 +1,14 @@
+mini_fridge:
+  itemname: display-name-mini_fridge
+  material: PAPER
+  lore:
+  - lore-decorative-item
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        barriers: 0,0,0
+  Pack:
+    model: iadeco:mini_fridge
+    custom_model_data: 1112

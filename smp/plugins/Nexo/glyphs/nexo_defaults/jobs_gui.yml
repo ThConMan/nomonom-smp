@@ -1,0 +1,92 @@
+alchemist:
+  texture: interface/jobs/alchemist
+  ascent: 13
+  height: 256
+  code: 1800
+  char: ꐒ
+
+assassin:
+  texture: interface/jobs/assassin
+  ascent: 13
+  height: 256
+  code: 1801
+  char: ꐓ
+
+blacksmith:
+  texture: interface/jobs/blacksmith
+  ascent: 13
+  height: 256
+  code: 1802
+  char: ꐔ
+
+builder:
+  texture: interface/jobs/builder
+  ascent: 13
+  height: 256
+  code: 1803
+  char: ꐕ
+
+crafter:
+  texture: interface/jobs/crafter
+  ascent: 13
+  height: 256
+  code: 1804
+  char: ꐖ
+
+digger:
+  texture: interface/jobs/digger
+  ascent: 13
+  height: 256
+  code: 1805
+  char: ꐗ
+
+enchanter:
+  texture: interface/jobs/enchanter
+  ascent: 13
+  height: 256
+  code: 1806
+  char: ꐘ
+
+farmer:
+  texture: interface/jobs/farmer
+  ascent: 13
+  height: 256
+  code: 1807
+  char: ꐙ
+
+fisherman:
+  texture: interface/jobs/fisherman
+  ascent: 13
+  height: 256
+  code: 1808
+  char: ꐚ
+
+hunter:
+  texture: interface/jobs/hunter
+  ascent: 13
+  height: 256
+  code: 1809
+  char: ꐛ
+
+lumberjack:
+  texture: interface/jobs/lumberjack
+  ascent: 13
+  height: 256
+  code: 1810
+  char: ꐜ
+
+miner:
+  texture: interface/jobs/miner
+  ascent: 13
+  height: 256
+  code: 1811
+  char: ꐝ
+
+smelter:
+  texture: interface/jobs/smelter
+  ascent: 13
+  height: 256
+  code: 1812
+  char: ꐞ
+
+# e29ca71d0fac9b60335518fc145c3237

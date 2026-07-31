@@ -1,0 +1,321 @@
+####################################################################################################
+# VotingPlugin – Special Rewards Configuration (SpecialRewards.yml)
+#
+# Quick-disable rule:
+#   - To disable any reward section: set it to {} (single line) or remove it.
+#     Example: FirstVote: {}
+#
+# VoteMilestones (NEW / Recommended):
+#   - Each entry is evaluated on every vote.
+#   - Triggers:
+#       • At: <number|list|range>   (exact totals; supports ranges like 10..50 step 10)
+#       • Every: <number>          (fires at multiples: 10,20,30,...)
+#   - First vote note:
+#       • The first vote total is 1, so use At: 1 for “first vote”.
+#
+# Limits (optional, per milestone):
+#   - NONE (default)           : can trigger whenever it matches
+#   - WINDOW_DAY/WEEK/MONTH    : only once per calendar window
+#   - COOLDOWN                 : once per duration (30m, 12h, 2w, 1mo, 5000ms)
+#
+# Groups (optional):
+#   - Use Group: <id> on a milestone to put multiple milestones into a selection bucket.
+#   - Selection modes per group are configured under VoteMilestonesOptions.Groups:
+#       • ALL     : execute all matched milestones in that group
+#       • FIRST   : execute first matched milestone (file order)
+#       • HIGHEST : execute “best” matched milestone (prefers AT > EVERY; higher values win)
+####################################################################################################
+
+# -----------------------------
+# VoteMilestones global options
+# -----------------------------
+VoteMilestonesOptions:
+  Groups:
+    # Group id and setting
+    # Set group id on each votemilestone (default id is default if not set)
+    # Valid options:
+    #   ALL      - Allow giving all vote milestones
+    #   FIRST    - Only give the first vote milestone that is met
+    #   HIGHEST  - Only give the highest vote milestone that is met
+    Default: ALL
+    ExampleId: FIRST
+    progressive: HIGHEST
+
+
+# -----------------------------
+# VoteMilestones
+# -----------------------------
+VoteMilestones:
+
+  # First vote ever (all-time)
+  FirstVoteAllTime:
+    Enabled: true
+    Total: ALLTIME_VOTES
+    At: 1
+    Group: first
+    Rewards:
+      Commands:
+        - 'phoenixcrates giveKey vote_key %player% 2'
+        - 'cmi money give %player% 250'
+      Messages:
+        Player: '&5Your name is now written into Nomonom. &7Welcome, traveler. &8(+2 Vote Keys, +$250)'
+
+  # AllSitesToday — vote on all 4 sites in one day
+  AllSitesToday_NomonomBonus:
+    Enabled: true
+    Total: ALLSITES_TODAY
+    At: 4
+    Limit:
+      Type: WINDOW_DAY
+    Rewards:
+      Commands:
+        - 'phoenixcrates giveKey vote_key %player% 1'
+        - 'cmi money give %player% 250'
+      Messages:
+        Player: '&bAll beacons are lit. &7Nomonom grants you a bonus. &8(+1 Vote Key, +$250)'
+
+  # ─── Progressive All-Time Milestones ───
+
+  Milestone_10:
+    Enabled: true
+    Total: ALLTIME_VOTES
+    At: 10
+    Rewards:
+      Commands:
+        - 'phoenixcrates giveKey vote_key %player% 1'
+        - 'cmi money give %player% 500'
+      Messages:
+        Player: '&610 votes reached! &7The realm remembers your loyalty. &8(+1 Vote Key, +$500)'
+
+  Milestone_25:
+    Enabled: true
+    Total: ALLTIME_VOTES
+    At: 25
+    Rewards:
+      Commands:
+        - 'phoenixcrates giveKey vote_key %player% 2'
+        - 'cmi money give %player% 1000'
+      Messages:
+        Player: '&625 votes! &7Your dedication strengthens Nomonom. &8(+2 Vote Keys, +$1,000)'
+
+  Milestone_50:
+    Enabled: true
+    Total: ALLTIME_VOTES
+    At: 50
+    Group: progressive
+    Rewards:
+      Commands:
+        - 'phoenixcrates giveKey vote_key %player% 3'
+        - 'cmi money give %player% 2500'
+      Messages:
+        Player: '&650 votes! &7You are a pillar of the realm. &8(+3 Vote Keys, +$2,500)'
+
+  Milestone_100:
+    Enabled: true
+    Total: ALLTIME_VOTES
+    At: 100
+    Group: progressive
+    Rewards:
+      Commands:
+        - 'phoenixcrates giveKey vote_key %player% 5'
+        - 'cmi money give %player% 5000'
+      Messages:
+        Player: '&6&l100 votes! &7Nomonom is forever in your debt. &8(+5 Vote Keys, +$5,000)'
+
+  # Recurring milestone — every 50 votes after 100
+  Milestone_Every50:
+    Enabled: true
+    Total: ALLTIME_VOTES
+    Every: 50
+    Group: progressive
+    Rewards:
+      Commands:
+        - 'phoenixcrates giveKey vote_key %player% 3'
+        - 'cmi money give %player% 2500'
+      Messages:
+        Player: '&6Another 50 votes! &7The realm continues to reward your faith. &8(+3 Vote Keys, +$2,500)'
+
+
+# -----------------------------
+# Vote party configuration
+# -----------------------------
+VoteParty:
+  # Whether or not vote party is enabled
+  Enabled: false
+  # Number of votes required to give rewards
+  VotesRequired: 20
+  # Increase the amount of votes required on each vote party reached
+  #IncreaseVotesRequired: 10
+  # If true, players who did not vote to reach the votes required will
+  # receive the reward
+  # If false, only players who voted get rewards
+  GiveAllPlayers: false
+  # If true, give online players the vote party reward
+  # Can also use RewardType: ONLINE if you wanted
+  GiveOnlinePlayersOnly: true
+  # If true, the vote count will reset each day
+  ResetEachDay: false
+  # If true, the vote count will reset each week
+  ResetWeekly: false
+  # Reset at the end of the month
+  ResetMonthly: false
+  # If true, will give voteparty only once per day
+  OnlyOncePerDay: false
+  # If true, will give voteparty once per week only
+  OnlyOncePerWeek: false
+  # Reset extra votes weekly
+  ResetExtraVotesWeekly: false
+  # Reset extra votes monthly
+  ResetExtraVotesMonthly: false
+  # Count votes from /av vote?
+  CountFakeVotes: true
+  # Number of user votes that apply to vote party total the user needs to get rewards
+  UserVotesRequired: 0
+  # Count offline votes
+  CountOfflineVotes: true
+  # Broadcast when vote party reached
+  Broadcast: '&cReached the vote party amount!'
+  # Send a broadcast at a certain number of votes left and send a vote reminder
+  VoteReminderBroadcast: '%votesrequired% left to go, go vote!'
+  # Send vote reminder at number of votes to go
+  VoteReminderAtVotes: []
+  # List of commands to execute, these only execute once.
+  # %player% does not work here
+  GlobalCommands: []
+  # List of commands to execute once (picks one randomly)
+  # Only runs once, %player% does not work here
+  GlobalRandomCommand: []
+  # Rewards to give per player
+  Rewards:
+    # Uncomment below for online players to be rewarded only
+    #RewardType: ONLINE
+    Commands:
+    - say %player%
+    Items:
+      DIAMOND:
+        Material: 'DIAMOND'
+        Amount: 1
+
+
+# -----------------------------
+# Vote streak rewards (NEW)
+# -----------------------------
+VoteStreaks:
+  # Id name, data is stored under this name
+  # On proxy setups keep different for each server unless you want one global streak/reward
+  Daily3Votes:
+    Type: DAILY
+    Enabled: false
+    Requirements:
+      Amount: 3
+      VotesRequired: 3
+    AllowMissedAmount: 1
+    AllowMissedPeriod: 7
+    Rewards:
+      Commands:
+      - say test
+
+
+# -----------------------------
+# Legacy vote rewards (DEPRECATED)
+# -----------------------------
+# These are fully disabled and kept only for reference.
+# VoteMilestones above replace all of this functionality.
+
+FirstVote: {}
+
+FirstVoteToday: {}
+
+AllSites: {}
+
+OnlyOneCumulative: false
+
+Cumulative:
+  '20':
+    Enabled: false
+    TotalToUse: AllTime
+    Rewards:
+      Messages:
+        Player: '&aYou got %cumulative% cumulative votes!'
+
+ResetMilestonesMonthly: false
+
+MileStones:
+  '20':
+    Enabled: false
+    Rewards:
+      Messages:
+        Player: '&aYou got %milestone% milestone votes!'
+
+VoteStreak:
+  Day:
+    '2':
+      Enabled: false
+      Rewards:
+        Messages:
+          Player: "&aYou voted for %Streak% %Type%'s in a row!"
+  Week:
+    '2':
+      Enabled: false
+      Rewards:
+        Messages:
+          Player: "&aYou voted for %Streak% %Type%'s in a row!"
+  Month:
+    '2':
+      Enabled: false
+      Rewards:
+        Messages:
+          Player: "&aYou voted for %Streak% %Type%'s in a row!"
+  Requirement:
+    UsePercentage: false
+    Day: 50
+    Week: 50
+    Month: 50
+
+
+# -----------------------------
+# Top voter awards
+# -----------------------------
+EnableMonthlyAwards: true
+
+MonthlyAwards:
+  1:
+    Rewards:
+      Commands:
+        - 'phoenixcrates giveKey vote_key %player% 5'
+      Messages:
+        Player: '&6You are the Ascended Champion of this month. &8(+5 Vote Keys)'
+  2:
+    Rewards:
+      Commands:
+        - 'phoenixcrates giveKey vote_key %player% 3'
+      Messages:
+        Player: '&eYou claimed 2nd place this month. &8(+3 Vote Keys)'
+  3:
+    Rewards:
+      Commands:
+        - 'phoenixcrates giveKey vote_key %player% 2'
+      Messages:
+        Player: '&fYou claimed 3rd place this month. &8(+2 Vote Keys)'
+
+EnableWeeklyAwards: false
+WeeklyAwards:
+  1:
+    Rewards:
+      Messages:
+        Player: '&aYou came in first place in %TopVoter%!'
+  2:
+    Rewards:
+      Messages:
+        Player: '&aYou came in second place in %TopVoter%!'
+
+EnableDailyRewards: false
+DailyAwards:
+  1:
+    Rewards:
+      Messages:
+        Player: '&aYou came in first place in %TopVoter%!'
+  2:
+    Rewards:
+      Messages:
+        Player: '&aYou came in second place in %TopVoter%!'

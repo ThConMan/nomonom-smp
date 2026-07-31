@@ -1,0 +1,33 @@
+blank_disc:
+  itemname: display-name-blank_disc
+  material: STICK
+  lore:
+  - lore-1-blank_disc
+  - lore-2-blank_disc
+  Pack:
+    texture: iamusic:item/blank_disc
+    custom_model_data: 1012
+music_disc_electric_keys:
+  itemname: display-name-music_disc_electric_keys
+  material: STICK
+  lore:
+  - '&7Electric keys'
+  Pack:
+    texture: iamusic:item/music_disc_electric_keys
+    custom_model_data: 1013
+music_disc_cdk_sunday:
+  itemname: display-name-music_disc_cdk_sunday
+  material: STICK
+  lore:
+  - '&7Cdk - Sunday'
+  Pack:
+    texture: iamusic:item/music_disc_cdk_sunday
+    custom_model_data: 1014
+music_disc_vidian_aether_theories:
+  itemname: display-name-music_disc_vidian_aether_theories
+  material: STICK
+  lore:
+  - '&7Vidian - Aether Theories'
+  Pack:
+    texture: iamusic:item/music_disc_vidian_aether_theories
+    custom_model_data: 1015

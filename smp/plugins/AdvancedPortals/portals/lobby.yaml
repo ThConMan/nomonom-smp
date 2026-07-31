@@ -1,0 +1,17 @@
+args:
+  bungee:
+  - Lobby
+  name:
+  - lobby
+  triggerblock:
+  - WATER
+maxLoc:
+  posX: 9
+  posY: 83
+  posZ: 2
+  worldName: void
+minLoc:
+  posX: 9
+  posY: 79
+  posZ: -2
+  worldName: void

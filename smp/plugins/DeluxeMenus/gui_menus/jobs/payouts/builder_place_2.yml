@@ -1,0 +1,347 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Builder
+size: 54
+items:
+  place:
+    material: BRICKS
+    slot: 3
+    display_name: '%imc_primary-color_c%Place'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Place the following blocks'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_builder_place'
+      - '[sound] UI_BUTTON_CLICK'
+  break:
+    material: GRASS_BLOCK
+    slot: 5
+    display_name: '%imc_primary-color_c%Break'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Break the following blocks'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_builder_break'
+      - '[sound] UI_BUTTON_CLICK'
+  place_hay_block:
+    material: hay_block
+    slot: 10
+    display_name: '%imc_primary-color_c%Hay Bale'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Hay Bale'
+  place_end_stone_bricks:
+    material: end_stone_bricks
+    slot: 11
+    display_name: '%imc_primary-color_c%End Stone Bricks'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%End Stone Bricks'
+  place_crimson_planks:
+    material: crimson_planks
+    slot: 12
+    display_name: '%imc_primary-color_c%Crimson Planks'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Crimson Planks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Crimson Hyphae'
+      - '%imc_dark-color_c% • %imc_text-color_c%Crimson Nylium'
+  place_warped_planks:
+    material: warped_planks
+    slot: 13
+    display_name: '%imc_primary-color_c%Warped Planks'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Warped Planks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Warped Hyphae'
+      - '%imc_dark-color_c% • %imc_text-color_c%Warped Nylium'
+  place_polished_blackstone:
+    material: polished_blackstone
+    slot: 14
+    display_name: '%imc_primary-color_c%Polished Blackstone'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Blackstone'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Blackstone Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Blackstone Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chiseled Polished Blackstone'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Blackstone Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Blackstone Brick Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Blackstone Brick Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cracked Polished Blackstone Bricks'
+  place_white_concrete:
+    material: white_concrete
+    slot: 15
+    display_name: '%imc_primary-color_c%Concretes'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%White Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Light Gray Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Gray Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Black Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Brown Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Red Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Orange Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Yellow Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Lime Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Green Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cyan Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Light Blue Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Blue Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Purple Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Magenta Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pink Concrete'
+  place_amethyst_block:
+    material: amethyst_block
+    slot: 16
+    display_name: '%imc_primary-color_c%Block of Amethyst'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Block of Amethyst'
+  place_copper_block:
+    material: copper_block
+    slot: 19
+    display_name: '%imc_primary-color_c%Block of Copper'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Block of Copper'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cut Copper'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cut Copper Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chiseled Copper'
+      - '%imc_dark-color_c% • %imc_text-color_c%Copper Door'
+      - '%imc_dark-color_c% • %imc_text-color_c%Copper Grate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Copper Trapdoor'
+  place_cobbled_deepslate:
+    material: cobbled_deepslate
+    slot: 20
+    display_name: '%imc_primary-color_c%Cobbled Deepslate'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cobbled Deepslate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cobbled Deepslate Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cobbled Deepslate Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cobbled Deepslate Wall'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Deepslate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Deepslate Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Deepslate Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Deepslate Wall'
+      - '%imc_dark-color_c% • %imc_text-color_c%Deepslate Tiles'
+      - '%imc_dark-color_c% • %imc_text-color_c%Deepslate Tile Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Deepslate Tile Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Deepslate Tile Wall'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chiseled Deepslate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Deepslate Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Deepslate Brick Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Deepslate Brick Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Deepslate Brick Wall'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cracked Deepslate Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chiseled Deepslate'
+  place_candle:
+    material: candle
+    slot: 21
+    display_name: '%imc_primary-color_c%Candle'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%White Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Light Gray Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Gray Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Black Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Brown Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Red Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Orange Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Yellow Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Lime Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Green Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cyan Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Light Blue Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Blue Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Purple Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Magenta Candle'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pink Candle'
+  place_mangrove_planks:
+    material: mangrove_planks
+    slot: 22
+    display_name: '%imc_primary-color_c%Mangrove Wood'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Mangrove Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Planks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Fence'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Fence Gate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Door'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Trapdoor'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Leaves'
+  place_mud_bricks:
+    material: mud_bricks
+    slot: 23
+    display_name: '%imc_primary-color_c%Mud Bricks'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mud Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mud Brick Stairs'
+  place_cherry_planks:
+    material: cherry_planks
+    slot: 24
+    display_name: '%imc_primary-color_c%Cherry Wood'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Cherry Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cherry Planks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cherry Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cherry Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cherry Fence'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cherry Fence Gate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cherry Door'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cherry Trapdoor'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cherry Leaves'
+  place_bamboo_planks:
+    material: bamboo_planks
+    slot: 25
+    display_name: '%imc_primary-color_c%Bamboo'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bamboo Planks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bamboo Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bamboo Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bamboo Fence'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bamboo Fence Gate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bamboo Door'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bamboo Trapdoor'
+  place_dried_kelp_block:
+    material: dried_kelp_block
+    slot: 28
+    display_name: '%imc_primary-color_c%Dried Kelp Block'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dried Kelp Block'
+  place_glowstone:
+    material: glowstone
+    slot: 29
+    display_name: '%imc_primary-color_c%Light Blocks'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Glowstone'
+      - '%imc_dark-color_c% • %imc_text-color_c%Sea Lantern'
+      - '%imc_dark-color_c% • %imc_text-color_c%Redstone Lamp'
+      - '%imc_dark-color_c% • %imc_text-color_c%Verdant Froglight'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pearlescent Froglight'
+      - '%imc_dark-color_c% • %imc_text-color_c%Ochre Froglight'
+  place_tuff_bricks:
+    material: tuff_bricks
+    slot: 30
+    display_name: '%imc_primary-color_c%Tuff'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Wall'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Brick Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Brick Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tuff Brick Wall'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Tuff Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Tuff Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Tuff Wall'
+  place_pale_oak_planks:
+    material: pale_oak_planks
+    slot: 31
+    display_name: '%imc_primary-color_c%Pale Oak Wood'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Planks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Fence'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Fence Gate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Door'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Trapdoor'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Leaves'
+  place_resin_bricks:
+    material: resin_bricks
+    slot: 32
+    display_name: '%imc_primary-color_c%Resin Bricks'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Resin Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Resin Brick Slab'
+      - '%imc_dark-color_c% • %imc_text-color_c%Resin Brick Stairs'
+      - '%imc_dark-color_c% • %imc_text-color_c%Resin Brick Wall'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chiseled Resin Bricks'
+  previous-page:
+    material: ARROW
+    slot: 48
+    display_name: '%imc_primary-color_c%Previous Page'
+    click_commands:
+      - '[openguimenu] jobs_payouts_builder_place'
+      - '[sound] ITEM_BOOK_PAGE_TURN'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_builder_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: GREEN_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

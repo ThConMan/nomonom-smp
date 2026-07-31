@@ -1,0 +1,6 @@
+dough:
+  itemname: Gale Stone
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/food/various/dough
+    custom_model_data: 1005

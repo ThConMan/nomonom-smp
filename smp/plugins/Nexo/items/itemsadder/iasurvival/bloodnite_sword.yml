@@ -1,0 +1,6 @@
+bloodnite_sword:
+  itemname: display-name-bloodnite_sword
+  material: DIAMOND_SWORD
+  Pack:
+    texture: iasurvival:item/swords/bloodnite_sword
+    custom_model_data: 1002

@@ -1,0 +1,142 @@
+ero_loot_pouch_rpg_item_vol_6_1:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:1.png
+    custom_model_data: 1172
+  itemname: <white>Loot Pouch RPG Item  1
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_10:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:10.png
+    custom_model_data: 1173
+  itemname: <white>Loot Pouch RPG Item  10
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_11:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:11.png
+    custom_model_data: 1174
+  itemname: <white>Loot Pouch RPG Item  11
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_12:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:12.png
+    custom_model_data: 1175
+  itemname: <white>Loot Pouch RPG Item  12
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_13:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:13.png
+    custom_model_data: 1176
+  itemname: <white>Loot Pouch RPG Item  13
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_14:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:14.png
+    custom_model_data: 1177
+  itemname: <white>Loot Pouch RPG Item  14
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_15:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:15.png
+    custom_model_data: 1178
+  itemname: <white>Loot Pouch RPG Item  15
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_16:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:16.png
+    custom_model_data: 1179
+  itemname: <white>Loot Pouch RPG Item  16
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_17:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:17.png
+    custom_model_data: 1180
+  itemname: <white>Loot Pouch RPG Item  17
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_18:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:18.png
+    custom_model_data: 1181
+  itemname: <white>Loot Pouch RPG Item  18
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_19:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:19.png
+    custom_model_data: 1182
+  itemname: <white>Loot Pouch RPG Item  19
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_2:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:2.png
+    custom_model_data: 1183
+  itemname: <white>Loot Pouch RPG Item  2
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_20:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:20.png
+    custom_model_data: 1184
+  itemname: <white>Loot Pouch RPG Item  20
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_3:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:3.png
+    custom_model_data: 1185
+  itemname: <white>Loot Pouch RPG Item  3
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_4:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:4.png
+    custom_model_data: 1186
+  itemname: <white>Loot Pouch RPG Item  4
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_5:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:5.png
+    custom_model_data: 1187
+  itemname: <white>Loot Pouch RPG Item  5
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_6:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:6.png
+    custom_model_data: 1188
+  itemname: <white>Loot Pouch RPG Item  6
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_7:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:7.png
+    custom_model_data: 1189
+  itemname: <white>Loot Pouch RPG Item  7
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_8:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:8.png
+    custom_model_data: 1190
+  itemname: <white>Loot Pouch RPG Item  8
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+ero_loot_pouch_rpg_item_vol_6_9:
+  Pack:
+    texture: ero_loot_pouch_rpg_item_vol_6:9.png
+    custom_model_data: 1191
+  itemname: <white>Loot Pouch RPG Item  9
+  material: PAPER
+  permission: ero_loot_pouch_rpg_item_vol_6.use
+
+# dc493b6ffcd8645e95d9aff063650691

@@ -1,0 +1,6 @@
+end_ingot:
+  itemname: display-name-end_ingot
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/end_ingot
+    custom_model_data: 1008

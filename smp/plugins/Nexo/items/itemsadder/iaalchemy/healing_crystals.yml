@@ -1,0 +1,8 @@
+healing_crystals:
+  itemname: display-name-healing_crystals
+  material: IRON_SWORD
+  ItemFlags:
+  - HIDE_ATTRIBUTES
+  Pack:
+    texture: iaalchemy:item/healing_crystals
+    custom_model_data: 1000

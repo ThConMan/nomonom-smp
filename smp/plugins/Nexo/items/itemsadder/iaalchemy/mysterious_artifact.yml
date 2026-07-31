@@ -1,0 +1,6 @@
+mysterious_artifact:
+  itemname: display-name-mysterious_artifact
+  material: STICK
+  Pack:
+    model: iaalchemy:item/mysterious_artifact
+    custom_model_data: 1054

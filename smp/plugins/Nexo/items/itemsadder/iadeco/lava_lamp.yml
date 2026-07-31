@@ -1,0 +1,18 @@
+lava_lamp:
+  itemname: display-name-lava_lamp
+  material: PAPER
+  lore:
+  - lore-decorative-item
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      lights:
+        lights:
+        - 0,1.0,0 7
+  Pack:
+    model: iadeco:lava_lamp
+    custom_model_data: 1110

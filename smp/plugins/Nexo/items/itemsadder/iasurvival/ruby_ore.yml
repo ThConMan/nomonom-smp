@@ -1,0 +1,13 @@
+ruby_ore:
+  itemname: display-name-ruby_ore
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: ruby_ore
+      hardness: 2.0
+      custom_variation: 25
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/ores/ruby_ore
+    custom_model_data: 1135

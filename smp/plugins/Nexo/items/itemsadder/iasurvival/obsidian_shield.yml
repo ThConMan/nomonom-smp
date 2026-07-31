@@ -1,0 +1,25 @@
+obsidian_shield:
+  itemname: display-name-obsidian_shield
+  material: SHIELD
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  AttributeModifiers:
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 66406b97-607c-4a62-9045-94d73e121561
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: OFFHAND
+    uuid: ec940880-4f23-4846-8e01-2dfac9f9a408
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    model: iasurvival:item/shields/obsidian_shield
+    blocking_model: iasurvival:item/shields/obsidian_shield_blocking
+    custom_model_data: 1008

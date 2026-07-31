@@ -1,0 +1,8 @@
+ufo_toy:
+  itemname: display-name-ufo_toy
+  material: ENDER_EYE
+  lore:
+  - lore-1-ufo_toy
+  Pack:
+    model: iavehicles:item/ufo_toy
+    custom_model_data: 1000

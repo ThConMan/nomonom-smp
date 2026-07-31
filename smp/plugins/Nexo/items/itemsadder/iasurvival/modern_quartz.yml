@@ -1,0 +1,13 @@
+modern_quartz:
+  itemname: display-name-modern_quartz
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: modern_quartz
+      hardness: 2.0
+      custom_variation: 16
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/decorative/modern_quartz
+    custom_model_data: 1113

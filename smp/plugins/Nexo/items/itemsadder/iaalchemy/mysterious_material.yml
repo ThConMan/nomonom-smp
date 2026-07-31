@@ -1,0 +1,6 @@
+mysterious_material:
+  itemname: display-name-mysterious_material
+  material: IRON_INGOT
+  Pack:
+    texture: iaalchemy:item/mysterious_material
+    custom_model_data: 1012

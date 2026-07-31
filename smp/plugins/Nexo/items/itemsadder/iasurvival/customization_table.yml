@@ -1,0 +1,19 @@
+customization_table:
+  itemname: display-name-customization_table
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: customization_table
+      hardness: 2.0
+      custom_variation: 10
+  Pack:
+    parent_model: block/cube_all
+    textures:
+    - iasurvival:block/machinery/customization_table/bottom
+    - iasurvival:block/machinery/customization_table/side
+    - iasurvival:block/machinery/customization_table/front
+    - iasurvival:block/machinery/customization_table/front
+    - iasurvival:block/machinery/customization_table/top
+    - iasurvival:block/machinery/customization_table/side
+    custom_model_data: 1048

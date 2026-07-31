@@ -1,0 +1,6 @@
+A:
+  base:
+    material: IRON_HORSE_ARMOR
+    weapon-damage: 7.0
+    skill-damage: 9.0
+    physical-damage: 1.0

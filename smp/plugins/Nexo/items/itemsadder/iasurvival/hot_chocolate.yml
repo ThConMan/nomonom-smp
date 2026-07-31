@@ -1,0 +1,8 @@
+hot_chocolate:
+  itemname: display-name-hot_chocolate
+  material: POTION
+  ItemFlags:
+  - HIDE_POTION_EFFECTS
+  Pack:
+    texture: iasurvival:item/thirst/hot_chocolate
+    custom_model_data: 1003

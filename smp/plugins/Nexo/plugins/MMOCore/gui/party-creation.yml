@@ -1,0 +1,23 @@
+
+# GUI display name
+name: '<shift:-33><glyph:vs_mmocorepackgui_party_creation_view_top><shift:-226><glyph:vs_mmocorepackgui_party_creation_view_bottom>'
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+    create:
+        slots: [18,19,20,21]
+        item: PAPER
+        function: 'create'
+        custom-model-data: 11181
+        name: '&aCreate a party!'
+        lore: {}
+    back:
+        slots: [23,24,25,26]
+        item: PAPER
+        custom-model-data: 11181
+        function: back
+        name: '&aBack'
+        lore: {}

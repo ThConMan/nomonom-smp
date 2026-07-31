@@ -1,0 +1,14 @@
+firesword_sword:
+  itemname: display-name-firesword_sword
+  material: DIAMOND_SWORD
+  AttributeModifiers:
+  - amount: 4.5
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 319e3d6b-d0c5-4292-80bd-5e4fcfb34f93
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    model: iasurvival:item/swords/firesword_sword
+    custom_model_data: 1007

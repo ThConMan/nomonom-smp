@@ -1,0 +1,192 @@
+icon_left_gray:
+  itemname: display-name-icon_left_gray
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_left_gray
+    custom_model_data: 1076
+icon_left_blue:
+  itemname: display-name-icon_left_blue
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_left_blue
+    custom_model_data: 1077
+icon_right_gray:
+  itemname: display-name-icon_right_gray
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_right_gray
+    custom_model_data: 1078
+icon_right_blue:
+  itemname: display-name-icon_right_blue
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_right_blue
+    custom_model_data: 1079
+icon_up_gray:
+  itemname: display-name-icon_up_gray
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_up_gray
+    custom_model_data: 1080
+icon_up_blue:
+  itemname: display-name-icon_up_blue
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_up_blue
+    custom_model_data: 1081
+icon_down_gray:
+  itemname: display-name-icon_down_gray
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_down_gray
+    custom_model_data: 1082
+icon_down_blue:
+  itemname: display-name-icon_down_blue
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_down_blue
+    custom_model_data: 1083
+icon_next_white:
+  itemname: display-name-icon_next_white
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_next_white
+    custom_model_data: 1084
+icon_next_orange:
+  itemname: display-name-icon_next_orange
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_next_orange
+    custom_model_data: 1085
+icon_back_white:
+  itemname: display-name-icon_back_white
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_back_white
+    custom_model_data: 1086
+icon_back_orange:
+  itemname: display-name-icon_back_orange
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_back_orange
+    custom_model_data: 1087
+icon_cancel:
+  itemname: display-name-icon_cancel
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_cancel
+    custom_model_data: 1088
+icon_confirm:
+  itemname: display-name-icon_confirm
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_confirm
+    custom_model_data: 1089
+icon_lock:
+  itemname: display-name-icon_lock
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_lock
+    custom_model_data: 1090
+icon_unlock:
+  itemname: display-name-icon_unlock
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_unlock
+    custom_model_data: 1091
+icon_web:
+  itemname: display-name-icon_web
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_web
+    custom_model_data: 1092
+icon_ender_chest:
+  itemname: display-name-icon_ender_chest
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_ender_chest
+    custom_model_data: 1093
+icon_refresh:
+  itemname: display-name-icon_refresh
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_refresh
+    custom_model_data: 1094
+icon_time_day:
+  itemname: display-name-icon_time_day
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_time_day
+    custom_model_data: 1095
+icon_time_midnight:
+  itemname: display-name-icon_time_midnight
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_time_midnight
+    custom_model_data: 1096
+icon_time_night:
+  itemname: display-name-icon_time_night
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_time_night
+    custom_model_data: 1097
+icon_time_noon:
+  itemname: display-name-icon_time_noon
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_time_noon
+    custom_model_data: 1098
+icon_time_sunrise:
+  itemname: display-name-icon_time_sunrise
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_time_sunrise
+    custom_model_data: 1099
+icon_time_sunset:
+  itemname: display-name-icon_time_sunset
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_time_sunset
+    custom_model_data: 1100
+icon_toggle_off:
+  itemname: display-name-icon_toggle_off
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_toggle_off
+    custom_model_data: 1101
+icon_toggle_on:
+  itemname: display-name-icon_toggle_on
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_toggle_on
+    custom_model_data: 1102
+icon_arrow_chest:
+  itemname: display-name-icon_arrow_chest
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_arrow_chest
+    custom_model_data: 1103
+icon_plus:
+  itemname: display-name-icon_plus
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_plus
+    custom_model_data: 1104
+icon_color_picker:
+  itemname: display-name-icon_color_picker
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_color_picker
+    custom_model_data: 1105
+icon_comment:
+  itemname: display-name-icon_comment
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_comment
+    custom_model_data: 1106
+icon_search:
+  itemname: display-name-icon_search
+  material: PAPER
+  Pack:
+    texture: mcicons:item/icon_search
+    custom_model_data: 1107

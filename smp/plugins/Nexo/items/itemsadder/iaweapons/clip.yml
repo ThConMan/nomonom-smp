@@ -1,0 +1,10 @@
+clip:
+  itemname: display-name-clip
+  material: STICK
+  lore:
+  - lore-1-clip
+  - lore-2-clip
+  - lore-3-clip
+  Pack:
+    texture: iaweapons:clip
+    custom_model_data: 1001

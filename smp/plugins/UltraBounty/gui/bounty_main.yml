@@ -1,0 +1,91 @@
+title: "ʙᴏᴜɴᴛʏ ʜᴜɴᴛᴇʀ (Page %page%)"
+size: 54
+items:
+  bounty_entry:
+    material: PLAYER_HEAD
+    name: "&#FF6B35&l%player_name%"
+    lore:
+      - "&8Target Information"
+      - ""
+      - "&#FF6B35♦ &fBounty: &#FF0000$%amount%"
+      - "&#FF6B35♦ &fSet by: &f%creator%"
+      - ""
+      - "&e➡ &l&nWANTED&e Target"
+    skull_owner: "%player_name%"
+    slots: [0-44]
+  refresh:
+    material: SKELETON_SKULL
+    name: "&#34eb9b&lʀᴇꜰʀᴇꜱʜ ʙᴏᴜɴᴛɪᴇꜱ"
+    lore:
+      - "&8Action"
+      - ""
+      - "&fClick here to refresh"
+      - "&fthe bounty listings!"
+      - ""
+      - "&7Set a bounty using this:"
+      - "&7/bounty add (player) (amount)"
+      - ""
+      - "&e➡ &l&nCLICK&e to Refresh"
+    slot: 49
+  next_page:
+    material: ARROW
+    name: "&#34eb9b&lɴᴇxᴛ ᴘᴀɢᴇ →"
+    lore:
+      - "&8Navigation"
+      - ""
+      - "&fGo forward to view"
+      - "&fmore bounty targets!"
+      - ""
+      - "&e➡ &l&nCLICK&e to go Forward"
+    slot: 50
+  previous_page:
+    material: ARROW
+    name: "&#ff0000&l← ᴘʀᴇᴠɪᴏᴜꜱ ᴘᴀɢᴇ"
+    lore:
+      - "&8Navigation"
+      - ""
+      - "&fGo back to view"
+      - "&fprevious bounty targets!"
+      - ""
+      - "&e➡ &l&nCLICK&e to go Back"
+    slot: 48
+  search:
+    material: OAK_SIGN
+    name: "&#34eb9b&lꜱᴇᴀʀᴄʜ ᴛᴀʀɢᴇᴛꜱ"
+    lore:
+      - "&8Action"
+      - ""
+      - "&fClick here to search for"
+      - "&fspecific bounty targets!"
+      - ""
+      - "&e➡ &l&nCLICK&e to Search"
+    slot: 45
+  sort:
+    material: HOPPER
+    title: "&#34eb9b&lꜱᴏʀᴛ ᴏᴘᴛɪᴏɴꜱ"
+    selected_prefix: "&#34eb9b• "
+    unselected_prefix: "&f• "
+    options:
+      AMOUNT: "Amount"
+      RECENTLY_SET: "Recently Set"
+      ALL: "All"
+    slot: 46
+  active_bounties:
+    material: CHEST
+    name: "&#FBC308&lʏᴏᴜʀ ᴀᴄᴛɪᴠᴇ ʙᴏᴜɴᴛɪᴇꜱ"
+    lore:
+      - "&8Your Investments"
+      - ""
+      - "&#FBC308♦ &fTotal Active: &#FBC308$%total_bounty%"
+      - ""
+      - "&fClick to view your active bounties"
+      - ""
+      - "&e➡ &l&nCLICK&e to View"
+    slot: 52
+  fill:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+    slots:
+      - 47
+      - 51
+      - 53

@@ -1,0 +1,6 @@
+peeled_potato:
+  itemname: display-name-peeled_potato
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/peeled_potato
+    custom_model_data: 1023

@@ -1,0 +1,15 @@
+monitor:
+  itemname: display-name-monitor
+  material: PAPER
+  lore:
+  - lore-decorative-item
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+  Pack:
+    model: iadeco:monitor
+    custom_model_data: 1116

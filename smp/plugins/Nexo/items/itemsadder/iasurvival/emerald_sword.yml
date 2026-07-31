@@ -1,0 +1,21 @@
+emerald_sword:
+  itemname: display-name-emerald_sword
+  material: DIAMOND_SWORD
+  AttributeModifiers:
+  - amount: 4.5
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 5d5df503-b006-4046-806b-3dc01a72ce9d
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.7
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 7c876970-f742-4b19-afbd-9e589c151c94
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iasurvival:item/swords/emerald_sword
+    custom_model_data: 1005

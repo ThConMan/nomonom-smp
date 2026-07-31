@@ -1,0 +1,6 @@
+tomato:
+  itemname: display-name-tomato
+  material: APPLE
+  Pack:
+    texture: iasurvival:item/food/vegetable_and_fruit/tomato
+    custom_model_data: 1006

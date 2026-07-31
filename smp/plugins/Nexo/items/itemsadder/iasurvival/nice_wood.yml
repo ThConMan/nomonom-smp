@@ -1,0 +1,13 @@
+nice_wood:
+  itemname: display-name-nice_wood
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: nice_wood
+      hardness: 2.0
+      custom_variation: 22
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/decorative/nice_wood
+    custom_model_data: 1121

@@ -1,0 +1,165 @@
+# Guilds v2.1.0 made by [itz_leoo].
+# Dependencies: [PixelLibs].
+# SoftDependencies: [BedWars1058, BedWarsProxy, PlaceholderAPI, Vault].
+# Read the wiki for more info: https://wiki.pixelstudios.dev/guilds
+# Join my discord for support: https://pixelstudios.dev/discord
+
+database:
+  type: sqlite
+  host: localhost
+  port: 3306
+  name: guilds
+  username: "REPLACE_ME_DB_USER"
+  password: ''
+  ssl: true
+  driver-class: ''
+  tables:
+    guilds: guilds
+    players: players
+    ranks: ranks
+  mongo-uri: mongodb://localhost:27017
+  auth-database: ''
+
+redis:
+  host: localhost
+  port: 6379
+  username: "REPLACE_ME_DB_USER"
+  password: ''
+
+guilds:
+  update-checker: true
+  settings:
+    friendly-fire:
+      enabled: true
+    bungeecord:
+      enabled: false
+      refresh: 10
+      join-delay: 50
+    
+    debug: false
+    
+    guild-players:
+      # Balanced: prevents mega-guild monopoly but still feels active.
+      max-members: 30
+      online:
+        symbol: ●
+        color: '&a'
+      offline:
+        symbol: ●
+        color: '&c'
+      # Keep GUI lists clean; don’t shove long LP prefixes in here.
+      format: '{playerName}'
+    
+    guild-name:
+      # Slightly more freedom for names players actually like.
+      max-name-length: 14
+      # Allow underscores + dashes (common for guild names).
+      chars: ^[a-zA-Z0-9_-]*$
+    
+    guild-tag:
+      format: '{guildTagColor}[{guildTag}]'
+      uppercase: false
+      default-max-length: 6
+      disable-color-system: false
+      tag:
+      - NONE:None
+      - GRAY:Gray
+      - DARK_AQUA:Dark Aqua
+      - DARK_GREEN:Dark Green
+      - YELLOW:Yellow
+      - ORANGE:Orange
+      - DARK_RED:Dark Red
+      - RED:Red
+      - GREEN:Green
+      - AQUA:Aqua
+      - DARK_BLUE:Dark Blue
+      - BLUE:Blue
+      - PINK:Pink
+      - PURPLE:Purple
+      - WHITE:White
+      - DARK_GRAY:Dark Gray
+      - BLACK:Black
+      orange-tag: Orange
+    
+    guild-rank-tag:
+      format: '{rankTagColor}[{rankTag}]'
+    
+    guild-level:
+      enabled: true
+      # SMP-friendly: steady progress without kill-farming breaking balance.
+      # If you want PvE-only XP, we can swap to mob kills only (depends on plugin support).
+      kill-reward: guild addxp {guildName} 2
+      final-kill-reward: guild addxp {guildName} 2
+      # BedWars-oriented hooks: set to 0 so they never matter on SMP.
+      bed-destroy-reward: guild addxp {guildName} 0
+      win-reward: guild addxp {guildName} 0
+    
+    guild-finder:
+      show:
+        hide-not-shown-guilds: true
+      sorting:
+        symbol:
+          selected: '&a➠'
+          not-selected: '&7 '
+        # These ranges now match the 30 cap (players won’t see goofy categories).
+        sizes:
+        - 1-10
+        - 11-20
+        - 21-30
+        - '31'
+    
+    guild-menu:
+      set-page-in-title: true
+    
+    progress-bar:
+      char: '|'
+      chars-count: 40
+      locked-color: '&7'
+      unlocked-color: '&6'
+    
+    guild-time:
+      format: yyyy-MM-dd HH:mm z
+    
+    guild-invite:
+      # 1 minute feels bad. 5 is the sweet spot.
+      time-in-minutes: 5
+    
+    guild-party:
+      party-command: party invite {player}
+    
+    guild-chat:
+      mute-time: 10
+      admin-spy:
+        enabled: true
+    
+    guild-kick:
+      require-reason: true
+  
+  commands:
+    guild:
+      aliases:
+      - guilds
+      - g
+      - clan
+      - c
+      - clans
+      achievements:
+        aliases:
+        - achievementmenu
+      disband:
+        confirm: Confirm
+    
+    guildadmin:
+      aliases:
+      - gadmin
+      - guildsadmin
+  
+  permissions:
+    create: guilds.create
+    join: ''
+    admin: guilds.admin
+    tag: guilds.tag
+    discord: guilds.discord
+
+config:
+  version: 3

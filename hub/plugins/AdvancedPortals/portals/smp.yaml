@@ -1,0 +1,17 @@
+args:
+  bungee:
+  - SMP
+  name:
+  - smp
+  triggerblock:
+  - WATER
+maxLoc:
+  posX: -2088
+  posY: 53
+  posZ: -81
+  worldName: void
+minLoc:
+  posX: -2088
+  posY: 49
+  posZ: -85
+  worldName: void

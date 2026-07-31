@@ -1,0 +1,6 @@
+chili_pepper:
+  itemname: display-name-chili_pepper
+  material: APPLE
+  Pack:
+    texture: iasurvival:item/food/vegetable_and_fruit/chili_pepper
+    custom_model_data: 1001

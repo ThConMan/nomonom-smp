@@ -1,0 +1,6 @@
+revolver:
+  itemname: display-name-revolver
+  material: GOLDEN_SWORD
+  Pack:
+    model: iaweapons:revolver
+    custom_model_data: 1002

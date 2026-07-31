@@ -1,0 +1,18 @@
+POCKETVAULT:
+  base:
+    material: BUNDLE
+    lore:
+    - '&7Special pouch linked to a different realm.'
+MINI_BOSS_POUCH:
+  base:
+    material: STICK
+    name: Mini-Boss Pouch
+    commands:
+      cmd0:
+        format: crate giveKey materialkoth_key %player% 2
+        delay: 0.0
+    hide-enchants: true
+J:
+  base:
+    material: STICK
+    custom-model-data: 2005.0

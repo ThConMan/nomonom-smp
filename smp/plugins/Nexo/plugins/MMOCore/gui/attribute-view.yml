@@ -1,0 +1,74 @@
+
+# GUI display name
+name: '<shift:-33><glyph:vs_mmocorepackgui_attributes_view_top><shift:-226><glyph:vs_mmocorepackgui_attributes_view_bottom>'
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+    reallocate:
+        slots: [40]
+        function: reallocation
+        item: PAPER
+        custom-model-data: 10910
+        name: '&aAttribute Points'
+        lore:
+            - ''
+            - 'You have spent a total of &6{total}&7 attribute points.'
+            - '&7Right click to reallocate them.'
+            - ''
+            - '&eCosts 1 attribute reallocation point.'
+            - '&e◆ Attribute Reallocation Points: &6{points}'
+    str:
+        slots: [20]
+        function: attribute_strength
+        name: '&a{name}'
+        item: PAPER
+        custom-model-data: 10911
+        lore: # {buffs} returns amount of buffs
+            - ''
+            - '&7Points Spent: &6{spent}&7/&6{max}'
+            - '&7Current {name}: &6&l{current}'
+            - ''
+            - '&8When Leveled Up:'
+            - '&7  +{buff_weapon_damage}% Weapon Damage (&a+{total_weapon_damage}%&7)'
+            - '&7  +{buff_max_health}% Max Health (&a+{total_max_health}%&7)'
+            - ''
+            - '&eClick to level up for 1 attribute point.'
+            - '&e◆ Current Attribute Points: {attribute_points}'
+    dex:
+        slots: [22]
+        function: attribute_dexterity
+        name: '&a{name}'
+        item: PAPER
+        custom-model-data: 10912
+        lore:
+            - ''
+            - '&7Points Spent: &6{spent}&7/&6{max}'
+            - '&7Current {name}: &6&l{current}'
+            - ''
+            - '&8When Leveled Up:'
+            - '&7  +{buff_physical_damage}% Physical Damage (&a+{total_physical_damage}%&7)'
+            - '&7  +{buff_projectile_damage}% Projectile Damage (&a+{total_projectile_damage}%&7)'
+            - '&7  +{buff_attack_speed}% Attack Speed (&a+{total_attack_speed}%&7)'
+            - ''
+            - '&eClick to level up for 1 attribute point.'
+            - '&e◆ Current Attribute Points: {attribute_points}'
+    int:
+        slots: [24]
+        function: attribute_intelligence
+        name: '&a{name}'
+        item: PAPER
+        custom-model-data: 10913
+        lore:
+            - ''
+            - '&7Points Spent: &6{spent}&7/&6{max}'
+            - '&7Current {name}: &6&l{current}'
+            - ''
+            - '&8When Leveled Up:'
+            - '&7  +{buff_magic_damage}% Magic Damage (&a+{total_magic_damage}%&7)'
+            - '&7  +{buff_cooldown_reduction}% Cooldown Reduction (&a+{total_cooldown_reduction}%&7)'
+            - ''
+            - '&eClick to level up for 1 attribute point.'
+            - '&e◆ Current Attribute Points: {attribute_points}'

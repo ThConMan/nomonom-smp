@@ -1,0 +1,34 @@
+ruby_vol_1_axe:
+  itemname: Ruby Axe
+  material: DIAMOND_AXE
+  Pack:
+    model: ruby_vol_1_pack:ruby_vol_1_pack/axe_ruby_vol_1
+    custom_model_data: 1007
+ruby_vol_1_bow:
+  itemname: Ruby Bow
+  material: BOW
+  Pack:
+    model: ruby_vol_1_pack:ruby_vol_1_pack/bow_ruby_vol_1
+    pulling_models:
+    - ruby_vol_1_pack:ruby_vol_1_pack/bow_ruby_vol_1_0
+    - ruby_vol_1_pack:ruby_vol_1_pack/bow_ruby_vol_1_1
+    - ruby_vol_1_pack:ruby_vol_1_pack/bow_ruby_vol_1_2
+    custom_model_data: 1009
+ruby_vol_1_spear:
+  itemname: Ruby Spear
+  material: DIAMOND_SWORD
+  Pack:
+    model: ruby_vol_1_pack:ruby_vol_1_pack/spear_ruby_vol_1
+    custom_model_data: 1012
+ruby_vol_1_staff:
+  itemname: Ruby Staff
+  material: DIAMOND_SWORD
+  Pack:
+    model: ruby_vol_1_pack:ruby_vol_1_pack/staff_ruby_vol_1
+    custom_model_data: 1013
+ruby_vol_1_sword:
+  itemname: Ruby Sword
+  material: DIAMOND_SWORD
+  Pack:
+    model: ruby_vol_1_pack:ruby_vol_1_pack/sword_ruby_vol_1
+    custom_model_data: 1015

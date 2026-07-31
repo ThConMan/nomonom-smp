@@ -1,0 +1,6 @@
+nether_donut:
+  itemname: display-name-nether_donut
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/nether_donut
+    custom_model_data: 1022

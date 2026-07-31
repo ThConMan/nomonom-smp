@@ -1,0 +1,15 @@
+decorative_pumpkin:
+  itemname: display-name-decorative_pumpkin
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        barriers: 0,0,0
+      lights:
+        lights:
+        - 0,0.0,0 15
+  Pack:
+    model: iafestivities:halloween/decorative_pumpkin
+    custom_model_data: 1052

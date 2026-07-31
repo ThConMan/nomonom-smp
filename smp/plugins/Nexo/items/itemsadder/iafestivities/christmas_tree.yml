@@ -1,0 +1,16 @@
+christmas_tree:
+  itemname: display-name-christmas_tree
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      lights:
+        lights:
+        - 0,1.0,0 15
+  Pack:
+    model: iafestivities:christmas/christmas_tree
+    custom_model_data: 1041

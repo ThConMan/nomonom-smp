@@ -1,0 +1,6 @@
+tropical_fish_nigiri:
+  itemname: §aTropical Fish Nigiri
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/fishes/tropical_fish_nigiri
+    custom_model_data: 1041

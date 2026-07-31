@@ -1,0 +1,17 @@
+args:
+  name:
+  - goport
+  triggerblock:
+  - NETHER_PORTAL
+  command:
+  - rtp world world_nether
+maxLoc:
+  posX: 392
+  posY: 31
+  posZ: -315
+  worldName: world_nether
+minLoc:
+  posX: 392
+  posY: 31
+  posZ: -315
+  worldName: world_nether

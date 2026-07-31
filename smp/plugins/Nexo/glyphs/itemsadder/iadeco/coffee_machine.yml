@@ -1,0 +1,8 @@
+coffee_machine_left:
+  texture: iadeco:gui/coffee_machine_left
+  ascent: 12
+  char: ꐓ
+coffee_machine_right:
+  texture: iadeco:gui/coffee_machine_right
+  ascent: 12
+  char: ꐔ

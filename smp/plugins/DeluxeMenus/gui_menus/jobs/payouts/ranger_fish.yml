@@ -1,0 +1,122 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Ranger
+size: 54
+items:
+  kill:
+    material: iron_sword
+    slot: 2
+    display_name: '%imc_primary-color_c%Kill'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Kill the following mobs'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_kill'
+      - '[sound] UI_BUTTON_CLICK'
+  tame:
+    material: bone
+    slot: 3
+    display_name: '%imc_primary-color_c%Tame'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Tame the following animals'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_tame'
+      - '[sound] UI_BUTTON_CLICK'
+  breed:
+    material: apple
+    slot: 4
+    display_name: '%imc_primary-color_c%Breed'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Breed the following animals'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_breed'
+      - '[sound] UI_BUTTON_CLICK'
+  shear_milk:
+    material: shears
+    slot: 5
+    display_name: '%imc_primary-color_c%Shear & Milk'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Shear or milk the following'
+      - '%imc_dark-color_c%animals to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_shear_milk'
+      - '[sound] UI_BUTTON_CLICK'
+  fish:
+    material: fishing_rod
+    slot: 6
+    display_name: '%imc_primary-color_c%Fish'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Fish the following items'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_fish'
+      - '[sound] UI_BUTTON_CLICK'
+  fish_salmon:
+    material: salmon
+    slot: 10
+    display_name: '%imc_primary-color_c%Raw Salmon'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Raw Salmon'
+      - '%imc_dark-color_c% • %imc_text-color_c%Raw Cod'
+  fish_tropical_fish:
+    material: tropical_fish
+    slot: 11
+    display_name: '%imc_primary-color_c%Tropical Fish'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tropical Fish'
+  fish_pufferfish:
+    material: pufferfish
+    slot: 12
+    display_name: '%imc_primary-color_c%Pufferfish'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pufferfish'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_ranger_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: RED_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

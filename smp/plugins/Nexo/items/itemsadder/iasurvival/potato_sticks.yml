@@ -1,0 +1,6 @@
+potato_sticks:
+  itemname: Potato Sticks
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/potato_sticks
+    custom_model_data: 1026

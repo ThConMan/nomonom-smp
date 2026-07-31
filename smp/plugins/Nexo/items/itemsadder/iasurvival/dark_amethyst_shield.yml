@@ -1,0 +1,7 @@
+dark_amethyst_shield:
+  itemname: display-name-dark_amethyst_shield
+  material: SHIELD
+  Pack:
+    model: iasurvival:item/shields/dark_amethyst_shield
+    blocking_model: iasurvival:item/shields/dark_amethyst_shield_blocking
+    custom_model_data: 1006

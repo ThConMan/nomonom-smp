@@ -1,0 +1,6 @@
+broomstick:
+  itemname: display-name-broomstick
+  material: PAPER
+  Pack:
+    model: iavehicles:air/broomstick
+    custom_model_data: 1034

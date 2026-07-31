@@ -1,0 +1,13 @@
+modern_sandstone:
+  itemname: display-name-modern_sandstone
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: modern_sandstone
+      hardness: 2.0
+      custom_variation: 17
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/decorative/modern_sandstone
+    custom_model_data: 1114

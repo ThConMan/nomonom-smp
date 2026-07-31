@@ -1,0 +1,130 @@
+# ItemsAdder - Swords
+
+elucidator_sword:
+  itemname: Elucidator
+  material: DIAMOND_SWORD
+  AttributeModifiers:
+  - amount: 8.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: f21a1966-eb4a-4dda-a048-1b0f07a4f817
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iaspecial_swords:item/elucidator_sword
+    custom_model_data: 7500001
+
+floating_sword:
+  itemname: Floating Sword
+  material: DIAMOND_SWORD
+  AttributeModifiers:
+  - amount: 8.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 790e112d-5d92-4344-9add-f5a12f3a397a
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    model: iaspecial_swords:item/floating_sword
+    custom_model_data: 7500002
+
+guitar_sword:
+  itemname: Guitar Sword
+  material: WOODEN_SWORD
+  AttributeModifiers:
+  - amount: 2.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: d2273977-4a1f-4a17-b068-8db0a43efcac
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.5
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 25844f6f-e3a1-4c2a-b732-2ff83b72be1b
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iaspecial_swords:item/guitar_sword
+    custom_model_data: 7500003
+
+masters_sword:
+  itemname: Master Sword
+  material: DIAMOND_SWORD
+  AttributeModifiers:
+  - amount: 8.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 5060442e-eb7d-4af3-a981-af39676b8f2e
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    model: iaspecial_swords:item/masters_sword
+    custom_model_data: 7500004
+
+repulser_sword:
+  itemname: Repulser Sword
+  material: DIAMOND_SWORD
+  AttributeModifiers:
+  - amount: 9.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: a37ea4f9-9aed-4a8b-9535-9d129c93167d
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iaspecial_swords:item/repulser_sword
+    custom_model_data: 7500005
+
+
+# ItemsAdder - Clubs / Staves
+
+baseball_bat:
+  itemname: Baseball Bat
+  material: WOODEN_SWORD
+  AttributeModifiers:
+  - amount: 2.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: cb955545-31be-47a0-b6e0-999f202e3bd6
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 4.0
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: dcb3d79b-cc83-4115-8a64-12abc94c16f5
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    model: iaspecial_swords:item/baseball_bat
+    custom_model_data: 7500006
+
+gandalf_stick:
+  itemname: Gandalf's Staff
+  material: WOODEN_SWORD
+  AttributeModifiers:
+  - amount: 6.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 86612e67-b2b9-43f3-9726-b854e18551ff
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 2.1
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 51a6c963-4635-4ca8-a960-249bf216ae30
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    model: iaspecial_swords:item/gandalf_stick
+    custom_model_data: 7500007

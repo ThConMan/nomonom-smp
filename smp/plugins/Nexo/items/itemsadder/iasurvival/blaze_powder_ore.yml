@@ -1,0 +1,13 @@
+blaze_powder_ore:
+  itemname: display-name-blaze_powder_ore
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: blaze_powder_ore
+      hardness: 2.0
+      custom_variation: 5
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/ores/blaze_powder_ore
+    custom_model_data: 1033

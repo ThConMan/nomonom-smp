@@ -1,0 +1,366 @@
+archmage_staff:
+  itemname: archmage_staff
+  material: STONE_SWORD
+  Pack:
+    model: archmage:archmage_model/archmage_staff
+    custom_model_data: 2043
+archmage_staff_shiny:
+  itemname: archmage_staff_shiny
+  material: STONE_SWORD
+  Pack:
+    model: archmage:archmage_model/archmage_staff_shiny
+    custom_model_data: 2044
+icon_arcane_devastation:
+  itemname: icon_arcane_devastation
+  material: COAL
+  Pack:
+    model: archmage:archmage_model/icon_arcane_devastation
+    custom_model_data: 2132
+icon_arcane_shield:
+  itemname: icon_arcane_shield
+  material: COAL
+  Pack:
+    model: archmage:archmage_model/icon_arcane_shield
+    custom_model_data: 2133
+icon_arcane_slash:
+  itemname: icon_arcane_slash
+  material: COAL
+  Pack:
+    model: archmage:archmage_model/icon_arcane_slash
+    custom_model_data: 2134
+icon_blizzard:
+  itemname: icon_blizzard
+  material: COAL
+  Pack:
+    model: archmage:archmage_model/icon_blizzard
+    custom_model_data: 2135
+icon_chains_of_void:
+  itemname: icon_chains_of_void
+  material: COAL
+  Pack:
+    model: archmage:archmage_model/icon_chains_of_void
+    custom_model_data: 2136
+icon_cloak_of_hastur:
+  itemname: icon_cloak_of_hastur
+  material: COAL
+  Pack:
+    model: archmage:archmage_model/icon_cloak_of_hastur
+    custom_model_data: 2137
+icon_meteor_storm:
+  itemname: icon_meteor_storm
+  material: COAL
+  Pack:
+    model: archmage:archmage_model/icon_meteor_storm
+    custom_model_data: 2138
+arcane_bolt_1:
+  itemname: arcane_bolt_1
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_bolt_1
+    custom_model_data: 2686
+arcane_bolt_2:
+  itemname: arcane_bolt_2
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_bolt_2
+    custom_model_data: 2687
+arcane_bolt_3:
+  itemname: arcane_bolt_3
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_bolt_3
+    custom_model_data: 2688
+arcane_bolt_4:
+  itemname: arcane_bolt_4
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_bolt_4
+    custom_model_data: 2689
+arcane_bolt_5:
+  itemname: arcane_bolt_5
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_bolt_5
+    custom_model_data: 2690
+arcane_bolt_6:
+  itemname: arcane_bolt_6
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_bolt_6
+    custom_model_data: 2691
+arcane_bolt_7:
+  itemname: arcane_bolt_7
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_bolt_7
+    custom_model_data: 2692
+arcane_bolt_8:
+  itemname: arcane_bolt_8
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_bolt_8
+    custom_model_data: 2693
+arcane_bolt_9:
+  itemname: arcane_bolt_9
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_bolt_9
+    custom_model_data: 2694
+arcane_impact_1:
+  itemname: arcane_impact_1
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_impact_1
+    custom_model_data: 2695
+arcane_impact_2:
+  itemname: arcane_impact_2
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_impact_2
+    custom_model_data: 2696
+arcane_impact_3:
+  itemname: arcane_impact_3
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_impact_3
+    custom_model_data: 2697
+arcane_impact_4:
+  itemname: arcane_impact_4
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_impact_4
+    custom_model_data: 2698
+arcane_impact_5:
+  itemname: arcane_impact_5
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_impact_5
+    custom_model_data: 2699
+arcane_impact_6:
+  itemname: arcane_impact_6
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_impact_6
+    custom_model_data: 2700
+arcane_impact_7:
+  itemname: arcane_impact_7
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_impact_7
+    custom_model_data: 2701
+arcane_slash_1:
+  itemname: arcane_slash_1
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_slash_1
+    custom_model_data: 2702
+arcane_slash_2:
+  itemname: arcane_slash_2
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_slash_2
+    custom_model_data: 2703
+arcane_slash_3:
+  itemname: arcane_slash_3
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_slash_3
+    custom_model_data: 2704
+arcane_slash_4:
+  itemname: arcane_slash_4
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_slash_4
+    custom_model_data: 2705
+arcane_slash_5:
+  itemname: arcane_slash_5
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_slash_5
+    custom_model_data: 2706
+arcane_slash_6:
+  itemname: arcane_slash_6
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_slash_6
+    custom_model_data: 2707
+arcane_slash_7:
+  itemname: arcane_slash_7
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_slash_7
+    custom_model_data: 2708
+arcane_thunder_1:
+  itemname: arcane_thunder_1
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_thunder_1
+    custom_model_data: 2709
+arcane_thunder_2:
+  itemname: arcane_thunder_2
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_thunder_2
+    custom_model_data: 2710
+arcane_thunder_3:
+  itemname: arcane_thunder_3
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_thunder_3
+    custom_model_data: 2711
+arcane_thunder_4:
+  itemname: arcane_thunder_4
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_thunder_4
+    custom_model_data: 2712
+arcane_thunder_5:
+  itemname: arcane_thunder_5
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_thunder_5
+    custom_model_data: 2713
+arcane_thunder_6:
+  itemname: arcane_thunder_6
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_thunder_6
+    custom_model_data: 2714
+arcane_thunder_7:
+  itemname: arcane_thunder_7
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_thunder_7
+    custom_model_data: 2715
+arcane_thunder_8:
+  itemname: arcane_thunder_8
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_thunder_8
+    custom_model_data: 2716
+arcane_thunder_9:
+  itemname: arcane_thunder_9
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/arcane_thunder_9
+    custom_model_data: 2717
+blizzard_icicle:
+  itemname: blizzard_icicle
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/blizzard_icicle
+    custom_model_data: 2718
+blizzard_impact_1:
+  itemname: blizzard_impact_1
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/blizzard_impact_1
+    custom_model_data: 2719
+blizzard_impact_2:
+  itemname: blizzard_impact_2
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/blizzard_impact_2
+    custom_model_data: 2720
+blizzard_impact_3:
+  itemname: blizzard_impact_3
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/blizzard_impact_3
+    custom_model_data: 2721
+blizzard_impact_4:
+  itemname: blizzard_impact_4
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/blizzard_impact_4
+    custom_model_data: 2722
+blizzard_impact_5:
+  itemname: blizzard_impact_5
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/blizzard_impact_5
+    custom_model_data: 2723
+blizzard_impact_6:
+  itemname: blizzard_impact_6
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/blizzard_impact_6
+    custom_model_data: 2724
+blizzard_impact_7:
+  itemname: blizzard_impact_7
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/blizzard_impact_7
+    custom_model_data: 2725
+meteor_storm_explosion_1:
+  itemname: meteor_storm_explosion_1
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/meteor_storm_explosion_1
+    custom_model_data: 2726
+meteor_storm_explosion_2:
+  itemname: meteor_storm_explosion_2
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/meteor_storm_explosion_2
+    custom_model_data: 2727
+meteor_storm_explosion_3:
+  itemname: meteor_storm_explosion_3
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/meteor_storm_explosion_3
+    custom_model_data: 2728
+meteor_storm_explosion_4:
+  itemname: meteor_storm_explosion_4
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/meteor_storm_explosion_4
+    custom_model_data: 2729
+meteor_storm_explosion_5:
+  itemname: meteor_storm_explosion_5
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/meteor_storm_explosion_5
+    custom_model_data: 2730
+meteor_storm_explosion_6:
+  itemname: meteor_storm_explosion_6
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/meteor_storm_explosion_6
+    custom_model_data: 2731
+void_rupture_1:
+  itemname: void_rupture_1
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/void_rupture_1
+    custom_model_data: 2732
+void_rupture_2:
+  itemname: void_rupture_2
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/void_rupture_2
+    custom_model_data: 2733
+void_rupture_3:
+  itemname: void_rupture_3
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/void_rupture_3
+    custom_model_data: 2734
+void_rupture_4:
+  itemname: void_rupture_4
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/void_rupture_4
+    custom_model_data: 2735
+void_rupture_5:
+  itemname: void_rupture_5
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/void_rupture_5
+    custom_model_data: 2736
+void_rupture_6:
+  itemname: void_rupture_6
+  material: PAPER
+  Pack:
+    model: archmage:archmage_model/void_rupture_6
+    custom_model_data: 2737

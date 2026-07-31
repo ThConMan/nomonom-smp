@@ -1,0 +1,6 @@
+blue_parrotfish:
+  itemname: display-name-blue_parrotfish
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/fishes/blue_parrotfish
+    custom_model_data: 1002

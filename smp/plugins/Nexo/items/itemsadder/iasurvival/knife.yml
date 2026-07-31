@@ -1,0 +1,21 @@
+knife:
+  itemname: display-name-knife
+  material: WOODEN_SWORD
+  AttributeModifiers:
+  - amount: 2.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: c650e76b-77a7-47cf-b147-02529e9d0052
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 5.0
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: ca413f4e-d2ae-4f0a-9099-7738e101d0b0
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iasurvival:item/tools/knife
+    custom_model_data: 1005

@@ -1,0 +1,6 @@
+spinel:
+  itemname: display-name-spinel
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/spinel
+    custom_model_data: 1016

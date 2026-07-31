@@ -1,0 +1,21 @@
+bronze_sword:
+  itemname: display-name-bronze_sword
+  material: DIAMOND_SWORD
+  AttributeModifiers:
+  - amount: 6.5
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 70d1466b-c6fd-4cb5-bdd3-a221f66d7b48
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: bcc29783-b37d-4ced-a80f-f0e786d4cf7a
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iasurvival:item/swords/bronze_sword
+    custom_model_data: 1003

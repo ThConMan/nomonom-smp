@@ -1,0 +1,4 @@
+on load:
+    register scoreboard team "testteam"
+    loop all players:
+        set entries of scoreboard team "testteam" to loop-player

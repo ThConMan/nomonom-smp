@@ -1,0 +1,6 @@
+garlic:
+  itemname: display-name-garlic
+  material: APPLE
+  Pack:
+    texture: iasurvival:item/food/vegetable_and_fruit/garlic
+    custom_model_data: 1002

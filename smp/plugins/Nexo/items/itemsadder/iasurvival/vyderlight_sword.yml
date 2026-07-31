@@ -1,0 +1,6 @@
+vyderlight_sword:
+  itemname: display-name-vyderlight_sword
+  material: DIAMOND_SWORD
+  Pack:
+    texture: iasurvival:item/swords/vyderlight_sword
+    custom_model_data: 1018

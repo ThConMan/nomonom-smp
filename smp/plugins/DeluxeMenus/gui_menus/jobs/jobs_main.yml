@@ -1,0 +1,1250 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: 'Jobs | Main Menu'
+open_command:
+  - job
+  - jobs menu
+  - jobs info
+  - jobs browse
+  - jobs
+size: 54
+items:
+  
+##################################
+#                                #
+#          WOODCUTTER            #    
+#                                #
+##################################
+  woodcutter_joined:
+    material: GOLDEN_AXE
+    slot: 20
+    priority: 1
+    dynamic_amount: "%jobsr_user_jlevel_woodcutter%"
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: "%jobsr_user_isin_woodcutter%"
+          output: "True"
+    enchantment_glint_override: true
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&aWoodcutter %imc_f_latin_{jobsr_user_jlevel_woodcutter}%"
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_woodcutter%'
+      - ''
+      - '%imc_dark-color_c%Chop trees and harvest wood'
+      - '%imc_dark-color_c%efficiently.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Leave"
+    shift_right_click_commands:
+      - '[player] jobs leave woodcutter'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs leave woodcutter'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_woodcutter_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_woodcutter_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  woodcutter_maxjobs:
+    material: GOLDEN_AXE
+    slot: 20
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: "=="
+          input: "%jobsr_user_joinedjobcount%"
+          output: "%jobsr_maxjobs%"
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&aWoodcutter"
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_woodcutter%'
+      - ''
+      - '%imc_dark-color_c%Chop trees and harvest wood'
+      - '%imc_dark-color_c%efficiently.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - ''
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_woodcutter_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_woodcutter_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  woodcutter:
+    material: GOLDEN_AXE
+    slot: 20
+    priority: 3
+    display_name: "&aWoodcutter"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_woodcutter%'
+      - ''
+      - '%imc_dark-color_c%Chop trees and harvest wood'
+      - '%imc_dark-color_c%efficiently.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Join"
+    shift_right_click_commands:
+      - '[player] jobs join woodcutter'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs join woodcutter'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_woodcutter_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_woodcutter_1'
+      - '[sound] UI_BUTTON_CLICK'
+  
+##################################
+#                                #
+#             MINER              #    
+#                                #
+##################################
+  miner_joined:
+    material: DIAMOND_PICKAXE
+    slot: 21
+    priority: 1
+    dynamic_amount: "%jobsr_user_jlevel_miner%"
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: "%jobsr_user_isin_miner%"
+          output: "True"
+    enchantment_glint_override: true
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&bMiner %imc_f_latin_{jobsr_user_jlevel_miner}%"
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_miner%'
+      - ''
+      - '%imc_dark-color_c%Dig through the depths to'
+      - '%imc_dark-color_c%uncover valuable resources.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - "%imc_dark-color_c% • %imc_text-color_c%TNTBreak"
+      - "%imc_dark-color_c% • %imc_text-color_c%Place"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Leave"
+    shift_right_click_commands:
+      - '[player] jobs leave miner'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs leave miner'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_miner_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_miner_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  miner_maxjobs:
+    material: DIAMOND_PICKAXE
+    slot: 21
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: "=="
+          input: "%jobsr_user_joinedjobcount%"
+          output: "%jobsr_maxjobs%"
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&bMiner"
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_miner%'
+      - ''
+      - '%imc_dark-color_c%Dig through the depths to'
+      - '%imc_dark-color_c%uncover valuable resources.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - "%imc_dark-color_c% • %imc_text-color_c%TNTBreak"
+      - "%imc_dark-color_c% • %imc_text-color_c%Place"
+      - ''
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_miner_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_miner_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  miner:
+    material: DIAMOND_PICKAXE
+    slot: 21
+    priority: 3
+    display_name: "&bMiner"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_miner%'
+      - ''
+      - '%imc_dark-color_c%Dig through the depths to'
+      - '%imc_dark-color_c%uncover valuable resources.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - "%imc_dark-color_c% • %imc_text-color_c%TNTBreak"
+      - "%imc_dark-color_c% • %imc_text-color_c%Place"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Join"
+    shift_right_click_commands:
+      - '[player] jobs join miner'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs join miner'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_miner_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_miner_1'
+      - '[sound] UI_BUTTON_CLICK'
+  
+##################################
+#                                #
+#            BUILDER             #    
+#                                #
+##################################
+  builder_joined:
+    material: BRICKS
+    slot: 22
+    priority: 1
+    dynamic_amount: "%jobsr_user_jlevel_builder%"
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: "%jobsr_user_isin_builder%"
+          output: "True"
+    enchantment_glint_override: true
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&2Builder %imc_f_latin_{jobsr_user_jlevel_builder}%"
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_builder%'
+      - ''
+      - '%imc_dark-color_c%Construct buildings and sculpt'
+      - '%imc_dark-color_c%terrain block by block.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Place"
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Leave"
+    shift_right_click_commands:
+      - '[player] jobs leave builder'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs leave builder'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_builder_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_builder_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  builder_maxjobs:
+    material: BRICKS
+    slot: 22
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: "=="
+          input: "%jobsr_user_joinedjobcount%"
+          output: "%jobsr_maxjobs%"
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&2Builder"
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_builder%'
+      - ''
+      - '%imc_dark-color_c%Construct buildings and sculpt'
+      - '%imc_dark-color_c%terrain block by block.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Place"
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - ''
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_builder_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_builder_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  builder:
+    material: BRICKS
+    slot: 22
+    priority: 3
+    display_name: "&2Builder"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_builder%'
+      - ''
+      - '%imc_dark-color_c%Construct buildings and sculpt'
+      - '%imc_dark-color_c%terrain block by block.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Place"
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Join"
+    shift_right_click_commands:
+      - '[player] jobs join builder'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs join builder'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_builder_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_builder_1'
+      - '[sound] UI_BUTTON_CLICK'
+  
+##################################
+#                                #
+#           BLACKSMITH           #    
+#                                #
+##################################
+  blacksmith_joined:
+    material: ANVIL
+    slot: 23
+    priority: 1
+    dynamic_amount: "%jobsr_user_jlevel_blacksmith%"
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: "%jobsr_user_isin_blacksmith%"
+          output: "True"
+    enchantment_glint_override: true
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&6Blacksmith %imc_f_latin_{jobsr_user_jlevel_blacksmith}%"
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_blacksmith%'
+      - ''
+      - '%imc_dark-color_c%Forge and repair gear, and smelt'
+      - '%imc_dark-color_c%raw ores into valuable materials.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Smelt"
+      - "%imc_dark-color_c% • %imc_text-color_c%Craft"
+      - "%imc_dark-color_c% • %imc_text-color_c%Repair"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Leave"
+    shift_right_click_commands:
+      - '[player] jobs leave blacksmith'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs leave blacksmith'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_blacksmith_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_blacksmith_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  blacksmith_maxjobs:
+    material: ANVIL
+    slot: 23
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: "=="
+          input: "%jobsr_user_joinedjobcount%"
+          output: "%jobsr_maxjobs%"
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&6Blacksmith"
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_blacksmith%'
+      - ''
+      - '%imc_dark-color_c%Forge and repair gear, and smelt' 
+      - '%imc_dark-color_c%raw ores into valuable materials.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Smelt"
+      - "%imc_dark-color_c% • %imc_text-color_c%Craft"
+      - "%imc_dark-color_c% • %imc_text-color_c%Repair"
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_blacksmith_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_blacksmith_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  blacksmith:
+    material: ANVIL
+    slot: 23
+    priority: 3
+    display_name: "&6Blacksmith"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_blacksmith%'
+      - ''
+      - '%imc_dark-color_c%Forge and repair gear, and smelt' 
+      - '%imc_dark-color_c%raw ores into valuable materials.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Smelt"
+      - "%imc_dark-color_c% • %imc_text-color_c%Craft"
+      - "%imc_dark-color_c% • %imc_text-color_c%Repair"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Join"
+    shift_right_click_commands:
+      - '[player] jobs join blacksmith'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs join blacksmith'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_blacksmith_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_blacksmith_1'
+      - '[sound] UI_BUTTON_CLICK'
+  
+##################################
+#                                #
+#             FARMER             #    
+#                                #
+##################################
+  farmer_joined:
+    material: WHEAT
+    slot: 24
+    priority: 1
+    dynamic_amount: "%jobsr_user_jlevel_farmer%"
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: "%jobsr_user_isin_farmer%"
+          output: "True"
+    enchantment_glint_override: true
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&eFarmer %imc_f_latin_{jobsr_user_jlevel_farmer}%"
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_farmer%'
+      - ''
+      - '%imc_dark-color_c%Work the fields to produce'
+      - '%imc_dark-color_c%food and resources.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - "%imc_dark-color_c% • %imc_text-color_c%Place"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Leave"
+    shift_right_click_commands:
+      - '[player] jobs leave farmer'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs leave farmer'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_farmer_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_farmer_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  farmer_maxjobs:
+    material: WHEAT
+    slot: 24
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: "=="
+          input: "%jobsr_user_joinedjobcount%"
+          output: "%jobsr_maxjobs%"
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&eFarmer"
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_farmer%'
+      - ''
+      - '%imc_dark-color_c%Work the fields to produce'
+      - '%imc_dark-color_c%food and resources.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - "%imc_dark-color_c% • %imc_text-color_c%Place"
+      - ''
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_farmer_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_farmer_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  farmer:
+    material: WHEAT
+    slot: 24
+    priority: 3
+    display_name: "&eFarmer"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_farmer%'
+      - ''
+      - '%imc_dark-color_c%Work the fields to produce'
+      - '%imc_dark-color_c%food and resources.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Break"
+      - "%imc_dark-color_c% • %imc_text-color_c%Place"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Join"
+    shift_right_click_commands:
+      - '[player] jobs join farmer'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs join farmer'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_farmer_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_farmer_1'
+      - '[sound] UI_BUTTON_CLICK'
+  
+##################################
+#                                #
+#             RANGER             #
+#                                #
+##################################
+  ranger_joined:
+    material: LEAD
+    slot: 29
+    priority: 1
+    dynamic_amount: "%jobsr_user_jlevel_ranger%"
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: "%jobsr_user_isin_ranger%"
+          output: "True"
+    enchantment_glint_override: true
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&cRanger %imc_f_latin_{jobsr_user_jlevel_ranger}%"
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_ranger%'
+      - ''
+      - '%imc_dark-color_c%Protect, breed, fish,'
+      - '%imc_dark-color_c%and hunt animals.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Kill"
+      - "%imc_dark-color_c% • %imc_text-color_c%Fish"
+      - "%imc_dark-color_c% • %imc_text-color_c%Breed"
+      - "%imc_dark-color_c% • %imc_text-color_c%Tame"
+      - "%imc_dark-color_c% • %imc_text-color_c%Shear"
+      - "%imc_dark-color_c% • %imc_text-color_c%Milk"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Leave"
+    shift_right_click_commands:
+      - '[player] jobs leave ranger'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs leave ranger'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_ranger_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_ranger_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  ranger_maxjobs:
+    material: LEAD
+    slot: 29
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: "=="
+          input: "%jobsr_user_joinedjobcount%"
+          output: "%jobsr_maxjobs%"
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&cRanger"
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_ranger%'
+      - ''
+      - '%imc_dark-color_c%Protect, breed, fish,'
+      - '%imc_dark-color_c%and hunt animals.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Kill"
+      - "%imc_dark-color_c% • %imc_text-color_c%Fish"
+      - "%imc_dark-color_c% • %imc_text-color_c%Breed"
+      - "%imc_dark-color_c% • %imc_text-color_c%Tame"
+      - "%imc_dark-color_c% • %imc_text-color_c%Shear"
+      - "%imc_dark-color_c% • %imc_text-color_c%Milk"
+      - ''
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_ranger_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_ranger_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  ranger:
+    material: LEAD
+    slot: 29
+    priority: 3
+    display_name: "&cRanger"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_ranger%'
+      - ''
+      - '%imc_dark-color_c%Protect, breed, fish,'
+      - '%imc_dark-color_c%and hunt animals.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Kill"
+      - "%imc_dark-color_c% • %imc_text-color_c%Fish"
+      - "%imc_dark-color_c% • %imc_text-color_c%Breed"
+      - "%imc_dark-color_c% • %imc_text-color_c%Tame"
+      - "%imc_dark-color_c% • %imc_text-color_c%Shear"
+      - "%imc_dark-color_c% • %imc_text-color_c%Milk"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Join"
+    shift_right_click_commands:
+      - '[player] jobs join ranger'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs join ranger'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_ranger_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_ranger_1'
+      - '[sound] UI_BUTTON_CLICK'
+  
+##################################
+#                                #
+#            EXPLORER            #
+#                                #
+##################################
+  explorer_joined:
+    material: COMPASS
+    slot: 30
+    priority: 1
+    dynamic_amount: "%jobsr_user_jlevel_explorer%"
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: "%jobsr_user_isin_explorer%"
+          output: "True"
+    enchantment_glint_override: true
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&3Explorer %imc_f_latin_{jobsr_user_jlevel_explorer}%"
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_explorer%'
+      - ''
+      - '%imc_dark-color_c%Explore vast lands, dig up hidden'
+      - '%imc_dark-color_c%relics, and trade with villagers.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Explore"
+      - "%imc_dark-color_c% • %imc_text-color_c%Villager Trade"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Leave"
+    shift_right_click_commands:
+      - '[player] jobs leave explorer'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs leave explorer'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_explorer_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_explorer_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  explorer_maxjobs:
+    material: COMPASS
+    slot: 30
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: "=="
+          input: "%jobsr_user_joinedjobcount%"
+          output: "%jobsr_maxjobs%"
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&3Explorer"
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_explorer%'
+      - ''
+      - '%imc_dark-color_c%Explore vast lands, dig up hidden'
+      - '%imc_dark-color_c%relics, and trade with villagers.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Explore"
+      - "%imc_dark-color_c% • %imc_text-color_c%Villager Trade"
+      - ''
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_explorer_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_explorer_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  explorer:
+    material: COMPASS
+    slot: 30
+    priority: 3
+    display_name: "&3Explorer"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_explorer%'
+      - ''
+      - '%imc_dark-color_c%Explore vast lands, dig up hidden'
+      - '%imc_dark-color_c%relics, and trade with villagers.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Explore"
+      - "%imc_dark-color_c% • %imc_text-color_c%Villager Trade"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Join"
+    shift_right_click_commands:
+      - '[player] jobs join explorer'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs join explorer'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_explorer_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_explorer_1'
+      - '[sound] UI_BUTTON_CLICK'
+  
+##################################
+#                                #
+#            CRAFTER             #
+#                                #
+##################################
+  crafter_joined:
+    material: CRAFTING_TABLE
+    slot: 31
+    priority: 1
+    dynamic_amount: "%jobsr_user_jlevel_crafter%"
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: "%jobsr_user_isin_crafter%"
+          output: "True"
+    enchantment_glint_override: true
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&fCrafter %imc_f_latin_{jobsr_user_jlevel_crafter}%"
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_crafter%'
+      - ''
+      - '%imc_dark-color_c%Shape raw materials into'
+      - '%imc_dark-color_c%crafted items.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Craft"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Leave"
+    shift_right_click_commands:
+      - '[player] jobs leave crafter'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs leave crafter'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_crafter_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_crafter_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  crafter_maxjobs:
+    material: CRAFTING_TABLE
+    slot: 31
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: "=="
+          input: "%jobsr_user_joinedjobcount%"
+          output: "%jobsr_maxjobs%"
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&fCrafter"
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_crafter%'
+      - ''
+      - '%imc_dark-color_c%Shape raw materials into'
+      - '%imc_dark-color_c%crafted items.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Craft"
+      - ''
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_crafter_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_crafter_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  crafter:
+    material: CRAFTING_TABLE
+    slot: 31
+    priority: 3
+    display_name: "&fCrafter"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_crafter%'
+      - ''
+      - '%imc_dark-color_c%Shape raw materials into'
+      - '%imc_dark-color_c%crafted items.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Craft"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Join"
+    shift_right_click_commands:
+      - '[player] jobs join crafter'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs join crafter'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_crafter_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_crafter_1'
+      - '[sound] UI_BUTTON_CLICK'
+  
+##################################
+#                                #
+#           CULINARIAN            #
+#                                #
+##################################
+  culinarian_joined:
+    material: CAKE
+    slot: 32
+    priority: 1
+    dynamic_amount: "%jobsr_user_jlevel_culinarian%"
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: "%jobsr_user_isin_culinarian%"
+          output: "True"
+    enchantment_glint_override: true
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&9Culinarian %imc_f_latin_{jobsr_user_jlevel_culinarian}%"
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_culinarian%'
+      - ''
+      - "%imc_dark-color_c%Master the arts of cooking,"
+      - "%imc_dark-color_c%baking, and tasting."
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Smelt"
+      - "%imc_dark-color_c% • %imc_text-color_c%Eat"
+      - "%imc_dark-color_c% • %imc_text-color_c%Craft"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Leave"
+    shift_right_click_commands:
+      - '[player] jobs leave culinarian'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs leave culinarian'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_culinarian_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_culinarian_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  culinarian_maxjobs:
+    material: CAKE
+    slot: 32
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: "=="
+          input: "%jobsr_user_joinedjobcount%"
+          output: "%jobsr_maxjobs%"
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&9Culinarian"
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_culinarian%'
+      - ''
+      - "%imc_dark-color_c%Master the arts of cooking,"
+      - "%imc_dark-color_c%baking, and tasting."
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Smelt"
+      - "%imc_dark-color_c% • %imc_text-color_c%Eat"
+      - "%imc_dark-color_c% • %imc_text-color_c%Craft"
+      - ''
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_culinarian_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_culinarian_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  culinarian:
+    material: CAKE
+    slot: 32
+    priority: 3
+    display_name: "&9Culinarian"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_culinarian%'
+      - ''
+      - "%imc_dark-color_c%Master the arts of cooking,"
+      - "%imc_dark-color_c%baking, and tasting."
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Smelt"
+      - "%imc_dark-color_c% • %imc_text-color_c%Eat"
+      - "%imc_dark-color_c% • %imc_text-color_c%Craft"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Join"
+    shift_right_click_commands:
+      - '[player] jobs join culinarian'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs join culinarian'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_culinarian_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_culinarian_1'
+      - '[sound] UI_BUTTON_CLICK'
+  
+##################################
+#                                #
+#            MAGICIAN            #
+#                                #
+##################################
+  magician_joined:
+    material: AMETHYST_SHARD
+    slot: 33
+    priority: 1
+    dynamic_amount: "%jobsr_user_jlevel_magician%"
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: "%jobsr_user_isin_magician%"
+          output: "True"
+    enchantment_glint_override: true
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&dMagician %imc_f_latin_{jobsr_user_jlevel_magician}%"
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_magician%'
+      - ''
+      - '%imc_dark-color_c%Wield magic to enhance items'
+      - '%imc_dark-color_c%and concoct mystical brews.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Brew"
+      - "%imc_dark-color_c% • %imc_text-color_c%Enchant"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Leave"
+    shift_right_click_commands:
+      - '[player] jobs leave magician'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs leave magician'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_magician_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_magician_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  magician_maxjobs:
+    material: AMETHYST_SHARD
+    slot: 33
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: "=="
+          input: "%jobsr_user_joinedjobcount%"
+          output: "%jobsr_maxjobs%"
+    item_flags: [HIDE_ENCHANTS, HIDE_ATTRIBUTES]
+    display_name: "&dMagician"
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_magician%'
+      - ''
+      - '%imc_dark-color_c%Wield magic to enhance items'
+      - '%imc_dark-color_c%and concoct mystical brews.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Brew"
+      - "%imc_dark-color_c% • %imc_text-color_c%Enchant"
+      - ''
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_magician_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_magician_1'
+      - '[sound] UI_BUTTON_CLICK'
+
+  magician:
+    material: AMETHYST_SHARD
+    slot: 33
+    priority: 3
+    display_name: "&dMagician"
+    item_flags: [HIDE_ATTRIBUTES]
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_magician%'
+      - ''
+      - '%imc_dark-color_c%Wield magic to enhance items'
+      - '%imc_dark-color_c%and concoct mystical brews.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Brew"
+      - "%imc_dark-color_c% • %imc_text-color_c%Enchant"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% More information"
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Shift Click:%imc_text-color_c% Join"
+    shift_right_click_commands:
+      - '[player] jobs join magician'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    shift_left_click_commands:
+      - '[player] jobs join magician'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+    right_click_commands:
+      - '[openguimenu] jobs_skilltree_magician_1'
+      - '[sound] UI_BUTTON_CLICK'
+    left_click_commands:
+      - '[openguimenu] jobs_skilltree_magician_1'
+      - '[sound] UI_BUTTON_CLICK'
+  
+##################################
+#                                #
+#             OTHER              #    
+#                                #
+##################################
+
+  information:
+    material: BOOKSHELF
+    slot: 4
+    display_name: "%imc_primary-color_c%Information"
+    lore:
+      - "%imc_dark-color_c%Jobs allow you to get paid for"
+      - "%imc_dark-color_c%breaking, killing, crafting, and more."
+      - "%imc_dark-color_c%Level up to receive unique rewards."
+      - ''
+      - "%imc_dark-color_c%You can join %imc_primary-color_c%%jobsr_maxjobs% %imc_dark-color_c%jobs at a time,"
+      - "%imc_dark-color_c%but you are currently in %imc_primary-color_c%%jobsr_user_joinedjobcount% %imc_dark-color_c%jobs."
+      - ''
+      - '%imc_darkest-color_c%Statistics:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Total Employees: %imc_primary-color_c%%jobsr_total_workers%"
+      - "%imc_dark-color_c% • %imc_text-color_c%Your Total Level: %imc_primary-color_c%%jobsr_user_totallevels%"
+      
+  leaderboard:
+    material: ITEM_FRAME
+    slot: 9
+    display_name: "&5Jobs Leaderboard"
+    lore:
+      - '%imc_dark-color_c%In the following menu, you can view'
+      - '%imc_dark-color_c%the top workers with the highest'
+      - '%imc_dark-color_c%levels in a specific job or globally.'
+      - ''
+      - '%imc_darkest-color_c%Options:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Global Top"
+      - "%imc_dark-color_c% • %imc_text-color_c%Top by Job"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Open"
+    click_commands:
+      - '[openguimenu] jobs_leaderboard'
+      - '[sound] UI_BUTTON_CLICK'
+
+  daily_quest:
+    material: BOOK
+    slot: 18
+    display_name: "&6Daily Quests"
+    lore:
+      - "%imc_dark-color_c%Each job offers you a daily quest to"
+      - "%imc_dark-color_c%complete. Open the following menu to"
+      - "%imc_dark-color_c%see which quests are available."
+      - ''
+      - '%imc_darkest-color_c%Statistics:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Pending Quests: %imc_primary-color_c%%jobsr_user_dailyquests_pending%"
+      - "%imc_dark-color_c% • %imc_text-color_c%Quests Completed: %imc_primary-color_c%%jobsr_user_doneq%"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Open"
+    click_commands:
+      - '[player] jobs quests'
+      - '[sound] UI_BUTTON_CLICK'
+
+  points_shop:
+    material: SUNFLOWER
+    slot: 27
+    display_name: "&ePoints Shop"
+    lore:
+      - "%imc_dark-color_c%In the following menu you can"
+      - "%imc_dark-color_c%purchase items using %imc_job-point-format_c_Points %%imc_dark-color_c%."
+      - "%imc_dark-color_c%Earn points by performing"
+      - "%imc_dark-color_c%paid actions in your job."
+      - ''
+      - '%imc_darkest-color_c%Statistics:'
+      - "%imc_dark-color_c% • %imc_text-color_c%Balance: %imc_job-point-format_c_{jobsr_user_points_fixed}%"
+      - "%imc_dark-color_c% • %imc_text-color_c%Total Earned: %imc_job-point-format_c_{jobsr_user_total_points}%"
+      - ''
+      - "%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Open"
+    click_commands:
+      - '[openguimenu] jobs_shop_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: YELLOW_STAINED_GLASS_PANE
+    display_name: "&f"
+    slots: [0, 1, 7, 8, 45, 46, 52, 53]

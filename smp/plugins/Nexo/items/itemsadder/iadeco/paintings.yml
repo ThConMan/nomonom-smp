@@ -1,0 +1,135 @@
+painting_burst:
+  itemname: display-name-painting_burst
+  material: PAPER
+  lore:
+  - '&7S5Z7 - Burst'
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0.5 1,1
+  Pack:
+    model: iadeco:painting_burst
+    custom_model_data: 1124
+painting_courbet:
+  itemname: display-name-painting_courbet
+  material: PAPER
+  lore:
+  - '&7S5Z7 - Courbet'
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - -0.5,0,0.5 2,1
+  Pack:
+    model: iadeco:painting_courbet
+    custom_model_data: 1125
+painting_graham:
+  itemname: display-name-painting_graham
+  material: PAPER
+  lore:
+  - '&7S5Z7 - Graham'
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0.5 1,2
+  Pack:
+    model: iadeco:painting_graham
+    custom_model_data: 1126
+painting_match:
+  itemname: display-name-painting_match
+  material: PAPER
+  lore:
+  - '&7S5Z7 - Match'
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - -0.5,0,0.5 2,2
+  Pack:
+    model: iadeco:painting_match
+    custom_model_data: 1127
+painting_pool:
+  itemname: display-name-painting_pool
+  material: PAPER
+  lore:
+  - '&7S5Z7 - Pool'
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - -0.5,0,0.5 2,1
+  Pack:
+    model: iadeco:painting_pool
+    custom_model_data: 1128
+painting_skull_and_roses:
+  itemname: display-name-painting_skull_and_roses
+  material: PAPER
+  lore:
+  - '&7S5Z7 - Skull and roses'
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - -0.5,0,0.5 2,2
+  Pack:
+    model: iadeco:painting_skull_and_roses
+    custom_model_data: 1129
+painting_stage:
+  itemname: display-name-painting_stage
+  material: PAPER
+  lore:
+  - '&7S5Z7 - Stage'
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - -0.5,0,0.5 2,2
+  Pack:
+    model: iadeco:painting_stage
+    custom_model_data: 1130
+painting_void:
+  itemname: display-name-painting_void
+  material: PAPER
+  lore:
+  - '&7S5Z7 - Void'
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - -0.5,0,0.5 2,2
+  Pack:
+    model: iadeco:painting_void
+    custom_model_data: 1131
+painting_wanderer:
+  itemname: display-name-painting_wanderer
+  material: PAPER
+  lore:
+  - '&7S5Z7 - Wanderer'
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0.5 1,2
+  Pack:
+    model: iadeco:painting_wanderer
+    custom_model_data: 1132

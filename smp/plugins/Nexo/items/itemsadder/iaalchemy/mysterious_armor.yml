@@ -1,0 +1,69 @@
+mysterious_hood:
+  itemname: display-name-mysterious_hood
+  material: FEATHER
+  lore:
+  - lore-1-mysterious_hood
+  - lore-2-mysterious_hood
+  - lore-3-mysterious_hood
+  AttributeModifiers:
+  - amount: 1.0
+    attribute: ARMOR
+    operation: 0
+    slot: CHEST
+    uuid: 8ba662d6-4ec5-4e0b-a3d7-841dfff0cc96
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    model: iaalchemy:item/mysterious_hood
+    custom_model_data: 1033
+material: CHAINMAIL_BOOTS
+mysterious_robe_chestplate:
+  itemname: display-name-mysterious_robe
+  material: PAPER
+  AttributeModifiers:
+  - amount: 4.0
+    attribute: ARMOR
+    operation: 0
+    slot: CHEST
+    uuid: 67233a06-7533-4458-9b76-b1e6a37947ca
+    name: nexo:modifier
+    key: nexo:modifier
+mysterious_leggings:
+  itemname: display-name-mysterious_leggings
+  material: PAPER
+  AttributeModifiers:
+  - amount: 2.0
+    attribute: ARMOR
+    operation: 0
+    slot: LEGS
+    uuid: 1fd6c9aa-853b-4aa5-bd0c-54b24b169bde
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: LEGS
+    uuid: 88eb62de-707e-4e93-a0f8-527f2ad75d18
+    name: nexo:modifier
+    key: nexo:modifier
+mysterious_boots:
+  itemname: display-name-mysterious_boots
+  material: PAPER
+  lore:
+  - lore-1-mysterious_boots
+  - lore-2-mysterious_boots
+  AttributeModifiers:
+  - amount: 1.0
+    attribute: ARMOR
+    operation: 0
+    slot: FEET
+    uuid: f1e8dc43-6ca6-455b-9686-3d08902c2193
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: FEET
+    uuid: 95de22c2-3960-4648-b7d6-753d890eba05
+    name: nexo:modifier
+    key: nexo:modifier

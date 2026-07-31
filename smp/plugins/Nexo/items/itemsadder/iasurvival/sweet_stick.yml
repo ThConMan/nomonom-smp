@@ -1,0 +1,6 @@
+sweet_stick:
+  itemname: §dSweet Stick
+  material: GOLDEN_CARROT
+  Pack:
+    texture: iasurvival:item/food/various/sweet_stick
+    custom_model_data: 1039

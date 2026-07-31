@@ -1,0 +1,18 @@
+iron_dirt_ore:
+  itemname: display-name-iron_dirt_ore
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: iron_dirt_ore
+      hardness: 2.0
+      block_sounds:
+        place:
+          name: block.gravel.place
+        break:
+          name: block.gravel.place
+      custom_variation: 15
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/ores/iron_dirt_ore
+    custom_model_data: 1108

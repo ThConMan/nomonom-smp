@@ -1,0 +1,122 @@
+menu_title: '<shift:-8><glyph:lumberjack>'
+open_command: lumberjack
+size: 54
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.admin
+      deny_commands:
+        - '[message] &cYou don''t have permission to do that!'
+
+items:
+  'job':
+    material: PAPER
+    model_data: 10031
+    slots: 
+    - 12
+    - 13
+    - 14
+    - 21
+    - 22
+    - 23
+    - 30
+    - 31
+    - 32
+    display_name: "&f&lLumberjack"
+    lore:
+       - "&#C7CFDDMax level: &l200"
+       - "&#C7CFDDEarn money from felling and planting trees"
+       - " "
+       - " &7Left-Click to join the job"
+       - " &7Right-Click to leave the job"
+    right_click_commands:
+       - '[player] jobs leave lumberjack'
+    left_click_commands:
+       - '[player] jobs join lumberjack'
+       
+  'arrow_left':
+    material: PAPER
+    model_data: 10033
+    slot: 45
+    display_name: "&f&l<"
+    lore: 
+       - "&7More jobs"
+    click_commands:
+       - '[openguimenu] hunter'
+
+  'arrow_right':
+    material: PAPER
+    model_data: 10034       
+    slot: 53
+    display_name: "&f&l>"
+    lore:
+       - "&7More jobs"
+    click_commands:
+       - '[openguimenu] miner'
+    
+       
+  'farmer':
+    material: PAPER
+    model_data: 10041
+    slot: 46
+    display_name: "&f&lFarmer"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] farmer'
+       
+  'fisherman':
+    material: PAPER
+    model_data: 10042
+    slot: 47
+    display_name: "&f&lFisherman"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] fisherman'
+       
+  'hunter':
+    material: PAPER
+    model_data: 10043
+    slot: 48
+    display_name: "&f&lHunter"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] hunter'
+       
+  'lumberjack':
+    material: PAPER
+    model_data: 10044
+    slot: 49
+    display_name: "&f&lLumberjack"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] lumberjack'
+       
+  'miner':
+    material: PAPER
+    model_data: 10045
+    slot: 50
+    display_name: "&f&lMiner"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] miner'
+       
+  'smelter':
+    material: PAPER
+    model_data: 10048
+    slot: 51
+    display_name: "&f&lSmelter"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] smelter'
+       
+       
+       
+       
+#e29ca71d0fac9b60335518fc145c3237

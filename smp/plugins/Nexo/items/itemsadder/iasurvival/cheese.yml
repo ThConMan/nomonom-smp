@@ -1,0 +1,6 @@
+cheese:
+  itemname: display-name-cheese
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/cheese
+    custom_model_data: 1004

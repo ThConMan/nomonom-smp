@@ -1,0 +1,26 @@
+product-license: V0BV1-PZRUF-62TIC-60QVU
+language: UNDEFINED
+notify-if-new-version: true
+database:
+  type: sqlite
+  address: localhost
+  name: phoenixcrates_db
+  port: 3306
+  username: "REPLACE_ME_DB_USER"
+  password: "REPLACE_ME_DB_PASSWORD"
+  table-prefix: pc
+  hikari:
+    maximumPoolSize: 10
+    minimumIdle: 5
+    idleTimeout: 300000
+    maxLifetime: 1700000
+    connectionTimeout: 30000
+    fetch-timeout: 5000
+performance:
+  internal-pool-size: 5
+  crate-render-radius: 15
+  hologram-refresh-rate: 10
+debug: false
+crates:
+  knockback: 0
+  quick-open: true

@@ -1,0 +1,6 @@
+drink_glass:
+  itemname: display-name-drink_glass
+  material: STICK
+  Pack:
+    texture: iasurvival:item/thirst/drink_glass
+    custom_model_data: 1006

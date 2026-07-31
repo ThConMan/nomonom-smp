@@ -1,0 +1,8 @@
+bloody_mary:
+  itemname: display-name-bloody_mary
+  material: POTION
+  ItemFlags:
+  - HIDE_POTION_EFFECTS
+  Pack:
+    texture: iasurvival:item/thirst/bloody_mary
+    custom_model_data: 1000

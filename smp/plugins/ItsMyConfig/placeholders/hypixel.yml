@@ -1,0 +1,62 @@
+# You can modify this file to change most of the configurations I sell.
+# Refer to the placeholders/example.yml file for more examples.
+# For the MiniMessage format, check the documentation here: https://docs.advntr.dev/minimessage/format.html.
+# For the plugin documentation, visit: https://docs.itsme.to/itsmyconfig.
+# For support, join our Discord: discord.gg/itsme-to.
+#
+# To find all configurations compatible with ItsMyConfig, which adapt directly to the style you have defined,
+# visit: https://builtbybit.com/resources/bundle/itsmyconfig-config.1081/
+
+custom-placeholder:
+  # colored_text only supports MiniMessage and custom tags like SmallCaps or Placeholder (p)
+  server-name:
+    value: <gradient:#FF5F6D:#FFC371:#7CFFCB:#5ED3FF:#8B7CFF><bold>Nomonom</bold></gradient>
+
+    type: colored_text
+  
+  # Use MiniMessage here too 
+  prefix:
+    value: <p:server-name> <dark_gray>➢</dark_gray><p:text-color>
+  error-prefix:
+    value: <red>[ERROR]</red> <dark_gray>➢</dark_gray><p:text-color>
+  
+  # Can be #RRGGBB or color names: black, dark_blue, dark_green, dark_aqua, dark_red, dark_purple, gold, gray, dark_gray, blue, green, aqua, red, light_purple, yellow, or white.
+  primary-color:
+    value: '#8de9d5'
+    type: color
+    underlined: true
+  secondary-color:
+    value: '#85FFA9'
+    type: color
+  text-color:
+    value: '#ECFFF6'
+    type: color
+  dark-color:
+    value: '#ADB8B3'
+    type: color
+  darkest-color:
+    value: '#4A695A'
+    type: color
+  
+  # Just put the link without https://
+  discord:
+    value:  discord.gg/ZA3X2r3x7k
+  store:
+    value: https://nomonom-webshop.tebex.io/
+  ip:
+    value: nomonom.net
+  
+  # Use MiniMessage here too, {0} refers to the amount
+  exp-format:
+    value: <#F15BB5>{0}◎</#F15BB5>
+    type: colored_text
+  eco-format:
+    value: <#FFCF9C>${0}</#FFCF9C>
+    type: colored_text
+  
+  # Modify the economy of the configuration that I sell. You can make it higher or lower. {0} refers to the amount. Making it 10*{0} will make the reward, for example, 10 times bigger.
+  price-modifier:
+    value: 2*{0}
+    type: math
+    rounding: HALF_UP
+    precision: 1

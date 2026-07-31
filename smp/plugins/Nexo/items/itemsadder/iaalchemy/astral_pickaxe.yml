@@ -1,0 +1,6 @@
+astral_pickaxe:
+  itemname: display-name-astral_pickaxe
+  material: DIAMOND_PICKAXE
+  Pack:
+    texture: iaalchemy:item/astral_pickaxe
+    custom_model_data: 1000

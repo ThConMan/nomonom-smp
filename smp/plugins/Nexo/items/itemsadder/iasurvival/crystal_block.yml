@@ -1,0 +1,13 @@
+crystal_block:
+  itemname: §3Crystal Block
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: crystal_block
+      hardness: 2.0
+      custom_variation: 9
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/minerals/crystal_block
+    custom_model_data: 1047

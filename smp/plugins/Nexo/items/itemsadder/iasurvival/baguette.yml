@@ -1,0 +1,6 @@
+baguette:
+  itemname: display-name-baguette
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/baguette
+    custom_model_data: 1000

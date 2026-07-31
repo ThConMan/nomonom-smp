@@ -1,0 +1,120 @@
+# ─── Binaries: paid plugins, server jars. Never commit. ───
+*.jar
+*.zip
+*.exe
+*.so
+*.dll
+
+# ─── Builds: not configuration, and not all ours to share ───
+*.schem
+*.schematic
+*.nbt
+
+# ─── Third-party model / texture / sound packs ───
+*.bbmodel
+*.ogg
+**/ModelEngine/blueprints/
+**/ModelEngine/resource pack/
+**/ModelEngine/internals/
+**/Nexo/pack/
+**/MythicMobs/packs/
+**/CustomNameplates/ResourcePack/
+**/AdvancedPets/skinPacks/
+
+# ─── World data ───
+*/world/
+*/world_nether/
+*/world_the_end/
+*/mortal_realm*/
+*/ascended_realm/
+*/dreamrealm/
+*/dungeons/
+*/mapworldf/
+*/void/
+*/worldsbck/
+*/CheckingPlotSquaredGenerator/
+*.mca
+*.mcr
+region/
+poi/
+entities/
+
+# ─── Databases & generated stores ───
+*.db
+*.mv.db
+*.sqlite
+*.sqlite3
+*.bd
+*.aof
+*/plugins/prism/
+*/plugins/spark/
+*.sparkprofile
+*.hprof
+
+# ─── Player data / PII ───
+# Runtime state, not configuration. This is where player identities live:
+# UUIDs, usernames, IP addresses, coordinates, skins, punishment records.
+ops.json
+whitelist.json
+banned-players.json
+banned-ips.json
+usercache.json
+playerdata/
+userdata/
+stats/
+advancements/
+.server-uuid
+**/Saves/
+**/data/players/
+**/maps/dungeons/players/
+**/players/
+**/.data/
+blockOwnerShips.yml
+saves.yml
+SkinsCache.yml
+punishments.txt
+player_kits.yml
+autowhitelist.json
+velocity-dump-*.json
+*.player
+*.playerskin
+FileBackups/
+DatabaseBackups/
+
+# ─── Secrets ───
+forwarding.secret
+*.ppk
+*.pem
+*.key
+id_rsa*
+id_ed25519*
+.env
+.ssh/
+
+# ─── Runtime bloat ───
+libraries/
+cache/
+logs/
+crash-reports/
+debug/
+versions/
+plugin-updates/
+.paper-remapped/
+old-jars/
+*.log
+*.log.gz
+session.lock
+.console_history
+
+# ─── Build output ───
+build/
+.gradle/
+node_modules/
+
+# ─── Backup / scratch files ───
+*.bak
+*.old
+*paper116_bak*
+*paper26.bak*
+tmp_*
+desktop.ini

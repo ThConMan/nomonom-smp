@@ -1,0 +1,6 @@
+empty_cup:
+  itemname: display-name-empty_cup
+  material: STICK
+  Pack:
+    texture: iasurvival:item/thirst/empty_cup
+    custom_model_data: 1007

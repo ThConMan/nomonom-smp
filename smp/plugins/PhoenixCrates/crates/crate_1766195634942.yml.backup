@@ -1,0 +1,534 @@
+enabled: true
+identifier: crate_1766195634942
+display-name: Mortal Loot
+
+# Invisible anchor that still works
+block-material: PAPER
+
+# Vanilla item model (paper + CMD)
+engine: VANILLA_MODEL;{PAPER;2000001}
+
+open-money-cost: 0.0
+open-cooldown: 0
+simultaneous-openings: true
+preview-item: true
+
+permission:
+  required: false
+  permission: phoenixcrates.crate.crate_1766195634942
+
+animation:
+  idle-effects:
+  - DEFAULT;{REDSTONE;#ff0000;0.0;0.0;0.0;1.0;0.1;2}
+  - DEFAULT;{FLAME;#ffffff;0.0;0.0;0.0;2.0;0.1;2}
+  - STAR;{SMOKE_NORMAL;#ffffff;0.0;0.0;0.0;0.0;0.0;2}
+  opening-animations:
+    '0':
+    - DEFAULT;{}
+    - NONE;{}
+    - DEFAULT;{#ffffff}
+
+hologram:
+  lines:
+  - '&e&l%name% Crate'
+  - ''
+  - '&aʀɪɢʜᴛ &7ᴄʟɪᴄᴋ ᴛᴏ ᴏᴘᴇɴ'
+  - '&cʟᴇꜰᴛ &7ᴄʟɪᴄᴋ ᴛᴏ ᴘʀᴇᴠɪᴇᴡ'
+  offset: 0.0
+
+menus:
+  rewards: default_rewards_preview
+  select-reward: default_select_reward
+  rerolls: default_crate_reroll
+
+key-required: true
+linked-keys-ids:
+- materialkoth_key
+
+broadcast:
+  message: '&9%player% &ewon &a"%reward%" &efrom &4%crate% Crate!'
+
+max-win-rewards: 0
+rewards-mode: RANDOM
+guaranteed-reward-type: SEQUENTIAL
+
+reroll:
+  enabled: false
+  free-rolls: 0
+  groups:
+    '0':
+      namespace: common
+      rerolls: 3
+    '1':
+      namespace: rare
+      rerolls: 5
+    '2':
+      namespace: legendary
+      rerolls: 10
+
+extra-settings:
+  animation:
+    display-item-position:
+      x: 0.0
+      y: 1.0
+      z: 0.0
+rewards:
+  '0':
+    identifier: reward_1766195634998
+    display-item:
+      material: custom:enchanted_book
+      amount: 1
+    win-commands: []
+    broadcast: true
+    percentage: 55.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+    win-items:
+      '0':
+        material: custom:enchanted_book
+        amount: 1
+  '1':
+    identifier: reward_1766195635000
+    display-item:
+      material: custom:wither_skeleton_skull
+      amount: 2
+    win-items:
+      '0':
+        material: custom:wither_skeleton_skull
+        amount: 2
+    win-commands: []
+    broadcast: true
+    percentage: 50.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+  '2':
+    identifier: reward_1766195635002
+    display-item:
+      material: custom:spawner
+      amount: 1
+    win-items:
+      '0':
+        material: custom:spawner
+        amount: 1
+    win-commands: []
+    broadcast: true
+    percentage: 1.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+  '3':
+    identifier: reward_1766195635004
+    display-item:
+      material: custom:spawner1
+      amount: 1
+    win-commands: []
+    broadcast: true
+    percentage: 1.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+    win-items:
+      '0':
+        material: custom:spawner1
+        amount: 1
+  '4':
+    identifier: reward_1766195635008
+    display-item:
+      material: custom:elytra
+      amount: 1
+    win-commands: []
+    broadcast: true
+    percentage: 10.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+    win-items:
+      '0':
+        material: custom:elytra
+        amount: 1
+  '5':
+    identifier: reward_1766195635010
+    display-item:
+      material: custom:diamond
+      amount: 32
+    win-items:
+      '0':
+        material: custom:diamond
+        amount: 32
+    win-commands: []
+    broadcast: true
+    percentage: 100.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+  '6':
+    identifier: reward_1766195635012
+    display-item:
+      material: custom:villager_spawn_egg
+      amount: 1
+    win-items:
+      '0':
+        material: custom:villager_spawn_egg
+        amount: 1
+    win-commands: []
+    broadcast: true
+    percentage: 30.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+  '7':
+    identifier: reward_1766195635014
+    display-item:
+      material: custom:spawner2
+      amount: 1
+    win-items:
+      '0':
+        material: custom:spawner2
+        amount: 1
+    win-commands: []
+    broadcast: true
+    percentage: 1.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+  '8':
+    identifier: reward_1766195635018
+    display-item:
+      material: custom:netherite_scrap
+      amount: 8
+    win-commands: []
+    broadcast: true
+    percentage: 100.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+    win-items:
+      '0':
+        material: custom:netherite_scrap
+        amount: 8
+  '9':
+    identifier: reward_1766195635020
+    display-item:
+      material: custom:firework_rocket
+      amount: 32
+    win-items:
+      '0':
+        material: custom:firework_rocket
+        amount: 32
+    win-commands: []
+    broadcast: true
+    percentage: 100.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+  '10':
+    identifier: reward_1766195635022
+    display-item:
+      material: custom:totem_of_undying
+      amount: 1
+    win-commands: []
+    broadcast: true
+    percentage: 20.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+    win-items:
+      '0':
+        material: custom:totem_of_undying
+        amount: 1
+  '11':
+    identifier: reward_1766195635024
+    display-item:
+      material: custom:golden_apple
+      amount: 16
+    win-items:
+      '0':
+        material: custom:golden_apple
+        amount: 16
+    win-commands: []
+    broadcast: true
+    percentage: 100.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+  '12':
+    identifier: reward_1766195635026
+    display-item:
+      material: custom:spawner3
+      amount: 1
+    win-commands: []
+    broadcast: true
+    percentage: 1.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+    win-items:
+      '0':
+        material: custom:spawner3
+        amount: 1
+  '13':
+    identifier: reward_1766195635028
+    display-item:
+      material: custom:experience_bottle
+      amount: 64
+    win-commands: []
+    broadcast: true
+    percentage: 100.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+    win-items:
+      '0':
+        material: custom:experience_bottle
+        amount: 64
+  '14':
+    identifier: reward_1766195635036
+    display-item:
+      material: custom:enchanted_golden_apple
+      amount: 1
+    win-items:
+      '0':
+        material: custom:enchanted_golden_apple
+        amount: 1
+    win-commands: []
+    broadcast: true
+    percentage: 30.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+  '15':
+    identifier: reward_1766195635038
+    display-item:
+      material: custom:breeze_rod
+      amount: 20
+    win-items:
+      '0':
+        material: custom:breeze_rod
+        amount: 20
+    win-commands: []
+    broadcast: true
+    percentage: 100.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+  '16':
+    identifier: reward_1766195635040
+    display-item:
+      material: custom:echo_shard
+      amount: 1
+    win-commands: []
+    broadcast: true
+    percentage: 50.0
+    win-limits: -1
+    guaranteed-win: -1
+    required-keys: 1
+    share-players-online: false
+    restricted-permissions: []
+    alternative-reward:
+      enabled: false
+      reward:
+        item:
+          material: DIAMOND_PICKAXE
+          amount: 1
+        virtual: false
+        broadcast: false
+        share-players-online: false
+        commands: []
+    win-items:
+      '0':
+        material: custom:echo_shard
+        amount: 1

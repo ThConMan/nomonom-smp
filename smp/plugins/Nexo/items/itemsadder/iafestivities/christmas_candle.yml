@@ -1,0 +1,16 @@
+christmas_candle:
+  itemname: display-name-christmas_candle
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      lights:
+        lights:
+        - 0,1.0,0 8
+  Pack:
+    model: iafestivities:christmas/christmas_candle
+    custom_model_data: 1040

@@ -1,0 +1,162 @@
+deadmau5_hat:
+  itemname: display-name-deadmau5_hat
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/deadmau5_hat
+    custom_model_data: 1005
+top_hat:
+  itemname: display-name-top_hat
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/top_hat
+    custom_model_data: 1006
+welding_mask:
+  itemname: display-name-welding_mask
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/welding_mask
+    custom_model_data: 1007
+mining_helmet:
+  itemname: display-name-mining_helmet
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/mining_helmet
+    custom_model_data: 1008
+dog_mask:
+  itemname: display-name-dog_mask
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/dog_mask
+    custom_model_data: 1009
+ruby_pickaxe_hat:
+  itemname: display-name-ruby_pickaxe_hat
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/ruby_pickaxe_hat
+    custom_model_data: 1010
+straw_hat:
+  itemname: display-name-straw_hat
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/straw_hat
+    custom_model_data: 1011
+cool_sunglasses:
+  itemname: display-name-cool_sunglasses
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/cool_sunglasses
+    custom_model_data: 1012
+cigar:
+  itemname: display-name-cigar
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/cigar
+    custom_model_data: 1013
+glasses:
+  itemname: display-name-glasses
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/glasses
+    custom_model_data: 1014
+biker_helmet:
+  itemname: display-name-biker_helmet
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/biker_helmet
+    custom_model_data: 1015
+cat_ears:
+  itemname: display-name-cat_ears
+  material: FEATHER
+  Pack:
+    model: iawearables:hat/cat_ears
+    custom_model_data: 1016
+demoniac_red_wings:
+  itemname: display-name-demoniac_red_wings
+  material: FEATHER
+  Pack:
+    model: iawearables:back/demoniac_red_wings
+    custom_model_data: 1017
+demoniac_turquoise_wings:
+  itemname: display-name-demoniac_turquoise_wings
+  material: FEATHER
+  Pack:
+    model: iawearables:back/demoniac_turquoise_wings
+    custom_model_data: 1018
+demoniac_purple_wings:
+  itemname: display-name-demoniac_purple_wings
+  material: FEATHER
+  Pack:
+    model: iawearables:back/demoniac_purple_wings
+    custom_model_data: 1019
+demoniac_blue_wings:
+  itemname: display-name-demoniac_blue_wings
+  material: FEATHER
+  Pack:
+    model: iawearables:back/demoniac_blue_wings
+    custom_model_data: 1020
+demoniac_black_wings:
+  itemname: display-name-demoniac_black_wings
+  material: FEATHER
+  Pack:
+    model: iawearables:back/demoniac_black_wings
+    custom_model_data: 1021
+all_black_cat_tail:
+  itemname: display-name-all_black_cat_tail
+  material: FEATHER
+  Pack:
+    model: iawearables:back/all_black_cat_tail
+    custom_model_data: 1022
+black_cat_tail:
+  itemname: display-name-black_cat_tail
+  material: FEATHER
+  Pack:
+    model: iawearables:back/black_cat_tail
+    custom_model_data: 1023
+white_cat_tail:
+  itemname: display-name-white_cat_tail
+  material: FEATHER
+  Pack:
+    model: iawearables:back/white_cat_tail
+    custom_model_data: 1024
+ender_dragon_wings:
+  itemname: display-name-ender_dragon_wings
+  material: FEATHER
+  Pack:
+    model: iawearables:back/ender_dragon_wings
+    custom_model_data: 1025
+red_backpack:
+  itemname: display-name-red_backpack
+  material: FEATHER
+  Pack:
+    model: iawearables:back/red_backpack
+    custom_model_data: 1026
+turquoise_backpack:
+  itemname: display-name-turquoise_backpack
+  material: FEATHER
+  Pack:
+    model: iawearables:back/turquoise_backpack
+    custom_model_data: 1027
+purple_backpack:
+  itemname: display-name-purple_backpack
+  material: FEATHER
+  Pack:
+    model: iawearables:back/purple_backpack
+    custom_model_data: 1028
+blue_backpack:
+  itemname: display-name-blue_backpack
+  material: FEATHER
+  Pack:
+    model: iawearables:back/blue_backpack
+    custom_model_data: 1029
+black_backpack:
+  itemname: display-name-black_backpack
+  material: FEATHER
+  Pack:
+    model: iawearables:back/black_backpack
+    custom_model_data: 1030
+brown_backpack:
+  itemname: display-name-brown_backpack
+  material: FEATHER
+  Pack:
+    model: iawearables:back/brown_backpack
+    custom_model_data: 1031

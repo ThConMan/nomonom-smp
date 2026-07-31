@@ -1,0 +1,6 @@
+sliced_roast_beef:
+  itemname: display-name-sliced_roast_beef
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/sliced_roast_beef
+    custom_model_data: 1037

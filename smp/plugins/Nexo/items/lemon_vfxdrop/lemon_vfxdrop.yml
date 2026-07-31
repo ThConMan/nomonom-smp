@@ -1,0 +1,42 @@
+lemon_loot_effect:
+  itemname: <red><bold>Example
+  material: POTION
+  Pack:
+    model: lemon_vfxdrop/lemon_loot_effect
+  Components:
+    item_model: nexo:lemon_loot_effect
+
+lemon_loot_effect_var2:
+  Pack:
+    model: lemon_vfxdrop/lemon_loot_effect_var2
+  Components:
+    item_model: nexo:lemon_loot_effect_var2
+  itemname: ''
+  material: POTION
+  permission: vfxdrop
+
+lemon_loot_effect_var3:
+  Pack:
+    model: lemon_vfxdrop/lemon_loot_effect_var3
+    custom_model_data: 1008
+  itemname: ''
+  material: POTION
+  permission: vfxdrop
+
+lemon_loot_effect_var4:
+  Pack:
+    model: lemon_vfxdrop/lemon_loot_effect_var4
+    custom_model_data: 1009
+  itemname: ''
+  material: POTION
+  permission: vfxdrop
+
+lemon_loot_effect_var5:
+  Pack:
+    model: lemon_vfxdrop/lemon_loot_effect_var5
+    custom_model_data: 1010
+  itemname: ''
+  material: POTION
+  permission: vfxdrop
+
+# 3417bda2a56f6523d84cf920aa1361af

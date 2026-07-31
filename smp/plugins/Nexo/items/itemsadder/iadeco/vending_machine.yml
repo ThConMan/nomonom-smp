@@ -1,0 +1,14 @@
+vending_machine:
+  itemname: display-name-vending_machine
+  material: PAPER
+  lore:
+  - lore-1-vending_machine
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        barriers: 0,0,0
+  Pack:
+    model: iadeco:vending_machine
+    custom_model_data: 1148

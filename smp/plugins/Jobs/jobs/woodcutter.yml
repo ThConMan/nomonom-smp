@@ -1,0 +1,414 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+woodcutter:
+  fullname: "Woodcutter"
+  shortname: W
+  description: 'Chop trees and harvest wood efficiently.'
+  ChatColour: GREEN
+  BossBarColour: GREEN
+  chat-display: shortfull
+  max-level: 48
+  vip-max-level: 250
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*50)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01)) * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01)) * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+  Quests:
+    '1':
+      Name: "Woodcutter - Easy"
+      Objectives:
+      - Break;oak_log;50
+      - Break;birch_log;50
+      - Break;jungle_log;50
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '2':
+      Name: "Woodcutter - Easy"
+      Objectives:
+      - Break;spruce_log;50
+      - Break;acacia_log;50
+      - Break;dark_oak_log;50
+      RewardAmount: 125
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_125%'
+    '3':
+      Name: "Woodcutter - Easy"
+      Objectives:
+      - Break;oak_log;100
+      - Break;spruce_log;100
+      RewardAmount: 150
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_150%'
+    '4':
+      Name: "Woodcutter - Easy"
+      Objectives:
+      - Break;birch_log;100
+      - Break;jungle_log;100
+      RewardAmount: 150
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_150%'
+    '5':
+      Name: "Woodcutter - Easy"
+      Objectives:
+      - Break;acacia_log;100
+      - Break;dark_oak_log;100
+      RewardAmount: 175
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_175%'
+    '6':
+      Name: "Woodcutter - Medium"
+      Objectives:
+      - Break;oak_log;100
+      - Break;spruce_log;100
+      - Break;birch_log;100
+      - Break;jungle_log;100
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '7':
+      Name: "Woodcutter - Medium"
+      Objectives:
+      - Break;acacia_log;150
+      - Break;dark_oak_log;150
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '8':
+      Name: "Woodcutter - Medium"
+      Objectives:
+      - Break;spruce_log;200
+      - Break;birch_log;200
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '9':
+      Name: "Woodcutter - Medium"
+      Objectives:
+      - Break;oak_log;320
+      RewardAmount: 250
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_250%'
+    '10':
+      Name: "Woodcutter - Medium"
+      Objectives:
+      - Break;dark_oak_log;128
+      - Break;acacia_log;128
+      - Break;jungle_log;128
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+    '11':
+      Name: "Woodcutter - Hard"
+      Objectives:
+      - Break;oak_log;428
+      - Break;spruce_log;256
+      RewardAmount: 400
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_400%'
+    '12':
+      Name: "Woodcutter - Hard"
+      Objectives:
+      - Break;birch_log;428
+      - Break;jungle_log;128
+      RewardAmount: 500
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_500%'
+    '13':
+      Name: "Woodcutter - Hard"
+      Objectives:
+      - Break;dark_oak_log;428
+      - Break;acacia_log;192
+      RewardAmount: 600
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_600%'
+    '14':
+      Name: "Woodcutter - Impossible"
+      Objectives:
+      - Break;oak_log;428
+      - Break;spruce_log;428
+      - Break;birch_log;428
+      - Break;acacia_log;256
+      - Break;dark_oak_log;256
+      RewardAmount: 1000
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_1000%'
+    '15':
+      Name: "Woodcutter - Easy"
+      Objectives:
+      - Break;warped_stem;50
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '16':
+      Name: "Woodcutter - Easy"
+      Objectives:
+      - Break;crimson_stem;50
+      RewardAmount: 100
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_100%'
+    '17':
+      Name: "Woodcutter - Easy"
+      Objectives:
+      - Break;warped_stem;64
+      - Break;crimson_stem;64
+      RewardAmount: 200
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_200%'
+    '18':
+      Name: "Woodcutter - Medium"
+      Objectives:
+      - Break;warped_stem;192
+      - Break;crimson_stem;64
+      RewardAmount: 250
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_250%'
+    '19':
+      Name: "Woodcutter - Medium"
+      Objectives:
+      - Break;warped_stem;128
+      - Break;crimson_stem;128
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+    '20':
+      Name: "Woodcutter - Hard"
+      Objectives:
+      - Break;warped_stem;192
+      - Break;crimson_stem;192
+      RewardAmount: 400
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_400%'
+  Gui:
+    ItemStack: GOLDEN_AXE
+  Break:
+    oak_log:
+      income: 0.5
+      points: 0.15
+      experience: 0.3
+    oak_wood:
+      income: 0.5
+      points: 0.15
+      experience: 0.3
+    stripped_oak_log:
+      income: 0.3
+      points: 0.05
+      experience: 0.15
+    spruce_log:
+      income: 0.5
+      points: 0.15
+      experience: 0.3
+    spruce_wood:
+      income: 0.5
+      points: 0.15
+      experience: 0.3
+    stripped_spruce_log:
+      income: 0.3
+      points: 0.05
+      experience: 0.15
+    birch_log:
+      income: 0.5
+      points: 0.15
+      experience: 0.3
+    birch_wood:
+      income: 0.5
+      points: 0.15
+      experience: 0.3
+    stripped_birch_log:
+      income: 0.3
+      points: 0.05
+      experience: 0.15
+    jungle_log:
+      income: 0.5
+      points: 0.15
+      experience: 0.3
+    jungle_wood:
+      income: 0.5
+      points: 0.15
+      experience: 0.3
+    stripped_jungle_log:
+      income: 0.3
+      points: 0.05
+      experience: 0.15
+    acacia_log:
+      income: 0.6
+      points: 0.2
+      experience: 0.4
+    acacia_wood:
+      income: 0.5
+      points: 0.15
+      experience: 0.3
+    stripped_acacia_log:
+      income: 0.3
+      points: 0.05
+      experience: 0.15
+    dark_oak_log:
+      income: 0.6
+      points: 0.2
+      experience: 0.4
+    dark_oak_wood:
+      income: 0.5
+      points: 0.15
+      experience: 0.3
+    stripped_dark_oak_log:
+      income: 0.3
+      points: 0.05
+      experience: 0.15
+    warped_stem:
+      income: 0.8
+      points: 0.3
+      experience: 0.6
+    warped_hyphae:
+      income: 0.8
+      points: 0.3
+      experience: 0.6
+    crimson_stem:
+      income: 0.8
+      points: 0.3
+      experience: 0.6
+    crimson_hyphae:
+      income: 0.8
+      points: 0.3
+      experience: 0.6
+    mangrove_wood:
+      income: 0.7
+      points: 0.2
+      experience: 0.4
+    mangrove_log:
+      income: 0.7
+      points: 0.2
+      experience: 0.4
+    stripped_mangrove_log:
+      income: 0.7
+      points: 0.2
+      experience: 0.4
+    cherry_wood:
+      income: 0.7
+      points: 0.2
+      experience: 0.4
+    cherry_log:
+      income: 0.7
+      points: 0.2
+      experience: 0.4
+    stripped_cherry_log:
+      income: 0.7
+      points: 0.2
+      experience: 0.4
+    pale_oak_log:
+      income: 0.7
+      points: 0.2
+      experience: 0.4 
+    pale_oak_wood:
+      income: 0.7
+      points: 0.2
+      experience: 0.4
+    stripped_pale_oak_log:
+      income: 0.7
+      points: 0.2
+      experience: 0.4

@@ -1,0 +1,6 @@
+cup_of_hot_water:
+  itemname: display-name-cup_of_hot_water
+  material: STICK
+  Pack:
+    texture: iasurvival:item/thirst/cup_of_hot_water
+    custom_model_data: 1002

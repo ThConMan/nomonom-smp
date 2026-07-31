@@ -1,0 +1,24 @@
+items: {}
+settings:
+  type: PLAYER_KIT
+  title: Kit Layout Editor
+  rows: 6
+  refresh:
+    enabled: false
+    rate: 60
+  on-open-actions: []
+reset-layout-item:
+  slot: '51'
+  material: BARRIER
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&aReset Layout'
+  lore:
+  - '&7By clicking here you will reset'
+  - '&7this kit layout to the default setting.'
+  - ''
+  - '&6ʟᴇꜰᴛ-ᴄʟɪᴄᴋ: &eʀᴇꜱᴇᴛ ʟᴀʏᴏᴜᴛ.'
+  actions:
+  - '[SOUND] UI_BUTTON_CLICK;0.1;1'

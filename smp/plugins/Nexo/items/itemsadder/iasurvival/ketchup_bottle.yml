@@ -1,0 +1,10 @@
+ketchup_bottle:
+  itemname: display-name-ketchup_bottle
+  material: STICK
+  lore:
+  - lore-1-ketchup_bottle
+  - lore-2-ketchup_bottle
+  - lore-3-ketchup_bottle
+  Pack:
+    texture: iasurvival:item/food/various/ketchup_bottle
+    custom_model_data: 1053

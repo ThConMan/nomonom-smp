@@ -1,0 +1,24 @@
+sword_skin_rusteroth:
+  itemname: display-name-sword_skin_rusteroth
+  material: STICK
+  Pack:
+    texture: iasurvival:item/other/sword_skin_rusteroth
+    custom_model_data: 1063
+sword_skin_bloodnite:
+  itemname: display-name-sword_skin_bloodnite
+  material: STICK
+  Pack:
+    texture: iasurvival:item/other/sword_skin_bloodnite
+    custom_model_data: 1064
+sword_skin_vyderlight:
+  itemname: display-name-sword_skin_vyderlight
+  material: STICK
+  Pack:
+    texture: iasurvival:item/other/sword_skin_vyderlight
+    custom_model_data: 1065
+sword_skin_aqualight:
+  itemname: display-name-sword_skin_aqualight
+  material: STICK
+  Pack:
+    texture: iasurvival:item/other/sword_skin_aqualight
+    custom_model_data: 1066

@@ -1,0 +1,113 @@
+# --------------------------------------------------- #
+# VeloFlame Proxy Configuration                       #
+# --------------------------------------------------- #
+
+config-version = "0.0.1"
+
+[settings]
+# General allowlist (host + trusted)
+whitelist = [
+  "127.0.0.1",
+  "0:0:0:0:0:0:0:1",
+  "localhost"
+]
+
+[action-bar]
+enabled = false
+permission = false
+
+[firewall]
+firewall-enabled = true
+firewall-duration = 60
+firewall-ipset = true
+firewall-ipset-name = "Security"
+
+# Trusted IPs that should never be firewalled by other modules (optional)
+whitelist = [
+  # "127.0.0.1"
+]
+
+# Prevents connecting too fast to the server.
+# Goal: throttle spam without jailing legit auto-reconnect users.
+[ratelimit]
+ratelimit-enabled = false
+
+# Do NOT firewall-ban for rate-limit. This is what causes “random” disconnect misery.
+ratelimit-firewall = false
+
+# Relaxed thresholds (still blocks bot spam, won't punish legit reconnect loops)
+ratelimit-connections = 15
+ratelimit-connections-period = 10
+ratelimit-pings = 35
+ratelimit-pings-period = 10
+
+# Optional: staff IPs you never want rate-limited
+whitelist = [
+  # "127.0.0.1"
+]
+
+# VPN list check
+[vpn]
+vpn-enabled = true
+
+# Experience-safe: don’t firewall-ban based on lists (false positives = silent connection drops)
+vpn-firewall = false
+
+# Only enforce after repeated attempts in a short window
+vpn-trigger = 5
+vpn-period = 20
+
+whitelist = []
+
+# Keep sources that are specifically VPN/DC/Tor focused (lower false positives)
+vpn-lists = [
+  "https://check.torproject.org/torbulkexitlist?ip=1.1.1.1",
+  "https://tcpshield.com/blocklist.txt"
+]
+
+# Online VPN checks
+[vpn-online]
+enabled = false
+
+# Experience-safe: don’t firewall-ban based on API responses/timeouts
+firewall = false
+
+apis = [
+  "https://proxycheck.io/v2/{ip}?vpn=1&asn=1",
+  "https://api.ipapi.is/?q={ip}"
+]
+
+vpn-online-trigger = 5
+vpn-online-period = 20
+
+thread-pool-size = 4
+
+# Less false negatives on slower routes
+check-timeout-ms = 3000
+
+# Don’t let this explode under load
+max-concurrent-checks = 75
+
+# Don’t thrash disk / churn files constantly
+write-interval-minutes = 5
+
+whitelist = []
+
+[account]
+account-enabled = true
+account-limit = 5
+account-concurrent = 3
+account-firewall = true
+whitelist = []
+
+# This feature intentionally forces reconnect loops — leave it OFF.
+[reconnect]
+reconnect-enabled = false
+reconnect-firewall = false
+reconnect-trigger = 3
+reconnect-period = 10
+reconnect-timeout = 30
+reconnect-min-time = 500
+reconnect-pings = 1
+reconnect-connections = 1
+whitelist = []

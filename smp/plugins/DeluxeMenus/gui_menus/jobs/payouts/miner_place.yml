@@ -1,0 +1,62 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Miner
+size: 54
+items:
+  break:
+    material: DIAMOND_PICKAXE
+    slot: 3
+    display_name: '%imc_primary-color_c%Break'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Break the following blocks'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_miner_break'
+  place:
+    material: GRASS_BLOCK
+    slot: 5
+    display_name: '%imc_primary-color_c%Place'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Place the following blocks'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_miner_place'
+  place_stonecutter:
+    material: stonecutter
+    slot: 10
+    display_name: '%imc_primary-color_c%Stonecutter'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stonecutter'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_miner_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: LIGHT_BLUE_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

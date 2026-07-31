@@ -1,0 +1,163 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Woodcutter
+open_command:
+  - jobs payouts woodcutter
+register_command: true
+size: 54
+items:
+  break:
+    material: DIAMOND_AXE
+    slot: 4
+    display_name: '%imc_primary-color_c%Break'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Break the following blocks'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_woodcutter_break'
+  break_oak_log:
+    material: oak_log
+    slot: 10
+    display_name: '%imc_primary-color_c%Oak Log'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Oak Log'
+      - '%imc_dark-color_c% • %imc_text-color_c%Oak Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Oak Log'
+  break_spruce_log:
+    material: spruce_log
+    slot: 11
+    display_name: '%imc_primary-color_c%Spruce Log'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Spruce Log'
+      - '%imc_dark-color_c% • %imc_text-color_c%Spruce Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Spruce Log'
+  break_birch_log:
+    material: birch_log
+    slot: 12
+    display_name: '%imc_primary-color_c%Birch Log'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Birch Log'
+      - '%imc_dark-color_c% • %imc_text-color_c%Birch Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Birch Log'
+  break_jungle_log:
+    material: jungle_log
+    slot: 13
+    display_name: '%imc_primary-color_c%Jungle Log'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Jungle Log'
+      - '%imc_dark-color_c% • %imc_text-color_c%Jungle Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Jungle Log'
+  break_acacia_log:
+    material: acacia_log
+    slot: 14
+    display_name: '%imc_primary-color_c%Acacia Log'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Acacia Log'
+      - '%imc_dark-color_c% • %imc_text-color_c%Acacia Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Acacia Log'
+  break_dark_oak_log:
+    material: dark_oak_log
+    slot: 15
+    display_name: '%imc_primary-color_c%Dark Oak Log'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dark Oak Log'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dark Oak Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Dark Oak Log'
+  break_warped_stem:
+    material: warped_stem
+    slot: 16
+    display_name: '%imc_primary-color_c%Warped Stem'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Warped Stem'
+      - '%imc_dark-color_c% • %imc_text-color_c%Warped Hyphae'
+  break_crimson_stem:
+    material: crimson_stem
+    slot: 19
+    display_name: '%imc_primary-color_c%Crimson Stem'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Crimson Stem'
+      - '%imc_dark-color_c% • %imc_text-color_c%Crimson Hyphae'
+  break_mangrove_log:
+    material: mangrove_log
+    slot: 20
+    display_name: '%imc_primary-color_c%Mangrove Log'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Log'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Mangrove Log'
+  break_cherry_log:
+    material: cherry_log
+    slot: 21
+    display_name: '%imc_primary-color_c%Cherry Log'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cherry Log'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cherry Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Cherry Log'
+  break_pale_oak_log:
+    material: pale_oak_log
+    slot: 22
+    display_name: '%imc_primary-color_c%Pale Oak Log'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Log'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pale Oak Wood'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stripped Pale Oak Log'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_woodcutter_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: LIME_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

@@ -1,0 +1,24 @@
+diamond_pickaxe:
+  itemname: Diamond Pickaxe
+  material: DIAMOND_PICKAXE
+  Pack:
+    model: default_tools:diamond/diamond_pickaxe
+    custom_model_data: 1006
+diamond_hoe:
+  itemname: Diamond Hoe
+  material: DIAMOND_HOE
+  Pack:
+    model: default_tools:diamond/diamond_hoe
+    custom_model_data: 1001
+diamond_axe:
+  itemname: Diamond Axe
+  material: DIAMOND_AXE
+  Pack:
+    model: default_tools:diamond/diamond_axe
+    custom_model_data: 1003
+diamond_shovel:
+  itemname: Diamond Shovel
+  material: DIAMOND_SHOVEL
+  Pack:
+    model: default_tools:diamond/diamond_shovel
+    custom_model_data: 1003

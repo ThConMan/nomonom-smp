@@ -1,0 +1,13 @@
+dark_amethyst_ore:
+  itemname: display-name-dark_amethyst_ore
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: dark_amethyst_ore
+      hardness: 2.0
+      custom_variation: 11
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/ores/dark_amethyst_ore
+    custom_model_data: 1049

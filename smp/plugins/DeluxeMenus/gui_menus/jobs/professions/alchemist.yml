@@ -1,0 +1,91 @@
+menu_title: '<shift:-8><glyph:alchemist>'
+open_command: alchemist
+size: 54
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.admin
+      deny_commands:
+        - '[message] &cYou don''t have permission to do that!'
+
+items:
+  'job':
+    material: PAPER
+    model_data: 10031
+    slots: 
+    - 12
+    - 13
+    - 14
+    - 21
+    - 22
+    - 23
+    - 30
+    - 31
+    - 32
+    display_name: "&f&lAlchemist"
+    lore:
+       - "&#B483EFMax level: &l200"
+       - "&#B483EFEarn money by brewing potions"
+       - " "
+       - " &7Left-Click to join the job"
+       - " &7Right-Click to leave the job"
+    right_click_commands:
+       - '[player] jobs leave alchemist'
+    left_click_commands:
+       - '[player] jobs join alchemist'
+
+  'arrow_right':
+    material: PAPER
+    model_data: 10034       
+    slot: 53
+    display_name: "&f&l>"
+    lore:
+       - "&7More jobs"
+    click_commands:
+       - '[openguimenu] assassin'
+
+  'alchemist':
+    material: PAPER
+    model_data: 10032
+    slot: 49
+    display_name: "&f&lAlchemist"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] alchemist'
+       
+  'assassin':
+    material: PAPER
+    model_data: 10049
+    slot: 50
+    display_name: "&f&lAssassin"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] assassin'
+       
+  'blacksmith':
+    material: PAPER
+    model_data: 10036
+    slot: 51
+    display_name: "&f&lBlacksmith"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] blacksmith'
+       
+  'builder':
+    material: PAPER
+    model_data: 10037
+    slot: 52
+    display_name: "&f&lBuilder"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] builder'
+       
+       
+       
+       
+#e29ca71d0fac9b60335518fc145c3237

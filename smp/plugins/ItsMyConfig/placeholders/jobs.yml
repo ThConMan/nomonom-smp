@@ -1,0 +1,21 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+custom-placeholder:
+  # Example of a random string.
+  # Randomly selects one value from the list each time it's used.
+  job-progress:
+    value: ⦁●⚫●⚫●⚫●⚫●⚫●⚫●⚫●⚫●⚫●⚫●⦁
+    type: progress_bar
+    completed-color: '&#00FF7F'
+    progress-color: '&#A8F9FF'
+    remaining-color: '&7'
+  job-exp-format:
+    value: "<#00FF7F>{0}♣</#00FF7F>"
+    type: colored_text
+  job-point-format:
+    value: "<#FF8811>{0}♦</#FF8811>"
+    type: colored_text

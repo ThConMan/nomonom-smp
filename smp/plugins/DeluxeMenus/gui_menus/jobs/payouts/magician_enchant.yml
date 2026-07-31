@@ -1,0 +1,197 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Magician
+open_command:
+  - jobs payouts magician
+register_command: true
+size: 54
+items:
+  enchant:
+    material: ENCHANTING_TABLE
+    slot: 3
+    display_name: '%imc_primary-color_c%Enchant'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Enchant the following items'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_magician_enchant'
+  brew:
+    material: BREWING_STAND
+    slot: 5
+    display_name: '%imc_primary-color_c%Brew'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Brew the following items'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_magician_brew'
+  enchant_stone_sword:
+    material: stone_sword
+    slot: 10
+    display_name: '%imc_primary-color_c%Swords'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wooden Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stone Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Sword'
+  enchant_iron_axe:
+    material: iron_axe
+    slot: 11
+    display_name: '%imc_primary-color_c%Axes'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wooden Axe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stone Axe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Axe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Axe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Axe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Axe'
+  enchant_iron_pickaxe:
+    material: iron_pickaxe
+    slot: 12
+    display_name: '%imc_primary-color_c%Pickaxes'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wooden Pickaxe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stone Pickaxe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Pickaxe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Pickaxe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Pickaxe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Pickaxe'
+  enchant_iron_shovel:
+    material: iron_shovel
+    slot: 13
+    display_name: '%imc_primary-color_c%Shovels'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wooden Shovel'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stone Shovel'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Shovel'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Shovel'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Shovel'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Shovel'
+  enchant_iron_hoe:
+    material: iron_hoe
+    slot: 14
+    display_name: '%imc_primary-color_c%Hoes'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wooden Hoe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stone Hoe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Hoe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Hoe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Hoe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Hoe'
+  enchant_iron_helmet:
+    material: iron_helmet
+    slot: 15
+    display_name: '%imc_primary-color_c%Helmets'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Leather Cap'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Helmet'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Helmet'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Helmet'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Helmet'
+  enchant_iron_chestplate:
+    material: iron_chestplate
+    slot: 16
+    display_name: '%imc_primary-color_c%Chestplates'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Leather Tunic'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Chestplate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Chestplate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Chestplate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Chestplate'
+  enchant_iron_leggings:
+    material: iron_leggings
+    slot: 19
+    display_name: '%imc_primary-color_c%Leggings'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Leather Pants'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Leggings'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Leggings'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Leggings'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Leggings'
+  enchant_iron_boots:
+    material: iron_boots
+    slot: 20
+    display_name: '%imc_primary-color_c%Boots'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Leather Boots'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Boots'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Boots'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Boots'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Boots'
+  enchant_bow:
+    material: bow
+    slot: 21
+    display_name: '%imc_primary-color_c%Bows'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bow'
+      - '%imc_dark-color_c% • %imc_text-color_c%Crossbow'
+  enchant_mace:
+    material: mace
+    slot: 22
+    display_name: '%imc_primary-color_c%Mace'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mace'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_magician_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: MAGENTA_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

@@ -1,0 +1,101 @@
+bronze_helmet:
+  itemname: display-name-bronze_helmet
+  material: PAPER
+  AttributeModifiers:
+  - amount: 2.0
+    attribute: ARMOR
+    operation: 0
+    slot: HEAD
+    uuid: 9f6dd3fe-9efc-42c6-b4b8-681121f84bff
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: HEAD
+    uuid: db1167f3-88a4-4b26-aba3-5806c344db48
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: HEAD
+    uuid: 22fe42cc-7099-4467-97cd-a91622e3b799
+    name: nexo:modifier
+    key: nexo:modifier
+material: CHAINMAIL_BOOTS
+bronze_chestplate:
+  itemname: display-name-bronze_chestplate
+  material: PAPER
+  AttributeModifiers:
+  - amount: 6.0
+    attribute: ARMOR
+    operation: 0
+    slot: CHEST
+    uuid: 3887a580-8475-4c63-b440-8fe6873639d9
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: CHEST
+    uuid: 3ae3c1d0-84bb-4283-80dd-c7901a292cea
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: CHEST
+    uuid: 8993b13a-f1e8-416c-b23d-dc3f3bd82dfd
+    name: nexo:modifier
+    key: nexo:modifier
+bronze_leggings:
+  itemname: display-name-bronze_leggings
+  material: PAPER
+  AttributeModifiers:
+  - amount: 5.0
+    attribute: ARMOR
+    operation: 0
+    slot: LEGS
+    uuid: 34c81726-09c4-4711-9960-d89e819c214c
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: LEGS
+    uuid: dd82620f-7fb8-4f3f-9f83-aac87c060ddd
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: LEGS
+    uuid: 6307f507-55d9-4f2d-a48e-d7e212981983
+    name: nexo:modifier
+    key: nexo:modifier
+bronze_boots:
+  itemname: display-name-bronze_boots
+  material: PAPER
+  AttributeModifiers:
+  - amount: 2.0
+    attribute: ARMOR
+    operation: 0
+    slot: FEET
+    uuid: 919d2555-a5b3-4d7c-9431-c718d74a279b
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: FEET
+    uuid: 96c43049-ec38-4ccb-85cb-d5843d4ff801
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: FEET
+    uuid: 58e1ee09-479d-4f72-98c7-8f89ab4e983d
+    name: nexo:modifier
+    key: nexo:modifier

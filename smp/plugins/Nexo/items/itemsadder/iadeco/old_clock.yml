@@ -1,0 +1,14 @@
+old_clock:
+  itemname: display-name-old_clock
+  material: PAPER
+  lore:
+  - lore-decorative-item
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        barriers: 0,0,0
+  Pack:
+    model: iadeco:old_clock
+    custom_model_data: 1122

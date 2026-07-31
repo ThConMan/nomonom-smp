@@ -1,0 +1,13 @@
+turquoise_ore:
+  itemname: display-name-turquoise_ore
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: turquoise_ore
+      hardness: 2.0
+      custom_variation: 29
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/ores/turquoise_ore
+    custom_model_data: 1145

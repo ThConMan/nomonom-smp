@@ -1,0 +1,278 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Explorer
+size: 54
+items:
+  explore:
+    material: LEATHER_BOOTS
+    slot: 3
+    display_name: '%imc_primary-color_c%Explore'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Discover chunks to'
+      - '%imc_dark-color_c%receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_explorer_explore'
+  trade:
+    material: EMERALD
+    slot: 5
+    display_name: '%imc_primary-color_c%Villager Trade'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Trade with villagers the following'
+      - '%imc_dark-color_c%items to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_explorer_trade'
+  trade_emerald:
+    material: emerald
+    slot: 10
+    display_name: '%imc_primary-color_c%Emerald'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Emerald'
+  trade_blast_furnace:
+    material: blast_furnace
+    slot: 11
+    display_name: '%imc_primary-color_c%Armorer'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Helmet'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Chestplate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Leggings'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Boots'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chainmail Helmet'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chainmail Chestplate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chainmail Leggings'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chainmail Boots'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Helmet'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Chestplate'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Leggings'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Boots'
+  trade_smoker:
+    material: smoker
+    slot: 12
+    display_name: '%imc_primary-color_c%Butcher'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Rabbit Stew'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cooked Porkchop'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cooked Chicken'
+  trade_cartography_table:
+    material: cartography_table
+    slot: 13
+    display_name: '%imc_primary-color_c%Cartographer'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Empty Map'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any Color Blank Banner'
+  trade_brewing_stand:
+    material: brewing_stand
+    slot: 14
+    display_name: '%imc_primary-color_c%Cleric'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Redstone Dust'
+      - '%imc_dark-color_c% • %imc_text-color_c%Lapis Lazuli'
+      - '%imc_dark-color_c% • %imc_text-color_c%Glowstone'
+      - '%imc_dark-color_c% • %imc_text-color_c%Ender Pearl'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bottle o'' Enchanting'
+  trade_composter:
+    material: composter
+    slot: 15
+    display_name: '%imc_primary-color_c%Farmer'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bread'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pumpkin Pie'
+      - '%imc_dark-color_c% • %imc_text-color_c%Apple'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cookie'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cake'
+      - '%imc_dark-color_c% • %imc_text-color_c%Suspicious Stew'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Carrot'
+      - '%imc_dark-color_c% • %imc_text-color_c%Glistering Melon Slice'
+  trade_barrel:
+    material: barrel
+    slot: 16
+    display_name: '%imc_primary-color_c%Fisherman'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cooked Cod'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bucket of Cod'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cooked Salmon'
+      - '%imc_dark-color_c% • %imc_text-color_c%Campfire'
+      - '%imc_dark-color_c% • %imc_text-color_c%Fishing Rod'
+  trade_fletching_table:
+    material: fletching_table
+    slot: 19
+    display_name: '%imc_primary-color_c%Fletcher'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Arrow'
+      - '%imc_dark-color_c% • %imc_text-color_c%Flint'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bow'
+      - '%imc_dark-color_c% • %imc_text-color_c%Crossbow'
+      - '%imc_dark-color_c% • %imc_text-color_c%Tipped Arrow'
+  trade_cauldron:
+    material: cauldron
+    slot: 20
+    display_name: '%imc_primary-color_c%Leatherworker'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Leather Cap'
+      - '%imc_dark-color_c% • %imc_text-color_c%Leather Tunic'
+      - '%imc_dark-color_c% • %imc_text-color_c%Leather Pants'
+      - '%imc_dark-color_c% • %imc_text-color_c%Leather Boots'
+      - '%imc_dark-color_c% • %imc_text-color_c%Saddle'
+  trade_lectern:
+    material: lectern
+    slot: 21
+    display_name: '%imc_primary-color_c%Librarian'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Enchanted Book'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bookshelf'
+      - '%imc_dark-color_c% • %imc_text-color_c%Lantern'
+      - '%imc_dark-color_c% • %imc_text-color_c%Glass'
+      - '%imc_dark-color_c% • %imc_text-color_c%Clock'
+      - '%imc_dark-color_c% • %imc_text-color_c%Compass'
+      - '%imc_dark-color_c% • %imc_text-color_c%Name Tag'
+  trade_stonecutter:
+    material: stonecutter
+    slot: 22
+    display_name: '%imc_primary-color_c%Mason'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Brick'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chiseled Stone Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Andesite'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Diorite'
+      - '%imc_dark-color_c% • %imc_text-color_c%Polished Granite'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dripstone Block'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any Color Terracotta'
+      - '%imc_dark-color_c% • %imc_text-color_c%Quartz Pillar'
+      - '%imc_dark-color_c% • %imc_text-color_c%Block of Quartz'
+  trade_loom:
+    material: loom
+    slot: 23
+    display_name: '%imc_primary-color_c%Shepherd'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any Color Wool'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any Color Carpet'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any Color Bed'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any Color Blank Banner'
+  trade_smithing_table:
+    material: smithing_table
+    slot: 24
+    display_name: '%imc_primary-color_c%Toolsmith'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stone Axe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stone Pickaxe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stone Shovel'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stone Hoe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Axe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Pickaxe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Shovel'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Axe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Pickaxe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Shovel'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Hoe'
+  trade_grindstone:
+    material: grindstone
+    slot: 24
+    display_name: '%imc_primary-color_c%Weaponsmith'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Axe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Axe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Sword'
+  trade_lead:
+    material: lead
+    slot: 25
+    display_name: '%imc_primary-color_c%Wandering Trader'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Packed Ice'
+      - '%imc_dark-color_c% • %imc_text-color_c%Blue Ice'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Pickaxe'
+      - '%imc_dark-color_c% • %imc_text-color_c%Fern'
+      - '%imc_dark-color_c% • %imc_text-color_c%Sugar Cane'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pumpkin'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any kind of Flower'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any kind of Seed'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any Color Dye'
+      - '%imc_dark-color_c% • %imc_text-color_c%Vines'
+      - '%imc_dark-color_c% • %imc_text-color_c%Brown Mushroom & Red Mushroom'
+      - '%imc_dark-color_c% • %imc_text-color_c%Lily Pad'
+      - '%imc_dark-color_c% • %imc_text-color_c%Small Dripleaf'
+      - '%imc_dark-color_c% • %imc_text-color_c%Sand & Red Sand'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pointed Dripstone'
+      - '%imc_dark-color_c% • %imc_text-color_c%Rooted Dirt'
+      - '%imc_dark-color_c% • %imc_text-color_c%Moss Block'
+      - '%imc_dark-color_c% • %imc_text-color_c%Sea Pickle & Kelp'
+      - '%imc_dark-color_c% • %imc_text-color_c%Glowstone'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bucket of Tropical Fish & Bucket of Pufferfish'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cactus'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any Coral Block'
+      - '%imc_dark-color_c% • %imc_text-color_c%Slimeball'
+      - '%imc_dark-color_c% • %imc_text-color_c%Any kind of Sapling'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_explorer_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: CYAN_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

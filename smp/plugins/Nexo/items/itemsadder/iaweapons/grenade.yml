@@ -1,0 +1,6 @@
+grenade:
+  itemname: display-name-grenade
+  material: SNOWBALL
+  Pack:
+    texture: iaweapons:grenade
+    custom_model_data: 1000

@@ -1,0 +1,12 @@
+small_fountain:
+  itemname: display-name-small_fountain
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        barriers: 0,0,0
+  Pack:
+    model: iadeco:small_fountain
+    custom_model_data: 1140

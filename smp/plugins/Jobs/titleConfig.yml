@@ -1,0 +1,62 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+# Title configuration
+# Stores the titles people gain at certain levels.
+# Each title requres to have a name, short name (used when the player has more than
+# 1 job) the colour of the title and the level requrirement to attain the title.
+# It is recommended but not required to have a title at level 0.
+# Titles are completely optional.
+# Posible variable are {level} to add current jobs level.
+# Optionaly you can set different titles based by job.
+#   JobName: Miner
+
+Titles:
+  Newbie:
+    Name: "Newbie"
+    ShortName: "{level}"
+    ChatColour: GREEN
+    levelReq: 0
+  Rookie:
+    Name: "Rookie"
+    ShortName: "{level}"
+    ChatColour: DARK_GREEN
+    levelReq: 25
+  Skilled:
+    Name: "Skilled"
+    ShortName: "{level}"
+    ChatColour: YELLOW
+    levelReq: 50
+  Intermediate:
+    Name: "Intermediate"
+    ShortName: "{level}"
+    ChatColour: AQUA
+    levelReq: 75
+  Proficient:
+    Name: "Proficient"
+    ShortName: "{level}"
+    ChatColour: BLUE
+    levelReq: 100
+  Experienced:
+    Name: "Experienced"
+    ShortName: "{level}"
+    ChatColour: DARK_BLUE
+    levelReq: 125
+  Advanced:
+    Name: "Advanced"
+    ShortName: "{level}"
+    ChatColour: RED
+    levelReq: 150
+  Expert:
+    Name: "Expert"
+    ShortName: "{level}"
+    ChatColour: DARK_RED
+    levelReq: 200
+  VIP:
+    Name: "VIP"
+    ShortName: "V-{level}"
+    ChatColour: GOLD
+    levelReq: 201

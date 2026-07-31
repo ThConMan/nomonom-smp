@@ -1,0 +1,6 @@
+bat_wings:
+  itemname: display-name-bat_wings
+  material: FEATHER
+  Pack:
+    model: iafestivities:halloween/bat_wings
+    custom_model_data: 1001

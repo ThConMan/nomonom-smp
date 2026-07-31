@@ -1,0 +1,128 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Blacksmith
+size: 54
+items:
+  craft:
+    material: CRAFTING_TABLE
+    slot: 3
+    display_name: '%imc_primary-color_c%Craft'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Craft the following items'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_blacksmith_craft'
+      - '[sound] UI_BUTTON_CLICK'
+  smelt:
+    material: BLAST_FURNACE
+    slot: 4
+    display_name: '%imc_primary-color_c%Smelt'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Smelt to obtain the following'
+      - '%imc_dark-color_c%items to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_blacksmith_smelt'
+      - '[sound] UI_BUTTON_CLICK'
+  repair:
+    material: ANVIL
+    slot: 5
+    display_name: '%imc_primary-color_c%Repair'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Repair the following items'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_blacksmith_repair'
+      - '[sound] UI_BUTTON_CLICK'
+  repair_iron_sword:
+    material: iron_sword
+    slot: 10
+    display_name: '%imc_primary-color_c%Swords'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wooden Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stone Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Golden Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Diamond Sword'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Sword'
+  repair_netherite_helmet:
+    material: netherite_helmet
+    slot: 11
+    display_name: '%imc_primary-color_c%Helmets'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Helmet'
+  repair_netherite_chestplate:
+    material: netherite_chestplate
+    slot: 12
+    display_name: '%imc_primary-color_c%Chestplates'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Chestplate'
+  repair_netherite_leggings:
+    material: netherite_leggings
+    slot: 13
+    display_name: '%imc_primary-color_c%Leggings'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Leggings'
+  repair_netherite_boots:
+    material: netherite_boots
+    slot: 14
+    display_name: '%imc_primary-color_c%Boots'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Item:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Netherite Boots'
+  repair_bow:
+    material: bow
+    slot: 15
+    display_name: '%imc_primary-color_c%Bows'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Items:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bow'
+      - '%imc_dark-color_c% • %imc_text-color_c%Crossbow'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_blacksmith_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: ORANGE_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

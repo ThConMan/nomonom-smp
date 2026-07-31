@@ -1,0 +1,75 @@
+title: "ꜱᴇᴀʀᴄʜ ʀᴇꜱᴜʟᴛꜱ (Page %page%)"
+size: 54
+items:
+  bounty_entry:
+    material: PLAYER_HEAD
+    name: "&#FF6B35&l%player_name%"
+    lore:
+      - "&8Search Result"
+      - ""
+      - "&#FF6B35♦ &fBounty: &#FF0000$%amount%"
+      - "&#FF6B35♦ &fCreator: &f%creator%"
+      - ""
+      - "&7Add more bounty with /bounty add %player_name% <amount>"
+      - ""
+      - "&e➡ &l&nFOUND&e Target"
+    skull_owner: "%player_name%"
+    slots: [0-44]
+  close:
+    material: BARRIER
+    name: "&#ff0000&lᴄʟᴏꜱᴇ ꜱᴇᴀʀᴄʜ"
+    lore:
+      - "&8Action"
+      - ""
+      - "&fClick to close the search results"
+      - ""
+      - "&e➡ &l&nCLICK&e to Close"
+    slot: 49
+  next_page:
+    material: ARROW
+    name: "&#34eb9b&lɴᴇxᴛ ʀᴇꜱᴜʟᴛꜱ →"
+    lore:
+      - "&8Navigation"
+      - ""
+      - "&fGo forward to view"
+      - "&fmore search results!"
+      - ""
+      - "&e➡ &l&nCLICK&e to go Forward"
+    slot: 50
+  previous_page:
+    material: ARROW
+    name: "&#ff0000&l← ᴘʀᴇᴠɪᴏᴜꜱ ʀᴇꜱᴜʟᴛꜱ"
+    lore:
+      - "&8Navigation"
+      - ""
+      - "&fGo back to view"
+      - "&fprevious search results!"
+      - ""
+      - "&e➡ &l&nCLICK&e to go Back"
+    slot: 48
+  back_to_menu:
+    material: ARROW
+    name: "&#34eb9b&lʙᴀᴄᴋ ᴛᴏ ᴍᴀɪɴ ᴍᴇɴᴜ"
+    lore:
+      - "&8Navigation"
+      - ""
+      - "&fReturn to the bounty list"
+      - ""
+      - "&e➡ &l&nCLICK&e to Return"
+    slot: 45
+  search_again:
+    material: OAK_SIGN
+    name: "&#34eb9b&lɴᴇᴡ ꜱᴇᴀʀᴄʜ"
+    lore:
+      - "&8Action"
+      - ""
+      - "&fClick to search for a different player"
+      - ""
+      - "&e➡ &l&nCLICK&e to Search"
+    slot: 53
+  fill:
+    material: GRAY_STAINED_GLASS_PANE
+    name: " "
+    slots:
+      - 46-47
+      - 51-52

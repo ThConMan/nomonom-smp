@@ -1,0 +1,6 @@
+dark_amethyst:
+  itemname: display-name-dark_amethyst
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/dark_amethyst
+    custom_model_data: 1005

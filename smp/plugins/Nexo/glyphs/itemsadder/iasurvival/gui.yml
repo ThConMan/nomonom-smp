@@ -1,0 +1,8 @@
+customization_table_left:
+  texture: iasurvival:gui/customization_table_left
+  ascent: 12
+  char: ꘫ
+customization_table_right:
+  texture: iasurvival:gui/customization_table_right
+  ascent: 12
+  char: ꘬

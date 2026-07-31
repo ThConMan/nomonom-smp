@@ -1,0 +1,21 @@
+sweets_sword:
+  itemname: display-name-sweets_sword
+  material: WOODEN_SWORD
+  AttributeModifiers:
+  - amount: 0.1
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 61078aad-2d13-43aa-bced-c9b44edd15fb
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 5.0
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 7872e3cc-ac4c-49b7-ba1c-29fd9a09de60
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iasurvival:item/swords/sweets_sword
+    custom_model_data: 1006

@@ -1,0 +1,25 @@
+philosopher_stone:
+  itemname: display-name-philosopher_stone
+  material: IRON_INGOT
+  lore:
+  - ' '
+  AttributeModifiers:
+  - amount: 0.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: b3ddc0f7-56da-4f1a-9190-fae93cbbd1ce
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 4.0
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 0be52762-f758-460a-b2b3-5679bbff0437
+    name: nexo:modifier
+    key: nexo:modifier
+  ItemFlags:
+  - HIDE_ATTRIBUTES
+  Pack:
+    texture: iaalchemy:item/philosopher_stone
+    custom_model_data: 1004

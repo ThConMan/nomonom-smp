@@ -1,0 +1,24 @@
+arcane_ring:
+  itemname: Arcane Ring
+  material: STICK
+  lore:
+  - lore-1-arcane_ring
+  - lore-2-arcane_ring
+  AttributeModifiers:
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 74fba1a2-fbba-4b41-b528-65b8f21d9397
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: OFFHAND
+    uuid: e579a574-bc40-499b-a669-88ea40382134
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iaalchemy:item/arcane_ring
+    custom_model_data: 9919

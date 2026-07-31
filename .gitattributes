@@ -1,0 +1,4 @@
+# This repo is an archive of real server configs. Preserve bytes exactly:
+# no CRLF/LF translation, no cleanup filters. Some of these files are
+# Windows-1252 rather than UTF-8 and Bukkit reads them back as-is.
+* -text

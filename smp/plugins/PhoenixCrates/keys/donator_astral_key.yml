@@ -1,0 +1,15 @@
+enabled: true
+identifier: donator_astral_key
+virtual: false
+glow: true
+item:
+  material: TRIPWIRE_HOOK
+  display-name: '&6&lAstral Chest &7Key'
+  lore:
+  - ''
+  - '&7Use this key to open the'
+  - '&6&lAstral Chest &7crate!'
+  - ''
+  - '&6The pinnacle crate — Ascended'
+  - '&6Shards, Ingots, and top-tier loot!'
+  amount: 1

@@ -1,0 +1,226 @@
+#---------- [Copyrightⓒ2024- Lost Assets, Hyeonee_ All rights reserved] ----------#
+
+#---------- [ Mobs - LOST MOBS PACKS - 5 - Crystal Mine ] ----------#
+
+
+#
+# 5-1. CrystalRock
+#
+CrystalRock:
+  Type: husk
+  Display: '&fCrystalRock'
+  Health: 60
+  Damage: 7
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  - 2 players
+  Options:
+    Despawn: true
+    Persistent: true
+    MovementSpeed: 0.2
+    Armor: 12
+    DamageReduction: 0.35
+    KnockbackResistance: 0.6
+    PreventOtherDrops: true
+    Silent: true
+    Invisible: true
+    FollowRange: 16
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    PreventJockeyMounts: true
+    LockPitch: true #Requires ProtocolLib
+    UseVanillaSpawning: true
+    Experience: 40
+  Skills:
+  - model{mid=lostasset_mob5_CrystalRock;i=true} @self ~onSpawn
+  - model{mid=lostasset_mob5_CrystalRock;i=true} @self ~onSpawn ~delay:10
+  - model{mid=lostasset_mob5_CrystalRock;i=true} @self ~onLoad
+  - model{mid=lostasset_mob5_CrystalRock;i=true} @self ~onTimer:200
+  - CancelEvent{sync=true} @self ~onAttack
+  - setstance{stance=Combat;delay=40} @self ~onSpawn
+  - skill{s=lostasset_mobs5_CrystalRock_atk} ~onTimer:2
+  Drops:
+  # Ascended Shards: Wither-skull-ish but a tad rarer (mobs are everywhere)
+  - mmoitems{type=MATERIAL;id=ASCENDED_SHARDS} 1 1.8%
+  # small bonus roll (rare double drop)
+  - mmoitems{type=MATERIAL;id=ASCENDED_SHARDS} 1 0.18%
+#
+
+#
+# 5-2. CrystalHermitCrab
+#
+CrystalHermitCrab:
+  Type: husk
+  Display: '&fCrystalHermitCrab'
+  Health: 80
+  Damage: 8
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  - 2 players
+  Options:
+    Despawn: true
+    Persistent: true
+    MovementSpeed: 0.22
+    Armor: 14
+    DamageReduction: 0.4
+    KnockbackResistance: 0.7
+    PreventOtherDrops: true
+    Silent: true
+    Invisible: true
+    FollowRange: 16
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    PreventJockeyMounts: true
+    LockPitch: true #Requires ProtocolLib
+    UseVanillaSpawning: true
+    Experience: 65
+  Skills:
+  - model{mid=lostasset_mob5_CrystalHermitCrab;i=true} @self ~onSpawn
+  - model{mid=lostasset_mob5_CrystalHermitCrab;i=true} @self ~onSpawn ~delay:10
+  - model{mid=lostasset_mob5_CrystalHermitCrab;i=true} @self ~onLoad
+  - model{mid=lostasset_mob5_CrystalHermitCrab;i=true} @self ~onTimer:200
+  - CancelEvent{sync=true} @self ~onAttack
+  - setstance{stance=Combat;delay=40} @self ~onSpawn
+  - skill{s=lostasset_mobs5_CrystalHermitCrab_atk} ~onTimer:2
+  Drops:
+  # Ascended Shards: Wither-skull-ish but a tad rarer
+  - mmoitems{type=MATERIAL;id=ASCENDED_SHARDS} 1 2.6%
+  # small bonus roll (rare double drop)
+  - mmoitems{type=MATERIAL;id=ASCENDED_SHARDS} 1 0.26%
+#
+
+#
+# 5-3. CrystalHedgehog
+#
+CrystalHedgehog:
+  Type: husk
+  Display: '&fCrystalHedgehog'
+  Health: 100
+  Damage: 9
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  - 2 players
+  Options:
+    Despawn: true
+    Persistent: true
+    MovementSpeed: 0.32
+    Armor: 16
+    DamageReduction: 0.45
+    KnockbackResistance: 0.8
+    PreventOtherDrops: true
+    Silent: true
+    Invisible: true
+    FollowRange: 16
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    PreventJockeyMounts: true
+    LockPitch: true #Requires ProtocolLib
+    UseVanillaSpawning: true
+    Experience: 95
+  Skills:
+  - model{mid=lostasset_mob5_CrystalHedgehog;i=true} @self ~onSpawn
+  - model{mid=lostasset_mob5_CrystalHedgehog;i=true} @self ~onSpawn ~delay:10
+  - model{mid=lostasset_mob5_CrystalHedgehog;i=true} @self ~onLoad
+  - model{mid=lostasset_mob5_CrystalHedgehog;i=true} @self ~onTimer:200
+  - CancelEvent{sync=true} @self ~onAttack
+  - setstance{stance=Combat;delay=40} @self ~onSpawn
+  - skill{s=lostasset_mobs5_CrystalHedgehog_atk} ~onTimer:2
+  Drops:
+  # Ascended Shards: best odds (tanky mob) but still not spammy
+  - mmoitems{type=MATERIAL;id=ASCENDED_SHARDS} 1 3.8%
+  # small bonus roll (rare double drop)
+  - mmoitems{type=MATERIAL;id=ASCENDED_SHARDS} 1 0.38%
+#
+
+#
+# 5-4. CrystalScorpion (kept in file, but you said you don't use it roaming)
+#
+CrystalScorpion:
+  Type: husk
+  Display: '&fCrystalScorpion'
+  Health: 320
+  Damage: 15
+  AIGoalSelectors:
+  - 0 clear
+  - 1 meleeattack
+  - 2 randomstroll
+  AITargetSelectors:
+  - 0 clear
+  - 1 attacker
+  - 2 players
+  Options:
+    Despawn: true
+    Persistent: true
+    MovementSpeed: 0.30
+    Armor: 26
+    DamageReduction: 0.58
+    KnockbackResistance: 1.0
+    PreventOtherDrops: true
+    Silent: true
+    Invisible: true
+    FollowRange: 24
+    PreventItemPickup: true
+    PreventRandomEquipment: true
+    PreventJockeyMounts: true
+    LockPitch: true #Requires ProtocolLib
+    UseVanillaSpawning: true
+    Experience: 250
+  Skills:
+  - model{mid=lostasset_mob5_CrystalScorpion;i=true} @self ~onSpawn
+  - model{mid=lostasset_mob5_CrystalScorpion;i=true} @self ~onSpawn ~delay:10
+  - model{mid=lostasset_mob5_CrystalScorpion;i=true} @self ~onLoad
+  - model{mid=lostasset_mob5_CrystalScorpion;i=true} @self ~onTimer:200
+  - CancelEvent{sync=true} @self ~onAttack
+  - setstance{stance=Combat;delay=40} @self ~onSpawn
+  - skill{s=lostasset_mobs5_CrystalScorpion_atk} ~onTimer:2
+  - skill{s=lostasset_mobs5_CrystalScorpion_TailStab} ~onTimer:2 <70%
+  - skill{s=lostasset_mobs5_CrystalScorpion_EarthStrike} ~onTimer:2 <40%
+#
+
+CrystalScorpion_thorn:
+  Type: ARMOR_STAND
+  Damage: 1
+  AIGoalSelectors:
+  - 0 clear
+  AITargetSelectors:
+  - 0 clear
+  Options:
+    CanMove: false
+    CanTick: false
+    HasArms: false
+    HasBasePlate: false
+    HasGravity: true
+    Invisible: true
+    Marker: true
+    Invincible: true
+  Skills:
+  - model{mid=lostasset_mob5_crystalsc_tail;i=true} @self ~onSpawn
+  - model{mid=lostasset_mob5_crystalsc_tail;i=true} @self ~onSpawn ~delay:10
+  - model{mid=lostasset_mob5_crystalsc_tail;i=true} @self ~onLoad
+  - model{mid=lostasset_mob5_crystalsc_tail;i=true} @self ~onTimer:200
+  - CancelEvent{sync=true} @self ~onAttack
+  - brightness{mid=lostasset_mob5_crystalsc_tail;block=15;sky=15} @self ~onSpawn
+  - state{s=thorn;li=0;lo=0;i=true;li=0;lo=0} @Self ~onSpawn
+  - skill{s=lostasset_mobs5_CrystalScorpion_thorn} ~onSpawn
+#
+#
+#
+#
+
+
+#ed382a3c24d60ea642656f71f3e0ba31

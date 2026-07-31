@@ -1,0 +1,321 @@
+pages:
+  page1:
+    title: "&8&lMiner's Exchange"
+    gui-rows: 6
+    items:
+
+      # =========================================================
+      # QoL Packs (NOT game-breaking, no enchants, no AE overlap)
+      # These are command packs: items go straight to inventory.
+      # =========================================================
+
+      '1':
+        material: BUNDLE
+        displayname: "&6&lMiner's Satchel"
+        lore:
+          - "&7Basic supplies for a real mining run."
+          - ""
+          - "&fYou get:"
+          - "&f• &e64x &fTorch"
+          - "&f• &e16x &fLadder"
+          - "&f• &e8x &fCooked Beef"
+          - "&f• &e1x &fWater Bucket"
+          - ""
+          - "&8No resale"
+        buy: 260
+        sell: -1
+        giveItem: false
+        buy-commands:
+          - "cmi give %player% torch 64"
+          - "cmi give %player% ladder 16"
+          - "cmi give %player% cooked_beef 8"
+          - "cmi give %player% water_bucket 1"
+
+      '2':
+        material: BUNDLE
+        displayname: "&e&lDeep Delver Pack"
+        lore:
+          - "&7For longer trips (and bad decisions)."
+          - ""
+          - "&fYou get:"
+          - "&f• &e128x &fTorch"
+          - "&f• &e32x &fLadder"
+          - "&f• &e16x &fCooked Beef"
+          - "&f• &e1x &fWater Bucket"
+          - "&f• &e1x &fMilk Bucket"
+          - ""
+          - "&8No resale"
+        buy: 540
+        sell: -1
+        giveItem: false
+        buy-commands:
+          - "cmi give %player% torch 128"
+          - "cmi give %player% ladder 32"
+          - "cmi give %player% cooked_beef 16"
+          - "cmi give %player% water_bucket 1"
+          - "cmi give %player% milk_bucket 1"
+
+      '3':
+        material: BUNDLE
+        displayname: "&7&lCave Cleaner"
+        lore:
+          - "&7Light + blocks for safety."
+          - ""
+          - "&fYou get:"
+          - "&f• &e64x &fTorch"
+          - "&f• &e64x &fCobblestone"
+          - "&f• &e16x &fBaked Potato"
+          - ""
+          - "&8No resale"
+        buy: 220
+        sell: -1
+        giveItem: false
+        buy-commands:
+          - "cmi give %player% torch 64"
+          - "cmi give %player% cobblestone 64"
+          - "cmi give %player% baked_potato 16"
+
+
+      # =========================================================
+      # SELL-ONLY Exchange (players cannot buy ores/ingots/gems)
+      # buy: -1 on everything below
+      # Grouped by TYPE across all materials (ores together, ingots together, etc.)
+      # =========================================================
+
+
+      # =========================
+      # ORES (STONE / OVERWORLD)
+      # =========================
+      '12':
+        material: COAL_ORE
+        buy: -1
+        sell: 1.55
+      '16':
+        material: REDSTONE_ORE
+        buy: -1
+        sell: 1.15
+      '20':
+        material: LAPIS_ORE
+        buy: -1
+        sell: 2.2
+      '26':
+        material: COPPER_ORE
+        buy: -1
+        sell: 1.2
+      '33':
+        material: IRON_ORE
+        buy: -1
+        sell: 1.45
+      '40':
+        material: GOLD_ORE
+        buy: -1
+        sell: 2.2
+      '50':
+        material: EMERALD_ORE
+        buy: -1
+        sell: 11.0
+      '54':
+        material: DIAMOND_ORE
+        buy: -1
+        sell: 14.5
+
+      # =========================
+      # ORES (DEEPSLATE)
+      # =========================
+      '13':
+        material: DEEPSLATE_COAL_ORE
+        buy: -1
+        sell: 1.65
+      '17':
+        material: DEEPSLATE_REDSTONE_ORE
+        buy: -1
+        sell: 1.25
+      '21':
+        material: DEEPSLATE_LAPIS_ORE
+        buy: -1
+        sell: 2.35
+      '27':
+        material: DEEPSLATE_COPPER_ORE
+        buy: -1
+        sell: 1.3
+      '34':
+        material: DEEPSLATE_IRON_ORE
+        buy: -1
+        sell: 1.55
+      '41':
+        material: DEEPSLATE_GOLD_ORE
+        buy: -1
+        sell: 2.35
+      '51':
+        material: DEEPSLATE_EMERALD_ORE
+        buy: -1
+        sell: 11.5
+      '55':
+        material: DEEPSLATE_DIAMOND_ORE
+        buy: -1
+        sell: 15.0
+
+      # =========================
+      # ORES (NETHER)
+      # =========================
+      '45':
+        material: NETHER_QUARTZ_ORE
+        buy: -1
+        sell: 2.3
+      '42':
+        material: NETHER_GOLD_ORE
+        buy: -1
+        sell: 1.35
+      '56':
+        material: ANCIENT_DEBRIS
+        buy: -1
+        sell: 132.25
+
+
+      # =========================
+      # RAW ITEMS
+      # =========================
+      '24':
+        material: RAW_COPPER
+        buy: -1
+        sell: 0.3
+      '31':
+        material: RAW_IRON
+        buy: -1
+        sell: 1.15
+      '38':
+        material: RAW_GOLD
+        buy: -1
+        sell: 1.7
+
+      # =========================
+      # RAW BLOCKS
+      # =========================
+      '25':
+        material: RAW_COPPER_BLOCK
+        buy: -1
+        sell: 2.7
+      '32':
+        material: RAW_IRON_BLOCK
+        buy: -1
+        sell: 10.35
+      '39':
+        material: RAW_GOLD_BLOCK
+        buy: -1
+        sell: 15.3
+
+
+      # =========================
+      # NUGGETS
+      # =========================
+      '28':
+        material: IRON_NUGGET
+        buy: -1
+        sell: 0.15
+      '35':
+        material: GOLD_NUGGET
+        buy: -1
+        sell: 0.23
+
+
+      # =========================
+      # GEMS / DUST / SHARDS (ITEMS)
+      # =========================
+      '10':
+        material: COAL
+        buy: -1
+        sell: 1.32
+      '14':
+        material: REDSTONE
+        buy: -1
+        sell: 0.88
+      '18':
+        material: LAPIS_LAZULI
+        buy: -1
+        sell: 1.81
+      '43':
+        material: QUARTZ
+        buy: -1
+        sell: 2.07
+      '46':
+        material: AMETHYST_SHARD
+        buy: -1
+        sell: 0.33
+      '48':
+        material: EMERALD
+        buy: -1
+        sell: 9.85
+      '52':
+        material: DIAMOND
+        buy: -1
+        sell: 13.13
+
+
+      # =========================
+      # INGOTS
+      # =========================
+      '22':
+        material: COPPER_INGOT
+        buy: -1
+        sell: 0.35
+      '29':
+        material: IRON_INGOT
+        buy: -1
+        sell: 1.38
+      '36':
+        material: GOLD_INGOT
+        buy: -1
+        sell: 2.07
+      '57':
+        material: NETHERITE_INGOT
+        buy: -1
+        sell: 591.91
+
+
+      # =========================
+      # BLOCKS (STORAGE / BUILD)
+      # =========================
+      '11':
+        material: COAL_BLOCK
+        buy: -1
+        sell: 12.41
+      '15':
+        material: REDSTONE_BLOCK
+        buy: -1
+        sell: 8.27
+      '19':
+        material: LAPIS_BLOCK
+        buy: -1
+        sell: 17.06
+      '23':
+        material: COPPER_BLOCK
+        buy: -1
+        sell: 3.15
+      '30':
+        material: IRON_BLOCK
+        buy: -1
+        sell: 13.03
+      '37':
+        material: GOLD_BLOCK
+        buy: -1
+        sell: 19.54
+      '44':
+        material: QUARTZ_BLOCK
+        buy: -1
+        sell: 8.69
+      '47':
+        material: AMETHYST_BLOCK
+        buy: -1
+        sell: 1.38
+      '49':
+        material: EMERALD_BLOCK
+        buy: -1
+        sell: 93.03
+      '53':
+        material: DIAMOND_BLOCK
+        buy: -1
+        sell: 124.04
+      '58':
+        material: NETHERITE_BLOCK
+        buy: -1
+        sell: 5593.5

@@ -1,0 +1,17 @@
+enable: true
+slot: 21
+title: ''
+hidden: false
+sub-section: false
+display-item: false
+
+fill-item:
+  material: AIR
+
+nav-bar:
+  mode: INHERIT
+
+item:
+  material: CRAFTING_TABLE
+  displayname: '&a🛠 &b&lBuilder’s Workshop'
+  name: "&a🛠 &b&lBuilder’s Workshop"

@@ -1,0 +1,6 @@
+tuna:
+  itemname: display-name-tuna
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/fishes/tuna
+    custom_model_data: 1042

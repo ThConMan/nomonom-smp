@@ -1,0 +1,6 @@
+aqua_aura:
+  itemname: display-name-aqua_aura
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/aqua_aura
+    custom_model_data: 1000

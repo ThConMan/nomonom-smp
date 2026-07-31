@@ -1,0 +1,238 @@
+#---------- [Copyrightⓒ2024- Lost Assets, Hyeonee_ All rights reserved] ----------#
+
+#---------- [ Skills - LOST MOBS PACKS - 5 - Crystal Mine ] ----------#
+
+
+#
+# 5-1. CrystalRock
+#
+lostasset_mobs5_CrystalRock_atk:
+  Cooldown: 5.0
+  Conditions:
+  - offgcd
+  - stance{stance=Combat;str=true}
+  - incombat true
+  - targetwithin{d=6} true
+  Skills:
+  - setspeed{s=0.2} @self
+  - gcd{ticks=40} @self
+  - state{s=attack;li=0;lo=0;i=true} @self
+  - effect:sound{s=entity.ghast.shoot;v=0.3;p=0.7} @Self
+  - delay 14
+  - skill{s=lostasset_mobs5_CrystalRock_atk_totem} @forward{a=2.0}
+  - effect:sound{s=block.stone.break;v=0.6;p=0.8} @Self
+  - delay 6
+  - setspeed{s=1.0} @self
+lostasset_mobs5_CrystalRock_atk_totem:
+  Skills: 
+  - effect:particles{p=explode;a=3;hS=0.8;vS=0.2;s=0.12;y=0.8;vd=20}
+  - totem{ch=1;onStart=lostasset_mobs5_CrystalRock_atk_dmg;int=1;hR=3;md=1}
+lostasset_mobs5_CrystalRock_atk_dmg:
+  Skills:
+  - damage{a=<caster.damage>} @PlayersNearOrigin{r=3.0} #Damage *1, only Premium
+  - throw{velocity=4;velocityY=1.5} @PlayersNearOrigin{r=3.0}
+#
+
+
+#
+# 5-2. CrystalHermitCrab
+#
+lostasset_mobs5_CrystalHermitCrab_atk:
+  Cooldown: 5.0
+  Conditions:
+  - offgcd
+  - stance{stance=Combat;str=true}
+  - incombat true
+  - targetwithin{d=6} true
+  Skills:
+  - setspeed{s=0.3} @self
+  - gcd{ticks=40} @self
+  - state{s=attack;li=0;lo=0;i=true} @self
+  - effect:sound{s=entity.ghast.shoot;v=0.3;p=1.4} @Self
+  - delay 14
+  - skill{s=lostasset_mobs5_CrystalHermitCrab_atk_totem} @forward{a=2.5}
+  - effect:sound{s=entity.ghast.shoot;v=0.4;p=0.6} @Self
+  - delay 6
+  - setspeed{s=1.0} @self
+lostasset_mobs5_CrystalHermitCrab_atk_totem:
+  Skills: 
+  - effect:particles{p=explode;a=4;hS=0.8;vS=0.2;s=0.15;y=0.8;vd=20}
+  - totem{ch=1;onStart=lostasset_mobs5_CrystalHermitCrab_atk_dmg;int=1;hR=3;md=1}
+lostasset_mobs5_CrystalHermitCrab_atk_dmg:
+  Skills:
+  - damage{a=<caster.damage>} @PlayersNearOrigin{r=3.0} #Damage *1, only Premium
+  - throw{velocity=6;velocityY=1.0} @PlayersNearOrigin{r=3.0}
+#
+
+
+#
+# 5-3. CrystalHedgehog
+#
+lostasset_mobs5_CrystalHedgehog_atk:
+  Cooldown: 5.0
+  Conditions:
+  - offgcd
+  - stance{stance=Combat;str=true}
+  - incombat true
+  - targetwithin{d=6} true
+  Skills:
+  - setspeed{s=0.3} @self
+  - gcd{ticks=40} @self
+  - state{s=attack;li=0;lo=0;i=true} @self
+  - effect:sound{s=entity.ghast.shoot;v=0.3;p=1.6} @Self
+  - delay 15
+  - skill{s=lostasset_mobs5_CrystalHedgehog_atk_totem} @forward{a=2.0}
+  - effect:sound{s=entity.wither.shoot;v=0.5;p=1.8} @Self
+  - delay 5
+  - setspeed{s=1.0} @self
+lostasset_mobs5_CrystalHedgehog_atk_totem:
+  Skills: 
+  - effect:particles{p=explode;a=4;hS=0.8;vS=0.2;s=0.12;y=0.8;vd=20}
+  - totem{ch=1;onStart=lostasset_mobs5_CrystalHedgehog_atk_dmg;int=1;hR=3;md=1}
+lostasset_mobs5_CrystalHedgehog_atk_dmg:
+  Skills:
+  - damage{a=<caster.damage>} @PlayersNearOrigin{r=3.0} #Damage *1, only Premium
+  - throw{velocity=3;velocityY=1.5} @PlayersNearOrigin{r=3.0}
+#
+
+
+#
+# 5-4. CrystalScorpion
+#
+lostasset_mobs5_CrystalScorpion_atk:
+  Cooldown: 4.5
+  Conditions:
+  - offgcd
+  - stance{stance=Combat;str=true}
+  - incombat true
+  - targetwithin{d=8} true
+  Skills:
+  - setspeed{s=0.3} @self
+  - gcd{ticks=45} @self
+  - state{s=attack;li=0;lo=0;i=true} @self
+  - effect:sound{s=entity.ghast.shoot;v=01.0;p=0.6} @Self
+  - delay 7
+  - skill{s=lostasset_mobs5_CrystalScorpion_atk_totem} @forward{a=4.0}
+  - effect:sound{s=entity.wither.shoot;v=1.1;p=1.2} @Self
+  - delay 10
+  - skill{s=lostasset_mobs5_CrystalScorpion_atk_totem} @forward{a=4.0}
+  - effect:sound{s=entity.wither.shoot;v=1.2;p=0.8} @Self
+  - delay 8
+  - setspeed{s=1.0} @self
+lostasset_mobs5_CrystalScorpion_atk_totem:
+  Skills: 
+  - effect:particles{p=explode;a=7;hS=1.4;vS=0.2;s=0.15;y=0.8;vd=20}
+  - totem{ch=1;onStart=lostasset_mobs5_CrystalScorpion_atk_dmg;int=1;hR=3;md=1}
+lostasset_mobs5_CrystalScorpion_atk_dmg:
+  Skills:
+  - damage{a=<caster.damage>} @PlayersNearOrigin{r=5.0} #Damage *1, only Premium
+  - throw{velocity=-1.5;velocityY=2.0} @PlayersNearOrigin{r=5.0}
+#
+lostasset_mobs5_CrystalScorpion_TailStab:
+  Cooldown: 9.0
+  Conditions:
+  - offgcd
+  - stance{stance=Combat;str=true}
+  - incombat true
+  - targetwithin{d=7} true
+  Skills:
+  - setspeed{s=0.0} @self
+  - gcd{ticks=40} @self
+  - state{s=pattern1;li=0;lo=0;i=true} @self
+  - effect:sound{s=entity.ghast.shoot;v=0.9;p=1.4} @Self
+  - delay 14
+  - skill{s=lostasset_mobs5_CrystalScorpion_TailStab_totem} @forward{a=4.0}
+  - effect:sound{s=entity.wither.shoot;v=1.4;p=1.4} @Self
+  - delay 6
+  - setspeed{s=1.0} @self
+lostasset_mobs5_CrystalScorpion_TailStab_totem:
+  Skills: 
+  - effect:particles{p=explode;a=12;hS=2.2;vS=0.2;s=0.15;y=0.8;vd=20}
+  - totem{ch=1;onStart=lostasset_mobs5_CrystalScorpion_TailStab_dmg;int=1;hR=3;md=1}
+lostasset_mobs5_CrystalScorpion_TailStab_dmg:
+  Skills:
+  - damage{a=<caster.damage>} @PlayersNearOrigin{r=6.0} #Damage *1, only Premium
+  - potion{t=POISON;d=80;level=0;force=true} @PlayersNearOrigin{r=6.0}
+  - throw{velocity=3.0;velocityY=1.5} @PlayersNearOrigin{r=6.0}
+#
+lostasset_mobs5_CrystalScorpion_EarthStrike:
+  Cooldown: 17.0
+  Conditions:
+  - offgcd
+  - stance{stance=Combat;str=true}
+  - incombat true
+  - targetwithin{d=16} true
+  Skills:
+  - setspeed{s=0.0} @self
+  - gcd{ticks=40} @self
+  - state{s=pattern2;li=0;lo=0;i=true} @self
+  - effect:sound{s=entity.ghast.shoot;v=1.2;p=0.6} @Self
+  - delay 7
+  - effect:particles{p=explode;a=12;hS=2.2;vS=0.2;s=0.16;y=0.2;vd=16} @Self
+  - delay 8
+  - skill{s=lostasset_mobs5_CrystalScorpion_EarthStrike_projectile} @Target
+  - effect:particles{p=explode;a=40;hS=3.6;vS=0.3;s=0.16;y=0.3;vd=24} @Self
+  - effect:sound{s=entity.generic.explode;v=1.2;p=1.2} @Self
+  - effect:sound{s=entity.ghast.shoot;v=0.8;p=0.6} @Self
+  - delay 5
+  - setspeed{s=1.0} @self
+lostasset_mobs5_CrystalScorpion_EarthStrike_projectile:
+  Skills: 
+  - projectile{oT=Summon_lostasset_mobs5_CrystalScorpion_EarthStrike;int=7;hR=1.0;vR=1.0;d=60;mr=24;v=8;sE=false;sB=false;hp=false;ht=false;hs=true;hfs=0;mch=2;hO=0}
+  - projectile{oT=Summon_lostasset_mobs5_CrystalScorpion_EarthStrike;int=7;hR=1.0;vR=1.0;d=60;mr=24;v=8;sE=false;sB=false;hp=false;ht=false;hs=true;hfs=0;mch=2;hO=60}
+  - projectile{oT=Summon_lostasset_mobs5_CrystalScorpion_EarthStrike;int=7;hR=1.0;vR=1.0;d=60;mr=24;v=8;sE=false;sB=false;hp=false;ht=false;hs=true;hfs=0;mch=2;hO=120}
+  - projectile{oT=Summon_lostasset_mobs5_CrystalScorpion_EarthStrike;int=7;hR=1.0;vR=1.0;d=60;mr=24;v=8;sE=false;sB=false;hp=false;ht=false;hs=true;hfs=0;mch=2;hO=180}
+  - projectile{oT=Summon_lostasset_mobs5_CrystalScorpion_EarthStrike;int=7;hR=1.0;vR=1.0;d=60;mr=24;v=8;sE=false;sB=false;hp=false;ht=false;hs=true;hfs=0;mch=2;hO=240}
+  - projectile{oT=Summon_lostasset_mobs5_CrystalScorpion_EarthStrike;int=7;hR=1.0;vR=1.0;d=60;mr=24;v=8;sE=false;sB=false;hp=false;ht=false;hs=true;hfs=0;mch=2;hO=300}
+Summon_lostasset_mobs5_CrystalScorpion_EarthStrike:
+  Skills: 
+  - summon{m=lostasset_mobs5_CrystalScorpion_thorn;a=1;r=0;yr=0;os=true} @Origin
+#
+lostasset_mobs5_CrystalScorpion_thorn:
+  Skills:
+  - effect:sound{s=entity.ghast.shoot;v=0.3;p=1.4} @Self
+  - delay 15
+  - skill{s=HIT_lostasset_mobs5_CrystalScorpion_thorn} @PIR{r=4}
+  - effect:particles{p=explode;a=4;hS=0.8;vS=0.2;s=0.14;y=0.2;vd=16} @Self
+  - effect:sound{s=entity.wither.shoot;v=0.3;p=1.4} @Self
+  - delay 14
+  - effect:sound{s=entity.ghast.shoot;v=0.3;p=1.2} @Self
+  - delay 6
+  - remove{} @Self
+HIT_lostasset_mobs5_CrystalScorpion_thorn:
+  Skills:
+  - damage{a=<caster.damage>;is=true} #Damage *1, only Premium
+  - throw{velocity=1;velocityY=0.5}
+
+
+#
+#
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#ed382a3c24d60ea642656f71f3e0ba31

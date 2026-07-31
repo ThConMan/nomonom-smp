@@ -1,0 +1,14 @@
+demoniac_hammer:
+  itemname: display-name-demoniac_hammer
+  material: DIAMOND_PICKAXE
+  lore:
+  - lore-1-demoniac_hammer
+  - lore-2-demoniac_hammer
+  - lore-3-demoniac_hammer
+  - lore-4-demoniac_hammer
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  - lore-enchantment-efficiency
+  Pack:
+    texture: iaalchemy:item/demoniac_hammer
+    custom_model_data: 1003

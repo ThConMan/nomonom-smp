@@ -1,0 +1,316 @@
+ascbow:
+  itemname: Ascended Bow
+  material: BOW
+  Pack:
+    texture: minecraft:ascarmorntools/tools/bow_asc
+    pulling_textures:
+    - minecraft:ascarmorntools/tools/bow_asc_0
+    - minecraft:ascarmorntools/tools/bow_asc_1
+    - minecraft:ascarmorntools/tools/bow_asc_2
+    custom_model_data: 9183
+
+ascaxe:
+  material: NETHERITE_AXE
+  Pack:
+    parent_model: minecraft:item/handheld
+    texture: minecraft:ascarmorntools/tools/asc_netherite_axe
+    custom_model_data: 9184
+  itemname: <white>Ascended Axe
+
+aschoe:
+  material: NETHERITE_HOE
+  Pack:
+    parent_model: minecraft:item/handheld
+    texture: minecraft:ascarmorntools/tools/asc_netherite_hoe
+    custom_model_data: 9185
+  itemname: <white>Ascended Hoe
+
+ascpickaxe:
+  material: NETHERITE_PICKAXE
+  itemname: <white>Ascended Pickaxe
+  Pack:
+    parent_model: minecraft:item/handheld
+    texture: minecraft:ascarmorntools/tools/asc_netherite_pickaxe
+    custom_model_data: 9186
+
+ascshovel:
+  material: NETHERITE_SHOVEL
+  Pack:
+    parent_model: minecraft:item/handheld
+    texture: minecraft:ascarmorntools/tools/asc_netherite_shovel
+    custom_model_data: 9187
+  itemname: <white>Ascended Shovel
+
+# =================================================
+# ASCENDED ARMOR — NEXO ITEMS (textures/models live here)
+# All variants match the base Ascended look (same icons + same worn model)
+# =================================================
+
+# ---------- BASE ASCENDED ----------
+ascended_helmet:
+  itemname: Ascended Helmet
+  mmoitem:
+    type: ARMOR
+    id: ASCENDED_HELMET
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_helmet
+    custom_model_data: 9100
+  Components:
+    equippable:
+      slot: HEAD
+      asset_id: nexo:ascended
+
+ascended_chestplate:
+  itemname: Ascended Chestplate
+  mmoitem:
+    type: ARMOR
+    id: ASCENDED_CHESTPLATE
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_chestplate
+    custom_model_data: 9101
+  Components:
+    equippable:
+      slot: CHEST
+      asset_id: nexo:ascended
+
+ascended_leggings:
+  itemname: Ascended Leggings
+  mmoitem:
+    type: ARMOR
+    id: ASCENDED_LEGGINGS
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_leggings
+    custom_model_data: 9102
+  Components:
+    equippable:
+      slot: LEGS
+      asset_id: nexo:ascended
+
+ascended_boots:
+  itemname: Ascended Boots
+  mmoitem:
+    type: ARMOR
+    id: ASCENDED_BOOTS
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_boots
+    custom_model_data: 9103
+  Components:
+    equippable:
+      slot: FEET
+      asset_id: nexo:ascended
+
+
+# ---------- FIRE (icons match base) ----------
+ascended_fire_helmet:
+  itemname: Ascended Fire Helmet
+  mmoitem:
+    type: ARMOR
+    id: ASC_HELM_FIRE
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_helmet
+    custom_model_data: 9110
+  Components:
+    equippable:
+      slot: HEAD
+      asset_id: nexo:ascended
+
+ascended_fire_chestplate:
+  itemname: Ascended Fire Chestplate
+  mmoitem:
+    type: ARMOR
+    id: ASC_CHEST_FIRE
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_chestplate
+    custom_model_data: 9111
+  Components:
+    equippable:
+      slot: CHEST
+      asset_id: nexo:ascended
+
+ascended_fire_leggings:
+  itemname: Ascended Fire Leggings
+  mmoitem:
+    type: ARMOR
+    id: ASC_LEGS_FIRE
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_leggings
+    custom_model_data: 9112
+  Components:
+    equippable:
+      slot: LEGS
+      asset_id: nexo:ascended
+
+ascended_fire_boots:
+  itemname: Ascended Fire Boots
+  mmoitem:
+    type: ARMOR
+    id: ASC_BOOT_FIRE
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_boots
+    custom_model_data: 9113
+  Components:
+    equippable:
+      slot: FEET
+      asset_id: nexo:ascended
+
+
+# ---------- WATER (icons match base) ----------
+ascended_water_helmet:
+  itemname: Ascended Water Helmet
+  mmoitem:
+    type: ARMOR
+    id: ASC_HELM_WATER
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_helmet
+    custom_model_data: 9120
+  Components:
+    equippable:
+      slot: HEAD
+      asset_id: nexo:ascended
+
+ascended_water_chestplate:
+  itemname: Ascended Water Chestplate
+  mmoitem:
+    type: ARMOR
+    id: ASC_CHEST_WATER
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_chestplate
+    custom_model_data: 9121
+  Components:
+    equippable:
+      slot: CHEST
+      asset_id: nexo:ascended
+
+ascended_water_leggings:
+  itemname: Ascended Water Leggings
+  mmoitem:
+    type: ARMOR
+    id: ASC_LEGS_WATER
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_leggings
+    custom_model_data: 9122
+  Components:
+    equippable:
+      slot: LEGS
+      asset_id: nexo:ascended
+
+ascended_water_boots:
+  itemname: Ascended Water Boots
+  mmoitem:
+    type: ARMOR
+    id: ASC_BOOT_WATER
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_boots
+    custom_model_data: 9123
+  Components:
+    equippable:
+      slot: FEET
+      asset_id: nexo:ascended
+
+
+# ---------- WIND (icons match base) ----------
+ascended_wind_helmet:
+  itemname: Ascended Wind Helmet
+  mmoitem:
+    type: ARMOR
+    id: ASC_HELM_WIND
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_helmet
+    custom_model_data: 9130
+  Components:
+    equippable:
+      slot: HEAD
+      asset_id: nexo:ascended
+
+ascended_wind_chestplate:
+  itemname: Ascended Wind Chestplate
+  mmoitem:
+    type: ARMOR
+    id: ASC_CHEST_WIND
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_chestplate
+    custom_model_data: 9131
+  Components:
+    equippable:
+      slot: CHEST
+      asset_id: nexo:ascended
+
+ascended_wind_leggings:
+  itemname: Ascended Wind Leggings
+  mmoitem:
+    type: ARMOR
+    id: ASC_LEGS_WIND
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_leggings
+    custom_model_data: 9132
+  Components:
+    equippable:
+      slot: LEGS
+      asset_id: nexo:ascended
+
+ascended_wind_boots:
+  itemname: Ascended Wind Boots
+  mmoitem:
+    type: ARMOR
+    id: ASC_BOOT_WIND
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_boots
+    custom_model_data: 9133
+  Components:
+    equippable:
+      slot: FEET
+      asset_id: nexo:ascended
+
+
+# ---------- EARTH (icons match base) ----------
+ascended_earth_helmet:
+  itemname: Ascended Earth Helmet
+  mmoitem:
+    type: ARMOR
+    id: ASC_HELM_EARTH
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_helmet
+    custom_model_data: 9140
+  Components:
+    equippable:
+      slot: HEAD
+      asset_id: nexo:ascended
+
+ascended_earth_chestplate:
+  itemname: Ascended Earth Chestplate
+  mmoitem:
+    type: ARMOR
+    id: ASC_CHEST_EARTH
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_chestplate
+    custom_model_data: 9141
+  Components:
+    equippable:
+      slot: CHEST
+      asset_id: nexo:ascended
+
+ascended_earth_leggings:
+  itemname: Ascended Earth Leggings
+  mmoitem:
+    type: ARMOR
+    id: ASC_LEGS_EARTH
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_leggings
+    custom_model_data: 9142
+  Components:
+    equippable:
+      slot: LEGS
+      asset_id: nexo:ascended
+
+ascended_earth_boots:
+  itemname: Ascended Earth Boots
+  mmoitem:
+    type: ARMOR
+    id: ASC_BOOT_EARTH
+  Pack:
+    texture: nexo:item/nexo_armor/ascended_boots
+    custom_model_data: 9143
+  Components:
+    equippable:
+      slot: FEET
+      asset_id: nexo:ascended

@@ -1,0 +1,10 @@
+projectile:
+  itemname: display-name-projectile
+  material: STICK
+  lore:
+  - lore-1-projectile
+  - lore-2-projectile
+  - lore-3-projectile
+  Pack:
+    texture: iaweapons:projectile
+    custom_model_data: 1061

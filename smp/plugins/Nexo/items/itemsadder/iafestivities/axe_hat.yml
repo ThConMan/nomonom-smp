@@ -1,0 +1,6 @@
+axe_hat:
+  itemname: display-name-axe_hat
+  material: FEATHER
+  Pack:
+    model: iafestivities:halloween/axe_hat
+    custom_model_data: 1000

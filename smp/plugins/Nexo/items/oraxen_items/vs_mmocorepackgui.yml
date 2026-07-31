@@ -1,0 +1,193 @@
+invisible_slot:
+  material: PAPER
+  Pack:
+    parent_model: item/generated
+    custom_model_data: 11181
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_invisible_slot.png
+  itemname: Invisible Slot
+vs_mmocorepackgui_previous_page:
+  material: PAPER
+  Pack:
+    custom_model_data: 11182
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_previous_page
+  itemname: Previous Page
+vs_mmocorepackgui_next_page:
+  material: PAPER
+  Pack:
+    custom_model_data: 11183
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_next_page
+  itemname: Next Page
+vs_mmocorepackgui_waypoints_unlocked:
+  material: PAPER
+  Pack:
+    custom_model_data: 10890
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_waypoints_unlocked
+  itemname: Unlocked Waypoint
+vs_mmocorepackgui_waypoints_locked:
+  material: PAPER
+  Pack:
+    custom_model_data: 10894
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_waypoints_locked
+  itemname: Locked Waypoint
+vs_mmocorepackgui_waypoints_current:
+  material: PAPER
+  Pack:
+    custom_model_data: 10892
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_waypoints_current
+  itemname: Current Waypoint
+vs_mmocorepackgui_waypoints_unavailable:
+  material: PAPER
+  Pack:
+    custom_model_data: 10893
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_waypoints_unavailable
+  itemname: Unavailable Waypoint
+vs_mmocorepackgui_skills_reset:
+  material: PAPER
+  Pack:
+    custom_model_data: 10900
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_skills_reset
+  itemname: Reset Skills
+vs_mmocorepackgui_skills_upgrade:
+  material: PAPER
+  Pack:
+    custom_model_data: 10901
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_skills_upgrade
+  itemname: Upgrade Skill
+vs_mmocorepackgui_skills_slot:
+  material: PAPER
+  Pack:
+    custom_model_data: 10902
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_skills_slot
+  itemname: Skill Slot
+vs_mmocorepackgui_skills_level_one:
+  material: PAPER
+  Pack:
+    custom_model_data: 10903
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_skills_level_one
+  itemname: Level One Skill
+vs_mmocorepackgui_skills_level_two:
+  material: PAPER
+  Pack:
+    custom_model_data: 10904
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_skills_level_two
+  itemname: Level Two Skill
+vs_mmocorepackgui_skills_level_three:
+  material: PAPER
+  Pack:
+    custom_model_data: 10905
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_skills_level_three
+  itemname: Level Three Skill
+vs_mmocorepackgui_attributes_reset:
+  material: PAPER
+  Pack:
+    custom_model_data: 10910
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_attributes_reset
+  itemname: Reset Attributes
+vs_mmocorepackgui_attributes_strength:
+  material: PAPER
+  Pack:
+    custom_model_data: 10911
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_attributes_strength
+  itemname: Strength Attribute
+vs_mmocorepackgui_attributes_dexterity:
+  material: PAPER
+  Pack:
+    custom_model_data: 10912
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_attributes_dexterity
+  itemname: Dexterity Attribute
+vs_mmocorepackgui_attributes_intelligence:
+  material: PAPER
+  Pack:
+    custom_model_data: 10913
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_attributes_intelligence
+  itemname: Intelligence Attribute
+vs_mmocorepackgui_party_invite:
+  material: PAPER
+  Pack:
+    custom_model_data: 10920
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_party_invite
+  itemname: Invite Player
+vs_mmocorepackgui_party_leave:
+  material: PAPER
+  Pack:
+    custom_model_data: 10921
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_party_leave
+  itemname: Leave Party
+vs_mmocorepackgui_profile_attribute_strength:
+  material: PAPER
+  Pack:
+    custom_model_data: 10930
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_attribute_strength
+  itemname: Strength Attribute
+vs_mmocorepackgui_profile_attribute_dexterity:
+  material: PAPER
+  Pack:
+    custom_model_data: 10931
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_attribute_dexterity
+  itemname: Dexterity Attribute
+vs_mmocorepackgui_profile_attribute_intelligence:
+  material: PAPER
+  Pack:
+    custom_model_data: 10932
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_attribute_intelligence
+  itemname: Intelligence Attribute
+vs_mmocorepackgui_profile_character:
+  material: PAPER
+  Pack:
+    custom_model_data: 10933
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_character
+  itemname: Character
+vs_mmocorepackgui_profile_booster:
+  material: PAPER
+  Pack:
+    custom_model_data: 10934
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_booster
+  itemname: Booster
+vs_mmocorepackgui_profile_profession_mining:
+  material: PAPER
+  Pack:
+    custom_model_data: 10935
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_mining
+  itemname: Mining Profession
+vs_mmocorepackgui_profile_profession_woodcutting:
+  material: PAPER
+  Pack:
+    custom_model_data: 10936
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_woodcutting
+  itemname: Woodcutting Profession
+vs_mmocorepackgui_profile_profession_farming:
+  material: PAPER
+  Pack:
+    custom_model_data: 10937
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_farming
+  itemname: Farming Profession
+vs_mmocorepackgui_profile_profession_fishing:
+  material: PAPER
+  Pack:
+    custom_model_data: 10938
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_fishing
+  itemname: Fishing Profession
+vs_mmocorepackgui_profile_profession_smelting:
+  material: PAPER
+  Pack:
+    custom_model_data: 10939
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_smelting
+  itemname: Smelting Profession
+vs_mmocorepackgui_profile_profession_enchanting:
+  material: PAPER
+  Pack:
+    custom_model_data: 10940
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_enchanting
+  itemname: Enchanting Profession
+vs_mmocorepackgui_profile_profession_alchemy:
+  material: PAPER
+  Pack:
+    custom_model_data: 10941
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_alchemy
+  itemname: Alchemy Profession
+vs_mmocorepackgui_profile_profession_smithing:
+  material: PAPER
+  Pack:
+    custom_model_data: 10942
+    texture: vs_mmocorepackgui/item/vs_mmocorepackgui_profile_profession_smithing
+  itemname: Smithing Profession

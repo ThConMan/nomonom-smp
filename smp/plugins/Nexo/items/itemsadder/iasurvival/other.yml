@@ -1,0 +1,36 @@
+nest:
+  itemname: display-name-nest
+  material: STICK
+  Pack:
+    texture: iasurvival:item/other/nest
+    custom_model_data: 1055
+eggs_nest:
+  itemname: display-name-eggs_nest
+  material: STICK
+  Pack:
+    texture: iasurvival:item/other/eggs_nest
+    custom_model_data: 1056
+plastic:
+  itemname: display-name-plastic
+  material: STICK
+  Pack:
+    texture: iasurvival:item/other/plastic
+    custom_model_data: 1057
+plastic_plate:
+  itemname: display-name-plastic_plate
+  material: STICK
+  Pack:
+    texture: iasurvival:item/other/plastic_plate
+    custom_model_data: 1058
+iron_plate:
+  itemname: display-name-iron_plate
+  material: STICK
+  Pack:
+    texture: iasurvival:item/other/iron_plate
+    custom_model_data: 1059
+tobacco:
+  itemname: display-name-tobacco
+  material: STICK
+  Pack:
+    texture: iasurvival:item/other/tobacco
+    custom_model_data: 1060

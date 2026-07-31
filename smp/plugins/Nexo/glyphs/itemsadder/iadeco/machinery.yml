@@ -1,0 +1,8 @@
+vending_machine_left:
+  texture: iadeco:gui/vending_machine_left
+  ascent: 12
+  char: ꘺
+vending_machine_right:
+  texture: iadeco:gui/vending_machine_right
+  ascent: 12
+  char: ꘻

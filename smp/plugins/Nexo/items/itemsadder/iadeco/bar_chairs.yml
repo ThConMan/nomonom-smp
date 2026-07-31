@@ -1,0 +1,240 @@
+white_bar_chair:
+  itemname: display-name-white_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:white_bar_chair
+    custom_model_data: 1017
+orange_bar_chair:
+  itemname: display-name-orange_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:orange_bar_chair
+    custom_model_data: 1018
+magenta_bar_chair:
+  itemname: display-name-magenta_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:magenta_bar_chair
+    custom_model_data: 1019
+light_blue_bar_chair:
+  itemname: display-name-light_blue_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:light_blue_bar_chair
+    custom_model_data: 1020
+yellow_bar_chair:
+  itemname: display-name-yellow_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:yellow_bar_chair
+    custom_model_data: 1021
+lime_bar_chair:
+  itemname: display-name-lime_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:lime_bar_chair
+    custom_model_data: 1022
+pink_bar_chair:
+  itemname: display-name-pink_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:pink_bar_chair
+    custom_model_data: 1023
+gray_bar_chair:
+  itemname: display-name-gray_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:gray_bar_chair
+    custom_model_data: 1024
+light_gray_bar_chair:
+  itemname: display-name-light_gray_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:light_gray_bar_chair
+    custom_model_data: 1025
+cyan_bar_chair:
+  itemname: display-name-cyan_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:cyan_bar_chair
+    custom_model_data: 1026
+purple_bar_chair:
+  itemname: display-name-purple_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:purple_bar_chair
+    custom_model_data: 1027
+blue_bar_chair:
+  itemname: display-name-blue_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:blue_bar_chair
+    custom_model_data: 1028
+brown_bar_chair:
+  itemname: display-name-brown_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:brown_bar_chair
+    custom_model_data: 1029
+green_bar_chair:
+  itemname: display-name-green_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:green_bar_chair
+    custom_model_data: 1030
+red_bar_chair:
+  itemname: display-name-red_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:red_bar_chair
+    custom_model_data: 1031
+black_bar_chair:
+  itemname: display-name-black_bar_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,0.3,0
+  Pack:
+    model: iadeco:black_bar_chair
+    custom_model_data: 1032

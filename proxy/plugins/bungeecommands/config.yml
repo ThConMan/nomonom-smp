@@ -1,0 +1,88 @@
+config-version: 1.4
+
+# Editor for minimessage: https://webui.advntr.dev/
+# Free version can have only 3 commands
+
+messages:
+  prefix: '<color:#686e70>[<color:#5bb3d4>BungeeCommands<color:#686e70>] '
+  command_is_disabled_on_this_server: '<red>This command is disabled on this server!'
+  no_permission: '<red>You do not have permission to execute this command!'
+
+commands:
+  hub:
+    # If you want to enable the command on all servers, just remove the enabled_servers section
+    aliases:
+      - "lobby"
+  #  permission: "hub.command"
+    commands:
+      - "send %player% Lobby"
+      - "@MESSAGE@ <green>Sending you to the Lobby...</green>"
+      - "@ACTIONBAR@ <yellow>Teleporting...</yellow>"
+
+  smp:
+    aliases:
+      - "survival"
+  #  permission: "smp.command"
+    commands:
+      - "send %player% SMP"
+      - "@MESSAGE@ <green>Sending you to SMP...</green>"
+      - "@ACTIONBAR@ <yellow>Teleporting...</yellow>"
+      
+  mortalrealm:
+    aliases:
+      - "mortalrealm"
+  #  permission: "smp.command"
+    commands:
+      - "send %player% MortalRealm"
+      - "@MESSAGE@ <green>Sending you to Mortal Realm...</green>"
+      - "@ACTIONBAR@ <yellow>Teleporting...</yellow>"
+
+ # discord:
+ #   permission: "hub.command"
+#    commands:
+ #     - "@MESSAGE@ <color:#ff8fbc>Link: <color:#2c29ff><color:#94c6ff><hover:show_text:'Click to open'><click:open_url:'https://discord.com'>Discord</click></hover></color></color></color>"
+ #     - "@SOUND@ Example1"
+#
+ # donate:
+ #   permission: "donate.command"
+ #   commands:
+ #     - "@BROADCAST@ <color:#ff8fbc>Link: <color:#2c29ff><color:#94c6ff><hover:show_text:'Click to open'><click:open_url:'https://donate.com'>Donate</click></hover></color></color></color>"
+#
+titles:
+  Example1:
+    fadein: 10
+    stay: 20
+    fadeout: 10
+    title: "<green>Hub"
+    subtitle: "<gray>!!!"
+
+sounds:
+  Example1:
+    name: "ENTITY.PLAYER.LEVELUP"
+    volume: 1.0
+    pitch: 1.0
+
+#
+# Documentation
+#
+# If you want to enable the command on all servers, just remove the enabled_servers section
+#
+# Here is the list of all available custom tags:
+#
+# - @MESSAGE@ - Sends a message to the player | You can use <br> to create a new line
+# - @BROADCAST@ - Sends a message to all players on the server
+# - @ACTIONBAR@ - Sends a message to the action bar of the player
+# - @TITLE@ Name_of_the_title - Sends a title to the player
+# - @DELAY@ (seconds) - Waits for a certain amount of time before executing the next command
+#
+# Extra commands | PacketEvents API is required for these commands:
+#
+# - @SOUND@ Name_of_the_sound - Plays a sound to the player
+#   https://javadocs.packetevents.com/com/github/retrooper/packetevents/protocol/sound/Sounds.html
+#
+# In your commands, you can use the following placeholders:
+# - %player% - The player who executed the command
+# - %arg-1% - The first argument of the command
+# - %arg-2% - The second argument of the command
+#
+# If the player uses more than the set amount of arguments, the rest will be added to the last argument

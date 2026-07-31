@@ -1,0 +1,125 @@
+# -------------------------------------------------------
+# Recurring rewards (PayEvery = fires repeatedly)
+# -------------------------------------------------------
+
+hourly:
+  DisplayName: "&7Hourly Reward"
+  AutoClaim: true
+  Description:
+  - "&2A small reward for every hour online"
+  PayEvery: 3600
+  Commands:
+  - asConsole! cmi heal [playerName] -s
+  - asConsole! cmi money give [playerName] 500
+  - asConsole! cmi give [playerName] EXPERIENCE_BOTTLE 8 -s
+
+daily:
+  DisplayName: "&7Daily Reward"
+  AutoClaim: true
+  Description:
+  - "&2A reward for every 24 hours of accumulated playtime"
+  PayEvery: 86400
+  Commands:
+  - asConsole! cmi money give [playerName] 7500
+  - asConsole! cmi give [playerName] GOLDEN_APPLE 4 -s
+
+# -------------------------------------------------------
+# One-time milestone unlocks (PayFor = fires once at threshold)
+# -------------------------------------------------------
+
+firstminute:
+  DisplayName: "&7Welcome"
+  AutoClaim: true
+  Description:
+  - "&21 minute of playtime"
+  PayFor: 60
+  Commands:
+  - asConsole! cmi give [playerName] COOKED_BEEF 8 -s
+  - asConsole! cmi give [playerName] TORCH 16 -s
+  - asConsole! cmi money give [playerName] 150
+  - asConsole! cmi msg [playerName] &7Welcome to Nononom SMP! &eHere's some grub and light to get you started.
+
+fiveminutes:
+  DisplayName: "&7Getting Started"
+  AutoClaim: true
+  Description:
+  - "&25 minutes of playtime"
+  PayFor: 300
+  Commands:
+  - asConsole! cmi give [playerName] IRON_SWORD 1 -s
+  - asConsole! cmi give [playerName] IRON_PICKAXE 1 -s
+  - asConsole! cmi give [playerName] COOKED_BEEF 16 -s
+  - asConsole! cmi money give [playerName] 400
+  - asConsole! cmi msg [playerName] &aKeep exploring! &7You've been given some iron tools to help you settle in.
+
+tenminutes:
+  DisplayName: "&7Early Bird"
+  AutoClaim: true
+  Description:
+  - "&210 minutes of playtime"
+  PayFor: 600
+  Commands:
+  - asConsole! cmi give [playerName] EXPERIENCE_BOTTLE 4 -s
+  - asConsole! cmi give [playerName] GOLDEN_APPLE 1 -s
+  - asConsole! cmi money give [playerName] 750
+  - asConsole! cmi msg [playerName] &610 minutes in! &7Here's a little boost to keep you going.
+
+wanderer:
+  DisplayName: "&aPioneer"
+  AutoClaim: true
+  Description:
+  - "&22 hours of playtime"
+  PayFor: 7200
+  Commands:
+  - asConsole! lp user [playerName] group add playtime_pioneer
+  - asConsole! cmi money give [playerName] 12500
+  - asConsole! cmi msg [playerName] &a&lPioneer &7milestone reached! You now have the &8[&aPioneer&8] &7tag.
+
+settler:
+  DisplayName: "&eSettler"
+  AutoClaim: true
+  Description:
+  - "&212 hours of playtime"
+  PayFor: 43200
+  Commands:
+  - asConsole! lp user [playerName] group add playtime_settler
+  - asConsole! cmi money give [playerName] 40000
+  - asConsole! cmi give [playerName] ENCHANTED_GOLDEN_APPLE 1 -s
+  - asConsole! cmi msg [playerName] &e&lSettler &7milestone reached! You now have the &8[&eSettler&8] &7tag.
+
+veteran:
+  DisplayName: "&bVeteran"
+  AutoClaim: true
+  Description:
+  - "&23 days of playtime"
+  PayFor: 259200
+  Commands:
+  - asConsole! lp user [playerName] group add playtime_veteran
+  - asConsole! cmi money give [playerName] 100000
+  - asConsole! cmi give [playerName] ENCHANTED_GOLDEN_APPLE 2 -s
+  - asConsole! cmi msg [playerName] &b&lVeteran &7milestone reached! You now have the &8[&bVeteran&8] &7tag.
+
+elder:
+  DisplayName: "&dElder"
+  AutoClaim: true
+  Description:
+  - "&27 days of playtime"
+  PayFor: 604800
+  Commands:
+  - asConsole! lp user [playerName] group add playtime_elder
+  - asConsole! cmi money give [playerName] 250000
+  - asConsole! pcrates giveKey donator_astral_key [playerName] 1
+  - asConsole! cmi msg [playerName] &d&lElder &7milestone reached! You now have the &8[&dElder&8] &7tag.
+
+legend:
+  DisplayName: "&6&lLegend"
+  AutoClaim: true
+  Description:
+  - "&230 days of playtime"
+  PayFor: 2592000
+  Commands:
+  - asConsole! lp user [playerName] group add playtime_legend
+  - asConsole! cmi money give [playerName] 750000
+  - asConsole! pcrates giveKey donator_astral_key [playerName] 3
+  - asConsole! broadcast &6&l[LEGEND] &e[playerDisplayName] &7has reached &6&lLegend &7status with 30 days of playtime!
+  - asConsole! cmi msg [playerName] &6&lLegend &7milestone reached! You now have the &8[&6&lLegend&8] &7tag.

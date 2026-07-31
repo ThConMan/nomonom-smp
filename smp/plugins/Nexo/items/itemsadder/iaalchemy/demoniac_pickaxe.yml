@@ -1,0 +1,13 @@
+demoniac_pickaxe:
+  itemname: display-name-demoniac_pickaxe
+  material: DIAMOND_PICKAXE
+  lore:
+  - lore-1-demoniac_pickaxe
+  - lore-2-demoniac_pickaxe
+  - lore-3-demoniac_pickaxe
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  - lore-enchantment-efficiency
+  Pack:
+    texture: iaalchemy:item/demoniac_pickaxe
+    custom_model_data: 1004

@@ -1,0 +1,15 @@
+# ##############################################################################
+# Discord Webhooks
+# - Toggle the integration and drop in webhook URLs for the channels you want
+#   to notify. Leave a field blank to disable that specific feed.
+# ##############################################################################
+
+enabled: false
+
+webhooks:
+  # General actions: toggles, scans, manual commands.
+  actions: ''
+  # Performance alerts & thresholds.
+  alerts: ''
+  # Snapshot uploads from the diagnostics system.
+  snapshots: ''

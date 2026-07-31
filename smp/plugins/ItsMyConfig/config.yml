@@ -1,0 +1,51 @@
+# ################################################################################################
+#
+#    ██╗████████╗███████╗███╗   ███╗██╗   ██╗ ██████╗ ██████╗ ███╗   ██╗███████╗██╗ ██████╗
+#    ██║╚══██╔══╝██╔════╝████╗ ████║╚██╗ ██╔╝██╔════╝██╔═══██╗████╗  ██║██╔════╝██║██╔════╝
+#    ██║   ██║   ███████╗██╔████╔██║ ╚████╔╝ ██║     ██║   ██║██╔██╗ ██║█████╗  ██║██║  ███╗
+#    ██║   ██║   ╚════██║██║╚██╔╝██║  ╚██╔╝  ██║     ██║   ██║██║╚██╗██║██╔══╝  ██║██║   ██║
+#    ██║   ██║   ███████║██║ ╚═╝ ██║   ██║   ╚██████╗╚██████╔╝██║ ╚████║██║     ██║╚██████╔╝
+#    ╚═╝   ╚═╝   ╚══════╝╚═╝     ╚═╝   ╚═╝    ╚═════╝ ╚═════╝ ╚═╝  ╚═══╝╚═╝     ╚═╝ ╚═════╝
+#
+#      Contact: @itsme-to
+#      Support: https://itsme.to/discord
+#      Documentation: https://docs.itsme.to/itsmyconfig
+#
+# ################################################################################################
+
+# Enable debug mode. This will enable debug logging and other debug features.
+debug: false
+
+# The symbol prefix to use for the config.
+# This is used to identify the config symbols in the code.
+symbol-prefix: $
+
+# If true, all console messages will be translated using the translation system.
+# This includes messages from the plugin as well as messages from other plugins.
+translate-console: false
+
+listeners:
+  PacketEvents:
+    priority: 1 # Lower number = higher priority. This will run before ProtocolLib.
+  ProtocolLib:
+    priority: 2
+    cache-processors: false # Not recommended (buggy), but will improve performance with ProtocolLib if it works right for you.
+
+messages:
+  invalid-use:
+  - <red><bold>ERROR</bold></red> <white>┃ Invalid use
+  - '  <yellow>/<usage>'
+  reload:
+  - <green><bold>SUCCESS</bold></green> <white>┃ ItsmyConfig reloaded !
+  no-permission:
+  - <red><bold>ERROR</bold></red> <white>┃ You don't have permission
+  message-sent:
+  - <green><bold>SUCCESS</bold></green> <white>┃ Message Sent !
+
+formatting:
+  thousands: k
+  millions: M
+  billions: B
+  trillions: T
+  quadrillions: Q
+config-version: 1

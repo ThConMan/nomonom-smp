@@ -1,0 +1,171 @@
+cooked_sausage:
+  permission: iasurvival.cooked_sausage
+  ingredient:
+    item: iasurvival:sausage
+  result:
+    amount: 1
+    nexo_item: cooked_sausage
+  experience: 1
+  cookingTime: 200
+baguette:
+  permission: iasurvival.baguette
+  ingredient:
+    item: iasurvival:dough
+  result:
+    amount: 1
+    nexo_item: baguette
+  experience: 1
+  cookingTime: 200
+fried_egg:
+  permission: iasurvival.fried_egg
+  ingredient:
+    item: iasurvival:broken_egg
+  result:
+    amount: 1
+    nexo_item: fried_egg
+  experience: 1
+  cookingTime: 200
+fried_potato_sticks:
+  permission: iasurvival.fried_potato_sticks
+  ingredient:
+    item: iasurvival:potato_sticks
+  result:
+    amount: 1
+    nexo_item: fried_potato_sticks
+  experience: 1
+  cookingTime: 200
+cooked_donut_base:
+  permission: iasurvival.cooked_donut_base
+  ingredient:
+    item: iasurvival:donut_base
+  result:
+    amount: 1
+    nexo_item: cooked_donut_base
+  experience: 1
+  cookingTime: 200
+cooked_blue_parrotfish:
+  permission: iasurvival.cooked_blue_parrotfish
+  ingredient:
+    item: iasurvival:blue_parrotfish
+  result:
+    amount: 1
+    nexo_item: cooked_blue_parrotfish
+  experience: 1
+  cookingTime: 200
+cooked_green_sunfish:
+  permission: iasurvival.cooked_green_sunfish
+  ingredient:
+    item: iasurvival:green_sunfish
+  result:
+    amount: 1
+    nexo_item: cooked_green_sunfish
+  experience: 1
+  cookingTime: 200
+cooked_goldfish:
+  permission: iasurvival.cooked_goldfish
+  ingredient:
+    item: iasurvival:goldfish
+  result:
+    amount: 1
+    nexo_item: cooked_goldfish
+  experience: 1
+  cookingTime: 200
+cooked_black_moor_goldfish:
+  permission: iasurvival.cooked_black_moor_goldfish
+  ingredient:
+    item: iasurvival:black_moor_goldfish
+  result:
+    amount: 1
+    nexo_item: cooked_black_moor_goldfish
+  experience: 1
+  cookingTime: 200
+cooked_tuna:
+  permission: iasurvival.cooked_tuna
+  ingredient:
+    item: iasurvival:tuna
+  result:
+    amount: 1
+    nexo_item: cooked_tuna
+  experience: 1
+  cookingTime: 200
+sliced_roast_beef:
+  permission: iasurvival.sliced_roast_beef
+  ingredient:
+    item: iasurvival:sliced_raw_beef
+  result:
+    amount: 1
+    nexo_item: sliced_roast_beef
+  experience: 1
+  cookingTime: 200
+plastic:
+  permission: iasurvival.various.plastic
+  ingredient:
+    item: iasurvival:fossil
+  result:
+    amount: 2
+    nexo_item: plastic
+  experience: 1
+  cookingTime: 1200
+raw_tin:
+  permission: iasurvival.raw_tin
+  ingredient:
+    item: iasurvival:cassiterite
+  result:
+    amount: 1
+    nexo_item: raw_tin
+  experience: 1
+  cookingTime: 500
+end_ingot:
+  permission: iasurvival.end_ingot
+  ingredient:
+    item: iasurvival:end_crystals
+  result:
+    amount: 1
+    nexo_item: end_ingot
+  experience: 1
+  cookingTime: 1200
+bronze_ingot:
+  permission: iasurvival.bronze_ingot
+  ingredient:
+    item: iasurvival:raw_tin_and_copper_ingot_dust
+  result:
+    amount: 1
+    nexo_item: bronze_ingot
+  experience: 1
+  cookingTime: 400
+cassiterite:
+  permission: iasurvival.cassiterite
+  ingredient:
+    item: iasurvival:cassiterite_ore
+  result:
+    amount: 1
+    nexo_item: cassiterite
+  experience: 1
+  cookingTime: 400
+boiled_water_bucket:
+  permission: iasurvival.thirst.boiled_water_bucket
+  ingredient:
+    item: WATER_BUCKET
+  result:
+    amount: 1
+    nexo_item: boiled_water_bucket
+  experience: 1
+  cookingTime: 200
+cup_of_hot_water:
+  permission: iasurvival.thirst.cup_of_hot_water
+  ingredient:
+    item: iasurvival:cup_of_water
+  result:
+    amount: 1
+    nexo_item: cup_of_hot_water
+  experience: 1
+  cookingTime: 200
+mysterious_material:
+  permission: iaalchemy.cooking.mysterious_material
+  ingredient:
+    item: iaalchemy:mysterious_ore
+  result:
+    amount: 1
+    nexo_item: mysterious_material
+  experience: 1
+  cookingTime: 2400

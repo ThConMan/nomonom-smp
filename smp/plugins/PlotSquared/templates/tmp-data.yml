@@ -1,0 +1,58 @@
+generator:
+  plugin: PlotSquared
+plot:
+  height: 50
+  size: 75
+  filling: dirt
+  floor: grass_block
+  bedrock: true
+  biome: minecraft:forest
+  auto_merge: false
+  create_signs: true
+  sign_material: OAK_WALL_SIGN
+wall:
+  block: green_terracotta
+  block_claimed: lime_terracotta
+  filling: lime_terracotta
+  height: 49
+  place_top_block: true
+road:
+  width: 75
+  height: 20
+  block: dirt
+  flags: {}
+misc_spawn_unowned: false
+home:
+  nonmembers: side
+  default: side
+schematic:
+  specify_on_claim: false
+  on_claim: false
+  file: 'null'
+  schematics: []
+economy:
+  prices:
+    merge: 100
+    sell: 100
+    claim: 100
+  use: false
+chat:
+  enabled: false
+  forced: false
+limits:
+  max-members: 128
+world:
+  max_height: 256
+  gamemode: creative
+  min_height: 1
+  border: false
+  max_gen_height: 319
+  min_gen_height: -64
+event:
+  spawn:
+    egg: false
+    breeding: false
+    custom: true
+natural_mob_spawning: false
+mob_spawner_spawning: false
+flags: {}

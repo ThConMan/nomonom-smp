@@ -1,0 +1,6 @@
+pear:
+  itemname: display-name-pear
+  material: APPLE
+  Pack:
+    texture: iasurvival:item/food/vegetable_and_fruit/pear
+    custom_model_data: 1004

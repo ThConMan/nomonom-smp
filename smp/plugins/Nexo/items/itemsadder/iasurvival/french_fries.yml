@@ -1,0 +1,6 @@
+french_fries:
+  itemname: French Fries
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/french_fries
+    custom_model_data: 1015

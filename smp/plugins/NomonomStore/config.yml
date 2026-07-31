@@ -1,0 +1,86 @@
+secret: "REPLACE_ME_SECRET"
+port: 8787
+
+paypal:
+  email: "REPLACE_ME_EMAIL"
+  sandbox: false
+  currency: "USD"
+  success-url: "https://nomonom.net/thanks"
+  cancel-url: "https://nomonom.net/store"
+  notify-url: "https://nomonom.net/api/paypal/ipn"
+
+products:
+  ranger:
+    display-name: "Ranger"
+    price: 5.00
+    type: rank
+    vault-group: "ranger"
+    announce-color: "&2"
+    commands:
+      - "lp user %player% parent add ranger"
+      - "crate giveKey donator_cache_key %player% 1"
+    message: "&aYou have been granted the &2Ranger &arank + &e1 Adventurer's Cache Key&a! Thank you for your support."
+
+  trickster:
+    display-name: "Trickster"
+    price: 15.00
+    type: rank
+    vault-group: "trickster"
+    announce-color: "&5"
+    commands:
+      - "lp user %player% parent add trickster"
+      - "crate giveKey donator_cache_key %player% 3"
+    message: "&aYou have been granted the &5Trickster &arank + &e3 Adventurer's Cache Keys&a! Thank you for your support."
+
+  mythril:
+    display-name: "Mythril"
+    price: 25.00
+    type: rank
+    vault-group: "mythril"
+    announce-color: "&b"
+    commands:
+      - "lp user %player% parent add mythril"
+      - "crate giveKey donator_cache_key %player% 3"
+      - "crate giveKey donator_vault_key %player% 2"
+      - "crate giveKey donator_astral_key %player% 1"
+    message: "&aYou have been granted the &bMythril &arank + &e3 Cache &a+ &d2 Vault &a+ &61 Astral Key&a! Thank you for your support."
+
+  celestial:
+    display-name: "Celestial"
+    price: 45.00
+    type: rank
+    vault-group: "celestial"
+    announce-color: "&d"
+    commands:
+      - "lp user %player% parent add celestial"
+      - "crate giveKey donator_cache_key %player% 5"
+      - "crate giveKey donator_vault_key %player% 3"
+      - "crate giveKey donator_astral_key %player% 2"
+    message: "&aYou have been granted the &dCelestial &arank + &e5 Cache &a+ &d3 Vault &a+ &62 Astral Keys&a! Thank you for your support."
+
+  cache-keys:
+    display-name: "5 Cache Keys"
+    price: 4.99
+    type: item
+    announce-color: "&a"
+    commands:
+      - "crate giveKey donator_cache_key %player% 5"
+    message: "&aYou received &e5 Adventurer's Cache Keys&a! Thank you for your support."
+
+  vault-keys:
+    display-name: "3 Vault Keys"
+    price: 7.99
+    type: item
+    announce-color: "&d"
+    commands:
+      - "crate giveKey donator_vault_key %player% 3"
+    message: "&aYou received &d3 Mythic Vault Keys&a! Thank you for your support."
+
+  astral-keys:
+    display-name: "3 Astral Keys"
+    price: 14.99
+    type: item
+    announce-color: "&e"
+    commands:
+      - "crate giveKey donator_astral_key %player% 3"
+    message: "&aYou received &63 Astral Chest Keys&a! Thank you for your support."

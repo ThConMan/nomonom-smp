@@ -1,0 +1,17 @@
+white_chair:
+  itemname: display-name-white_chair
+  material: PAPER
+  lore:
+  - lore-chair
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.1,0
+  Pack:
+    model: iadeco:white_chair
+    custom_model_data: 1149

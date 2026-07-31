@@ -1,0 +1,44 @@
+######## created by samus2002 #########
+
+skeleton_arrow:
+  Id: arrow
+  Display: "&7Skeleton Arrow"
+  Model: 57500
+  Hide:
+  - ATTRIBUTES
+  
+skeleton_sword:
+  Id: stone_sword
+  Display: "&7Skeleton Sword"
+  Model: 57500
+  Hide:
+  - ATTRIBUTES
+
+skeleton_staff:
+  Id: stone_sword
+  Display: "&7Skeleton Staff"
+  Model: 57501
+  Hide:
+  - ATTRIBUTES
+
+lich_king_scythe:
+  Id: stone_sword
+  Display: "&7Lich King Scythe"
+  Model: 57502
+  Hide:
+  - ATTRIBUTES
+
+skeleton_shield:
+  Id: shield
+  Display: "&7Skeleton Shield"
+  Model: 57500
+  Hide:
+  - ATTRIBUTES
+
+skeleton_bow:
+  Id: bow
+  Display: "&7Skeleton Bow"
+  Model: 57500
+  Hide:
+  - ATTRIBUTES
+#e2ff5d74a4388bf51bbd7b70abc99d65

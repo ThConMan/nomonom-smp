@@ -1,0 +1,13 @@
+end_ore:
+  itemname: display-name-end_ore
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: end_ore
+      hardness: 2.0
+      custom_variation: 12
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/ores/end_ore
+    custom_model_data: 1053

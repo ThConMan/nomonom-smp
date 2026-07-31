@@ -1,0 +1,6 @@
+mysterious_amulet:
+  itemname: display-name-mysterious_amulet
+  material: ENDER_PEARL
+  Pack:
+    texture: iaalchemy:item/mysterious_amulet
+    custom_model_data: 1000

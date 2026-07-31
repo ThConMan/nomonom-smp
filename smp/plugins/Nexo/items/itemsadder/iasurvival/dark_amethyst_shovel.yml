@@ -1,0 +1,6 @@
+dark_amethyst_shovel:
+  itemname: display-name-dark_amethyst_shovel
+  material: DIAMOND_SHOVEL
+  Pack:
+    texture: iasurvival:item/tools/dark_amethyst_shovel
+    custom_model_data: 1001

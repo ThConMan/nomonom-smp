@@ -1,0 +1,6 @@
+ak47:
+  itemname: display-name-ak47
+  material: GOLDEN_SWORD
+  Pack:
+    model: iaweapons:ak47
+    custom_model_data: 1000

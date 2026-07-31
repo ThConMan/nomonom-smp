@@ -1,0 +1,368 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Ranger
+open_command:
+  - jobs payouts ranger
+register_command: true
+size: 54
+items:
+  kill:
+    material: iron_sword
+    slot: 2
+    display_name: '%imc_primary-color_c%Kill'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Kill the following mobs'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_kill'
+      - '[sound] UI_BUTTON_CLICK'
+  tame:
+    material: bone
+    slot: 3
+    display_name: '%imc_primary-color_c%Tame'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Tame the following animals'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_tame'
+      - '[sound] UI_BUTTON_CLICK'
+  breed:
+    material: apple
+    slot: 4
+    display_name: '%imc_primary-color_c%Breed'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Breed the following animals'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_breed'
+      - '[sound] UI_BUTTON_CLICK'
+  shear_milk:
+    material: shears
+    slot: 5
+    display_name: '%imc_primary-color_c%Shear & Milk'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Shear or milk the following'
+      - '%imc_dark-color_c%animals to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_shear_milk'
+      - '[sound] UI_BUTTON_CLICK'
+  fish:
+    material: fishing_rod
+    slot: 6
+    display_name: '%imc_primary-color_c%Fish'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Fish the following items'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_fish'
+      - '[sound] UI_BUTTON_CLICK'
+  kill_chicken_spawn_egg:
+    material: chicken_spawn_egg
+    slot: 10
+    display_name: '%imc_primary-color_c%Chicken'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Chicken'
+  kill_cow_spawn_egg:
+    material: cow_spawn_egg
+    slot: 11
+    display_name: '%imc_primary-color_c%Cow'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entities:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cow'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mooshroom'
+  kill_pig_spawn_egg:
+    material: pig_spawn_egg
+    slot: 12
+    display_name: '%imc_primary-color_c%Pig'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pig'
+  kill_sheep_spawn_egg:
+    material: sheep_spawn_egg
+    slot: 13
+    display_name: '%imc_primary-color_c%Sheep'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Sheep'
+  kill_wolf_spawn_egg:
+    material: wolf_spawn_egg
+    slot: 14
+    display_name: '%imc_primary-color_c%Wolf'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wolf'
+  kill_creeper_spawn_egg:
+    material: creeper_spawn_egg
+    slot: 15
+    display_name: '%imc_primary-color_c%Creeper'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Creeper'
+  kill_skeleton_spawn_egg:
+    material: skeleton_spawn_egg
+    slot: 16
+    display_name: '%imc_primary-color_c%Skeleton'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entities:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Skeleton'
+      - '%imc_dark-color_c% • %imc_text-color_c%Stray'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wither Skeleton'
+      - '%imc_dark-color_c% • %imc_text-color_c%Bogged'
+  kill_spider_spawn_egg:
+    material: spider_spawn_egg
+    slot: 19
+    display_name: '%imc_primary-color_c%Spider'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entities:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Spider'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cave Spider'
+  kill_zombie_spawn_egg:
+    material: zombie_spawn_egg
+    slot: 20
+    display_name: '%imc_primary-color_c%Zombie'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entities:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Zombie'
+      - '%imc_dark-color_c% • %imc_text-color_c%Husk'
+      - '%imc_dark-color_c% • %imc_text-color_c%Drowned'
+  kill_blaze_spawn_egg:
+    material: blaze_spawn_egg
+    slot: 21
+    display_name: '%imc_primary-color_c%Blaze'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Blaze'
+  kill_enderman_spawn_egg:
+    material: enderman_spawn_egg
+    slot: 22
+    display_name: '%imc_primary-color_c%Enderman'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Enderman'
+  kill_ghast_spawn_egg:
+    material: ghast_spawn_egg
+    slot: 23
+    display_name: '%imc_primary-color_c%Ghast'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Ghast'
+  kill_iron_golem_spawn_egg:
+    material: iron_golem_spawn_egg
+    slot: 24
+    display_name: '%imc_primary-color_c%Iron Golem'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Iron Golem'
+  kill_piglin_spawn_egg:
+    material: piglin_spawn_egg
+    slot: 25
+    display_name: '%imc_primary-color_c%Piglin'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Piglin'
+  kill_silverfish_spawn_egg:
+    material: silverfish_spawn_egg
+    slot: 28
+    display_name: '%imc_primary-color_c%Silverfish'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Silverfish'
+  kill_snow_golem_spawn_egg:
+    material: snow_golem_spawn_egg
+    slot: 29
+    display_name: '%imc_primary-color_c%Snow Golem'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Snow Golem'
+  kill_squid_spawn_egg:
+    material: squid_spawn_egg
+    slot: 30
+    display_name: '%imc_primary-color_c%Squid'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entities:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Squid'
+      - '%imc_dark-color_c% • %imc_text-color_c%Glow Squid'
+  kill_rabbit_spawn_egg:
+    material: rabbit_spawn_egg
+    slot: 31
+    display_name: '%imc_primary-color_c%Rabbit'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Rabbit'
+  kill_guardian_spawn_egg:
+    material: guardian_spawn_egg
+    slot: 32
+    display_name: '%imc_primary-color_c%Guardian'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entities:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Guardian'
+      - '%imc_dark-color_c% • %imc_text-color_c%Elder Guardian'
+  kill_shulker_spawn_egg:
+    material: shulker_spawn_egg
+    slot: 33
+    display_name: '%imc_primary-color_c%Shulker'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Shulker'
+  kill_phantom_spawn_egg:
+    material: phantom_spawn_egg
+    slot: 34
+    display_name: '%imc_primary-color_c%Phantom'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Phantom'
+  kill_wither_spawn_egg:
+    material: wither_spawn_egg
+    slot: 37
+    display_name: '%imc_primary-color_c%Wither'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wither'
+  kill_ender_dragon_spawn_egg:
+    material: ender_dragon_spawn_egg
+    slot: 38
+    display_name: '%imc_primary-color_c%Ender Dragon'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Ender Dragon'
+  kill_player_head:
+    material: player_head
+    slot: 39
+    display_name: '%imc_primary-color_c%Player'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Player'
+  kill_horse_spawn_egg:
+    material: horse_spawn_egg
+    slot: 40
+    display_name: '%imc_primary-color_c%Horse'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entities:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Horse'
+      - '%imc_dark-color_c% • %imc_text-color_c%Donkey'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mule'
+  kill_salmon_spawn_egg:
+    material: salmon_spawn_egg
+    slot: 41
+    display_name: '%imc_primary-color_c%Salmon'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entities:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Salmon'
+      - '%imc_dark-color_c% • %imc_text-color_c%Cod'
+  kill_turtle_spawn_egg:
+    material: turtle_spawn_egg
+    slot: 42
+    display_name: '%imc_primary-color_c%Turtle'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Turtle'
+  kill_strider_spawn_egg:
+    material: strider_spawn_egg
+    slot: 43
+    display_name: '%imc_primary-color_c%Strider'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Strider'
+  next_page:
+    material: ARROW
+    slot: 50
+    display_name: '%imc_primary-color_c%Next Page'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_kill_2'
+      - '[sound] ITEM_BOOK_PAGE_TURN'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_ranger_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: RED_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

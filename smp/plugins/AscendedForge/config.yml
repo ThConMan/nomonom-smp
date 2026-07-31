@@ -1,0 +1,808 @@
+gui:
+  title: "&5&lAscended Forge &7({page}/{pages})"
+  size: 54
+
+  border:
+    material: BLACK_STAINED_GLASS_PANE
+    name: " "
+
+  nav:
+    # IMPORTANT: 45 and 53 are border slots and get overwritten by fillBorder()
+    prevSlot: 46
+    nextSlot: 52
+    closeSlot: -1
+
+economy:
+  useVault: true
+
+messages:
+  noPermission: "&cNo permission."
+  playersOnly: "&cPlayers only."
+  notReady: "&cSystem not ready (missing dependency)."
+  missing: "&cMissing requirements for &d{item}"
+  crafted: "&aCrafted: &d{item}"
+
+recipes:
+
+  # =========================
+  # SWORDS (MATCH MMOITEMS CRAFTING)
+  # =========================
+
+  ASCENDED_SWORD:
+    display:
+      page: 1
+      slot: 0
+      name: "&d&lAscended Sword"
+      lore:
+        - "&7Base sword used for elemental variants."
+    output:
+      kind: MMOITEMS
+      mmoType: SWORD
+      mmoId: ASCENDED_SWORD
+    cost:
+      money: 0
+      items:
+        - kind: VANILLA
+          material: NETHERITE_SWORD
+          amount: 1
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_INGOT
+          amount: 1
+
+  ASC_SWORD_FIRE:
+    display:
+      page: 1
+      slot: 2
+      name: "&c&lAscended FIRE Sword"
+      lore:
+        - "&7Consumes your base Ascended Sword."
+    output:
+      kind: MMOITEMS
+      mmoType: SWORD
+      mmoId: ASC_SWORD_FIRE
+    cost:
+      money: 0
+      items:
+        - kind: MMOITEMS
+          mmoType: SWORD
+          mmoId: ASCENDED_SWORD
+          amount: 1
+        - kind: VANILLA
+          material: BLAZE_ROD
+          amount: 4
+        - kind: VANILLA
+          material: LAVA_BUCKET
+          amount: 4
+        - kind: VANILLA
+          material: MAGMA_BLOCK
+          amount: 2
+
+  ASC_SWORD_WATER:
+    display:
+      page: 1
+      slot: 4
+      name: "&9&lAscended WATER Sword"
+      lore:
+        - "&7Consumes your base Ascended Sword."
+    output:
+      kind: MMOITEMS
+      mmoType: SWORD
+      mmoId: ASC_SWORD_WATER
+    cost:
+      money: 0
+      items:
+        - kind: MMOITEMS
+          mmoType: SWORD
+          mmoId: ASCENDED_SWORD
+          amount: 1
+        - kind: VANILLA
+          material: COD
+          amount: 2
+        - kind: VANILLA
+          material: SALMON
+          amount: 2
+        - kind: VANILLA
+          material: WATER_BUCKET
+          amount: 2
+        - kind: VANILLA
+          material: LAPIS_LAZULI
+          amount: 2
+
+  ASC_SWORD_WIND:
+    display:
+      page: 1
+      slot: 6
+      name: "&f&lAscended WIND Sword"
+      lore:
+        - "&7Consumes your base Ascended Sword."
+    output:
+      kind: MMOITEMS
+      mmoType: SWORD
+      mmoId: ASC_SWORD_WIND
+    cost:
+      money: 0
+      items:
+        - kind: MMOITEMS
+          mmoType: SWORD
+          mmoId: ASCENDED_SWORD
+          amount: 1
+        - kind: VANILLA
+          material: PAPER
+          amount: 4
+        - kind: VANILLA
+          material: WHITE_DYE
+          amount: 2
+        - kind: VANILLA
+          material: QUARTZ_BLOCK
+          amount: 2
+
+  ASC_SWORD_EARTH:
+    display:
+      page: 1
+      slot: 8
+      name: "&a&lAscended EARTH Sword"
+      lore:
+        - "&7Consumes your base Ascended Sword."
+    output:
+      kind: MMOITEMS
+      mmoType: SWORD
+      mmoId: ASC_SWORD_EARTH
+    cost:
+      money: 0
+      items:
+        - kind: MMOITEMS
+          mmoType: SWORD
+          mmoId: ASCENDED_SWORD
+          amount: 1
+        - kind: VANILLA
+          material: COAL_BLOCK
+          amount: 2
+        - kind: VANILLA
+          material: SHORT_GRASS
+          amount: 2
+        - kind: VANILLA
+          material: OAK_LEAVES
+          amount: 2
+        - kind: VANILLA
+          material: RAW_IRON_BLOCK
+          amount: 2
+
+  # =========================
+  # BASE ASCENDED ARMOR (NEXO OUTPUT, MMOITEMS INGOT COST)
+  # =========================
+
+  ASCENDED_HELMET:
+    display:
+      page: 1
+      slot: 9
+      name: "&5&lAscended Helmet"
+      lore:
+        - "&7Forged beyond netherite."
+    output:
+      kind: NEXO
+      nexoId: ascended_helmet
+    cost:
+      money: 0
+      items:
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_INGOT
+          amount: 1
+        - kind: VANILLA
+          material: NETHERITE_HELMET
+          amount: 1
+
+  ASCENDED_CHESTPLATE:
+    display:
+      page: 1
+      slot: 18
+      name: "&5&lAscended Chestplate"
+      lore:
+        - "&7Forged beyond netherite."
+    output:
+      kind: NEXO
+      nexoId: ascended_chestplate
+    cost:
+      money: 0
+      items:
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_INGOT
+          amount: 1
+        - kind: VANILLA
+          material: NETHERITE_CHESTPLATE
+          amount: 1
+
+  ASCENDED_LEGGINGS:
+    display:
+      page: 1
+      slot: 27
+      name: "&5&lAscended Leggings"
+      lore:
+        - "&7Forged beyond netherite."
+    output:
+      kind: NEXO
+      nexoId: ascended_leggings
+    cost:
+      money: 0
+      items:
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_INGOT
+          amount: 1
+        - kind: VANILLA
+          material: NETHERITE_LEGGINGS
+          amount: 1
+
+  ASCENDED_BOOTS:
+    display:
+      page: 1
+      slot: 36
+      name: "&5&lAscended Boots"
+      lore:
+        - "&7Forged beyond netherite."
+    output:
+      kind: NEXO
+      nexoId: ascended_boots
+    cost:
+      money: 0
+      items:
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_INGOT
+          amount: 1
+        - kind: VANILLA
+          material: NETHERITE_BOOTS
+          amount: 1
+
+  # =========================
+  # ELEMENTAL ARMOR (MATCHES NEXO RECIPES)
+  # =========================
+
+  # ---------- FIRE ----------
+  ASCENDED_FIRE_HELMET:
+    display:
+      page: 1
+      slot: 11
+      name: "&c&lAscended Fire Helmet"
+      lore: ["&7Infused with flame."]
+    output:
+      kind: NEXO
+      nexoId: ascended_fire_helmet
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_helmet
+          amount: 1
+        - kind: VANILLA
+          material: BLAZE_ROD
+          amount: 4
+        - kind: VANILLA
+          material: LAVA_BUCKET
+          amount: 4
+        - kind: VANILLA
+          material: MAGMA_BLOCK
+          amount: 2
+
+  ASCENDED_FIRE_CHESTPLATE:
+    display:
+      page: 1
+      slot: 20
+      name: "&c&lAscended Fire Chestplate"
+      lore: ["&7Infused with flame."]
+    output:
+      kind: NEXO
+      nexoId: ascended_fire_chestplate
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_chestplate
+          amount: 1
+        - kind: VANILLA
+          material: BLAZE_ROD
+          amount: 4
+        - kind: VANILLA
+          material: LAVA_BUCKET
+          amount: 4
+        - kind: VANILLA
+          material: MAGMA_BLOCK
+          amount: 2
+
+  ASCENDED_FIRE_LEGGINGS:
+    display:
+      page: 1
+      slot: 29
+      name: "&c&lAscended Fire Leggings"
+      lore: ["&7Infused with flame."]
+    output:
+      kind: NEXO
+      nexoId: ascended_fire_leggings
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_leggings
+          amount: 1
+        - kind: VANILLA
+          material: BLAZE_ROD
+          amount: 4
+        - kind: VANILLA
+          material: LAVA_BUCKET
+          amount: 4
+        - kind: VANILLA
+          material: MAGMA_BLOCK
+          amount: 2
+
+  ASCENDED_FIRE_BOOTS:
+    display:
+      page: 1
+      slot: 38
+      name: "&c&lAscended Fire Boots"
+      lore: ["&7Infused with flame."]
+    output:
+      kind: NEXO
+      nexoId: ascended_fire_boots
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_boots
+          amount: 1
+        - kind: VANILLA
+          material: BLAZE_ROD
+          amount: 4
+        - kind: VANILLA
+          material: LAVA_BUCKET
+          amount: 4
+        - kind: VANILLA
+          material: MAGMA_BLOCK
+          amount: 2
+
+  # ---------- WATER ----------
+  ASCENDED_WATER_HELMET:
+    display:
+      page: 1
+      slot: 13
+      name: "&b&lAscended Water Helmet"
+      lore: ["&7Infused with tides."]
+    output:
+      kind: NEXO
+      nexoId: ascended_water_helmet
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_helmet
+          amount: 1
+        - kind: VANILLA
+          material: PRISMARINE_CRYSTALS
+          amount: 4
+        - kind: VANILLA
+          material: WATER_BUCKET
+          amount: 4
+        - kind: VANILLA
+          material: HEART_OF_THE_SEA
+          amount: 2
+
+  ASCENDED_WATER_CHESTPLATE:
+    display:
+      page: 1
+      slot: 22
+      name: "&b&lAscended Water Chestplate"
+      lore: ["&7Infused with tides."]
+    output:
+      kind: NEXO
+      nexoId: ascended_water_chestplate
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_chestplate
+          amount: 1
+        - kind: VANILLA
+          material: PRISMARINE_CRYSTALS
+          amount: 4
+        - kind: VANILLA
+          material: WATER_BUCKET
+          amount: 4
+        - kind: VANILLA
+          material: HEART_OF_THE_SEA
+          amount: 2
+
+  ASCENDED_WATER_LEGGINGS:
+    display:
+      page: 1
+      slot: 31
+      name: "&b&lAscended Water Leggings"
+      lore: ["&7Infused with tides."]
+    output:
+      kind: NEXO
+      nexoId: ascended_water_leggings
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_leggings
+          amount: 1
+        - kind: VANILLA
+          material: PRISMARINE_CRYSTALS
+          amount: 4
+        - kind: VANILLA
+          material: WATER_BUCKET
+          amount: 4
+        - kind: VANILLA
+          material: HEART_OF_THE_SEA
+          amount: 2
+
+  ASCENDED_WATER_BOOTS:
+    display:
+      page: 1
+      slot: 40
+      name: "&b&lAscended Water Boots"
+      lore: ["&7Infused with tides."]
+    output:
+      kind: NEXO
+      nexoId: ascended_water_boots
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_boots
+          amount: 1
+        - kind: VANILLA
+          material: PRISMARINE_CRYSTALS
+          amount: 4
+        - kind: VANILLA
+          material: WATER_BUCKET
+          amount: 4
+        - kind: VANILLA
+          material: HEART_OF_THE_SEA
+          amount: 2
+
+  # ---------- WIND ----------
+  ASCENDED_WIND_HELMET:
+    display:
+      page: 1
+      slot: 15
+      name: "&f&lAscended Wind Helmet"
+      lore: ["&7Infused with gales."]
+    output:
+      kind: NEXO
+      nexoId: ascended_wind_helmet
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_helmet
+          amount: 1
+        - kind: VANILLA
+          material: FEATHER
+          amount: 4
+        - kind: VANILLA
+          material: PHANTOM_MEMBRANE
+          amount: 4
+        - kind: VANILLA
+          material: ELYTRA
+          amount: 2
+
+  ASCENDED_WIND_CHESTPLATE:
+    display:
+      page: 1
+      slot: 24
+      name: "&f&lAscended Wind Chestplate"
+      lore: ["&7Infused with gales."]
+    output:
+      kind: NEXO
+      nexoId: ascended_wind_chestplate
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_chestplate
+          amount: 1
+        - kind: VANILLA
+          material: FEATHER
+          amount: 4
+        - kind: VANILLA
+          material: PHANTOM_MEMBRANE
+          amount: 4
+        - kind: VANILLA
+          material: ELYTRA
+          amount: 2
+
+  ASCENDED_WIND_LEGGINGS:
+    display:
+      page: 1
+      slot: 33
+      name: "&f&lAscended Wind Leggings"
+      lore: ["&7Infused with gales."]
+    output:
+      kind: NEXO
+      nexoId: ascended_wind_leggings
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_leggings
+          amount: 1
+        - kind: VANILLA
+          material: FEATHER
+          amount: 4
+        - kind: VANILLA
+          material: PHANTOM_MEMBRANE
+          amount: 4
+        - kind: VANILLA
+          material: ELYTRA
+          amount: 2
+
+  ASCENDED_WIND_BOOTS:
+    display:
+      page: 1
+      slot: 42
+      name: "&f&lAscended Wind Boots"
+      lore: ["&7Infused with gales."]
+    output:
+      kind: NEXO
+      nexoId: ascended_wind_boots
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_boots
+          amount: 1
+        - kind: VANILLA
+          material: FEATHER
+          amount: 4
+        - kind: VANILLA
+          material: PHANTOM_MEMBRANE
+          amount: 4
+        - kind: VANILLA
+          material: ELYTRA
+          amount: 2
+
+  # ---------- EARTH ----------
+  ASCENDED_EARTH_HELMET:
+    display:
+      page: 1
+      slot: 17
+      name: "&2&lAscended Earth Helmet"
+      lore: ["&7Infused with stone."]
+    output:
+      kind: NEXO
+      nexoId: ascended_earth_helmet
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_helmet
+          amount: 1
+        - kind: VANILLA
+          material: DIRT
+          amount: 4
+        - kind: VANILLA
+          material: STONE
+          amount: 4
+        - kind: VANILLA
+          material: EMERALD
+          amount: 2
+
+  ASCENDED_EARTH_CHESTPLATE:
+    display:
+      page: 1
+      slot: 26
+      name: "&2&lAscended Earth Chestplate"
+      lore: ["&7Infused with stone."]
+    output:
+      kind: NEXO
+      nexoId: ascended_earth_chestplate
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_chestplate
+          amount: 1
+        - kind: VANILLA
+          material: DIRT
+          amount: 4
+        - kind: VANILLA
+          material: STONE
+          amount: 4
+        - kind: VANILLA
+          material: EMERALD
+          amount: 2
+
+  ASCENDED_EARTH_LEGGINGS:
+    display:
+      page: 1
+      slot: 35
+      name: "&2&lAscended Earth Leggings"
+      lore: ["&7Infused with stone."]
+    output:
+      kind: NEXO
+      nexoId: ascended_earth_leggings
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_leggings
+          amount: 1
+        - kind: VANILLA
+          material: DIRT
+          amount: 4
+        - kind: VANILLA
+          material: STONE
+          amount: 4
+        - kind: VANILLA
+          material: EMERALD
+          amount: 2
+
+  ASCENDED_EARTH_BOOTS:
+    display:
+      page: 1
+      slot: 44
+      name: "&2&lAscended Earth Boots"
+      lore: ["&7Infused with stone."]
+    output:
+      kind: NEXO
+      nexoId: ascended_earth_boots
+    cost:
+      money: 0
+      items:
+        - kind: NEXO
+          nexoId: ascended_boots
+          amount: 1
+        - kind: VANILLA
+          material: DIRT
+          amount: 4
+        - kind: VANILLA
+          material: STONE
+          amount: 4
+        - kind: VANILLA
+          material: EMERALD
+          amount: 2
+
+  # =========================
+  # PAGE 2 TEST
+  # =========================
+  ASCENDED_PICKAXE:
+    display:
+      page: 2
+      slot: 10
+      name: "&d&lAscended Pickaxe"
+      lore:
+        - "&7Craft the Ascended Pickaxe!"
+        - "&cMust use base item."
+    output:
+      kind: MMOITEMS
+      mmoType: TOOL
+      mmoId: ASCENDED_PICKAXE # <-- change this to your actual MMOItems ID (example: ASCENDED_PICKAXE)
+    cost:
+      money: 0
+      items:
+        - kind: VANILLA
+          material: NETHERITE_PICKAXE
+          amount: 1
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_INGOT
+          amount: 1
+
+  ASCENDED_AXE:
+    display:
+      page: 2
+      slot: 12
+      name: "&d&lAscended Axe"
+      lore:
+        - "&7Craft the Ascended Axe!"
+        - "&cMust use base item."
+    output:
+      kind: MMOITEMS
+      mmoType: AXE
+      mmoId: ASCENDED_AXE # <-- CHANGE to your actual MMOItems ID
+    cost:
+      money: 0
+      items:
+        - kind: VANILLA
+          material: NETHERITE_AXE
+          amount: 1
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_INGOT
+          amount: 1
+
+  ASCENDED_SHOVEL:
+    display:
+      page: 2
+      slot: 14
+      name: "&d&lAscended Shovel"
+      lore:
+        - "&7Craft the Ascended Shovel!"
+        - "&cMust use base item."
+    output:
+      kind: MMOITEMS
+      mmoType: TOOL
+      mmoId: ASCENDED_SHOVEL # <-- CHANGE to your actual MMOItems ID
+    cost:
+      money: 0
+      items:
+        - kind: VANILLA
+          material: NETHERITE_SHOVEL
+          amount: 1
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_INGOT
+          amount: 1
+
+  ASCENDED_HOE:
+    display:
+      page: 2
+      slot: 16
+      name: "&d&lAscended Hoe"
+      lore:
+        - "&7Craft the Ascended Hoe!"
+        - "&cMust use base item."
+    output:
+      kind: MMOITEMS
+      mmoType: TOOL
+      mmoId: ASCENDED_HOE # <-- CHANGE to your actual MMOItems ID
+    cost:
+      money: 0
+      items:
+        - kind: VANILLA
+          material: NETHERITE_HOE
+          amount: 1
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_INGOT
+          amount: 1
+
+  ASCENDED_BOW:
+    display:
+      page: 2
+      slot: 31
+      name: "&d&lAscended Bow"
+      lore:
+        - "&7Craft the Ascended Bow!"
+        - "&cMust use base item."
+    output:
+      kind: MMOITEMS
+      mmoType: BOW
+      mmoId: ASCENDED_BOW # <-- CHANGE to your actual MMOItems ID
+    cost:
+      money: 0
+      items:
+        - kind: VANILLA
+          material: BOW
+          amount: 1
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_INGOT
+          amount: 1
+
+  ASCENDED_INGOT:
+    display:
+      page: 1
+      slot: 49
+      name: "&d&lAscended Ingot"
+      lore:
+        - "&7Craft the Ascended Ingot!"
+    output:
+      kind: MMOITEMS
+      mmoType: MATERIAL
+      mmoId: ASCENDED_INGOT # <-- CHANGE to your actual MMOItems ID
+    cost:
+      money: 0
+      items:
+        - kind: MMOITEMS
+          mmoType: MATERIAL
+          mmoId: ASCENDED_SHARDS
+          amount: 6
+        - kind: VANILLA
+          material: NETHERITE_INGOT
+          amount: 2
+        - kind: VANILLA
+          material: NETHER_STAR
+          amount: 1

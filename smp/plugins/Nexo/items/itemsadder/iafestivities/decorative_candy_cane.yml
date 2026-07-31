@@ -1,0 +1,13 @@
+decorative_candy_cane:
+  itemname: display-name-decorative_candy_cane
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+  Pack:
+    model: iafestivities:christmas/decorative_candy_cane
+    custom_model_data: 1051

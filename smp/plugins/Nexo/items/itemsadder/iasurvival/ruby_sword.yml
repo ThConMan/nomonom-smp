@@ -1,0 +1,24 @@
+ruby_sword:
+  itemname: display-name-ruby_sword
+  material: DIAMOND_SWORD
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  AttributeModifiers:
+  - amount: 6.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: aa93d3e9-0ee4-4484-a7a1-1df8dbcf01de
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.9
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: bd71b834-d597-4d8c-9461-97c0932aa861
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iasurvival:item/swords/ruby_sword
+    custom_model_data: 1016

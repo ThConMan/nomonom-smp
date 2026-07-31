@@ -1,0 +1,13 @@
+cassiterite_block:
+  itemname: display-name-cassiterite_block
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: cassiterite_block
+      hardness: 2.0
+      custom_variation: 6
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/minerals/cassiterite_block
+    custom_model_data: 1035

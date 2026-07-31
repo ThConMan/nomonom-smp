@@ -1,0 +1,15 @@
+dark_throne:
+  itemname: display-name-dark_throne
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 3,3
+      seats:
+      - 0,2.6,0
+  Pack:
+    model: iadeco:dark_throne
+    custom_model_data: 1050

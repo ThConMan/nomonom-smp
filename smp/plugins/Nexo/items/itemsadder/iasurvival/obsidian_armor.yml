@@ -1,0 +1,117 @@
+obsidian_helmet:
+  itemname: display-name-obsidian_helmet
+  material: PAPER
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  - lore-enchantment-protection
+  AttributeModifiers:
+  - amount: 5.0
+    attribute: ARMOR
+    operation: 0
+    slot: HEAD
+    uuid: ad2be09a-a735-4001-8911-cef7d437daa2
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 2.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: HEAD
+    uuid: 4cf871e7-1693-4525-b544-c8010821c2a4
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: HEAD
+    uuid: 13a9afc9-613a-42ea-84a5-9c31d85c859e
+    name: nexo:modifier
+    key: nexo:modifier
+material: CHAINMAIL_BOOTS
+obsidian_chestplate:
+  itemname: display-name-obsidian_chestplate
+  material: PAPER
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  - lore-enchantment-protection
+  AttributeModifiers:
+  - amount: 9.0
+    attribute: ARMOR
+    operation: 0
+    slot: CHEST
+    uuid: f8c7df8e-7f15-4941-8a8a-c412f801d9d6
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 2.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: CHEST
+    uuid: d118c395-e491-42dd-baef-0cadf7fc0edc
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: CHEST
+    uuid: 71f92636-64e3-48de-9a61-c27a41246fc7
+    name: nexo:modifier
+    key: nexo:modifier
+obsidian_leggings:
+  itemname: display-name-obsidian_leggings
+  material: PAPER
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  - lore-enchantment-protection
+  AttributeModifiers:
+  - amount: 7.0
+    attribute: ARMOR
+    operation: 0
+    slot: LEGS
+    uuid: 82193604-3d2f-4067-9b58-758fb58d6441
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 2.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: LEGS
+    uuid: 05e10d64-bcc3-4e10-bd42-8fe5e70c5e4e
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: LEGS
+    uuid: 0c4a4c2a-9744-472e-ae9a-0ba769e812d1
+    name: nexo:modifier
+    key: nexo:modifier
+obsidian_boots:
+  itemname: display-name-obsidian_boots
+  material: PAPER
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  - lore-enchantment-protection
+  AttributeModifiers:
+  - amount: 4.0
+    attribute: ARMOR
+    operation: 0
+    slot: FEET
+    uuid: 53dd957c-1005-40b3-bcf8-0330cbb9e424
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 2.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: FEET
+    uuid: 6b16bd3b-d677-4a37-8635-7b62f0cb2031
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: FEET
+    uuid: 37b598d9-f138-43e1-a63e-d8905f129dfd
+    name: nexo:modifier
+    key: nexo:modifier

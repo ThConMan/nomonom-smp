@@ -1,0 +1,36 @@
+black_shears:
+  itemname: display-name-black_shears
+  material: SHEARS
+  Pack:
+    texture: iasurvival:item/tools/black_shears
+    custom_model_data: 1000
+red_shears:
+  itemname: display-name-red_shears
+  material: SHEARS
+  Pack:
+    texture: iasurvival:item/tools/red_shears
+    custom_model_data: 1001
+green_shears:
+  itemname: display-name-green_shears
+  material: SHEARS
+  Pack:
+    texture: iasurvival:item/tools/green_shears
+    custom_model_data: 1002
+blue_shears:
+  itemname: display-name-blue_shears
+  material: SHEARS
+  Pack:
+    texture: iasurvival:item/tools/blue_shears
+    custom_model_data: 1003
+purple_shears:
+  itemname: display-name-purple_shears
+  material: SHEARS
+  Pack:
+    texture: iasurvival:item/tools/purple_shears
+    custom_model_data: 1004
+cyan_shears:
+  itemname: display-name-cyan_shears
+  material: SHEARS
+  Pack:
+    texture: iasurvival:item/tools/cyan_shears
+    custom_model_data: 1005

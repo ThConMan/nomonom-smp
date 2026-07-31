@@ -1,0 +1,6 @@
+dark_amethyst_pickaxe:
+  itemname: display-name-dark_amethyst_pickaxe
+  material: DIAMOND_PICKAXE
+  Pack:
+    texture: iasurvival:item/tools/dark_amethyst_pickaxe
+    custom_model_data: 1002

@@ -1,0 +1,106 @@
+# MobGrab Configuration
+
+# Effects
+pickup-sound: ENTITY_ITEM_PICKUP
+place-sound: ENTITY_ENDERMAN_TELEPORT
+pickup-particles: CLOUD
+place-particles: HAPPY_VILLAGER
+particle-count: 10
+
+# Cooldown between pickups (seconds)
+cooldown-seconds: 1
+
+# Mob toggle mode
+# false = whitelist (only mobs listed as true can be picked up)
+# true  = blacklist (all mobs allowed unless listed as false)
+blacklist-mode: false
+
+# Geyser/Floodgate support
+# Automatically detected if floodgate is installed
+geyser:
+  enabled: true
+  # Number of mobs per page in Bedrock form GUI
+  mobs-per-page: 20
+
+# Per-mob toggles
+enabled-mobs:
+  ALLAY: true
+  ARMADILLO: true
+  AXOLOTL: true
+  BAT: true
+  BEE: true
+  BLAZE: true
+  BOGGED: true
+  BREEZE: true
+  CAMEL: true
+  CAT: true
+  CAVE_SPIDER: true
+  CHICKEN: true
+  COD: true
+  COW: true
+  CREEPER: true
+  DOLPHIN: true
+  DONKEY: true
+  DROWNED: true
+  ELDER_GUARDIAN: true
+  ENDERMAN: true
+  ENDERMITE: true
+  EVOKER: true
+  FOX: true
+  FROG: true
+  GHAST: true
+  GLOW_SQUID: true
+  GOAT: true
+  GUARDIAN: true
+  HOGLIN: true
+  HORSE: true
+  HUSK: true
+  IRON_GOLEM: true
+  LLAMA: true
+  MAGMA_CUBE: true
+  MOOSHROOM: true
+  MULE: true
+  OCELOT: true
+  PANDA: true
+  PARROT: true
+  PHANTOM: true
+  PIG: true
+  PIGLIN: true
+  PIGLIN_BRUTE: true
+  PILLAGER: true
+  POLAR_BEAR: true
+  PUFFERFISH: true
+  RABBIT: true
+  RAVAGER: true
+  SALMON: true
+  SHEEP: true
+  SHULKER: true
+  SILVERFISH: true
+  SKELETON: true
+  SKELETON_HORSE: true
+  SLIME: true
+  SNIFFER: true
+  SNOW_GOLEM: true
+  SPIDER: true
+  SQUID: true
+  STRAY: true
+  STRIDER: true
+  TADPOLE: true
+  TRADER_LLAMA: true
+  TROPICAL_FISH: true
+  TURTLE: true
+  VEX: true
+  VILLAGER: true
+  VINDICATOR: true
+  WANDERING_TRADER: true
+  WARDEN: true
+  WITCH: true
+  WITHER: true
+  WITHER_SKELETON: true
+  WOLF: true
+  ZOGLIN: true
+  ZOMBIE: true
+  ZOMBIE_HORSE: true
+  ZOMBIE_VILLAGER: true
+  ZOMBIFIED_PIGLIN: true
+  ENDER_DRAGON: false

@@ -1,0 +1,84 @@
+dark_geode_0a:
+  itemname: Dark Geode
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/dark_geode_0a
+    custom_model_data: 1210
+hallow_skull_0a:
+  itemname: Hallow Skull
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/hallow_skull_0a
+    custom_model_data: 1211
+infested_egg_0a:
+  itemname: Infested Egg
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/infested_egg_0a
+    custom_model_data: 1212
+magical_core_0a:
+  itemname: Magical Core
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/magical_core_0a
+    custom_model_data: 1213
+magical_substance_0a:
+  itemname: Magical Substance
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/magical_substance_0a
+    custom_model_data: 1214
+nano_nest_0a:
+  itemname: Nano Nest
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/nano_nest_0a
+    custom_model_data: 1215
+shadow_diamond_0a:
+  itemname: Shadow Diamond
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/shadow_diamond_0a
+    custom_model_data: 1216
+dark_geode_1a:
+  itemname: Dark Geode
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/dark_geode_1a
+    custom_model_data: 1217
+hallow_skull_1a:
+  itemname: Hallow Skull
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/hallow_skull_1a
+    custom_model_data: 1218
+infested_egg_1a:
+  itemname: Infested Egg
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/infested_egg_1a
+    custom_model_data: 1219
+magical_core_1a:
+  itemname: Magical Core
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/magical_core_1a
+    custom_model_data: 1220
+magical_substance_1a:
+  itemname: Magical Substance
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/magical_substance_1a
+    custom_model_data: 1221
+nano_nest_1a:
+  itemname: Nano Nest
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/nano_nest_1a
+    custom_model_data: 1222
+shadow_diamond_1a:
+  itemname: Shadow Diamond
+  material: PAPER
+  Pack:
+    texture: shadow_magic_material:item/shadow_diamond_1a
+    custom_model_data: 1223

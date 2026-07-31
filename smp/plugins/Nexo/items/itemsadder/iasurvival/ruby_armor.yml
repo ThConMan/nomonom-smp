@@ -1,0 +1,57 @@
+ruby_helmet:
+  itemname: display-name-ruby_helmet
+  material: PAPER
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  AttributeModifiers:
+  - amount: 2.5
+    attribute: ARMOR
+    operation: 0
+    slot: HEAD
+    uuid: 292b90e6-4356-4129-b9eb-4a2d54b99eca
+    name: nexo:modifier
+    key: nexo:modifier
+material: CHAINMAIL_BOOTS
+ruby_chestplate:
+  itemname: display-name-ruby_chestplate
+  material: PAPER
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  AttributeModifiers:
+  - amount: 5.0
+    attribute: ARMOR
+    operation: 0
+    slot: CHEST
+    uuid: 575c6a00-6cc3-4423-be02-4021a9653deb
+    name: nexo:modifier
+    key: nexo:modifier
+ruby_leggings:
+  itemname: display-name-ruby_leggings
+  material: PAPER
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  AttributeModifiers:
+  - amount: 4.5
+    attribute: ARMOR
+    operation: 0
+    slot: LEGS
+    uuid: dfa457f4-38de-4ab4-9975-206adef4bafe
+    name: nexo:modifier
+    key: nexo:modifier
+ruby_boots:
+  itemname: display-name-ruby_boots
+  material: PAPER
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  AttributeModifiers:
+  - amount: 2.0
+    attribute: ARMOR
+    operation: 0
+    slot: FEET
+    uuid: b36c3d35-e132-421c-aa43-365e78ebb72c
+    name: nexo:modifier
+    key: nexo:modifier

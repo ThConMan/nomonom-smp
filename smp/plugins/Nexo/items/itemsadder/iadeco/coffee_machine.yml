@@ -1,0 +1,15 @@
+coffee_machine:
+  itemname: display-name-coffee_machine
+  material: PAPER
+  lore:
+  - lore-1-coffee_machine
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+  Pack:
+    model: iadeco:coffee_machine
+    custom_model_data: 1044

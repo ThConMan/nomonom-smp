@@ -1,0 +1,22 @@
+bronze_shield:
+  itemname: display-name-bronze_shield
+  material: SHIELD
+  AttributeModifiers:
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 3b579481-eac4-4670-8492-459306588003
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 0.0
+    attribute: MOVEMENT_SPEED
+    operation: 0
+    slot: OFFHAND
+    uuid: 3f87341f-255c-420e-9ffd-67562e36d3fd
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    model: iasurvival:item/shields/bronze_shield
+    blocking_model: iasurvival:item/shields/bronze_shield_blocking
+    custom_model_data: 1005

@@ -1,0 +1,156 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Farmer
+size: 54
+items:
+  break:
+    material: DIAMOND_HOE
+    slot: 3
+    display_name: '%imc_primary-color_c%Break'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Break the following blocks'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_farmer_break'
+  place:
+    material: WHEAT
+    slot: 5
+    display_name: '%imc_primary-color_c%Place'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Place the following blocks'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_farmer_place'
+  place_dead_tube_coral_fan:
+    material: dead_tube_coral_fan
+    slot: 10
+    display_name: '%imc_primary-color_c%Dead Coral Fan'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Blocks:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dead Tube Coral Fan'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dead Brain Coral Fan'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dead Bubble Coral Fan'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dead Fire Coral Fan'
+      - '%imc_dark-color_c% • %imc_text-color_c%Dead Horn Coral Fan'
+  place_wheat:
+    material: wheat
+    slot: 11
+    display_name: '%imc_primary-color_c%Wheat Crops'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Wheat Crops'
+  place_potato:
+    material: potato
+    slot: 12
+    display_name: '%imc_primary-color_c%Potato'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Potato'
+  place_carrot:
+    material: carrot
+    slot: 13
+    display_name: '%imc_primary-color_c%Carrot'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Carrot'
+  place_beetroot:
+    material: beetroot
+    slot: 14
+    display_name: '%imc_primary-color_c%Beetroot'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Beetroot'
+  place_pumpkin_seeds:
+    material: pumpkin_seeds
+    slot: 15
+    display_name: '%imc_primary-color_c%Pumpkin Seeds'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pumpkin Seeds'
+  place_melon_seeds:
+    material: melon_seeds
+    slot: 16
+    display_name: '%imc_primary-color_c%Melon Seeds'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Melon Seeds'
+  place_sweet_berries:
+    material: sweet_berries
+    slot: 19
+    display_name: '%imc_primary-color_c%Sweet Berries'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Sweet Berries'
+  place_mangrove_propagule:
+    material: mangrove_propagule
+    slot: 20
+    display_name: '%imc_primary-color_c%Mangrove Propagule'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Mangrove Propagule'
+  place_torchflower_seeds:
+    material: torchflower_seeds
+    slot: 21
+    display_name: '%imc_primary-color_c%Torchflower Seeds'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Torchflower Seeds'
+  place_pitcher_pod:
+    material: pitcher_pod
+    slot: 22
+    display_name: '%imc_primary-color_c%Pitcher Pod'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Block:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pitcher Pod'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_farmer_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: YELLOW_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

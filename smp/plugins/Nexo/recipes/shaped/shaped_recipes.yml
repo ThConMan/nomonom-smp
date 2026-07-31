@@ -1,0 +1,341 @@
+# =================================================
+# ASCENDED RECIPES (Nexo armor, MMOItems ingot)
+# Only Ascended armor + variants.
+# =================================================
+
+# ---------- BASE ASCENDED ----------
+ascended_helmet:
+  result:
+    nexo_item: ascended_helmet
+  ingredients:
+    N:
+      minecraft_type: NETHERITE_HELMET
+    I:
+      mmoitems_id: ASCENDED_INGOT
+      mmoitems_type: MATERIAL
+  shape:
+  - ___
+  - _NI
+  - ___
+
+ascended_chestplate:
+  result:
+    nexo_item: ascended_chestplate
+  ingredients:
+    N:
+      minecraft_type: NETHERITE_CHESTPLATE
+    I:
+      mmoitems_id: ASCENDED_INGOT
+      mmoitems_type: MATERIAL
+  shape:
+  - ___
+  - _NI
+  - ___
+
+ascended_leggings:
+  result:
+    nexo_item: ascended_leggings
+  ingredients:
+    N:
+      minecraft_type: NETHERITE_LEGGINGS
+    I:
+      mmoitems_id: ASCENDED_INGOT
+      mmoitems_type: MATERIAL
+  shape:
+  - ___
+  - _NI
+  - ___
+
+ascended_boots:
+  result:
+    nexo_item: ascended_boots
+  ingredients:
+    N:
+      minecraft_type: NETHERITE_BOOTS
+    I:
+      mmoitems_id: ASCENDED_INGOT
+      mmoitems_type: MATERIAL
+  shape:
+  - ___
+  - _NI
+  - ___
+
+
+# ---------- FIRE ----------
+asc_fire_helmet:
+  result:
+    nexo_item: ascended_fire_helmet
+  ingredients:
+    A:
+      minecraft_type: BLAZE_ROD
+    B:
+      minecraft_type: LAVA_BUCKET
+    C:
+      minecraft_type: MAGMA_BLOCK
+    D:
+      nexo_item: ascended_helmet
+  shape:
+  - ABA
+  - CDC
+  - ABA
+
+asc_fire_chestplate:
+  result:
+    nexo_item: ascended_fire_chestplate
+  ingredients:
+    A:
+      minecraft_type: BLAZE_ROD
+    B:
+      minecraft_type: LAVA_BUCKET
+    C:
+      minecraft_type: MAGMA_BLOCK
+    D:
+      nexo_item: ascended_chestplate
+  shape:
+  - ABA
+  - CDC
+  - ABA
+
+asc_fire_leggings:
+  result:
+    nexo_item: ascended_fire_leggings
+  ingredients:
+    A:
+      minecraft_type: BLAZE_ROD
+    B:
+      minecraft_type: LAVA_BUCKET
+    C:
+      minecraft_type: MAGMA_BLOCK
+    D:
+      nexo_item: ascended_leggings
+  shape:
+  - ABA
+  - CDC
+  - ABA
+
+asc_fire_boots:
+  result:
+    nexo_item: ascended_fire_boots
+  ingredients:
+    A:
+      minecraft_type: BLAZE_ROD
+    B:
+      minecraft_type: LAVA_BUCKET
+    C:
+      minecraft_type: MAGMA_BLOCK
+    D:
+      nexo_item: ascended_boots
+  shape:
+  - ABA
+  - CDC
+  - ABA
+
+
+# ---------- WATER ----------
+asc_water_helmet:
+  result:
+    nexo_item: ascended_water_helmet
+  ingredients:
+    A:
+      minecraft_type: PRISMARINE_CRYSTALS
+    B:
+      minecraft_type: WATER_BUCKET
+    C:
+      minecraft_type: HEART_OF_THE_SEA
+    D:
+      nexo_item: ascended_helmet
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+asc_water_chestplate:
+  result:
+    nexo_item: ascended_water_chestplate
+  ingredients:
+    A:
+      minecraft_type: PRISMARINE_CRYSTALS
+    B:
+      minecraft_type: WATER_BUCKET
+    C:
+      minecraft_type: HEART_OF_THE_SEA
+    D:
+      nexo_item: ascended_chestplate
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+asc_water_leggings:
+  result:
+    nexo_item: ascended_water_leggings
+  ingredients:
+    A:
+      minecraft_type: PRISMARINE_CRYSTALS
+    B:
+      minecraft_type: WATER_BUCKET
+    C:
+      minecraft_type: HEART_OF_THE_SEA
+    D:
+      nexo_item: ascended_leggings
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+asc_water_boots:
+  result:
+    nexo_item: ascended_water_boots
+  ingredients:
+    A:
+      minecraft_type: PRISMARINE_CRYSTALS
+    B:
+      minecraft_type: WATER_BUCKET
+    C:
+      minecraft_type: HEART_OF_THE_SEA
+    D:
+      nexo_item: ascended_boots
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+
+# ---------- WIND ----------
+asc_wind_helmet:
+  result:
+    nexo_item: ascended_wind_helmet
+  ingredients:
+    A:
+      minecraft_type: FEATHER
+    B:
+      minecraft_type: PHANTOM_MEMBRANE
+    C:
+      minecraft_type: ELYTRA
+    D:
+      nexo_item: ascended_helmet
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+asc_wind_chestplate:
+  result:
+    nexo_item: ascended_wind_chestplate
+  ingredients:
+    A:
+      minecraft_type: FEATHER
+    B:
+      minecraft_type: PHANTOM_MEMBRANE
+    C:
+      minecraft_type: ELYTRA
+    D:
+      nexo_item: ascended_chestplate
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+asc_wind_leggings:
+  result:
+    nexo_item: ascended_wind_leggings
+  ingredients:
+    A:
+      minecraft_type: FEATHER
+    B:
+      minecraft_type: PHANTOM_MEMBRANE
+    C:
+      minecraft_type: ELYTRA
+    D:
+      nexo_item: ascended_leggings
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+asc_wind_boots:
+  result:
+    nexo_item: ascended_wind_boots
+  ingredients:
+    A:
+      minecraft_type: FEATHER
+    B:
+      minecraft_type: PHANTOM_MEMBRANE
+    C:
+      minecraft_type: ELYTRA
+    D:
+      nexo_item: ascended_boots
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+
+# ---------- EARTH ----------
+asc_earth_helmet:
+  result:
+    nexo_item: ascended_earth_helmet
+  ingredients:
+    A:
+      minecraft_type: DIRT
+    B:
+      minecraft_type: STONE
+    C:
+      minecraft_type: EMERALD
+    D:
+      nexo_item: ascended_helmet
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+asc_earth_chestplate:
+  result:
+    nexo_item: ascended_earth_chestplate
+  ingredients:
+    A:
+      minecraft_type: DIRT
+    B:
+      minecraft_type: STONE
+    C:
+      minecraft_type: EMERALD
+    D:
+      nexo_item: ascended_chestplate
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+asc_earth_leggings:
+  result:
+    nexo_item: ascended_earth_leggings
+  ingredients:
+    A:
+      minecraft_type: DIRT
+    B:
+      minecraft_type: STONE
+    C:
+      minecraft_type: EMERALD
+    D:
+      nexo_item: ascended_leggings
+  shape:
+  - ABA
+  - BDB
+  - ACA
+
+asc_earth_boots:
+  result:
+    nexo_item: ascended_earth_boots
+  ingredients:
+    A:
+      minecraft_type: DIRT
+    B:
+      minecraft_type: STONE
+    C:
+      minecraft_type: EMERALD
+    D:
+      nexo_item: ascended_boots
+  shape:
+  - ABA
+  - BDB
+  - ACA

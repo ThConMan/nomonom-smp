@@ -1,0 +1,6 @@
+hotdog:
+  itemname: §CHotdog
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/hotdog
+    custom_model_data: 1021

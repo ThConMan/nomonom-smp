@@ -1,0 +1,6 @@
+cassiterite:
+  itemname: display-name-cassiterite
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/cassiterite
+    custom_model_data: 1002

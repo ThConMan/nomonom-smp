@@ -1,0 +1,88 @@
+VoteSites:
+
+  MCBestServers:
+    Enabled: true
+    Name: 'MinecraftBestServers.com'
+    Priority: 5
+    Hidden: false
+    ServiceSite: "Minecraft Server List"
+    VoteURL: 'https://minecraftbestservers.com/server-nomonom.5572/vote'
+    VoteDelay: 24h
+    WaitUntilVoteDelay: false
+    VoteDelayDaily: false
+    ForceOffline: false
+    DisplayItem:
+      Material: 'DIAMOND'
+      Amount: 1
+    Rewards:
+      RewardFiles:
+      - 'NomonomVoteKey'
+
+  MinecraftBuzz:
+    Enabled: true
+    Name: 'minecraft.buzz'
+    Priority: 10
+    Hidden: false
+    ServiceSite: "Minecraft.Buzz"
+    VoteURL: 'https://minecraft.buzz/vote/16283'
+    VoteDelay: 24h
+    WaitUntilVoteDelay: false
+    VoteDelayDaily: false
+    ForceOffline: false
+    DisplayItem:
+      Material: 'NETHER_STAR'
+      Amount: 1
+    Rewards:
+      RewardFiles:
+      - 'NomonomVoteKey'
+
+  MinecraftServersOrg:
+    Enabled: true
+    Name: 'minecraftservers.org'
+    Priority: 9
+    Hidden: false
+    ServiceSite: "MinecraftServers.org"
+    VoteURL: 'https://minecraftservers.org/vote/684145'
+    VoteDelay: 24h
+    WaitUntilVoteDelay: false
+    VoteDelayDaily: false
+    ForceOffline: false
+    DisplayItem:
+      Material: 'EMERALD'
+      Amount: 1
+    Rewards:
+      RewardFiles:
+      - 'NomonomVoteKey'
+
+  PlanetMinecraft:
+    Enabled: true
+    Name: 'PlanetMinecraft.com'
+    Priority: 8
+    Hidden: false
+    ServiceSite: "PlanetMinecraft.com"
+    VoteURL: 'https://www.planetminecraft.com/server/nomonom-smp-take-a-peek-you-may-like-it/vote/'
+    VoteDelay: 24h
+    WaitUntilVoteDelay: false
+    VoteDelayDaily: false
+    ForceOffline: false
+    DisplayItem:
+      Material: 'AMETHYST_SHARD'
+      Amount: 1
+    Rewards:
+      RewardFiles:
+      - 'NomonomVoteKey'
+
+  minecraft-server-list:
+    Enabled: false
+    Name: 'minecraft-server-list.com'
+    ServiceSite: 'MCSL'
+    VoteURL: 'https://minecraft-server-list.com/server/514394/vote/'
+    VoteDelay: 24h
+    DisplayItem:
+      Material: 'EMERALD'
+      Amount: 1
+    Rewards:
+      RewardFiles:
+      - 'NomonomVoteKey'
+
+EverySiteReward: {}

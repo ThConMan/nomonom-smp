@@ -1,0 +1,6 @@
+raw_tin:
+  itemname: display-name-raw_tin
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/raw_tin
+    custom_model_data: 1013

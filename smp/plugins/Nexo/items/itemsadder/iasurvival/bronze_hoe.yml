@@ -1,0 +1,6 @@
+bronze_hoe:
+  itemname: display-name-bronze_hoe
+  material: DIAMOND_HOE
+  Pack:
+    texture: iasurvival:item/tools/bronze_hoe
+    custom_model_data: 1000

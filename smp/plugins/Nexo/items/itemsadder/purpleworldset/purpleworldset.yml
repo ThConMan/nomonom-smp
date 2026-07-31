@@ -1,0 +1,52 @@
+purpleworld_axe:
+  itemname: Purple World Axe
+  material: DIAMOND_AXE
+  Pack:
+    model: purpleworldset:purpleworldset/purpleworld_axe
+    custom_model_data: 1005
+purpleworld_sword:
+  itemname: Purple World Sword
+  material: DIAMOND_SWORD
+  Pack:
+    model: purpleworldset:purpleworldset/purpleworld_sword
+    custom_model_data: 1010
+purpleworld_hoe:
+  itemname: Purple World Hoe
+  material: DIAMOND_HOE
+  Pack:
+    model: purpleworldset:purpleworldset/purpleworld_hoe
+    custom_model_data: 1003
+purpleworld_battleaxe:
+  itemname: Purple World Battle Axe
+  material: DIAMOND_AXE
+  Pack:
+    model: purpleworldset:purpleworldset/purpleworld_battleaxe
+    custom_model_data: 1006
+purpleworld_pickaxe:
+  itemname: Purple World Pickaxe
+  material: DIAMOND_PICKAXE
+  Pack:
+    model: purpleworldset:purpleworldset/purpleworld_pickaxe
+    custom_model_data: 1007
+purpleworld_shovel:
+  itemname: Purple World Shovel
+  material: DIAMOND_SHOVEL
+  Pack:
+    model: purpleworldset:purpleworldset/purpleworld_shovel
+    custom_model_data: 1004
+purpleworld_dagger:
+  itemname: Purple World Dagger
+  material: DIAMOND_SWORD
+  Pack:
+    model: purpleworldset:purpleworldset/purpleworld_dagger
+    custom_model_data: 1011
+purpleworld_bow:
+  itemname: Purple World Bow
+  material: BOW
+  Pack:
+    model: purpleworldset:purpleworldset/purpleworld_bow
+    pulling_models:
+    - purpleworldset:purpleworldset/purpleworld_bow_0
+    - purpleworldset:purpleworldset/purpleworld_bow_1
+    - purpleworldset:purpleworldset/purpleworld_bow_2
+    custom_model_data: 1008

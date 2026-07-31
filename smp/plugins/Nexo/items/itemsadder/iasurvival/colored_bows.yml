@@ -1,0 +1,60 @@
+black_bow:
+  itemname: display-name-black_bow
+  material: BOW
+  Pack:
+    texture: iasurvival:item/bows/black_bow
+    pulling_textures:
+    - iasurvival:black_bow_0
+    - iasurvival:black_bow_1
+    - iasurvival:black_bow_2
+    custom_model_data: 1001
+red_bow:
+  itemname: display-name-red_bow
+  material: BOW
+  Pack:
+    texture: iasurvival:item/bows/red_bow
+    pulling_textures:
+    - iasurvival:red_bow_0
+    - iasurvival:red_bow_1
+    - iasurvival:red_bow_2
+    custom_model_data: 1002
+green_bow:
+  itemname: display-name-green_bow
+  material: BOW
+  Pack:
+    texture: iasurvival:item/bows/green_bow
+    pulling_textures:
+    - iasurvival:green_bow_0
+    - iasurvival:green_bow_1
+    - iasurvival:green_bow_2
+    custom_model_data: 1003
+blue_bow:
+  itemname: display-name-blue_bow
+  material: BOW
+  Pack:
+    texture: iasurvival:item/bows/blue_bow
+    pulling_textures:
+    - iasurvival:blue_bow_0
+    - iasurvival:blue_bow_1
+    - iasurvival:blue_bow_2
+    custom_model_data: 1004
+purple_bow:
+  itemname: display-name-purple_bow
+  material: BOW
+  Pack:
+    texture: iasurvival:item/bows/purple_bow
+    pulling_textures:
+    - iasurvival:purple_bow_0
+    - iasurvival:purple_bow_1
+    - iasurvival:purple_bow_2
+    custom_model_data: 1005
+cyan_bow:
+  itemname: display-name-cyan_bow
+  material: BOW
+  Pack:
+    texture: iasurvival:item/bows/cyan_bow
+    pulling_textures:
+    - iasurvival:cyan_bow_0
+    - iasurvival:cyan_bow_1
+    - iasurvival:cyan_bow_2
+    custom_model_data: 1006

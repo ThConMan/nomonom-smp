@@ -1,0 +1,15 @@
+enabled: true
+identifier: donator_cache_key
+virtual: false
+glow: true
+item:
+  material: TRIPWIRE_HOOK
+  display-name: '&a&lAdventurer''s Cache &7Key'
+  lore:
+  - ''
+  - '&7Use this key to open the'
+  - '&a&lAdventurer''s Cache &7crate!'
+  - ''
+  - '&eContains custom villagers,'
+  - '&egear, and more!'
+  amount: 1

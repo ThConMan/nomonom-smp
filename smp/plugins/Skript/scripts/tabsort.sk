@@ -1,0 +1,61 @@
+# ============================================================
+# Tab Sort - Nononom SMP
+# Controls tab list vertical order via scoreboard teams
+# Priority: Staff > Donator > Playtime > Default
+# Teams are invisible — purely for sorting
+# ============================================================
+
+on load:
+    loop all players:
+        assignTabTeam(loop-player)
+
+every 60 seconds:
+    loop all players:
+        assignTabTeam(loop-player)
+
+on join:
+    wait 2 ticks
+    assignTabTeam(event-player)
+
+function assignTabTeam(p: player):
+    set {_g} to group of {_p}
+    if {_g} is "owner":
+        add {_p} to team named "t01_owner"
+    else if {_g} is "co-owner":
+        add {_p} to team named "t02_coowner"
+    else if {_g} is "admin":
+        add {_p} to team named "t03_admin"
+    else if {_g} is "moderator":
+        add {_p} to team named "t04_mod"
+    else if {_g} is "pvpman":
+        add {_p} to team named "t05_pvpman"
+    else if {_g} is "kitmanager":
+        add {_p} to team named "t06_kitman"
+    else if {_g} is "helper":
+        add {_p} to team named "t07_helper"
+    else if {_g} is "founder":
+        add {_p} to team named "t08_founder"
+    else if {_g} is "celestial":
+        add {_p} to team named "t09_celestial"
+    else if {_g} is "mythril":
+        add {_p} to team named "t10_mythril"
+    else if {_g} is "trickster":
+        add {_p} to team named "t11_trickster"
+    else if {_g} is "ranger":
+        add {_p} to team named "t12_ranger"
+    else if {_p} has permission "group.playtime_legend":
+        add {_p} to team named "t13_legend"
+    else if {_p} has permission "group.playtime_elder":
+        add {_p} to team named "t14_elder"
+    else if {_p} has permission "group.playtime_veteran":
+        add {_p} to team named "t15_veteran"
+    else if {_p} has permission "group.playtime_settler":
+        add {_p} to team named "t16_settler"
+    else if {_p} has permission "group.playtime_wanderer":
+        add {_p} to team named "t17_pioneer"
+    else if {_g} is "dev":
+        add {_p} to team named "t18_dev"
+    else if {_g} is "builder":
+        add {_p} to team named "t19_builder"
+    else:
+        add {_p} to team named "t20_default"

@@ -1,0 +1,1693 @@
+# ============================================================
+# AdvancedEnchantments - enchantments.yml (Nomonom SMP)
+# 4 Tiers: COMMON | RARE | EPIC | LEGENDARY
+#
+# No soul system — balance via chance% and cooldown only.
+#
+# LEGENDARY section comment and header cleaned up — souls fully removed.
+# ============================================================
+
+# ============================================================
+# COMMON — Basic QoL, no soul cost
+# ============================================================
+
+replanter:
+  display: '%group-color%Replanter'
+  description: Automatically replants crops when harvested.
+  applies-to: Hoes
+  type: MINING
+  group: COMMON
+  applies:
+    - ALL_HOE
+  levels:
+    '1':
+      conditions:
+        - '%is crop% = false : %stop%'
+        - '%is fully grown% = false : %stop%'
+      effects:
+        - PLANT_SEEDS:0:%block drop type%
+        - PARTICLE:HAPPY_VILLAGER:3:0
+        - PLAY_SOUND:BLOCK_GRASS_PLACE
+
+smelting:
+  display: '%group-color%Smelting'
+  description: Chance to automatically smelt mined blocks.
+  applies-to: Pickaxes, Shovels
+  type: MINING
+  group: COMMON
+  applies:
+    - ALL_PICKAXE
+    - ALL_SHOVEL
+  levels:
+    '1':
+      chance: 33
+      effects:
+        - SMELT
+        - PARTICLE:FLAME:4:0.3
+        - PLAY_SOUND:BLOCK_FIRE_AMBIENT
+    '2':
+      chance: 66
+      effects:
+        - SMELT
+        - PARTICLE:FLAME:4:0.3
+        - PLAY_SOUND:BLOCK_FIRE_AMBIENT
+    '3':
+      chance: 100
+      effects:
+        - SMELT
+        - PARTICLE:FLAME:5:0.3
+        - PLAY_SOUND:BLOCK_FIRE_AMBIENT
+
+glowing:
+  display: '%group-color%Glowing'
+  description: Grants permanent night vision.
+  applies-to: Helmets
+  type: EFFECT_STATIC
+  group: COMMON
+  applies:
+    - ALL_HELMET
+  levels:
+    '1':
+      effects:
+        - POTION:NIGHT_VISION:0
+
+
+# ============================================================
+# RARE — Good utility, light combat tools
+# ============================================================
+
+gills:
+  display: '%group-color%Gills'
+  description: Breathe underwater indefinitely.
+  applies-to: Helmets
+  type: EFFECT_STATIC
+  group: RARE
+  applies:
+    - ALL_HELMET
+  levels:
+    '1':
+      effects:
+        - POTION:WATER_BREATHING:0
+
+obsidianshield:
+  display: '%group-color%Obsidian Shield'
+  description: Grants permanent fire resistance.
+  applies-to: Armor
+  type: EFFECT_STATIC
+  group: RARE
+  applies:
+    - ALL_ARMOR
+  levels:
+    '1':
+      effects:
+        - POTION:FIRE_RESISTANCE:0
+
+implants:
+  display: '%group-color%Implants'
+  description: Passively restores hunger over time.
+  applies-to: Helmets
+  type: REPEATING
+  group: RARE
+  applies:
+    - ALL_HELMET
+  levels:
+    '1':
+      chance: 30
+      time: 5
+      effects:
+        - ADD_FOOD:1
+        - PARTICLE:HAPPY_VILLAGER:2:0
+    '2':
+      chance: 50
+      time: 5
+      effects:
+        - ADD_FOOD:1
+        - PARTICLE:HAPPY_VILLAGER:2:0
+    '3':
+      chance: 70
+      time: 5
+      effects:
+        - ADD_FOOD:1
+        - PARTICLE:HAPPY_VILLAGER:3:0
+
+hasten:
+  display: '%group-color%Hasten'
+  description: Chance to gain Haste after breaking blocks.
+  applies-to: Tools
+  type: MINING
+  group: RARE
+  applies:
+    - ALL_PICKAXE
+    - ALL_SHOVEL
+    - ALL_AXE
+  levels:
+    '1':
+      chance: 15
+      cooldown: 3
+      effects:
+        - POTION:FAST_DIGGING:0:40
+        - PARTICLE:CRIT:5:0.3
+        - PLAY_SOUND:BLOCK_NOTE_BLOCK_PLING
+    '2':
+      chance: 25
+      cooldown: 3
+      effects:
+        - POTION:FAST_DIGGING:1:60
+        - PARTICLE:CRIT:8:0.3
+        - PLAY_SOUND:BLOCK_NOTE_BLOCK_PLING
+    '3':
+      chance: 45
+      cooldown: 3
+      effects:
+        - POTION:FAST_DIGGING:2:80
+        - PARTICLE:CRIT:10:0.5
+        - PLAY_SOUND:BLOCK_NOTE_BLOCK_PLING
+
+jellylegs:
+  display: '%group-color%Jelly Legs'
+  description: Chance to negate fall damage.
+  applies-to: Boots
+  type: FALL_DAMAGE
+  settings:
+    showActionBar: true
+  group: RARE
+  applies:
+    - ALL_BOOTS
+  levels:
+    '1':
+      chance: 40
+      effects:
+        - CANCEL_EVENT
+        - PARTICLE:CLOUD:10:0.5
+        - PLAY_SOUND:BLOCK_SLIME_BLOCK_STEP
+    '2':
+      chance: 80
+      effects:
+        - CANCEL_EVENT
+        - PARTICLE:CLOUD:15:0.5
+        - PLAY_SOUND:BLOCK_SLIME_BLOCK_STEP
+    '3':
+      chance: 100
+      effects:
+        - CANCEL_EVENT
+        - PARTICLE:CLOUD:20:0.5
+        - PLAY_SOUND:BLOCK_SLIME_BLOCK_STEP
+
+
+
+iceaspect:
+  display: '%group-color%Ice Aspect'
+  description: Chance to slow your enemy on hit.
+  applies-to: Swords
+  type: ATTACK;ATTACK_MOB
+  group: RARE
+  applies:
+    - ALL_SWORD
+  levels:
+    '1':
+      chance: 15
+      cooldown: 2
+      effects:
+        - POTION:SLOW:1:100 @Victim
+        - PARTICLE:CLOUD:12:0.3 @Victim
+        - PLAY_SOUND:BLOCK_GLASS_BREAK
+    '2':
+      chance: 23
+      cooldown: 2
+      effects:
+        - POTION:SLOW:1:100 @Victim
+        - PARTICLE:CLOUD:16:0.3 @Victim
+        - PLAY_SOUND:BLOCK_GLASS_BREAK
+    '3':
+      chance: 31
+      cooldown: 2
+      effects:
+        - POTION:SLOW:1:100 @Victim
+        - PARTICLE:CLOUD:20:0.3 @Victim
+        - PLAY_SOUND:BLOCK_GLASS_BREAK
+
+smokebomb:
+  display: '%group-color%Smoke Bomb'
+  description: |-
+    When near death, blind your attacker
+    to give yourself a chance to escape.
+  applies-to: Helmets
+  type: DEFENSE;DEFENSE_MOB
+  settings:
+    showActionBar: true
+  group: RARE
+  applies:
+    - ALL_HELMET
+  levels:
+    '1':
+      chance: 12
+      cooldown: 3
+      conditions:
+        - '%victim health% > 4 : %stop%'
+      effects:
+        - PARTICLE:CLOUD:200:3 @Victim
+        - POTION:BLINDNESS:0:80 @Attacker
+        - PLAY_SOUND:ENTITY_SNOWBALL_THROW
+    '2':
+      chance: 20
+      cooldown: 3
+      conditions:
+        - '%victim health% > 5 : %stop%'
+      effects:
+        - PARTICLE:CLOUD:200:3 @Victim
+        - POTION:BLINDNESS:0:100 @Attacker
+        - PLAY_SOUND:ENTITY_SNOWBALL_THROW
+    '3':
+      chance: 28
+      cooldown: 3
+      conditions:
+        - '%victim health% > 5 : %stop%'
+      effects:
+        - PARTICLE:CLOUD:200:3 @Victim
+        - POTION:BLINDNESS:1:80 @Attacker
+        - PLAY_SOUND:ENTITY_SNOWBALL_THROW
+    '4':
+      chance: 34
+      cooldown: 3
+      conditions:
+        - '%victim health% > 6 : %stop%'
+      effects:
+        - PARTICLE:CLOUD:200:3 @Victim
+        - POTION:BLINDNESS:1:100 @Attacker
+        - PLAY_SOUND:ENTITY_SNOWBALL_THROW
+    '5':
+      chance: 38
+      cooldown: 3
+      conditions:
+        - '%victim health% > 6 : %stop%'
+      effects:
+        - PARTICLE:CLOUD:200:3 @Victim
+        - POTION:BLINDNESS:2:80 @Attacker
+        - PLAY_SOUND:ENTITY_SNOWBALL_THROW
+
+
+spark:
+  display: '%group-color%Spark'
+  description: Chance to ignite enemies with your trident.
+  applies-to: Tridents
+  type: ATTACK;ATTACK_MOB;SHOOT;SHOOT_MOB
+  group: RARE
+  applies:
+    - TRIDENT
+  levels:
+    '1':
+      chance: 25
+      cooldown: 6
+      effects:
+        - BURN:40 @Victim
+        - PARTICLE:FLAME:8:0.5 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+    '2':
+      chance: 35
+      cooldown: 6
+      effects:
+        - BURN:40 @Victim
+        - PARTICLE:FLAME:10:0.5 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+    '3':
+      chance: 45
+      cooldown: 6
+      effects:
+        - BURN:40 @Victim
+        - PARTICLE:FLAME:12:0.5 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+
+
+
+
+
+frenzy:
+  display: '%group-color%Frenzy'
+  description: Chance for crossbow bolts to detonate on impact.
+  applies-to: Crossbows
+  type: SHOOT;SHOOT_MOB
+  settings:
+    showActionBar: true
+  group: RARE
+  applies:
+    - CROSSBOW
+  levels:
+    '1':
+      chance: 8
+      cooldown: 20
+      effects:
+        - DO_HARM:4 @Victim
+        - BURN:60 @Victim
+        - PARTICLE:EXPLOSION_LARGE:1:0 @Victim
+        - PLAY_SOUND:ENTITY_GENERIC_EXPLODE
+    '2':
+      chance: 12
+      cooldown: 20
+      effects:
+        - DO_HARM:6 @Victim
+        - BURN:80 @Victim
+        - PARTICLE:EXPLOSION_LARGE:1:0 @Victim
+        - PLAY_SOUND:ENTITY_GENERIC_EXPLODE
+    '3':
+      chance: 18
+      cooldown: 20
+      effects:
+        - DO_HARM:8 @Victim
+        - BURN:100 @Victim
+        - PARTICLE:EXPLOSION_LARGE:2:0 @Victim
+        - PLAY_SOUND:ENTITY_GENERIC_EXPLODE
+
+heavy:
+  display: '%group-color%Heavy'
+  description: |-
+    Reduces damage taken from
+    enemy bows by up to 10%.
+  applies-to: Armor
+  type: DEFENSE;DEFENSE_PROJECTILE
+  group: RARE
+  applies:
+    - ALL_ARMOR
+  levels:
+    '1':
+      chance: 4
+      cooldown: 4
+      conditions:
+        - '%attacker is holding% = BOW : %allow%'
+      effects:
+        - DECREASE_DAMAGE:2 @Victim
+        - PARTICLE:CRIT:3:0.2 @Victim
+    '2':
+      chance: 9
+      cooldown: 4
+      conditions:
+        - '%attacker is holding% = BOW : %allow%'
+      effects:
+        - DECREASE_DAMAGE:4 @Victim
+        - PARTICLE:CRIT:4:0.2 @Victim
+    '3':
+      chance: 12
+      cooldown: 4
+      conditions:
+        - '%attacker is holding% = BOW : %allow%'
+      effects:
+        - DECREASE_DAMAGE:6 @Victim
+        - PARTICLE:CRIT:5:0.2 @Victim
+    '4':
+      chance: 16
+      cooldown: 4
+      conditions:
+        - '%attacker is holding% = BOW : %allow%'
+      effects:
+        - DECREASE_DAMAGE:8 @Victim
+        - PARTICLE:CRIT:6:0.2 @Victim
+    '5':
+      chance: 21
+      cooldown: 4
+      conditions:
+        - '%attacker is holding% = BOW : %allow%'
+      effects:
+        - DECREASE_DAMAGE:10 @Victim
+        - PARTICLE:CRIT:8:0.2 @Victim
+
+marksman:
+  display: '%group-color%Marksman'
+  description: Chance to deal bonus damage with crossbows.
+  applies-to: Crossbows
+  type: SHOOT;SHOOT_MOB
+  group: RARE
+  applies:
+    - CROSSBOW
+  levels:
+    '1':
+      chance: 15
+      cooldown: 5
+      conditions:
+        - '%attacker is holding% = CROSSBOW : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>10-18</random number> @Victim
+        - PARTICLE:CRIT:8:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '2':
+      chance: 20
+      cooldown: 5
+      conditions:
+        - '%attacker is holding% = CROSSBOW : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>12-20</random number> @Victim
+        - PARTICLE:CRIT:10:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '3':
+      chance: 25
+      cooldown: 6
+      conditions:
+        - '%attacker is holding% = CROSSBOW : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>14-22</random number> @Victim
+        - PARTICLE:CRIT:12:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '4':
+      chance: 30
+      cooldown: 6
+      conditions:
+        - '%attacker is holding% = CROSSBOW : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>16-24</random number> @Victim
+        - PARTICLE:CRIT:15:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+
+
+# ============================================================
+# EPIC — Strong utility and solid PvP
+# ============================================================
+
+harvest:
+  display: '%group-color%Harvest'
+  description: Chance to harvest crops in a 3x3 area.
+  applies-to: Hoes
+  type: MINING
+  group: EPIC
+  applies:
+    - ALL_HOE
+  levels:
+    '1':
+      settings:
+        whitelist:
+          - CROPS
+          - WHEAT
+          - CARROT
+          - CARROTS
+          - POTATO
+          - POTATOES
+          - BEETROOT
+          - BEETROOTS
+          - COCOA
+          - NETHER_WART
+          - NETHER_WARTS
+          - TORCHFLOWER
+          - PITCHER_CROP
+      chance: 25
+      effects:
+        - BREAK_BLOCK @Trench{r=3,it=true}
+        - PARTICLE:HAPPY_VILLAGER:4:0.3
+        - PLAY_SOUND:BLOCK_CROP_BREAK
+    '2':
+      settings:
+        whitelist:
+          - CROPS
+          - WHEAT
+          - CARROT
+          - CARROTS
+          - POTATO
+          - POTATOES
+          - BEETROOT
+          - BEETROOTS
+          - COCOA
+          - NETHER_WART
+          - NETHER_WARTS
+          - TORCHFLOWER
+          - PITCHER_CROP
+      chance: 45
+      effects:
+        - BREAK_BLOCK @Trench{r=3,it=true}
+        - PARTICLE:HAPPY_VILLAGER:4:0.3
+        - PLAY_SOUND:BLOCK_CROP_BREAK
+    '3':
+      settings:
+        whitelist:
+          - CROPS
+          - WHEAT
+          - CARROT
+          - CARROTS
+          - POTATO
+          - POTATOES
+          - BEETROOT
+          - BEETROOTS
+          - COCOA
+          - NETHER_WART
+          - NETHER_WARTS
+          - TORCHFLOWER
+          - PITCHER_CROP
+      chance: 65
+      effects:
+        - BREAK_BLOCK @Trench{r=3,it=true}
+        - PARTICLE:HAPPY_VILLAGER:4:0.3
+        - PLAY_SOUND:BLOCK_CROP_BREAK
+    '4':
+      settings:
+        whitelist:
+          - CROPS
+          - WHEAT
+          - CARROT
+          - CARROTS
+          - POTATO
+          - POTATOES
+          - BEETROOT
+          - BEETROOTS
+          - COCOA
+          - NETHER_WART
+          - NETHER_WARTS
+          - TORCHFLOWER
+          - PITCHER_CROP
+      chance: 82
+      effects:
+        - BREAK_BLOCK @Trench{r=3,it=true}
+        - PARTICLE:HAPPY_VILLAGER:4:0.3
+        - PLAY_SOUND:BLOCK_CROP_BREAK
+    '5':
+      settings:
+        whitelist:
+          - CROPS
+          - WHEAT
+          - CARROT
+          - CARROTS
+          - POTATO
+          - POTATOES
+          - BEETROOT
+          - BEETROOTS
+          - COCOA
+          - NETHER_WART
+          - NETHER_WARTS
+          - TORCHFLOWER
+          - PITCHER_CROP
+      chance: 100
+      effects:
+        - BREAK_BLOCK @Trench{r=3,it=true}
+        - PARTICLE:HAPPY_VILLAGER:4:0.3
+        - PLAY_SOUND:BLOCK_CROP_BREAK
+
+timber:
+  display: '%group-color%Timber'
+  description: Chance to fell an entire tree in one swing.
+  applies-to: Axes
+  group: EPIC
+  type: MINING
+  settings:
+    showActionBar: true
+  applies:
+    - ALL_AXE
+  levels:
+    '1':
+      chance: 20
+      cooldown: 5
+      effects:
+        - BREAK_TREE @Block
+        - PARTICLE:CLOUD:10:0.5
+        - PLAY_SOUND:BLOCK_WOOD_BREAK
+    '2':
+      chance: 45
+      cooldown: 5
+      effects:
+        - BREAK_TREE @Block
+        - PARTICLE:CLOUD:12:0.5
+        - PLAY_SOUND:BLOCK_WOOD_BREAK
+    '3':
+      chance: 70
+      cooldown: 6
+      effects:
+        - BREAK_TREE @Block
+        - PARTICLE:CLOUD:14:0.5
+        - PLAY_SOUND:BLOCK_WOOD_BREAK
+    '4':
+      chance: 100
+      cooldown: 3
+      effects:
+        - BREAK_TREE @Block
+        - PARTICLE:CLOUD:16:0.5
+        - PLAY_SOUND:BLOCK_WOOD_BREAK
+
+veinminer:
+  display: '%group-color%Vein Miner'
+  description: Chance to mine an entire ore vein at once.
+  applies-to: Pickaxes
+  group: EPIC
+  type: MINING
+  applies:
+    - ALL_PICKAXE
+  levels:
+    '1':
+      chance: 20
+      cooldown: 6
+      settings:
+        whitelist:
+          - "COAL_ORE"
+          - "COPPER_ORE"
+          - "IRON_ORE"
+          - "GOLD_ORE"
+          - "LAPIS_ORE"
+          - "REDSTONE_ORE"
+          - "DIAMOND_ORE"
+          - "EMERALD_ORE"
+          - "NETHER_QUARTZ_ORE"
+          - "NETHER_GOLD_ORE"
+          - "ANCIENT_DEBRIS"
+          - "DEEPSLATE_COAL_ORE"
+          - "DEEPSLATE_COPPER_ORE"
+          - "DEEPSLATE_IRON_ORE"
+          - "DEEPSLATE_GOLD_ORE"
+          - "DEEPSLATE_LAPIS_ORE"
+          - "DEEPSLATE_REDSTONE_ORE"
+          - "DEEPSLATE_DIAMOND_ORE"
+          - "DEEPSLATE_EMERALD_ORE"
+      effects:
+        - BREAK_BLOCK @Veinmine
+        - PARTICLE:CRIT:6:0.3
+        - PLAY_SOUND:BLOCK_STONE_BREAK
+    '2':
+      chance: 55
+      cooldown: 6
+      settings:
+        whitelist:
+          - "COAL_ORE"
+          - "COPPER_ORE"
+          - "IRON_ORE"
+          - "GOLD_ORE"
+          - "LAPIS_ORE"
+          - "REDSTONE_ORE"
+          - "DIAMOND_ORE"
+          - "EMERALD_ORE"
+          - "NETHER_QUARTZ_ORE"
+          - "NETHER_GOLD_ORE"
+          - "ANCIENT_DEBRIS"
+          - "DEEPSLATE_COAL_ORE"
+          - "DEEPSLATE_COPPER_ORE"
+          - "DEEPSLATE_IRON_ORE"
+          - "DEEPSLATE_GOLD_ORE"
+          - "DEEPSLATE_LAPIS_ORE"
+          - "DEEPSLATE_REDSTONE_ORE"
+          - "DEEPSLATE_DIAMOND_ORE"
+          - "DEEPSLATE_EMERALD_ORE"
+      effects:
+        - BREAK_BLOCK @Veinmine
+        - PARTICLE:CRIT:6:0.3
+        - PLAY_SOUND:BLOCK_STONE_BREAK
+    '3':
+      chance: 100
+      cooldown: 8
+      settings:
+        whitelist:
+          - "COAL_ORE"
+          - "COPPER_ORE"
+          - "IRON_ORE"
+          - "GOLD_ORE"
+          - "LAPIS_ORE"
+          - "REDSTONE_ORE"
+          - "DIAMOND_ORE"
+          - "EMERALD_ORE"
+          - "NETHER_QUARTZ_ORE"
+          - "NETHER_GOLD_ORE"
+          - "ANCIENT_DEBRIS"
+          - "DEEPSLATE_COAL_ORE"
+          - "DEEPSLATE_COPPER_ORE"
+          - "DEEPSLATE_IRON_ORE"
+          - "DEEPSLATE_GOLD_ORE"
+          - "DEEPSLATE_LAPIS_ORE"
+          - "DEEPSLATE_REDSTONE_ORE"
+          - "DEEPSLATE_DIAMOND_ORE"
+          - "DEEPSLATE_EMERALD_ORE"
+      effects:
+        - BREAK_BLOCK @Veinmine
+        - PARTICLE:CRIT:6:0.3
+        - PLAY_SOUND:BLOCK_STONE_BREAK
+
+glowminer:
+  display: '%group-color%Glow Miner'
+  description: Chance to mine entire patches of glowstone at once.
+  applies-to: Pickaxes
+  group: EPIC
+  type: MINING
+  applies:
+    - ALL_PICKAXE
+  levels:
+    '1':
+      chance: 75
+      cooldown: 5
+      settings:
+        whitelist:
+          - "GLOWSTONE"
+      effects:
+        - BREAK_BLOCK @Veinmine
+        - PARTICLE:END_ROD:6:0.3
+        - PLAY_SOUND:BLOCK_GLASS_BREAK
+    '2':
+      chance: 100
+      cooldown: 4
+      settings:
+        whitelist:
+          - "GLOWSTONE"
+      effects:
+        - BREAK_BLOCK @Veinmine
+        - PARTICLE:END_ROD:6:0.3
+        - PLAY_SOUND:BLOCK_GLASS_BREAK
+
+restore:
+  display: '%group-color%Restore'
+  description: |-
+    When your tool breaks, it has a chance
+    to repair half its durability — at the
+    cost of this enchantment.
+  applies-to: Tools
+  type: ITEM_BREAK
+  group: EPIC
+  settings:
+    showActionBar: true
+  applies:
+    - ALL_PICKAXE
+    - ALL_SHOVEL
+    - ALL_AXE
+  levels:
+    '1':
+      chance: 40
+      effects:
+        - ADD_DURABILITY_CURRENT_ITEM:<round><math>(%maximum durability%/2)</math></round>
+        - REMOVE_ENCHANT:restore
+        - PLAY_SOUND:ITEM_TOTEM_USE
+    '2':
+      chance: 60
+      effects:
+        - ADD_DURABILITY_CURRENT_ITEM:<round><math>(%maximum durability%/2)</math></round>
+        - REMOVE_ENCHANT:restore
+        - PLAY_SOUND:ITEM_TOTEM_USE
+    '3':
+      chance: 80
+      effects:
+        - ADD_DURABILITY_CURRENT_ITEM:<round><math>(%maximum durability%/2)</math></round>
+        - REMOVE_ENCHANT:restore
+        - PLAY_SOUND:ITEM_TOTEM_USE
+    '4':
+      chance: 100
+      effects:
+        - ADD_DURABILITY_CURRENT_ITEM:<round><math>(%maximum durability%/2)</math></round>
+        - REMOVE_ENCHANT:restore
+        - PLAY_SOUND:ITEM_TOTEM_USE
+
+slingshot:
+  display: '%group-color%Slingshot'
+  description: Right-click to launch yourself skyward with your elytra.
+  applies-to: Elytra
+  type: RIGHT_CLICK
+  group: EPIC
+  applies:
+    - ELYTRA
+  levels:
+    '1':
+      chance: 25
+      cooldown: 15
+      conditions:
+        - '%is holding% contains FIREWORK : %stop%'
+      effects:
+        - BOOST:UP:10
+        - PARTICLE:CLOUD:12:0.5
+        - PLAY_SOUND:ENTITY_FIREWORK_ROCKET_LAUNCH
+    '2':
+      chance: 45
+      cooldown: 10
+      conditions:
+        - '%is holding% contains FIREWORK : %stop%'
+      effects:
+        - BOOST:UP:12
+        - PARTICLE:CLOUD:12:0.5
+        - PLAY_SOUND:ENTITY_FIREWORK_ROCKET_LAUNCH
+    '3':
+      chance: 60
+      cooldown: 5
+      conditions:
+        - '%is holding% contains FIREWORK : %stop%'
+      effects:
+        - BOOST:UP:16
+        - PARTICLE:CLOUD:12:0.5
+        - PLAY_SOUND:ENTITY_FIREWORK_ROCKET_LAUNCH
+
+
+soulbound:
+  display: '%group-color%Soulbound'
+  description: Chance to keep this item on death.
+  applies-to: Weapons, Tools, Bows
+  type: DEATH;PASSIVE_DEATH
+  group: EPIC
+  applies:
+    - ALL_TOOLS
+    - ALL_SWORD
+    - BOW
+    - CROSSBOW
+  levels:
+    '1':
+      chance: 20
+      effects:
+        - KEEP_ON_DEATH
+        - PARTICLE:HEART:3:0.3
+        - PLAY_SOUND:ITEM_TOTEM_USE
+    '2':
+      chance: 40
+      effects:
+        - KEEP_ON_DEATH
+        - PARTICLE:HEART:3:0.3
+        - PLAY_SOUND:ITEM_TOTEM_USE
+    '3':
+      chance: 60
+      effects:
+        - KEEP_ON_DEATH
+        - PARTICLE:HEART:3:0.3
+        - PLAY_SOUND:ITEM_TOTEM_USE
+
+armored:
+  display: '%group-color%Armored'
+  description: Reduces damage from enemy swords.
+  applies-to: Armor
+  type: DEFENSE
+  group: EPIC
+  applies:
+    - ALL_ARMOR
+  levels:
+    '1':
+      chance: 6
+      cooldown: 8
+      conditions:
+        - '%attacker is holding% contains SWORD : %allow%'
+      effects:
+        - DECREASE_DAMAGE:2 @Victim
+        - PARTICLE:CRIT:4:0.2
+    '2':
+      chance: 12
+      cooldown: 8
+      conditions:
+        - '%attacker is holding% contains SWORD : %allow%'
+      effects:
+        - DECREASE_DAMAGE:4 @Victim
+        - PARTICLE:CRIT:4:0.2
+    '3':
+      chance: 16
+      cooldown: 8
+      conditions:
+        - '%attacker is holding% contains SWORD : %allow%'
+      effects:
+        - DECREASE_DAMAGE:6 @Victim
+        - PARTICLE:CRIT:4:0.2
+    '4':
+      chance: 20
+      cooldown: 8
+      conditions:
+        - '%attacker is holding% contains SWORD : %allow%'
+      effects:
+        - DECREASE_DAMAGE:8 @Victim
+        - PARTICLE:CRIT:4:0.2
+
+
+
+bowmaster:
+  display: '%group-color%Bowmaster'
+  description: |-
+    Punish sword users — deal bonus
+    damage to enemies holding a sword.
+  applies-to: Bow, Crossbow, Trident
+  type: SHOOT
+  group: EPIC
+  applies:
+    - TRIDENT
+    - BOW
+    - CROSSBOW
+  levels:
+    '1':
+      chance: 15
+      cooldown: 5
+      conditions:
+        - '%victim is holding% contains SWORD : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>15-25</random number> @Attacker
+        - PARTICLE:CRIT:8:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '2':
+      chance: 20
+      cooldown: 5
+      conditions:
+        - '%victim is holding% contains SWORD : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>20-30</random number> @Attacker
+        - PARTICLE:CRIT:8:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '3':
+      chance: 25
+      cooldown: 6
+      conditions:
+        - '%victim is holding% contains SWORD : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>25-35</random number> @Attacker
+        - PARTICLE:CRIT:8:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '4':
+      chance: 30
+      cooldown: 6
+      conditions:
+        - '%victim is holding% contains SWORD : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>28-38</random number> @Attacker
+        - PARTICLE:CRIT:8:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '5':
+      chance: 35
+      cooldown: 6
+      conditions:
+        - '%victim is holding% contains SWORD : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>30-40</random number> @Attacker
+        - PARTICLE:CRIT:8:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+
+ambit:
+  display: '%group-color%Ambit'
+  description: |-
+    Chance to deal damage to mobs
+    within an increasing radius.
+  applies-to: Swords, Axes
+  type: ATTACK_MOB
+  settings:
+    showActionBar: true
+  group: EPIC
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    '1':
+      chance: 5
+      cooldown: 10
+      effects:
+        - DO_HARM:<random number>1-2</random number> @Aoe{radius=1,target=mobs}
+        - PARTICLE:CRIT:6:0.4
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_SWEEP
+    '2':
+      chance: 6
+      cooldown: 10
+      effects:
+        - DO_HARM:<random number>1-2</random number> @Aoe{radius=2,target=mobs}
+        - PARTICLE:CRIT:6:0.4
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_SWEEP
+    '3':
+      chance: 8
+      cooldown: 11
+      effects:
+        - DO_HARM:<random number>1-3</random number> @Aoe{radius=3,target=mobs}
+        - PARTICLE:CRIT:6:0.4
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_SWEEP
+    '4':
+      chance: 10
+      cooldown: 11
+      effects:
+        - DO_HARM:<random number>1-3</random number> @Aoe{radius=4,target=mobs}
+        - PARTICLE:CRIT:6:0.4
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_SWEEP
+    '5':
+      chance: 12
+      cooldown: 12
+      effects:
+        - DO_HARM:<random number>2-3</random number> @Aoe{radius=5,target=mobs}
+        - PARTICLE:CRIT:6:0.4
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_SWEEP
+    '6':
+      chance: 14
+      cooldown: 13
+      effects:
+        - DO_HARM:<random number>2-3</random number> @Aoe{radius=6,target=mobs}
+        - PARTICLE:CRIT:6:0.4
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_SWEEP
+    '7':
+      chance: 16
+      cooldown: 14
+      effects:
+        - DO_HARM:<random number>2-3</random number> @Aoe{radius=7,target=mobs}
+        - PARTICLE:CRIT:6:0.4
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_SWEEP
+
+beastslayer:
+  display: '%group-color%Beastslayer'
+  description: Chance to deal bonus damage to hostile mobs.
+  applies-to: Swords, Axes
+  type: ATTACK_MOB
+  group: EPIC
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    '1':
+      chance: 25
+      cooldown: 2
+      conditions:
+        - '%is hostile% = true : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>10-25</random number> @Attacker
+        - PARTICLE:CRIT:8:0.4 @Victim
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_STRONG
+    '2':
+      chance: 50
+      cooldown: 2
+      conditions:
+        - '%is hostile% = true : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>12-28</random number> @Attacker
+        - PARTICLE:CRIT:8:0.4 @Victim
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_STRONG
+    '3':
+      chance: 75
+      cooldown: 2
+      conditions:
+        - '%is hostile% = true : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>14-32</random number> @Attacker
+        - PARTICLE:CRIT:8:0.4 @Victim
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_STRONG
+    '4':
+      chance: 100
+      cooldown: 2
+      conditions:
+        - '%is hostile% = true : %allow%'
+      effects:
+        - INCREASE_DAMAGE:<random number>16-36</random number> @Attacker
+        - PARTICLE:CRIT:8:0.4 @Victim
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_STRONG
+
+bluntforce:
+  display: '%group-color%Blunt Force'
+  description: |-
+    Strike with savage force — deal
+    heavy bonus damage but suffer recoil.
+  applies-to: Axes
+  group: EPIC
+  type: ATTACK
+  settings:
+    showActionBar: true
+  applies:
+    - ALL_AXE
+  levels:
+    '1':
+      chance: 10
+      cooldown: 5
+      effects:
+        - INCREASE_DAMAGE:20
+        - DO_HARM:1 @Attacker
+        - PARTICLE:CRIT:10:0.5 @Victim
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_CRIT
+    '2':
+      chance: 15
+      cooldown: 5
+      effects:
+        - INCREASE_DAMAGE:30
+        - DO_HARM:1 @Attacker
+        - PARTICLE:CRIT:10:0.5 @Victim
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_CRIT
+    '3':
+      chance: 20
+      cooldown: 5
+      effects:
+        - INCREASE_DAMAGE:40
+        - DO_HARM:2 @Attacker
+        - PARTICLE:CRIT:10:0.5 @Victim
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_CRIT
+    '4':
+      chance: 25
+      cooldown: 4
+      effects:
+        - INCREASE_DAMAGE:50
+        - DO_HARM:2 @Attacker
+        - PARTICLE:CRIT:10:0.5 @Victim
+        - PLAY_SOUND:ENTITY_PLAYER_ATTACK_CRIT
+
+infernal:
+  display: '%group-color%Infernal'
+  description: Chance to set enemies ablaze on hit.
+  applies-to: Swords, Axes
+  type: ATTACK;ATTACK_MOB
+  group: EPIC
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    '1':
+      chance: 15
+      cooldown: 2
+      effects:
+        - PARTICLE:BURN:2:20
+        - BURN:2 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+    '2':
+      chance: 30
+      cooldown: 2
+      effects:
+        - PARTICLE:BURN:2:40
+        - BURN:4 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+    '3':
+      chance: 50
+      cooldown: 2
+      effects:
+        - PARTICLE:BURN:3:20
+        - BURN:6 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+
+vampire:
+  display: '%group-color%Vampire'
+  description: Chance to steal health from enemies you strike.
+  applies-to: Swords
+  type: ATTACK;ATTACK_MOB
+  group: EPIC
+  applies:
+    - ALL_SWORD
+  levels:
+    '1':
+      chance: 7
+      cooldown: 4
+      effects:
+        - WAIT:40
+        - ADD_HEALTH:<random number>1-6</random number>
+        - PARTICLE:HEART:3:0.3
+        - PLAY_SOUND:ENTITY_PLAYER_LEVELUP
+    '2':
+      chance: 12
+      cooldown: 4
+      effects:
+        - WAIT:40
+        - ADD_HEALTH:<random number>1-6</random number>
+        - PARTICLE:HEART:3:0.3
+        - PLAY_SOUND:ENTITY_PLAYER_LEVELUP
+    '3':
+      chance: 15
+      cooldown: 4
+      effects:
+        - WAIT:40
+        - ADD_HEALTH:<random number>1-6</random number>
+        - PARTICLE:HEART:3:0.3
+        - PLAY_SOUND:ENTITY_PLAYER_LEVELUP
+
+strife:
+  display: '%group-color%Strife'
+  description: Chance to deal bonus melee damage with your trident.
+  applies-to: Tridents
+  type: ATTACK;ATTACK_MOB
+  group: EPIC
+  applies:
+    - TRIDENT
+  levels:
+    '1':
+      chance: 5
+      cooldown: 3
+      effects:
+        - INCREASE_DAMAGE:15
+        - PARTICLE:CRIT:6:0.4 @Victim
+        - PLAY_SOUND:ENTITY_TRIDENT_HIT
+    '2':
+      chance: 10
+      cooldown: 6
+      effects:
+        - INCREASE_DAMAGE:25
+        - PARTICLE:CRIT:6:0.4 @Victim
+        - PLAY_SOUND:ENTITY_TRIDENT_HIT
+    '3':
+      chance: 15
+      cooldown: 8
+      effects:
+        - INCREASE_DAMAGE:30
+        - PARTICLE:CRIT:6:0.4 @Victim
+        - PLAY_SOUND:ENTITY_TRIDENT_HIT
+
+twinge:
+  display: '%group-color%Twinge'
+  description: |-
+    Chance to make enemies bleed
+    on trident melee strikes.
+  applies-to: Tridents
+  type: ATTACK
+  settings:
+    showActionBar: true
+  group: EPIC
+  applies:
+    - TRIDENT
+  levels:
+    '1':
+      chance: 5
+      cooldown: 3
+      effects:
+        - POTION:SLOW:0:100 @Victim
+        - PARTICLE:CRIT:4:0.2 @Victim
+        - DO_HARM:<random number>1-3</random number> @Victim
+        - MESSAGE:§4You're bleeding! @Victim
+        - WAIT:20
+        - DO_HARM:<random number>1-3</random number> @Victim
+        - WAIT:20
+        - DO_HARM:<random number>1-3</random number> @Victim
+    '2':
+      chance: 8
+      cooldown: 3
+      effects:
+        - POTION:SLOW:0:100 @Victim
+        - PARTICLE:CRIT:4:0.2 @Victim
+        - DO_HARM:<random number>1-3</random number> @Victim
+        - MESSAGE:§4You're bleeding! @Victim
+        - WAIT:20
+        - DO_HARM:<random number>1-3</random number> @Victim
+        - WAIT:20
+        - DO_HARM:<random number>1-3</random number> @Victim
+    '3':
+      chance: 11
+      cooldown: 5
+      effects:
+        - POTION:SLOW:0:100 @Victim
+        - PARTICLE:CRIT:4:0.2 @Victim
+        - DO_HARM:<random number>1-3</random number> @Victim
+        - MESSAGE:§4You're bleeding! @Victim
+        - WAIT:20
+        - DO_HARM:<random number>1-3</random number> @Victim
+        - WAIT:20
+        - DO_HARM:<random number>1-3</random number> @Victim
+    '4':
+      chance: 14
+      cooldown: 6
+      effects:
+        - POTION:SLOW:0:100 @Victim
+        - PARTICLE:CRIT:4:0.2 @Victim
+        - DO_HARM:<random number>1-3</random number> @Victim
+        - MESSAGE:§4You're bleeding! @Victim
+        - WAIT:20
+        - DO_HARM:<random number>1-3</random number> @Victim
+        - WAIT:20
+        - DO_HARM:<random number>1-3</random number> @Victim
+
+deadshot:
+  display: '%group-color%Deadshot'
+  description: Trident headshots deal massively increased damage.
+  applies-to: Tridents
+  type: SHOOT;SHOOT_MOB
+  settings:
+    showActionBar: true
+  group: EPIC
+  applies:
+    - TRIDENT
+  levels:
+    '1':
+      chance: 20
+      cooldown: 6
+      conditions:
+        - '%is headshot% = true : %allow%'
+      effects:
+        - INCREASE_DAMAGE:50 @Attacker
+        - PARTICLE:CRIT:12:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '2':
+      chance: 28
+      cooldown: 6
+      conditions:
+        - '%is headshot% = true : %allow%'
+      effects:
+        - INCREASE_DAMAGE:60 @Attacker
+        - PARTICLE:CRIT:12:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '3':
+      chance: 35
+      cooldown: 6
+      conditions:
+        - '%is headshot% = true : %allow%'
+      effects:
+        - INCREASE_DAMAGE:70 @Attacker
+        - PARTICLE:CRIT:12:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+
+
+restless:
+  display: '%group-color%Gears'
+  description: Grants permanent speed while worn.
+  applies-to: Boots
+  type: EFFECT_STATIC
+  group: EPIC
+  applies:
+    - ALL_BOOTS
+  levels:
+    '1':
+      effects:
+        - POTION:SPEED:0
+    '2':
+      effects:
+        - POTION:SPEED:1
+    '3':
+      effects:
+        - POTION:SPEED:2
+
+strike:
+  display: '%group-color%Strike'
+  description: Chance to call lightning down on your target.
+  applies-to: Swords, Bow, Crossbow, Trident
+  type: ATTACK;ATTACK_MOB;SHOOT;SHOOT_MOB
+  settings:
+    showActionBar: true
+  group: EPIC
+  applies:
+    - TRIDENT
+    - BOW
+    - CROSSBOW
+    - ALL_SWORD
+  levels:
+    '1':
+      chance: 10
+      cooldown: 8
+      effects:
+        - LIGHTNING @Victim
+    '2':
+      chance: 15
+      cooldown: 8
+      effects:
+        - LIGHTNING @Victim
+    '3':
+      chance: 20
+      cooldown: 8
+      effects:
+        - LIGHTNING @Victim
+
+callallies:
+  display: '%group-color%Call to Arms'
+  description: |-
+    Sound the horn to summon iron golem
+    allies to fight by your side.
+  applies-to: Goat Horns
+  type: HORN
+  group: EPIC
+  applies:
+    - GOAT_HORN
+  levels:
+    '1':
+      cooldown: 60
+      effects:
+        - "GUARD:IRON_GOLEM:3:2:%player name%'s Ally:true @Aoe{radius=5,target=all}"
+    '2':
+      cooldown: 45
+      effects:
+        - "GUARD:IRON_GOLEM:4:2:%player name%'s Ally:true @Aoe{radius=5,target=all}"
+    '3':
+      cooldown: 30
+      effects:
+        - "GUARD:IRON_GOLEM:5:2:%player name%'s Ally:true @Aoe{radius=5,target=all}"
+
+# ============================================================
+# LEGENDARY — God-tier enchants
+# ============================================================
+
+trench:
+  display: '%group-color%Trench'
+  description: |-
+    Mine a 3x3 area with every pickaxe swing.
+    Max level: guaranteed every block, always.
+  applies-to: Pickaxes, Shovels
+  type: MINING
+  group: LEGENDARY
+  applies:
+    - ALL_PICKAXE
+    - ALL_SHOVEL
+  levels:
+    '1':
+      chance: 20
+      effects:
+        - BREAK_BLOCK @Trench{r=3}
+    '2':
+      chance: 40
+      effects:
+        - BREAK_BLOCK @Trench{r=3}
+    '3':
+      chance: 60
+      effects:
+        - BREAK_BLOCK @Trench{r=3}
+    '4':
+      chance: 80
+      effects:
+        - BREAK_BLOCK @Trench{r=3}
+    '5':
+      chance: 100
+      effects:
+        - BREAK_BLOCK @Trench{r=3}
+
+unbreakable:
+  display: '%group-color%Unbreakable'
+  description: |-
+    Has a chance to restore durability whenever you mine or attack.
+    At max level, this item will never break.
+  applies-to: Tools, Swords, Axes
+  type: MINING;ATTACK;ATTACK_MOB
+  group: LEGENDARY
+  applies:
+    - ALL_PICKAXE
+    - ALL_SHOVEL
+    - ALL_HOE
+    - ALL_AXE
+    - ALL_SWORD
+    - SHEARS
+  levels:
+    '1':
+      chance: 20
+      effects:
+        - REPAIR
+        - PARTICLE:END_ROD:2:0.1
+    '2':
+      chance: 40
+      effects:
+        - REPAIR
+        - PARTICLE:END_ROD:2:0.1
+    '3':
+      chance: 60
+      effects:
+        - REPAIR
+        - PARTICLE:END_ROD:2:0.1
+    '4':
+      chance: 80
+      effects:
+        - REPAIR
+        - PARTICLE:END_ROD:2:0.1
+    '5':
+      chance: 100
+      effects:
+        - REPAIR
+        - PARTICLE:END_ROD:2:0.1
+
+steelwings:
+  display: '%group-color%Steel Wings'
+  description: |-
+    Your elytra repairs itself over time while worn.
+    Max level: repairs as fast as flight drains it — fly forever.
+  applies-to: Elytra
+  type: REPEATING
+  group: LEGENDARY
+  applies:
+    - ELYTRA
+  levels:
+    '1':
+      chance: 100
+      time: 5
+      effects:
+        - REPAIR
+        - PARTICLE:END_ROD:1:0.1
+    '2':
+      chance: 100
+      time: 4
+      effects:
+        - REPAIR
+        - PARTICLE:END_ROD:1:0.1
+    '3':
+      chance: 100
+      time: 3
+      effects:
+        - REPAIR
+        - PARTICLE:END_ROD:1:0.1
+    '4':
+      chance: 100
+      time: 2
+      effects:
+        - REPAIR
+        - PARTICLE:END_ROD:1:0.1
+    '5':
+      chance: 100
+      time: 1
+      effects:
+        - REPAIR
+        - PARTICLE:END_ROD:1:0.1
+
+sniper:
+  display: '%group-color%Sniper'
+  description: Bow headshots deal massively increased damage.
+  applies-to: Bows
+  type: SHOOT;SHOOT_MOB
+  settings:
+    showActionBar: true
+  group: LEGENDARY
+  applies:
+    - BOW
+  levels:
+    '1':
+      chance: 20
+      cooldown: 6
+      conditions:
+        - '%is headshot% = true : %allow%'
+      effects:
+        - INCREASE_DAMAGE:50 @Attacker
+        - PARTICLE:CRIT:12:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '2':
+      chance: 50
+      cooldown: 6
+      conditions:
+        - '%is headshot% = true : %allow%'
+      effects:
+        - INCREASE_DAMAGE:65 @Attacker
+        - PARTICLE:CRIT:12:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '3':
+      chance: 100
+      cooldown: 6
+      conditions:
+        - '%is headshot% = true : %allow%'
+      effects:
+        - INCREASE_DAMAGE:75 @Attacker
+        - PARTICLE:CRIT:12:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+
+striker:
+  display: '%group-color%Striker'
+  description: Chance to rain a volley of arrows on your target.
+  applies-to: Bows
+  type: SHOOT;SHOOT_MOB
+  settings:
+    showActionBar: true
+  group: LEGENDARY
+  applies:
+    - BOW
+  levels:
+    '1':
+      chance: 15
+      cooldown: 8
+      effects:
+        - SPAWN_ARROWS @Victim
+        - PARTICLE:CRIT:8:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '2':
+      chance: 20
+      cooldown: 8
+      effects:
+        - SPAWN_ARROWS @Victim
+        - PARTICLE:CRIT:8:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+    '3':
+      chance: 25
+      cooldown: 8
+      effects:
+        - SPAWN_ARROWS @Victim
+        - PARTICLE:CRIT:8:0.5 @Victim
+        - PLAY_SOUND:ENTITY_ARROW_HIT_PLAYER
+
+neutralize:
+  display: '%group-color%Neutralize'
+  description: |-
+    Chance to disarm your enemy
+    with a well-placed shot.
+  applies-to: Bow, Crossbow
+  settings:
+    showActionBar: true
+  type: SHOOT
+  group: LEGENDARY
+  applies:
+    - BOW
+    - CROSSBOW
+  levels:
+    '1':
+      chance: 5
+      cooldown: 30
+      effects:
+        - DISARM @Victim
+        - PARTICLE:FLASH:1:0 @Victim
+        - PLAY_SOUND:ENTITY_ITEM_PICKUP
+    '2':
+      chance: 7
+      cooldown: 40
+      effects:
+        - DISARM @Victim
+        - PARTICLE:FLASH:1:0 @Victim
+        - PLAY_SOUND:ENTITY_ITEM_PICKUP
+
+hellfire:
+  display: '%group-color%Hellfire'
+  description: Chance for arrows to erupt in a burst of hellfire.
+  applies-to: Bows
+  type: SHOOT;SHOOT_MOB
+  settings:
+    showActionBar: true
+  group: LEGENDARY
+  applies:
+    - BOW
+  levels:
+    '1':
+      chance: 10
+      cooldown: 3
+      effects:
+        - BURN:100 @Victim
+        - DO_HARM:2 @Victim
+        - PARTICLE:FLAME:20:2 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+    '2':
+      chance: 20
+      cooldown: 3
+      effects:
+        - BURN:120 @Victim
+        - DO_HARM:3 @Victim
+        - PARTICLE:FLAME:25:2 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+    '3':
+      chance: 32
+      cooldown: 3
+      effects:
+        - BURN:140 @Victim
+        - DO_HARM:4 @Victim
+        - PARTICLE:FLAME:30:2 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+    '4':
+      chance: 48
+      cooldown: 3
+      effects:
+        - BURN:160 @Victim
+        - DO_HARM:5 @Victim
+        - PARTICLE:FLAME:35:2 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+    '5':
+      chance: 65
+      cooldown: 3
+      effects:
+        - BURN:180 @Victim
+        - DO_HARM:6 @Victim
+        - PARTICLE:FLAME:40:2 @Victim
+        - PLAY_SOUND:ENTITY_BLAZE_SHOOT
+
+nulify:
+  display: '%group-color%Nullify'
+  description: |-
+    Chance to deal double damage
+    and blind your enemy.
+  applies-to: Swords, Axes
+  type: ATTACK
+  group: LEGENDARY
+  applies:
+    - ALL_SWORD
+    - ALL_AXE
+  levels:
+    '1':
+      chance: 6
+      cooldown: 15
+      effects:
+        - INCREASE_DAMAGE:100
+        - POTION:BLINDNESS:0:80 @Victim
+        - PARTICLE:FLASH:1:0 @Victim
+        - PLAY_SOUND:ENTITY_ENDERMAN_TELEPORT
+    '2':
+      chance: 10
+      cooldown: 12
+      effects:
+        - INCREASE_DAMAGE:100
+        - POTION:BLINDNESS:1:80 @Victim
+        - PARTICLE:FLASH:2:0 @Victim
+        - PLAY_SOUND:ENTITY_ENDERMAN_TELEPORT
+    '3':
+      chance: 14
+      cooldown: 10
+      effects:
+        - INCREASE_DAMAGE:100
+        - POTION:BLINDNESS:2:80 @Victim
+        - PARTICLE:FLASH:3:0 @Victim
+        - PLAY_SOUND:ENTITY_ENDERMAN_TELEPORT

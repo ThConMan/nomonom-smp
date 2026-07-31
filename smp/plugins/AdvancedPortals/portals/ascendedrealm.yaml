@@ -1,0 +1,17 @@
+args:
+  name:
+  - ascendedrealm
+  triggerblock:
+  - NETHER_PORTAL
+  command:
+  - warp ascendedrealm
+maxLoc:
+  posX: 49854
+  posY: 214
+  posZ: -50208
+  worldName: void
+minLoc:
+  posX: 49848
+  posY: 209
+  posZ: -50208
+  worldName: void

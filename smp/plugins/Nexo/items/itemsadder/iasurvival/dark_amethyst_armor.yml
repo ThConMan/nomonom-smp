@@ -1,0 +1,73 @@
+dark_amethyst_helmet:
+  itemname: display-name-dark_amethyst_helmet
+  material: PAPER
+  AttributeModifiers:
+  - amount: 4.0
+    attribute: ARMOR
+    operation: 0
+    slot: HEAD
+    uuid: 1a48fd41-1313-4cfb-9a0a-f5a6c160f8ed
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: HEAD
+    uuid: 2c0b131c-e432-4e2a-ab78-211b80c7dd22
+    name: nexo:modifier
+    key: nexo:modifier
+material: CHAINMAIL_BOOTS
+dark_amethyst_chestplate:
+  itemname: display-name-dark_amethyst_chestplate
+  material: PAPER
+  AttributeModifiers:
+  - amount: 9.0
+    attribute: ARMOR
+    operation: 0
+    slot: CHEST
+    uuid: 9bf5bf23-1440-4c4a-944e-007f170ab57e
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: CHEST
+    uuid: 83be8f1a-f5df-4fba-8455-8dc45d584336
+    name: nexo:modifier
+    key: nexo:modifier
+dark_amethyst_leggings:
+  itemname: display-name-dark_amethyst_leggings
+  material: PAPER
+  AttributeModifiers:
+  - amount: 5.0
+    attribute: ARMOR
+    operation: 0
+    slot: LEGS
+    uuid: 1650b8af-23a3-4173-95f8-600c807eb88a
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: LEGS
+    uuid: 34442ece-5987-485b-9f8f-ac5c2419f855
+    name: nexo:modifier
+    key: nexo:modifier
+dark_amethyst_boots:
+  itemname: display-name-dark_amethyst_boots
+  material: PAPER
+  AttributeModifiers:
+  - amount: 2.0
+    attribute: ARMOR
+    operation: 0
+    slot: FEET
+    uuid: 94b9b472-f15d-4128-b5cd-8b60eba720da
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 1.0
+    attribute: ARMOR_TOUGHNESS
+    operation: 0
+    slot: FEET
+    uuid: fe623d10-27ff-48b5-b385-53bad1897df6
+    name: nexo:modifier
+    key: nexo:modifier

@@ -1,0 +1,6 @@
+sliced_bread_with_apple_jam:
+  itemname: display-name-sliced_bread_with_apple_jam
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/sliced_bread_with_apple_jam
+    custom_model_data: 1032

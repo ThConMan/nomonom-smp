@@ -1,0 +1,13 @@
+modern_stone:
+  itemname: display-name-modern_stone
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: modern_stone
+      hardness: 2.0
+      custom_variation: 18
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/decorative/modern_stone
+    custom_model_data: 1115

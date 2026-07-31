@@ -1,0 +1,6 @@
+dark_amethyst_prism:
+  itemname: display-name-dark_amethyst_prism
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/dark_amethyst_prism
+    custom_model_data: 1006

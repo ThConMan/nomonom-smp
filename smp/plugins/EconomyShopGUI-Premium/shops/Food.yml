@@ -1,0 +1,258 @@
+pages:
+  page1:
+    title: "&2&lFood"
+    gui-rows: 6
+    items:
+
+      # -----------------------------
+      # Nomonom Eats (Nexo Models)
+      # NOW: buy via Nexo give commands
+      # -----------------------------
+
+      '1':
+        material: COOKED_PORKCHOP
+        CustomModelData: 1020
+        displayname: "&6&lHamburger"
+        buy: 18
+        sell: 4.5
+        slot: 10
+        giveItem: false
+        buy-commands:
+          - "nexo give hamburger 1 %player%"
+
+      '2':
+        material: COOKED_PORKCHOP
+        CustomModelData: 1015
+        displayname: "&e&lFrench Fries"
+        buy: 12
+        sell: 3
+        slot: 11
+        giveItem: false
+        buy-commands:
+          - "nexo give french_fries 1 %player%"
+
+      '3':
+        material: COOKED_PORKCHOP
+        CustomModelData: 1025
+        displayname: "&c&lPizza Slice"
+        buy: 20
+        sell: 5
+        slot: 12
+        giveItem: false
+        buy-commands:
+          - "nexo give pizza 1 %player%"
+
+      '4':
+        material: COOKED_PORKCHOP
+        CustomModelData: 1021
+        displayname: "&6&lHotdog"
+        buy: 14
+        sell: 3.5
+        slot: 13
+        giveItem: false
+        buy-commands:
+          - "nexo give hotdog 1 %player%"
+
+      '5':
+        material: COOKED_PORKCHOP
+        CustomModelData: 1040
+        displayname: "&a&lTaco"
+        buy: 16
+        sell: 4
+        slot: 19
+        giveItem: false
+        buy-commands:
+          - "nexo give taco 1 %player%"
+
+      '6':
+        material: COOKED_PORKCHOP
+        CustomModelData: 1026
+        displayname: "&6&lPotato Sticks"
+        buy: 11
+        sell: 2.75
+        slot: 20
+        giveItem: false
+        buy-commands:
+          - "nexo give potato_sticks 1 %player%"
+
+      '7':
+        material: COOKED_PORKCHOP
+        CustomModelData: 1005
+        displayname: "&e&lChips"
+        buy: 9
+        sell: 2.25
+        slot: 21
+        giveItem: false
+        buy-commands:
+          - "nexo give chips 1 %player%"
+
+      '8':
+        material: COOKED_PORKCHOP
+        CustomModelData: 1034
+        displayname: "&d&lBerry Jam Toast"
+        buy: 13
+        sell: 3.25
+        slot: 22
+        giveItem: false
+        buy-commands:
+          - "nexo give berry_jam_toast 1 %player%"
+
+      '9':
+        material: APPLE
+        CustomModelData: 1000
+        displayname: "&e&lBanana"
+        buy: 8
+        sell: 2
+        slot: 28
+        giveItem: false
+        buy-commands:
+          - "nexo give banana 1 %player%"
+
+      '10':
+        material: GOLDEN_CARROT
+        CustomModelData: 1039
+        displayname: "&6&lSweet Stick"
+        lore:
+          - "&7Special Nomonom treat"
+        buy: 28
+        sell: 7
+        slot: 29
+        giveItem: false
+        buy-commands:
+          - "nexo give sweet_stick 1 %player%"
+
+      '11':
+        material: COOKED_PORKCHOP
+        CustomModelData: 1041
+        displayname: "&b&lTropical Fish Nigiri"
+        buy: 22
+        sell: 5.5
+        slot: 30
+        giveItem: false
+        buy-commands:
+          - "nexo give tropical_fish_nigiri 1 %player%"
+
+      '12':
+        material: COOKED_PORKCHOP
+        CustomModelData: 1028
+        displayname: "&b&lSalmon Nigiri"
+        buy: 22
+        sell: 5.5
+        slot: 31
+        giveItem: false
+        buy-commands:
+          - "nexo give salmon_nigiri 1 %player%"
+
+      # -----------------------------
+      # Staples (Permanent Comfort)
+      # -----------------------------
+
+      '20':
+        material: BREAD
+        buy: 8
+        sell: 2
+        slot: 15
+
+      '21':
+        material: BAKED_POTATO
+        buy: 6
+        sell: 1.5
+        slot: 16
+
+      '22':
+        material: COOKED_BEEF
+        buy: 10
+        sell: 2.5
+        slot: 17
+
+      '23':
+        material: COOKED_CHICKEN
+        buy: 8
+        sell: 2
+        slot: 24
+
+      '24':
+        material: COOKED_PORKCHOP
+        buy: 10
+        sell: 2.5
+        slot: 25
+
+      '25':
+        material: COOKED_MUTTON
+        buy: 9
+        sell: 2.25
+        slot: 26
+
+      '26':
+        material: COOKED_COD
+        buy: 7
+        sell: 1.75
+        slot: 33
+
+      '27':
+        material: COOKED_SALMON
+        buy: 9
+        sell: 2.25
+        slot: 34
+
+      '28':
+        material: GOLDEN_CARROT
+        buy: 22
+        sell: 5.5
+        slot: 35
+
+      # -----------------------------
+      # Bundles (Nexo Give)
+      # -----------------------------
+
+      '40':
+        material: BUNDLE
+        displayname: "&6&lExplorer Rations"
+        lore:
+          - "&7Bulk food for long runs."
+          - ""
+          - "&f• 8x Hamburger"
+          - "&f• 8x French Fries"
+          - "&f• 8x Banana"
+        buy: 360
+        sell: -1
+        slot: 40
+        giveItem: false
+        buy-commands:
+          - "nexo give hamburger 8 %player%"
+          - "nexo give french_fries 8 %player%"
+          - "nexo give banana 8 %player%"
+
+      '41':
+        material: BUNDLE
+        displayname: "&c&lHot Meal Combo"
+        lore:
+          - "&7Proper food. No downtime."
+          - ""
+          - "&f• 6x Pizza Slice"
+          - "&f• 6x Hotdog"
+          - "&f• 6x Taco"
+        buy: 390
+        sell: -1
+        slot: 41
+        giveItem: false
+        buy-commands:
+          - "nexo give pizza_slice 6 %player%"
+          - "nexo give hotdog 6 %player%"
+          - "nexo give taco 6 %player%"
+
+      '42':
+        material: BUNDLE
+        displayname: "&b&lSushi Night"
+        lore:
+          - "&7Premium seafood combo."
+          - ""
+          - "&f• 8x Salmon Nigiri"
+          - "&f• 8x Tropical Fish Nigiri"
+        buy: 330
+        sell: -1
+        slot: 42
+        giveItem: false
+        buy-commands:
+          - "nexo give salmon_nigiri 8 %player%"
+          - "nexo give tropical_fish_nigiri 8 %player%"

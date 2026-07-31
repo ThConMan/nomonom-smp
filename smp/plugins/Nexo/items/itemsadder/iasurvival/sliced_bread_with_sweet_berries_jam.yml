@@ -1,0 +1,6 @@
+sliced_bread_with_sweet_berries_jam:
+  itemname: §cBread with Sweet Berry Spread
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/sliced_bread_with_sweet_berries_jam
+    custom_model_data: 1034

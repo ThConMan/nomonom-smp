@@ -1,0 +1,12 @@
+mysterious_book:
+  itemname: display-name-mysterious_book
+  material: WRITTEN_BOOK
+  Pack:
+    texture: iaalchemy:item/mysterious_book
+    custom_model_data: 1001
+mysterious_book_decrypted:
+  itemname: display-name-mysterious_book_decrypted
+  material: WRITTEN_BOOK
+  Pack:
+    texture: iaalchemy:item/mysterious_book_decrypted
+    custom_model_data: 1002

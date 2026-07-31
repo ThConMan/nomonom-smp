@@ -1,0 +1,15 @@
+tv:
+  itemname: display-name-tv
+  material: PAPER
+  lore:
+  - lore-decorative-item
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+  Pack:
+    model: iadeco:tv
+    custom_model_data: 1146

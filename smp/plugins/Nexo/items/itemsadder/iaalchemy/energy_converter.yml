@@ -1,0 +1,18 @@
+energy_converter:
+  itemname: display-name-energy_converter
+  material: PAPER
+  lore:
+  - lore-1-energy_converter
+  - lore-2-energy_converter
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        barriers: 0,0,0
+      lights:
+        lights:
+        - 0,0.0,0 7
+  Pack:
+    model: iaalchemy:item/energy_converter
+    custom_model_data: 1054

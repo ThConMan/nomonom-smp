@@ -1,0 +1,24 @@
+netherite_pickaxe:
+  itemname: Netherite Pickaxe
+  material: NETHERITE_PICKAXE
+  Pack:
+    model: default_tools:netherite/netherite_pickaxe
+    custom_model_data: 1001
+netherite_hoe:
+  itemname: Netherite Hoe
+  material: NETHERITE_HOE
+  Pack:
+    model: default_tools:netherite/netherite_hoe
+    custom_model_data: 1002
+netherite_axe:
+  itemname: Netherite Axe
+  material: NETHERITE_AXE
+  Pack:
+    model: default_tools:netherite/netherite_axe
+    custom_model_data: 1001
+netherite_shovel:
+  itemname: Netherite Shovel
+  material: NETHERITE_SHOVEL
+  Pack:
+    model: default_tools:netherite/netherite_shovel
+    custom_model_data: 1001

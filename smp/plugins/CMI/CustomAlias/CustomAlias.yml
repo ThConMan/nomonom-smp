@@ -1,0 +1,163 @@
+#
+# Edit custom variables in game if possible
+# Some extra variables can be used, like [playerName] will insert senders name automatically
+# All global variables should work, you can find full list in locale file
+# You can add delay between commands by inserting line like
+# delay! 5
+# This will delay next commands by defines time in seconds
+# If command is shortened and you need to provide some changing variables like target player name you need to define what and where it should be placed
+# Example: /cmi heal Zrips 
+# Can be shortened with custom alias to something like /h zrips by using alias command like
+# cmi heal $1
+# If you need to add more than one variable, use $1- format. Number represents variable place when used in alias command
+# Example: cmi tppos $1-
+# In case you want to print out help page if player enters wrong subcommand, use ? in alias
+# Example: ca ?
+# In this case if player performs /ca wrongsub or /ca anotherwrong
+# Commands under this alias will get executed. Exelent way to show help page and correct usage if needed
+
+CustomAlias:
+  r:
+    Cmds:
+    - reply $1-
+    Perm: true
+    AddTabs: true
+  whisper:
+    Cmds:
+    - msg
+  v:
+    Cmds:
+    - vanish
+  gmc:
+    Cmds:
+    - gm 1
+  gms:
+    Cmds:
+    - gm 0
+    Perm: true
+  ci:
+    Cmds:
+    - clear
+  ec:
+    Cmds:
+    - aec
+  flags:
+    Cmds:
+    - plot flag set pvp false
+    - 'plot flag set use #pressure_plates,#all_signs,#buttons,lever,crafting_table,#all_hanging_signs'
+  spec:
+    Cmds:
+    - gm 3
+  cosmetics:
+    Cmds:
+    - uc menu
+  accept:
+    Cmds: []
+  duels:
+    Cmds:
+    - duel challenge
+  renamepet:
+    Cmds:
+    - uc rename $1-
+  vc:
+    Cmds:
+    - dvc start
+  vc stop:
+    Cmds:
+    - dvc stop
+  vcg:
+    Cmds:
+    - dvc group $1-
+  bal:
+    Cmds:
+    - balance $1-
+  delhome:
+    Cmds:
+    - removehome $1-
+  craft:
+    Cmds:
+    - workbench
+    Perm: true
+  h:
+    Cmds:
+    - home
+  halloween:
+    Cmds:
+    - check:%1%! on! asConsole! lp user [playerName] permission set cmi.chatformat.halloween
+      true
+    - check:%1%! on! asConsole! lp user [playerName] permission unset cmi.chatformat.personal
+    - check:%1%! on! msg! &6🎃 Halloween gradient &aON&7. Use &e/halloween off&7 to
+      go back.
+    - check:%1%! off! asConsole! lp user [playerName] permission set cmi.chatformat.personal
+      true
+    - check:%1%! off! asConsole! lp user [playerName] permission unset cmi.chatformat.halloween
+    - check:%1%! off! msg! &7Switched to &aPersonal&7. Your /nick & /chatcolor will
+      show.
+  cos:
+    Cmds:
+    - cosmetics
+  s:
+    Cmds:
+    - spawn
+  mi:
+    Cmds:
+    - mmoitems browse
+    Perm: true
+  inspect:
+    Cmds:
+    - pr wand inspect
+    AddTabs: true
+  i:
+    Cmds:
+    - nexo inv
+    Perm: true
+    AddTabs: true
+  y:
+    Cmds:
+    - prism wand inspect
+  accept $1-:
+    Cmds:
+    - duel accept $1-
+    AddTabs: true
+  chal:
+    Cmds:
+    - challenge
+    AddTabs: true
+  ascend:
+    Cmds:
+    - ascendedforge:ascend
+    AddTabs: true
+  shop:
+    Cmds:
+    - market
+  dr:
+    Cmds:
+    - plotme $1-
+    AddTabs: true
+  profiles:
+    Cmds:
+    - mmoprofiles open [playerName]
+  stats:
+    Cmds:
+    - mmocore:stats
+  rtp:
+    Cmds:
+    - asConsole! minecraft:tellraw [playerName] {"text":"Use the ","color":"gray","extra":[{"text":"RTP
+      Zone","color":"aqua","bold":true},{"text":" in the Mortal Realm portal!","color":"gray"}]}
+  help:
+    Cmds:
+    - asConsole! minecraft:tellraw [playerName] {"text":"Need help? Ask staff in-game,
+      or check Discord.","color":"aqua"}
+  ender:
+    Cmds:
+    - ec
+  sell:
+    Cmds:
+    - sellgui
+    AddTabs: true
+  nightvision:
+    Cmds:
+    - effect [playerName] nightvision infinite
+  website:
+    Cmds:
+    - asConsole! msg [playerName] https://nomonom.net

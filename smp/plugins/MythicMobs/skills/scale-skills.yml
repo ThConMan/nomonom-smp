@@ -1,0 +1,7 @@
+ScaleUp:
+  Skills:
+  - command{c="cmi scale add <trigger.name> 0.1"} @self
+
+ScaleDown:
+  Skills:
+  - command{c="cmi scale take <trigger.name> 0.1"} @self

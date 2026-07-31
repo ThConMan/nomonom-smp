@@ -1,0 +1,30 @@
+mana_bar_0:
+  texture: iaalchemy:hud/mana_bar/0
+  height: 50
+  ascent: -15
+  char: ꘰
+mana_bar_1:
+  texture: iaalchemy:hud/mana_bar/1
+  height: 50
+  ascent: -15
+  char: ꘱
+mana_bar_2:
+  texture: iaalchemy:hud/mana_bar/2
+  height: 50
+  ascent: -15
+  char: ꘲
+mana_bar_3:
+  texture: iaalchemy:hud/mana_bar/3
+  height: 50
+  ascent: -15
+  char: ꘳
+mana_bar_4:
+  texture: iaalchemy:hud/mana_bar/4
+  height: 50
+  ascent: -15
+  char: ꘴
+mana_bar_5:
+  texture: iaalchemy:hud/mana_bar/5
+  height: 50
+  ascent: -15
+  char: ꘵

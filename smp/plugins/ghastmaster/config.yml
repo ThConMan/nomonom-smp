@@ -1,0 +1,187 @@
+# Please do not delete any entries of this Config.
+# Please read the information above the entries before modifying them
+Config:
+
+  Prefix:
+    # This prefix is shown in front of the chosen plugin messages. At the end of the prefix you should reset the color codes using &r.
+    # The prefix can be added to every message using %PREFIX%.
+    plugin-prefix: ''
+
+
+  Messages:
+    # This message gets send to a player who has reloaded the configuration file(s)
+    reloaded-config: '%PREFIX%&aConfiguration reloaded!'
+    
+    # Ownership system messages
+    unauthorized-access: '%PREFIX%&c✗ Access denied! This Happy Ghast belongs to &e%OWNER%&c.'
+    bypass-mount-success: '%PREFIX%&e⚡ Bypassing ownership! Mounting &e%OWNER%&e''s Happy Ghast.'
+    ghast-already-harnessed: '%PREFIX%&c✗ This Happy Ghast is already owned by someone else!'
+    ghast-ownership-claimed: '%PREFIX%&a✓ You have claimed ownership of this Happy Ghast!'
+    ghast-ownership-gained: '%PREFIX%&a✓ Happy Ghast successfully claimed! You are now the owner.'
+    ghast-ownership-removed: '%PREFIX%&7⚠ Harness removed, but you still own this Happy Ghast.'
+    no-permission-harness: '%PREFIX%&c✗ You don''t have permission to claim Happy Ghasts!'
+    cannot-remove-harness-with-passengers: '%PREFIX%&c✗ Cannot remove harness while passengers are aboard!'
+    
+    # Free system messages
+    free-mode-entered: '%PREFIX%&e⚡ Free mode activated! Right-click a Happy Ghast to mark it as free.'
+    free-mode-timeout: '%PREFIX%&7⏰ Free mode timed out. Use the command again to try again.'
+    ghast-freed-success: '%PREFIX%&a✓ Happy Ghast marked as free! It can be harnessed and ridden by anyone but never claimed.'
+    ghast-already-free: '%PREFIX%&c✗ This Happy Ghast is already free!'
+    cannot-free-ghast: '%PREFIX%&c✗ You can only free unclaimed Happy Ghasts or Happy Ghasts you own!'
+    ghast-harnessed-free: '%PREFIX%&a✓ Harness placed on free Happy Ghast - no ownership will be gained.'
+    no-permission-free: '%PREFIX%&c✗ You don''t have permission to free Happy Ghasts!'
+    command-players-only: '%PREFIX%&c✗ This command can only be used by players!'
+    
+    # Mount instruction message (shown when mounting as first passenger)
+    # Use %SPEED_ITEM% and %BOOST_ITEM% to show the configured items
+    mount-instructions: '%PREFIX%&e⚡ Mount successful! &7Left-click with &f%SPEED_ITEM% &7to increase speed, &6%BOOST_ITEM% &7for boost mode!'
+    
+    # Unclaim system messages
+    ownership-system-disabled: '%PREFIX%&c✗ Ownership system is disabled!'
+    no-permission-unclaim: '%PREFIX%&c✗ You don''t have permission to unclaim Happy Ghasts!'
+    no-permission-unclaim-admin: '%PREFIX%&c✗ You don''t have permission to force unclaim Happy Ghasts!'
+    no-ghast-in-sight: '%PREFIX%&c✗ No Happy Ghast found in your line of sight!'
+    cannot-unclaim-not-owner: '%PREFIX%&c✗ You can only unclaim ghasts you own!'
+    cannot-unclaim-free-ghast: '%PREFIX%&c✗ You cannot unclaim free ghasts! Only admins can convert free ghasts back to unclaimed.'
+    ghast-already-unclaimed: '%PREFIX%&c✗ This Happy Ghast is already unclaimed!'
+    cannot-unclaim-ghast: '%PREFIX%&c✗ You cannot unclaim this Happy Ghast!'
+    ghast-unclaimed-success: '%PREFIX%&a✓ Happy Ghast unclaimed! It can now be claimed by anyone.'
+    ghast-admin-unclaimed-success: '%PREFIX%&a✓ Happy Ghast force unclaimed! Previous owner: %PREVIOUS_OWNER%'
+    unclaim-mode-entered: '%PREFIX%&e⚡ Unclaim mode activated! Right-click a Happy Ghast to unclaim it.'
+    admin-unclaim-mode-entered: '%PREFIX%&c⚡ Admin unclaim mode activated! Right-click any Happy Ghast to force unclaim it.'
+    unclaim-mode-timeout: '%PREFIX%&7⏰ Unclaim mode timed out. Use the command again to try again.'
+    admin-unclaim-confirmation-required: '%PREFIX%&e⚠ This Happy Ghast belongs to &e%OWNER%&r. Confirmation required to force unclaim:'
+    no-pending-unclaim: '%PREFIX%&c✗ No pending unclaim confirmation found.'
+    ghast-no-longer-exists: '%PREFIX%&c✗ The Happy Ghast no longer exists.'
+    
+    # NBT block placement prevention message
+    nbt-block-prevention: '%PREFIX%&c✗ Cannot place containers with items! Empty the container first to prevent data loss.'
+    
+    # Passenger ejection message (shown when owner dismounts)
+    passengers-ejected-owner-dismount: '%PREFIX%&e⚠ Owner dismounted! You have been ejected to prevent unauthorized control.'
+
+
+  Settings:
+    # Base speeds as percentages of Happy Ghast default flying speed (100% = normal speed)
+    # The speed of a Happy Ghast while idle (0 passengers)
+    idle-happy-ghast-speed-percent: 100.0
+    
+    # The speed of a Happy Ghast with passengers (percentages of base speed)
+    1-passenger-happy-ghast-speed-percent: 150.0
+    2-passenger-happy-ghast-speed-percent: 130.0
+    3-passenger-happy-ghast-speed-percent: 120.0
+    4-passenger-happy-ghast-speed-percent: 115.0
+    
+    # Speed level multipliers (applied after passenger calculation)
+    # These are percentages - 150% = 1.5x speed, 1000% = 10x speed
+    speed-level-1-percent: 110.0
+    speed-level-2-percent: 120.0
+    speed-level-3-percent: 150.0
+    speed-level-4-percent: 200.0
+    boost-speed-percent: 500.0
+    
+    # Duration for each speed level in seconds
+    speed-level-1-duration: 30
+    speed-level-2-duration: 25
+    speed-level-3-duration: 20
+    speed-level-4-duration: 15
+    boost-duration: 5
+    
+    # Boost cooldown in seconds (time before boost can be used again)
+    boost-cooldown: 60
+    
+    # Control settings
+    # Allow any passenger to feed the ghast (true) or only the first passenger (false)
+    any-passenger-can-feed: true
+    
+    # Item used for speed feeding (default: SNOWBALL)
+    speed-feed-item: SNOWBALL
+    
+    # Item used for boost feeding (default: FIRE_CHARGE)
+    boost-feed-item: FIRE_CHARGE
+    
+    # HUD settings
+    show-speed-hud: true
+    hud-update-interval-ticks: 20
+    
+    # HUD symbol customization
+    # Speed display symbols (snowflake theme)
+    speed-hud-prefix: '❄ Speed: '
+    speed-hud-filled-symbol: '❅'
+    speed-hud-empty-symbol: '❅'
+    speed-hud-filled-color: 'WHITE'
+    speed-hud-empty-color: 'DARK_GRAY'
+    speed-hud-prefix-color: 'AQUA'
+    speed-hud-suffix-color: 'AQUA'
+    
+    # Boost display symbols
+    boost-hud-prefix: '⭐ Boost: '
+    boost-hud-symbol: '●'
+    boost-hud-prefix-color: 'GOLD'
+    boost-hud-symbol-color: 'YELLOW'
+    boost-hud-suffix-color: 'GOLD'
+    
+    # Mount message settings
+    show-mount-instructions: true
+    
+    # Feature toggles - Enable or disable specific plugin features
+    # When this is set to true, a player can place blocks on top of the Happy Ghast while crouching
+    build-on-happy-ghast-enabled: true
+    
+    # Enable or disable dynamic speed management system
+    speed-management-enabled: true
+    
+    # Enable or disable feeding system for speed boosts
+    feeding-system-enabled: true
+    
+    # Enable or disable HUD display system
+    hud-system-enabled: true
+    
+    # Enable or disable particle effects for free ghasts
+    particle-effects-enabled: true
+    
+    # Enable or disable bypass permission system
+    bypass-system-enabled: true
+    
+    # When true, ejects unauthorized passengers when the owner dismounts to prevent ghast takeover
+    # Passengers with ghastmaster.bypass permission or OP status are not ejected
+    eject-passengers-on-owner-dismount: true
+    
+    # When true, shows ejection message to passengers who are ejected when owner dismounts
+    # Set to false to silently eject passengers without notification
+    show-ejection-message: false
+    
+    # Ownership system settings
+    # Enable or disable the ghast ownership system
+    ownership-system-enabled: true
+    
+    # Knockback strength when unauthorized players try to access owned ghasts
+    ownership-knockback-strength: 1.5
+    
+    # Free system settings
+    # Enable or disable the free ghast system
+    free-system-enabled: true
+    
+    # Free mode timeout in ticks (600 ticks = 30 seconds)
+    free-mode-timeout-ticks: 600
+    
+    # Unclaim mode timeout in ticks (600 ticks = 30 seconds)
+    unclaim-mode-timeout-ticks: 600
+    
+    # Particle settings for free ghasts
+    # Chance for particles to spawn each interval (0.0 = never, 1.0 = always)
+    free-ghast-particle-chance: 0.3
+    
+    # Number of heart particles to spawn each time
+    free-ghast-particle-count: 2
+    
+    # Interval between particle spawns in ticks (40 ticks = 2 seconds)
+    free-ghast-particle-interval-ticks: 40
+
+  # Permission list:
+  # ghastmaster.reload: Permission to reload the config
+  # ghastmaster.harness.place: Permission to place harnesses on Happy Ghasts
+  # ghastmaster.free: Permission to use the free command and mark ghasts as free
+  # ghastmaster.unclaim: Permission to unclaim owned Happy Ghasts
+  # ghastmaster.unclaim.admin: Permission to force unclaim any Happy Ghast (admin command)
+  # ghastmaster.bypass: Permission to ride Happy Ghasts that are not owned by the player

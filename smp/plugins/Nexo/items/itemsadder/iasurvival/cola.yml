@@ -1,0 +1,8 @@
+cola:
+  itemname: display-name-cola
+  material: POTION
+  ItemFlags:
+  - HIDE_POTION_EFFECTS
+  Pack:
+    texture: iasurvival:item/thirst/cola
+    custom_model_data: 1002

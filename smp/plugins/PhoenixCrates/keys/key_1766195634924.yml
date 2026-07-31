@@ -1,0 +1,7 @@
+enabled: true
+identifier: materialkoth_key
+virtual: false
+glow: true
+item:
+  material: custom:mmoitem:material3
+  amount: 1

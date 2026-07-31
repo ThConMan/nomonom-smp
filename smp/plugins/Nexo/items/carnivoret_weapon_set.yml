@@ -1,0 +1,161 @@
+carnivoret_weapon_set_hat:
+  itemname: <white>Hat
+  material: PAPER
+  Mechanics:
+    hat:
+      enabled: true
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/hat
+    custom_model_data: 1192
+carnivoret_chestplate:
+  material: NETHERITE_CHESTPLATE
+  Pack:
+    CustomArmor:
+      layer1: elitecreatures/carnivoret_weapon_set/carnivoret_armor_layer_1
+      layer2: elitecreatures/carnivoret_weapon_set/carnivoret_armor_layer_2
+    texture: elitecreatures/carnivoret_weapon_set/carnivoret_chestplate
+    custom_model_data: 1000
+  Components:
+    equippable:
+      slot: CHEST
+      asset_id: nexo:carnivoret
+  itemname: <white>Carnivoret Chestplate
+carnivoret_leggings:
+  material: NETHERITE_LEGGINGS
+  Pack:
+    CustomArmor:
+      layer1: elitecreatures/carnivoret_weapon_set/carnivoret_armor_layer_1
+      layer2: elitecreatures/carnivoret_weapon_set/carnivoret_armor_layer_2
+    texture: elitecreatures/carnivoret_weapon_set/carnivoret_leggings
+    custom_model_data: 1000
+  Components:
+    equippable:
+      slot: LEGS
+      asset_id: nexo:carnivoret
+  itemname: <white>Carnivoret Leggings
+carnivoret_boots:
+  material: NETHERITE_BOOTS
+  Pack:
+    CustomArmor:
+      layer1: elitecreatures/carnivoret_weapon_set/carnivoret_armor_layer_1
+      layer2: elitecreatures/carnivoret_weapon_set/carnivoret_armor_layer_2
+    texture: elitecreatures/carnivoret_weapon_set/carnivoret_boots
+    custom_model_data: 1000
+  Components:
+    equippable:
+      slot: FEET
+      asset_id: nexo:carnivoret
+  itemname: <white>Carnivoret Boots
+carnivoret_weapon_set_axe:
+  material: IRON_AXE
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/axe
+    custom_model_data: 1001
+  itemname: <white>Axe
+carnivoret_weapon_set_bow:
+  material: BOW
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/bow
+    pulling_models:
+    - elitecreatures/carnivoret_weapon_set/bow_0
+    - elitecreatures/carnivoret_weapon_set/bow_1
+    - elitecreatures/carnivoret_weapon_set/bow_2
+    custom_model_data: 1010
+  itemname: <white>Bow
+carnivoret_weapon_set_chest:
+  material: PAPER
+  Mechanics:
+    furniture:
+      limited_placing:
+        roof: false
+        floor: true
+        wall: false
+      drop:
+        silktouch: false
+        loots:
+        - probability: 1
+          nexo_item: carnivoret_weapon_set_chest
+      properties:
+        display_transform: FIXED
+        scale: 0.5,0.5,0.5
+      hitbox:
+        barriers:
+        - 0,0,0
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/chest
+    custom_model_data: 1193
+  itemname: <white>Chest
+carnivoret_weapon_set_fishing_rod:
+  material: FISHING_ROD
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/fishing_rod
+    cast_model: elitecreatures/carnivoret_weapon_set/fishing_rod_cast
+    custom_model_data: 1000
+  itemname: <white>Fishing Rod
+carnivoret_weapon_set_hammer:
+  material: IRON_AXE
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/hammer
+    custom_model_data: 1002
+  itemname: <white>Hammer
+carnivoret_weapon_set_hoe:
+  material: IRON_HOE
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/hoe
+    custom_model_data: 1001
+  itemname: <white>Hoe
+carnivoret_weapon_set_key:
+  material: PAPER
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/key
+    custom_model_data: 1194
+  itemname: <white>Key
+carnivoret_weapon_set_pickaxe:
+  material: IRON_PICKAXE
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/pickaxe
+    custom_model_data: 1002
+  itemname: <white>Pickaxe
+carnivoret_weapon_set_scythe:
+  material: IRON_HOE
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/scythe
+    custom_model_data: 1002
+  itemname: <white>Scythe
+carnivoret_weapon_set_shield:
+  material: SHIELD
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/shield
+    blocking_model: elitecreatures/carnivoret_weapon_set/shield_blocking
+    custom_model_data: 1010
+  itemname: <white>Shield
+carnivoret_weapon_set_shovel:
+  material: IRON_SHOVEL
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/shovel
+    custom_model_data: 1001
+  itemname: <white>Shovel
+carnivoret_weapon_set_spear:
+  material: IRON_SWORD
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/spear
+    custom_model_data: 1004
+  itemname: <white>Spear
+carnivoret_weapon_set_staff:
+  material: IRON_SWORD
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/staff
+    custom_model_data: 1005
+  itemname: <white>Staff
+carnivoret_weapon_set_sword:
+  material: IRON_SWORD
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/sword
+    custom_model_data: 1006
+  itemname: <white>Sword
+carnivoret_weapon_set_wing:
+  material: PAPER
+  Pack:
+    model: elitecreatures/carnivoret_weapon_set/wing
+    custom_model_data: 1195
+  itemname: <white>Wing

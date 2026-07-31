@@ -1,0 +1,53 @@
+tomato_seeds:
+  itemname: display-name-tomato_seeds
+  material: WHEAT_SEEDS
+  Pack:
+    texture: iasurvival:item/crops/tomato_seeds
+    custom_model_data: 1000
+garlic_seeds:
+  itemname: display-name-garlic_seeds
+  material: WHEAT_SEEDS
+  Pack:
+    texture: iasurvival:item/crops/garlic_seeds
+    custom_model_data: 1001
+lettuce_seeds:
+  itemname: display-name-lettuce_seeds
+  material: WHEAT_SEEDS
+  Pack:
+    texture: iasurvival:item/crops/lettuce_seeds
+    custom_model_data: 1002
+chili_pepper_seeds:
+  itemname: display-name-chili_pepper_seeds
+  material: WHEAT_SEEDS
+  Pack:
+    texture: iasurvival:item/crops/chili_pepper_seeds
+    custom_model_data: 1003
+rice_seeds:
+  itemname: display-name-rice_seeds
+  material: WHEAT_SEEDS
+  Pack:
+    texture: iasurvival:item/crops/rice_seeds
+    custom_model_data: 1004
+tobacco_seeds:
+  itemname: display-name-tobacco_seeds
+  material: WHEAT_SEEDS
+  Pack:
+    texture: iasurvival:item/crops/tobacco_seeds
+    custom_model_data: 1005
+boiled_water_bucket:
+  itemname: display-name-boiled_water_bucket
+  material: WATER_BUCKET
+  Pack:
+    texture: iasurvival:item/thirst/boiled_water_bucket
+    custom_model_data: 1000
+waterskin:
+  itemname: display-name-waterskin
+  material: WOODEN_SWORD
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-all
+  ItemFlags:
+  - HIDE_ATTRIBUTES
+  Pack:
+    texture: iasurvival:item/thirst/waterskin
+    custom_model_data: 1004

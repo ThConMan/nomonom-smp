@@ -1,0 +1,33 @@
+VANISHING_DUST:
+  base:
+    material: PAPER # or whatever your pouch base material is
+    name: <gradient:#3a1b44:#b21f3b:#b8b8bf><bold>Vanishing Dust</gradient>
+    lore:
+    - '&7A pinch of dust that swallows you in shadow.'
+    - '&8Right-click to use.'
+    max-stack-size: 16.0 # 1 pouch = 1 use
+    disable-interaction: false
+    custom-model-data: 1189.0
+    ability:
+      ability1:
+        type: SHADOW_VEIL
+        cooldown: 15.0
+        duration: 5.0
+        mode: RIGHT_CLICK
+  
+  # If your pouch uses a model:
+  # custom-model-data: 1234
+
+  abilities:
+    shadow-veil:
+      type: YOUR_EXISTING_ABILITY_TYPE
+      mode: RIGHT_CLICK
+      cooldown: 60 # change if you want
+      consumes: 1 # IMPORTANT: this makes it 1-use
+
+# Whatever fields your existing ability requires:
+# (examples)
+# skill: SHADOW_VEIL
+# power: 1
+# duration: 6
+# amplifier: 1

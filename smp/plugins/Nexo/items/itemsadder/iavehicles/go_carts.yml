@@ -1,0 +1,96 @@
+white_go_cart:
+  itemname: display-name-white_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/white_go_cart
+    custom_model_data: 1059
+orange_go_cart:
+  itemname: display-name-orange_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/orange_go_cart
+    custom_model_data: 1060
+magenta_go_cart:
+  itemname: display-name-magenta_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/magenta_go_cart
+    custom_model_data: 1061
+light_blue_go_cart:
+  itemname: display-name-light_blue_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/light_blue_go_cart
+    custom_model_data: 1062
+yellow_go_cart:
+  itemname: display-name-yellow_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/yellow_go_cart
+    custom_model_data: 1063
+lime_go_cart:
+  itemname: display-name-lime_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/lime_go_cart
+    custom_model_data: 1064
+pink_go_cart:
+  itemname: display-name-pink_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/pink_go_cart
+    custom_model_data: 1065
+gray_go_cart:
+  itemname: display-name-gray_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/gray_go_cart
+    custom_model_data: 1066
+light_gray_go_cart:
+  itemname: display-name-light_gray_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/light_gray_go_cart
+    custom_model_data: 1067
+cyan_go_cart:
+  itemname: display-name-cyan_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/cyan_go_cart
+    custom_model_data: 1068
+purple_go_cart:
+  itemname: display-name-purple_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/purple_go_cart
+    custom_model_data: 1069
+blue_go_cart:
+  itemname: display-name-blue_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/blue_go_cart
+    custom_model_data: 1070
+brown_go_cart:
+  itemname: display-name-brown_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/brown_go_cart
+    custom_model_data: 1071
+green_go_cart:
+  itemname: display-name-green_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/green_go_cart
+    custom_model_data: 1072
+red_go_cart:
+  itemname: display-name-red_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/red_go_cart
+    custom_model_data: 1073
+black_go_cart:
+  itemname: display-name-black_go_cart
+  material: PAPER
+  Pack:
+    model: iavehicles:ground/black_go_cart
+    custom_model_data: 1074

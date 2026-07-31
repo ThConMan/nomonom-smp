@@ -1,0 +1,34 @@
+ASCENDED_AXE:
+  base:
+    material: NETHERITE_AXE
+    name: '&5&lAscended Axe'
+    max-item-damage: 3021.0
+    lore:
+    - '&bPinnacle of the Mortal Realm.'
+    attack-damage: 9.0
+    attack-speed: 1.0
+    ability:
+      ability1:
+        type: STUN
+        mode: ATTACK
+    mining-efficiency: 15.0
+    custom-model-data: 9184.0
+    crafting:
+      shaped:
+        '1':
+          input:
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+          - v AIR 0 1..|v netherite_axe - 1.0..|m material ascended_ingot 1.0..
+          - v AIR 0 1..|v AIR 0 1..|v AIR 0 1..
+      shapeless:
+        '1':
+          input:
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v netherite_axe - 1.0..
+          - m material ascended_ingot 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..
+          - v AIR - 1.0..

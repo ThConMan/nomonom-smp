@@ -1,0 +1,6 @@
+dark_jack_o_lantern_backpack:
+  itemname: display-name-dark_jack_o_lantern_backpack
+  material: FEATHER
+  Pack:
+    model: iafestivities:halloween/dark_jack_o_lantern_backpack
+    custom_model_data: 1004

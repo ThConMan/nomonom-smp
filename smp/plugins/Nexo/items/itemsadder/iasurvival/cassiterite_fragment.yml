@@ -1,0 +1,6 @@
+cassiterite_fragment:
+  itemname: display-name-cassiterite_fragment
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/cassiterite_fragment
+    custom_model_data: 1003

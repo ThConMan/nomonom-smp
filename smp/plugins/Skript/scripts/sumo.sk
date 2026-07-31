@@ -1,0 +1,23 @@
+on damage of player:
+    victim is in region "sumo"
+    attacker is a player
+    set damage to 0
+    # Save everything
+    set {_boots} to boots of victim
+    set {_legs} to leggings of victim
+    set {_chest} to chestplate of victim
+    set {_helm} to helmet of victim
+    set {_weapon} to tool of attacker
+    # Strip for clean KB
+    set boots of victim to air
+    set leggings of victim to air
+    set chestplate of victim to air
+    set helmet of victim to air
+    set tool of attacker to air
+    # Restore next tick
+    wait 1 tick
+    set boots of victim to {_boots}
+    set leggings of victim to {_legs}
+    set chestplate of victim to {_chest}
+    set helmet of victim to {_helm}
+    set tool of attacker to {_weapon}

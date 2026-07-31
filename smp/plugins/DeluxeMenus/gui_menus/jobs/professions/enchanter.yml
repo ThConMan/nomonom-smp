@@ -1,0 +1,131 @@
+menu_title: '<shift:-8><glyph:enchanter>'
+open_command: enchanter
+size: 54
+open_requirement:
+  requirements:
+    permission:
+      type: has permission
+      permission: deluxemenus.admin
+      deny_commands:
+        - '[message] &cYou don''t have permission to do that!'
+
+items:
+  'job':
+    material: PAPER
+    model_data: 10031
+    slots: 
+    - 12
+    - 13
+    - 14
+    - 21
+    - 22
+    - 23
+    - 30
+    - 31
+    - 32
+    display_name: "&f&lEnchanter"
+    lore:
+       - "&#AD52B7Max level: &l200"
+       - "&#AD52B7Earn money by enchanting weapons"
+       - " "
+       - " &7Left-Click to join the job"
+       - " &7Right-Click to leave the job"
+    right_click_commands:
+       - '[player] jobs leave enchanter'
+    left_click_commands:
+       - '[player] jobs join enchanter'
+       
+  'arrow_left':
+    material: PAPER
+    model_data: 10033
+    slot: 45
+    display_name: "&f&l<"
+    lore: 
+       - "&7More jobs"
+    click_commands:
+       - '[openguimenu] digger'
+
+  'arrow_right':
+    material: PAPER
+    model_data: 10034       
+    slot: 53
+    display_name: "&f&l>"
+    lore:
+       - "&7More jobs"
+    click_commands:
+       - '[openguimenu] farmer'
+       
+  'builder':
+    material: PAPER
+    model_data: 10037
+    slot: 46
+    display_name: "&f&lBuilder"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] builder'
+       
+  'crafter':
+    material: PAPER
+    model_data: 10038
+    slot: 47
+    display_name: "&f&lCrafter"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] crafter'
+       
+  'digger':
+    material: PAPER
+    model_data: 10039
+    slot: 48
+    display_name: "&f&lDigger"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] digger'
+       
+  'enchanter':
+    material: PAPER
+    model_data: 10040
+    slot: 49
+    display_name: "&f&lEnchanter"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] enchanter'
+       
+  'farmer':
+    material: PAPER
+    model_data: 10041
+    slot: 50
+    display_name: "&f&lFarmer"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] farmer'
+       
+  'fisherman':
+    material: PAPER
+    model_data: 10042
+    slot: 51
+    display_name: "&f&lFisherman"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] fisherman'
+       
+  'hunter':
+    material: PAPER
+    model_data: 10043
+    slot: 52
+    display_name: "&f&lHunter"
+    lore:
+       - "&7Learn more about this job"
+    click_commands:
+       - '[openguimenu] hunter'
+       
+       
+       
+       
+#e29ca71d0fac9b60335518fc145c3237

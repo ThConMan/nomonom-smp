@@ -1,0 +1,6 @@
+fried_potato_sticks:
+  itemname: display-name-fried_potato_sticks
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/fried_potato_sticks
+    custom_model_data: 1017

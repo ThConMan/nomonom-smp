@@ -1,0 +1,25 @@
+energy_orb:
+  itemname: display-name-energy_orb
+  material: STICK
+  lore:
+  - lore-1-energy_orb
+  Pack:
+    texture: iaalchemy:item/energy_orb
+    custom_model_data: 1008
+small_energy_capsule:
+  itemname: display-name-small_energy_capsule
+  material: STICK
+  lore:
+  - lore-1-small_energy_capsule
+  Pack:
+    texture: iaalchemy:item/small_energy_capsule
+    custom_model_data: 1009
+energy_capsule:
+  itemname: display-name-energy_capsule
+  material: STICK
+  lore:
+  - lore-1-energy_capsule
+  - lore-2-energy_capsule
+  Pack:
+    texture: iaalchemy:item/energy_capsule
+    custom_model_data: 1010

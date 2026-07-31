@@ -1,0 +1,122 @@
+# DeluxeMenus 1.14.1-Release main configuration file
+#
+# A full wiki on how to use this plugin can be found at:
+# https://wiki.helpch.at/helpchat-plugins/deluxemenus
+
+use_admin_commands_in_menus_list: false
+menus_list_page_size: 10
+metas_list_page_size: 15
+debug: HIGHEST
+check_updates: true
+gui_menus:
+  # ### JOBS PAYOUTS
+  jobs_payouts_blacksmith_craft:
+    file: jobs/payouts/blacksmith_craft.yml
+  jobs_payouts_blacksmith_repair:
+    file: jobs/payouts/blacksmith_repair.yml
+  jobs_payouts_blacksmith_smelt:
+    file: jobs/payouts/blacksmith_smelt.yml
+  jobs_payouts_builder_place:
+    file: jobs/payouts/builder_place.yml
+  jobs_payouts_builder_place_2:
+    file: jobs/payouts/builder_place_2.yml
+  jobs_payouts_builder_break:
+    file: jobs/payouts/builder_break.yml
+  jobs_payouts_crafter_craft:
+    file: jobs/payouts/crafter_craft.yml
+  jobs_payouts_crafter_craft_2:
+    file: jobs/payouts/crafter_craft_2.yml
+  jobs_payouts_culinarian_craft:
+    file: jobs/payouts/culinarian_craft.yml
+  jobs_payouts_culinarian_smelt:
+    file: jobs/payouts/culinarian_smelt.yml
+  jobs_payouts_culinarian_eat:
+    file: jobs/payouts/culinarian_eat.yml
+  jobs_payouts_explorer_explore:
+    file: jobs/payouts/explorer_explore.yml
+  jobs_payouts_explorer_trade:
+    file: jobs/payouts/explorer_trade.yml
+  jobs_payouts_farmer_break:
+    file: jobs/payouts/farmer_break.yml
+  jobs_payouts_farmer_place:
+    file: jobs/payouts/farmer_place.yml
+  jobs_payouts_magician_enchant:
+    file: jobs/payouts/magician_enchant.yml
+  jobs_payouts_magician_brew:
+    file: jobs/payouts/magician_brew.yml
+  jobs_payouts_miner_break:
+    file: jobs/payouts/miner_break.yml
+  jobs_payouts_miner_place:
+    file: jobs/payouts/miner_place.yml
+  jobs_payouts_ranger_kill:
+    file: jobs/payouts/ranger_kill.yml
+  jobs_payouts_ranger_kill_2:
+    file: jobs/payouts/ranger_kill_2.yml
+  jobs_payouts_ranger_tame:
+    file: jobs/payouts/ranger_tame.yml
+  jobs_payouts_ranger_breed:
+    file: jobs/payouts/ranger_breed.yml
+  jobs_payouts_ranger_shear_milk:
+    file: jobs/payouts/ranger_shear_milk.yml
+  jobs_payouts_ranger_fish:
+    file: jobs/payouts/ranger_fish.yml
+  jobs_payouts_woodcutter_break:
+    file: jobs/payouts/woodcutter_break.yml
+  
+  # ### JOBS SKILL-TREE
+  jobs_skilltree_miner_1:
+    file: jobs/skilltree/miner_1.yml
+  jobs_skilltree_miner_2:
+    file: jobs/skilltree/miner_2.yml
+  jobs_skilltree_woodcutter_1:
+    file: jobs/skilltree/woodcutter_1.yml
+  jobs_skilltree_woodcutter_2:
+    file: jobs/skilltree/woodcutter_2.yml
+  jobs_skilltree_builder_1:
+    file: jobs/skilltree/builder_1.yml
+  jobs_skilltree_builder_2:
+    file: jobs/skilltree/builder_2.yml
+  jobs_skilltree_farmer_1:
+    file: jobs/skilltree/farmer_1.yml
+  jobs_skilltree_farmer_2:
+    file: jobs/skilltree/farmer_2.yml
+  jobs_skilltree_ranger_1:
+    file: jobs/skilltree/ranger_1.yml
+  jobs_skilltree_ranger_2:
+    file: jobs/skilltree/ranger_2.yml
+  jobs_skilltree_explorer_1:
+    file: jobs/skilltree/explorer_1.yml
+  jobs_skilltree_explorer_2:
+    file: jobs/skilltree/explorer_2.yml
+  jobs_skilltree_crafter_1:
+    file: jobs/skilltree/crafter_1.yml
+  jobs_skilltree_crafter_2:
+    file: jobs/skilltree/crafter_2.yml
+  jobs_skilltree_blacksmith_1:
+    file: jobs/skilltree/blacksmith_1.yml
+  jobs_skilltree_blacksmith_2:
+    file: jobs/skilltree/blacksmith_2.yml
+  jobs_skilltree_magician_1:
+    file: jobs/skilltree/magician_1.yml
+  jobs_skilltree_magician_2:
+    file: jobs/skilltree/magician_2.yml
+  jobs_skilltree_culinarian_1:
+    file: jobs/skilltree/culinarian_1.yml
+  jobs_skilltree_culinarian_2:
+    file: jobs/skilltree/culinarian_2.yml
+  
+  # ### JOBS SHOP
+  jobs_shop_1:
+    file: jobs/jobs_shop_1.yml
+  jobs_shop_2:
+    file: jobs/jobs_shop_2.yml
+  
+  # ### JOBS MAIN
+  jobs_main:
+    file: jobs/jobs_main.yml
+  jobs_leaderboard:
+    file: jobs/jobs_leaderboard.yml
+  
+  # ### ADVANCED MENU
+  advanced_menu:
+    file: advanced_menu.yml

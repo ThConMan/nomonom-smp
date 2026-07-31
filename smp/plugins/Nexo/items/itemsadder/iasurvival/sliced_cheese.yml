@@ -1,0 +1,6 @@
+sliced_cheese:
+  itemname: display-name-sliced_cheese
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/various/sliced_cheese
+    custom_model_data: 1035

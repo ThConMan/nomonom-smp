@@ -1,0 +1,6 @@
+ruby:
+  itemname: display-name-ruby
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/ruby
+    custom_model_data: 1015

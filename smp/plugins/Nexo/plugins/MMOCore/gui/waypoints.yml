@@ -1,0 +1,97 @@
+# GUI display name
+name: '<shift:-33><glyph:vs_mmocorepackgui_waypoints_view_top><shift:-226><glyph:vs_mmocorepackgui_waypoints_view_bottom>'
+name-on-waypoint: '<shift:-33><glyph:vs_mmocorepackgui_waypoints_view_top><shift:-226><glyph:vs_mmocorepackgui_waypoints_view_bottom>'
+
+# Number of slots in your inventory. Must be
+# between 9 and 54 and must be a multiple of 9.
+slots: 54
+
+items:
+  waypoint:
+    slots: [ 10,11,12,13,14,15,16,19,20,21,22,23,24,25,28,29,30,31,32,33,34 ]
+    function: waypoint
+
+    # Displayed when there is no waypoint
+    no-waypoint:
+      item: AIR
+      custom-model-data: 11181
+      lore: { }
+
+    # Displayed when the waypoint has not been unlocked yet.
+    locked:
+      name: '&c- Locked -'
+      item: PAPER
+      custom-model-data: 10894
+      lore: { }
+
+    # When the two waypoints are not linked together
+    not-a-destination:
+      name: '&a{name}'
+      item: PAPER
+      custom-model-data: 10893
+
+      # Material displayed when the waypoint is not
+      # ready (not dynamic, or not enough stellium)
+      #not-ready: PAPER
+
+      lore:
+        - '{lore}'
+        - '&7You cannot teleport as the two waypoints are not linked.'
+
+
+    # When you cannot teleport to a non dynamic waypoint
+    not-dynamic:
+      name: '&a{name}'
+      item: PAPER
+      custom-model-data: 10893
+
+      lore:
+        - '{lore}'
+        - '&7You cannot teleport as you are not standing on a waypoint.'
+
+
+    current-waypoint:
+      name: '&a{name}'
+      item: PAPER
+      custom-model-data: 10892
+
+      lore:
+        - '{lore}'
+        - '&7The waypoint you are standing at.'
+
+    # When you don't have enough stellium
+    not-enough-stellium:
+      name: '&a{name}'
+      item: PAPER
+      custom-model-data: 10893
+
+      lore:
+        - '{lore}'
+        - '&7You cannot teleport as you do not have enough Stellium.'
+        - '&7Teleporting costs &b{normal_cost}&7/&b{dynamic_cost} &7Stellium.'
+
+    # Displayed when the waypoint is unlocked and usable
+    display:
+      name: '&a{name}'
+      item: PAPER
+      custom-model-data: 10890
+      lore:
+        - '{lore}'
+        - '&7You can teleport to this waypoint.'
+        - '&7Intermediary waypoints: {intermediary_waypoints}'
+        - '&7Click to teleport for &b{current_cost} &7Stellium.'
+
+  next:
+    slots: [ 44 ]
+    function: next
+    item: PAPER
+    custom-model-data: 11183
+    name: '&aNext Page'
+    lore: [ ]
+  previous:
+    slots: [ 36 ]
+    function: previous
+    item: PAPER
+    custom-model-data: 11182
+    name: '&aPrevious Page'
+    lore: [ ]

@@ -1,0 +1,24 @@
+ruby_dagger:
+  itemname: display-name-ruby_dagger
+  material: GOLDEN_SWORD
+  lore:
+  - lore-blocked-enchants
+  - lore-enchantment-mending
+  AttributeModifiers:
+  - amount: 4.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 142a0eab-abed-4809-8aa0-700f39425424
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 4.2
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: 464324bf-2c93-4c2e-9fc7-7cd03218fe97
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iasurvival:item/swords/ruby_dagger
+    custom_model_data: 1003

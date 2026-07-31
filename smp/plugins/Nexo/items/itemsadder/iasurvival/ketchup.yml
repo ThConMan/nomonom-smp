@@ -1,0 +1,9 @@
+ketchup:
+  itemname: display-name-ketchup
+  material: STICK
+  lore:
+  - lore-1-ketchup
+  - lore-2-ketchup
+  Pack:
+    texture: iasurvival:item/food/various/ketchup
+    custom_model_data: 1052

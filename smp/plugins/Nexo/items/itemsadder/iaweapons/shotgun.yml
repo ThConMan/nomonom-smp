@@ -1,0 +1,12 @@
+shotgun:
+  itemname: display-name-shotgun
+  material: HORSE_ARMOR
+  Pack:
+    model: iaweapons:shotgun/shotgun
+    pulling_models:
+    - iaweapons:shotgun/shotgun_0
+    - iaweapons:shotgun/shotgun_1
+    - iaweapons:shotgun/shotgun_2
+    charged_model: iaweapons:shotgun/shotgun_charged
+    firework_model: iaweapons:shotgun/shotgun_firework
+    custom_model_data: 1001

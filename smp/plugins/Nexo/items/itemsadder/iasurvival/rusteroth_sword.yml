@@ -1,0 +1,6 @@
+rusteroth_sword:
+  itemname: display-name-rusteroth_sword
+  material: DIAMOND_SWORD
+  Pack:
+    texture: iasurvival:item/swords/rusteroth_sword
+    custom_model_data: 1017

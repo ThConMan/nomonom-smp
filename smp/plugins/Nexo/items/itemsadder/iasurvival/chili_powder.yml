@@ -1,0 +1,9 @@
+chili_powder:
+  itemname: display-name-chili_powder
+  material: STICK
+  lore:
+  - lore-1-chili_powder
+  - lore-2-chili_powder
+  Pack:
+    texture: iasurvival:item/food/various/chili_powder
+    custom_model_data: 1000

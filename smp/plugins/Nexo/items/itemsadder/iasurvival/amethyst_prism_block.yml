@@ -1,0 +1,13 @@
+dark_amethyst_prism_block:
+  itemname: display-name-dark_amethyst_prism_block
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: dark_amethyst_prism_block
+      hardness: 2.0
+      custom_variation: 2
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/minerals/dark_amethyst_prism_block
+    custom_model_data: 1014

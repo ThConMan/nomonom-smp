@@ -1,0 +1,129 @@
+# ==========================
+# PhoenixDuels - 4 Row Duel GUI
+# /challenge -> open GUI of online players
+# Clicking a head -> runs /duel <player> as the clicker
+#
+# Layout:
+# - 4 rows (36 slots)
+# - Black glass panes ONLY on the border:
+#   top row:    0-8
+#   bottom row: 27-35
+#   sides:      9,17 and 18,26
+# - Slot 4 = nameless sword (decor)
+# - Player heads fill slots 10-16 and 19-25 (center area, no panes)
+# ==========================
+
+command /challenge:
+    executable by: players
+    trigger:
+        set {_p} to player
+
+        # Build list of targets
+        set {_targets::*} to all players
+        remove {_p} from {_targets::*}
+
+        if size of {_targets::*} is 0:
+            send "&cNo other players online to duel." to {_p}
+            stop
+
+        # 4 rows = 36 slots
+        set {_size} to 36
+
+        # Dark multicolor bold title
+        set {_title} to "&4&lN&4&lO&5&lM&5&lO&5&lN&5&lO&8&lM &8&lD&5&lU&5&lE&4&lL&4&lS"
+
+        open virtual chest inventory with size {_size} named {_title} to {_p}
+
+        # ==== Border panes: black stained glass, name "&7" ====
+        set {_pane} to black stained glass pane
+        set name of {_pane} to "&7"
+
+        # Top row (0-8)
+        set slot 0 of current inventory of {_p} to {_pane}
+        set slot 1 of current inventory of {_p} to {_pane}
+        set slot 2 of current inventory of {_p} to {_pane}
+        set slot 3 of current inventory of {_p} to {_pane}
+        set slot 4 of current inventory of {_p} to {_pane}
+        set slot 5 of current inventory of {_p} to {_pane}
+        set slot 6 of current inventory of {_p} to {_pane}
+        set slot 7 of current inventory of {_p} to {_pane}
+        set slot 8 of current inventory of {_p} to {_pane}
+
+        # Second row sides (9 and 17)
+        set slot 9 of current inventory of {_p} to {_pane}
+        set slot 17 of current inventory of {_p} to {_pane}
+
+        # Third row sides (18 and 26)
+        set slot 18 of current inventory of {_p} to {_pane}
+        set slot 26 of current inventory of {_p} to {_pane}
+
+        # Bottom row (27-35)
+        set slot 27 of current inventory of {_p} to {_pane}
+        set slot 28 of current inventory of {_p} to {_pane}
+        set slot 29 of current inventory of {_p} to {_pane}
+        set slot 30 of current inventory of {_p} to {_pane}
+        set slot 31 of current inventory of {_p} to {_pane}
+        set slot 32 of current inventory of {_p} to {_pane}
+        set slot 33 of current inventory of {_p} to {_pane}
+        set slot 34 of current inventory of {_p} to {_pane}
+        set slot 35 of current inventory of {_p} to {_pane}
+
+        # ==== Nameless sword at slot 4 (overwrites pane there) ====
+        set {_sword} to iron sword
+        set name of {_sword} to "&7"
+        set slot 4 of current inventory of {_p} to {_sword}
+
+        # ==== Player heads in slots 10-16 and 19-25 (center only) ====
+        set {_slot} to 10
+
+        loop {_targets::*}:
+            if {_slot} = 17:
+                set {_slot} to 19
+            if {_slot} > 25:
+                stop
+
+            set {_head} to skull of loop-value
+            set name of {_head} to "&a%loop-value%"
+            set lore of {_head} to "&7Click to challenge &a%loop-value%&7."
+            set slot {_slot} of current inventory of {_p} to {_head}
+
+            add 1 to {_slot}
+
+
+on inventory click:
+    set {_p} to player
+
+    # Same title as creation
+    set {_title} to "&4&lN&4&lO&5&lM&5&lO&5&lN&5&lO&8&lM &8&lD&5&lU&5&lE&4&lL&4&lS"
+
+    if name of event-inventory is not {_title}:
+        stop
+
+    cancel event
+
+    if event-item is air:
+        stop
+
+    set {_display} to name of event-item
+
+    # Ignore border panes and sword (both use "&7" as name)
+    if {_display} is "&7":
+        stop
+
+    # Match the head’s name to a real player
+    delete {_target}
+    loop all players:
+        if {_display} is "&a%loop-player%":
+            set {_target} to loop-player
+            stop loop
+
+    if {_target} is not set:
+        stop
+
+    if {_target} is {_p}:
+        stop
+
+    # Run the duel command
+    execute {_p} command "duel %name of {_target}%"
+
+    close inventory of {_p}

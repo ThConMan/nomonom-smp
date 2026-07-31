@@ -1,0 +1,16 @@
+firework_launcher:
+  itemname: display-name-firework_launcher
+  material: CROSSBOW
+  lore:
+  - lore-1-firework_launcher
+  - lore-2-firework_launcher
+  - lore-3-firework_launcher
+  Pack:
+    model: iaweapons:firework_launcher/firework_launcher
+    pulling_models:
+    - iaweapons:firework_launcher/firework_launcher_0
+    - iaweapons:firework_launcher/firework_launcher_1
+    - iaweapons:firework_launcher/firework_launcher_2
+    charged_model: iaweapons:firework_launcher/firework_launcher_charged
+    firework_model: iaweapons:firework_launcher/firework_launcher_firework
+    custom_model_data: 1000

@@ -1,0 +1,17 @@
+args:
+  bungee:
+  - Lobby
+  name:
+  - hub
+  triggerblock:
+  - AIR
+maxLoc:
+  posX: 49991
+  posY: 83
+  posZ: -49986
+  worldName: void
+minLoc:
+  posX: 49987
+  posY: 77
+  posZ: -49986
+  worldName: void

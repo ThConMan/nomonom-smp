@@ -1,0 +1,245 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs Payouts | Ranger
+size: 54
+items:
+  kill:
+    material: iron_sword
+    slot: 2
+    display_name: '%imc_primary-color_c%Kill'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Kill the following mobs'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_kill'
+      - '[sound] UI_BUTTON_CLICK'
+  tame:
+    material: bone
+    slot: 3
+    display_name: '%imc_primary-color_c%Tame'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Tame the following animals'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_tame'
+      - '[sound] UI_BUTTON_CLICK'
+  breed:
+    material: apple
+    slot: 4
+    display_name: '%imc_primary-color_c%Breed'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Breed the following animals'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_breed'
+      - '[sound] UI_BUTTON_CLICK'
+  shear_milk:
+    material: shears
+    slot: 5
+    display_name: '%imc_primary-color_c%Shear & Milk'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Shear or milk the following'
+      - '%imc_dark-color_c%animals to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_shear_milk'
+      - '[sound] UI_BUTTON_CLICK'
+  fish:
+    material: fishing_rod
+    slot: 6
+    display_name: '%imc_primary-color_c%Fish'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Fish the following items'
+      - '%imc_dark-color_c%to receive your payment.'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_fish'
+      - '[sound] UI_BUTTON_CLICK'
+  kill_endermite_spawn_egg:
+    material: endermite_spawn_egg
+    slot: 10
+    display_name: '%imc_primary-color_c%Endermite'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Endermite'
+  kill_evoker_spawn_egg:
+    material: evoker_spawn_egg
+    slot: 11
+    display_name: '%imc_primary-color_c%Evoker'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Evoker'
+  kill_hoglin_spawn_egg:
+    material: hoglin_spawn_egg
+    slot: 12
+    display_name: '%imc_primary-color_c%Hoglin'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Hoglin'
+  kill_zoglin_spawn_egg:
+    material: zoglin_spawn_egg
+    slot: 13
+    display_name: '%imc_primary-color_c%Zoglin'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Zoglin'
+  kill_magma_cube_spawn_egg:
+    material: magma_cube_spawn_egg
+    slot: 14
+    display_name: '%imc_primary-color_c%Magma Cube'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Magma Cube'
+  kill_slime_spawn_egg:
+    material: slime_spawn_egg
+    slot: 15
+    display_name: '%imc_primary-color_c%Slime'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Slime'
+  kill_pillager_spawn_egg:
+    material: pillager_spawn_egg
+    slot: 16
+    display_name: '%imc_primary-color_c%Pillager'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Pillager'
+  kill_ravager_spawn_egg:
+    material: ravager_spawn_egg
+    slot: 19
+    display_name: '%imc_primary-color_c%Ravager'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Ravager'
+  kill_vex_spawn_egg:
+    material: vex_spawn_egg
+    slot: 20
+    display_name: '%imc_primary-color_c%Vex'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Vex'
+  kill_vindicator_spawn_egg:
+    material: vindicator_spawn_egg
+    slot: 21
+    display_name: '%imc_primary-color_c%Vindicator'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Vindicator'
+  kill_witch_spawn_egg:
+    material: witch_spawn_egg
+    slot: 22
+    display_name: '%imc_primary-color_c%Witch'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Witch'
+  kill_goat_spawn_egg:
+    material: goat_spawn_egg
+    slot: 23
+    display_name: '%imc_primary-color_c%Goat'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Goat'
+  kill_frog_spawn_egg:
+    material: frog_spawn_egg
+    slot: 24
+    display_name: '%imc_primary-color_c%Frog'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Frog'
+  kill_camel_spawn_egg:
+    material: camel_spawn_egg
+    slot: 25
+    display_name: '%imc_primary-color_c%Camel'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Camel'
+  kill_sniffer_spawn_egg:
+    material: sniffer_spawn_egg
+    slot: 28
+    display_name: '%imc_primary-color_c%Sniffer'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Sniffer'
+  kill_breeze_spawn_egg:
+    material: breeze_spawn_egg
+    slot: 29
+    display_name: '%imc_primary-color_c%Breeze'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Entity:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Breeze'
+  previous-page:
+    material: ARROW
+    slot: 48
+    display_name: '%imc_primary-color_c%Previous Page'
+    click_commands:
+      - '[openguimenu] jobs_payouts_ranger_kill'
+      - '[sound] ITEM_BOOK_PAGE_TURN'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_ranger_1'
+      - '[sound] UI_BUTTON_CLICK'
+  background:
+    material: RED_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

@@ -1,0 +1,1669 @@
+############################
+#
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+builder:
+  fullname: "Builder"
+  shortname: B
+  description: 'Construct buildings and sculpt terrain block by block.'
+  ChatColour: DARK_GREEN
+  BossBarColour: DARK_GREEN
+  chat-display: shortfull
+
+  # Make it actually worth running
+  max-level: 48
+  vip-max-level: 250
+
+  leveling-progression-equation: 13*(joblevel)+(joblevel*joblevel*50)
+  income-progression-equation: baseincome+(baseincome*(joblevel-2)*0.01)-((baseincome+(baseincome*(joblevel-2)*0.01)) * ((numjobs-1)*0.01))
+  points-progression-equation: basepoints+(basepoints*(joblevel-2)*0.01)-((basepoints+(basepoints*(joblevel-2)*0.01)) * ((numjobs-1)*0.01))
+  experience-progression-equation: baseexperience-(baseexperience*((numjobs-1) *0.01))
+
+  rejoinCooldown: 5
+  maxDailyQuests: 1
+
+  Quests:
+    '1':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;stripped_oak_wood;64
+      - Place;stripped_spruce_wood;64
+      RewardAmount: 350
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_350%'
+
+    '2':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;stripped_birch_wood;64
+      - Place;stripped_jungle_wood;64
+      RewardAmount: 350
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_350%'
+
+    '3':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;stripped_acacia_wood;64
+      - Place;stripped_dark_oak_wood;64
+      RewardAmount: 350
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_350%'
+
+    '4':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;cobblestone;64
+      - Place;andesite;32
+      - Place;granite;32
+      - Place;diorite;32
+      RewardAmount: 450
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_450%'
+
+    '5':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;oak_planks;64
+      - Place;spruce_planks;64
+      - Place;birch_planks;64
+      RewardAmount: 500
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_500%'
+
+    '6':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;jungle_planks;64
+      - Place;acacia_planks;64
+      - Place;dark_oak_planks;64
+      RewardAmount: 500
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_500%'
+
+    '7':
+      Name: "Builder - Medium"
+      Objectives:
+      - Place;bricks;192
+      RewardAmount: 700
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_700%'
+
+    '8':
+      Name: "Builder - Medium"
+      Objectives:
+      - Place;obsidian;32
+      RewardAmount: 900
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_900%'
+
+    '9':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;furnace;16
+      - Place;chest;32
+      - Place;crafting_table;4
+      RewardAmount: 350
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_350%'
+
+    '10':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;oak_stairs;48
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+
+    '11':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;cobblestone_stairs;48
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+
+    '12':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;spruce_stairs;48
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+
+    '13':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;birch_stairs;48
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+
+    '14':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;quartz_stairs;32
+      RewardAmount: 450
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_450%'
+
+    '15':
+      Name: "Builder - Medium"
+      Objectives:
+      - Place;quartz_block;128
+      RewardAmount: 1000
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_1000%'
+
+    '16':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;oak_fence;32
+      RewardAmount: 400
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_400%'
+
+    '17':
+      Name: "Builder - Easy"
+      Objectives:
+      - Place;glowstone;16
+      RewardAmount: 450
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_450%'
+
+    '18':
+      Name: "Builder - Medium"
+      Objectives:
+      - Place;glass;128
+      RewardAmount: 650
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_650%'
+
+    '19':
+      Name: "Builder - Medium"
+      Objectives:
+      - Place;nether_bricks;192
+      RewardAmount: 850
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_850%'
+
+    '20':
+      Name: "Builder - Hard"
+      Objectives:
+      - Place;stone_bricks;256
+      RewardAmount: 1250
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_1250%'
+
+    '21':
+      Name: "Builder - Easy"
+      Objectives:
+      - Break;dirt;128
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+
+    '22':
+      Name: "Builder - Easy"
+      Objectives:
+      - Break;grass_block;64
+      RewardAmount: 300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_300%'
+
+    '23':
+      Name: "Builder - Easy"
+      Objectives:
+      - Break;coarse_dirt;64
+      RewardAmount: 325
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_325%'
+
+    '24':
+      Name: "Builder - Easy"
+      Objectives:
+      - Break;gravel;96
+      RewardAmount: 350
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_350%'
+
+    '25':
+      Name: "Builder - Easy"
+      Objectives:
+      - Break;sand;128
+      RewardAmount: 450
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_450%'
+
+    '26':
+      Name: "Builder - Easy"
+      Objectives:
+      - Break;red_sand;96
+      RewardAmount: 425
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_425%'
+
+    '27':
+      Name: "Builder - Easy"
+      Objectives:
+      - Break;soul_sand;128
+      RewardAmount: 500
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_500%'
+
+    '28':
+      Name: "Builder - Easy"
+      Objectives:
+      - Break;podzol;64
+      RewardAmount: 550
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_550%'
+
+    '29':
+      Name: "Builder - Medium"
+      Objectives:
+      - Break;dirt;196
+      - Break;grass_block;128
+      RewardAmount: 800
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_800%'
+
+    '30':
+      Name: "Builder - Medium"
+      Objectives:
+      - Break;sand;196
+      - Break;red_sand;128
+      RewardAmount: 850
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_850%'
+
+    '31':
+      Name: "Builder - Medium"
+      Objectives:
+      - Break;coarse_dirt;128
+      - Break;podzol;96
+      RewardAmount: 950
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_950%'
+
+    '32':
+      Name: "Builder - Medium"
+      Objectives:
+      - Break;clay;128
+      - Break;gravel;128
+      RewardAmount: 950
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_950%'
+
+    '33':
+      Name: "Builder - Hard"
+      Objectives:
+      - Break;dirt;384
+      RewardAmount: 1300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_1300%'
+
+    '34':
+      Name: "Builder - Hard"
+      Objectives:
+      - Break;grass_block;256
+      RewardAmount: 1400
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_1400%'
+
+    '35':
+      Name: "Builder - Hard"
+      Objectives:
+      - Break;sand;384
+      RewardAmount: 1300
+      RewardCommands:
+      - itsmyconfig message [playerName] <p:prefix> You have completed your job daily quest and received your reward. <click:run_command:'/jobs quests'><p:primary-color>[✎ View the Quests]</p></click><sound:entity.villager.work_toolsmith>
+      RewardDesc:
+      - "%imc_dark-color_c%Complete the following quest"
+      - "%imc_dark-color_c%and you will get rewarded."
+      - ''
+      - '%imc_text-color_c% • Rewards: %imc_eco-format_c_1300%'
+
+  Gui:
+    ItemStack: quartz_block
+
+  Place:
+
+    ### OAK
+
+    stripped_oak_wood:
+      income: 0.30
+      points: 0.12
+      experience: 0.22
+    oak_planks:
+      income: 0.08
+      points: 0.03
+      experience: 0.10
+    oak_slab:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    oak_stairs:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    oak_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    oak_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    oak_door:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    oak_trapdoor:
+      income: 0.12
+      points: 0.06
+      experience: 0.14
+    oak_leaves:
+      income: 0.10
+      points: 0.05
+      experience: 0.10
+
+    ### SPRUCE
+
+    stripped_spruce_wood:
+      income: 0.30
+      points: 0.12
+      experience: 0.22
+    spruce_planks:
+      income: 0.08
+      points: 0.03
+      experience: 0.10
+    spruce_slab:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    spruce_stairs:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    spruce_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    spruce_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    spruce_door:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    spruce_trapdoor:
+      income: 0.12
+      points: 0.06
+      experience: 0.14
+    spruce_leaves:
+      income: 0.10
+      points: 0.05
+      experience: 0.10
+
+    ### BIRCH
+
+    stripped_birch_wood:
+      income: 0.30
+      points: 0.12
+      experience: 0.22
+    birch_planks:
+      income: 0.08
+      points: 0.03
+      experience: 0.10
+    birch_slab:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    birch_stairs:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    birch_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    birch_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    birch_door:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    birch_trapdoor:
+      income: 0.12
+      points: 0.06
+      experience: 0.14
+    birch_leaves:
+      income: 0.10
+      points: 0.05
+      experience: 0.10
+
+    ### JUNGLE
+
+    stripped_jungle_wood:
+      income: 0.30
+      points: 0.12
+      experience: 0.22
+    jungle_planks:
+      income: 0.08
+      points: 0.03
+      experience: 0.10
+    jungle_slab:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    jungle_stairs:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    jungle_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    jungle_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    jungle_door:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    jungle_trapdoor:
+      income: 0.12
+      points: 0.06
+      experience: 0.14
+    jungle_leaves:
+      income: 0.10
+      points: 0.05
+      experience: 0.10
+
+    ### ACACIA
+
+    stripped_acacia_wood:
+      income: 0.30
+      points: 0.12
+      experience: 0.22
+    acacia_planks:
+      income: 0.08
+      points: 0.03
+      experience: 0.10
+    acacia_slab:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    acacia_stairs:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    acacia_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    acacia_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    acacia_door:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    acacia_trapdoor:
+      income: 0.12
+      points: 0.06
+      experience: 0.14
+    acacia_leaves:
+      income: 0.10
+      points: 0.05
+      experience: 0.10
+
+    ### DARK OAK
+
+    stripped_dark_oak_wood:
+      income: 0.30
+      points: 0.12
+      experience: 0.22
+    dark_oak_planks:
+      income: 0.08
+      points: 0.03
+      experience: 0.10
+    dark_oak_slab:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    dark_oak_stairs:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    dark_oak_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    dark_oak_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    dark_oak_door:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    dark_oak_trapdoor:
+      income: 0.12
+      points: 0.06
+      experience: 0.14
+    dark_oak_leaves:
+      income: 0.10
+      points: 0.05
+      experience: 0.10
+
+    ### DEAD CORAL
+
+    dead_tube_coral_block:
+      income: 0.25
+      points: 0.12
+      experience: 0.20
+    dead_brain_coral_block:
+      income: 0.25
+      points: 0.12
+      experience: 0.20
+    dead_bubble_coral_block:
+      income: 0.25
+      points: 0.12
+      experience: 0.20
+    dead_fire_coral_block:
+      income: 0.25
+      points: 0.12
+      experience: 0.20
+    dead_horn_coral_block:
+      income: 0.25
+      points: 0.12
+      experience: 0.20
+
+    ### DRIED KELP
+
+    dried_kelp_block:
+      income: 0.40
+      points: 0.18
+      experience: 0.40
+
+    ### STONE
+
+    stone:
+      income: 0.04
+      points: 0.02
+      experience: 0.05
+    stone_slab:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+
+    ### ANDESITE
+
+    andesite:
+      income: 0.10
+      points: 0.04
+      experience: 0.10
+
+    ### GRANITE
+
+    granite:
+      income: 0.10
+      points: 0.04
+      experience: 0.10
+
+    ### DIORITE
+
+    diorite:
+      income: 0.10
+      points: 0.04
+      experience: 0.10
+
+    ### COBBLESTONE
+
+    cobblestone:
+      income: 0.04
+      points: 0.02
+      experience: 0.05
+    cobblestone_slab:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+    cobblestone_stairs:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+    cobblestone_wall:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+
+    mossy_cobblestone:
+      income: 0.06
+      points: 0.03
+      experience: 0.08
+    mossy_cobblestone_wall:
+      income: 0.06
+      points: 0.03
+      experience: 0.08
+
+    ### WOOL
+
+    wool-all:
+      income: 0.22
+      points: 0.12
+      experience: 0.22
+
+    ### TERRACOTTA
+
+    terracotta-all:
+      income: 0.30
+      points: 0.08
+      experience: 0.40
+
+    ### ORE BLOCKS
+
+    coal_block:
+      income: 1.20
+      points: 0.30
+      experience: 1.20
+    gold_block:
+      income: 1.50
+      points: 0.55
+      experience: 1.30
+    iron_block:
+      income: 1.00
+      points: 0.35
+      experience: 1.00
+    diamond_block:
+      income: 2.50
+      points: 1.10
+      experience: 2.50
+    emerald_block:
+      income: 3.25
+      points: 1.40
+      experience: 3.00
+    redstone_block:
+      income: 1.75
+      points: 0.60
+      experience: 1.50
+
+    ### SANDSTONE
+
+    sandstone:
+      income: 0.70
+      points: 0.30
+      experience: 0.60
+    sandstone_slab:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+    sandstone_stairs:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+
+    ### BRICKS
+
+    bricks:
+      income: 0.18
+      points: 0.08
+      experience: 0.18
+    brick_slab:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+    brick_stairs:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+
+    ### STONE BRICKS
+
+    stone_bricks:
+      income: 0.18
+      points: 0.08
+      experience: 0.18
+    stone_brick_slab:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+    stone_brick_stairs:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+
+    mossy_stone_bricks:
+      income: 0.20
+      points: 0.09
+      experience: 0.20
+    cracked_stone_bricks:
+      income: 0.20
+      points: 0.09
+      experience: 0.20
+    chiseled_stone_bricks:
+      income: 0.24
+      points: 0.10
+      experience: 0.24
+
+    ### NETHER BRICKS
+
+    nether_bricks:
+      income: 0.25
+      points: 0.12
+      experience: 0.25
+    nether_brick_slab:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+    nether_brick_stairs:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+    nether_brick_fence:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+
+    ### QUARTZ
+
+    quartz_block:
+      income: 0.90
+      points: 0.32
+      experience: 0.90
+    quartz_slab:
+      income: 0.06
+      points: 0.02
+      experience: 0.07
+    quartz_stairs:
+      income: 0.06
+      points: 0.02
+      experience: 0.07
+    quartz_pillar:
+      income: 1.00
+      points: 0.38
+      experience: 1.00
+    chiseled_quartz_block:
+      income: 1.40
+      points: 0.45
+      experience: 1.40
+    smooth_quartz:
+      income: 1.00
+      points: 0.38
+      experience: 1.00
+
+    ### RED SANDSTONE
+
+    red_sandstone_slab:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+    red_sandstone_stairs:
+      income: 0.05
+      points: 0.02
+      experience: 0.06
+    red_sandstone:
+      income: 0.70
+      points: 0.30
+      experience: 0.60
+    chiseled_red_sandstone:
+      income: 0.80
+      points: 0.32
+      experience: 0.70
+    cut_red_sandstone:
+      income: 0.80
+      points: 0.32
+      experience: 0.70
+
+    ### PURPUR
+
+    purpur_block:
+      income: 0.85
+      points: 0.30
+      experience: 0.85
+    purpur_stairs:
+      income: 0.06
+      points: 0.02
+      experience: 0.07
+    purpur_slab:
+      income: 0.06
+      points: 0.02
+      experience: 0.07
+
+    ### UTILITY BLOCKS
+
+    crafting_table:
+      income: 0.35
+      points: 0.12
+      experience: 0.40
+    bookshelf:
+      income: 0.60
+      points: 0.35
+      experience: 0.70
+    chiseled_bookshelf:
+      income: 0.50
+      points: 0.25
+      experience: 0.60
+    chest:
+      income: 0.35
+      points: 0.12
+      experience: 0.40
+    furnace:
+      income: 0.35
+      points: 0.12
+      experience: 0.40
+    jukebox:
+      income: 1.25
+      points: 0.85
+      experience: 1.50
+    enchanting_table:
+      income: 3.00
+      points: 1.50
+      experience: 3.50
+    ender_chest:
+      income: 3.00
+      points: 1.50
+      experience: 3.50
+    trapped_chest:
+      income: 0.35
+      points: 0.12
+      experience: 0.40
+    hopper:
+      income: 1.20
+      points: 0.45
+      experience: 1.30
+    lightning_rod:
+      income: 0.60
+      points: 0.18
+      experience: 0.75
+    decorated_pot:
+      income: 0.25
+      points: 0.18
+      experience: 0.25
+
+    ### OBSIDIAN
+
+    obsidian:
+      income: 1.50
+      points: 0.70
+      experience: 2.00
+
+    ### PRISMARINE
+
+    prismarine:
+      income: 0.25
+      points: 0.18
+      experience: 0.25
+    prismarine_stairs:
+      income: 0.06
+      points: 0.02
+      experience: 0.07
+    prismarine_bricks:
+      income: 0.35
+      points: 0.22
+      experience: 0.35
+    prismarine_brick_stairs:
+      income: 0.06
+      points: 0.02
+      experience: 0.07
+    dark_prismarine:
+      income: 0.50
+      points: 0.30
+      experience: 0.50
+    dark_prismarine_stairs:
+      income: 0.06
+      points: 0.02
+      experience: 0.07
+
+    ### ICE
+
+    ice:
+      income: 0.30
+      points: 0.14
+      experience: 0.25
+    packed_ice:
+      income: 0.45
+      points: 0.18
+      experience: 0.75
+    snow_block:
+      income: 0.20
+      points: 0.12
+      experience: 0.20
+
+    ### GLASS
+
+    glass:
+      income: 0.55
+      points: 0.10
+      experience: 0.55
+    tinted_glass:
+      income: 0.70
+      points: 0.12
+      experience: 0.70
+    stained_glass-all:
+      income: 0.60
+      points: 0.11
+      experience: 0.60
+
+    ### IRON
+
+    iron_trapdoor:
+      income: 0.18
+      points: 0.10
+      experience: 0.20
+    iron_bars:
+      income: 0.10
+      points: 0.06
+      experience: 0.10
+
+    ### GLASS PANE
+
+    glass_pane:
+      income: 0.30
+      points: 0.06
+      experience: 0.30
+    stained_glass_pane-all:
+      income: 0.30
+      points: 0.06
+      experience: 0.30
+
+    ### LIGHT BLOCKS
+
+    sea_lantern:
+      income: 1.10
+      points: 0.55
+      experience: 1.10
+    glowstone:
+      income: 0.90
+      points: 0.18
+      experience: 0.90
+    redstone_lamp:
+      income: 1.40
+      points: 0.30
+      experience: 1.60
+    verdant_froglight:
+      income: 0.60
+      points: 0.22
+      experience: 0.80
+    pearlescent_froglight:
+      income: 0.60
+      points: 0.22
+      experience: 0.80
+    ochre_froglight:
+      income: 0.60
+      points: 0.22
+      experience: 0.80
+
+    ### HAY BLOCK
+
+    hay_block:
+      income: 1.00
+      points: 0.30
+      experience: 0.90
+
+    ### END STONE
+
+    end_stone_bricks:
+      income: 0.35
+      points: 0.18
+      experience: 0.35
+
+    ### CRIMSON WOOD
+
+    crimson_planks:
+      income: 0.12
+      points: 0.04
+      experience: 0.12
+    crimson_hyphae:
+      income: 0.80
+      points: 0.30
+      experience: 0.70
+    crimson_nylium:
+      income: 0.35
+      points: 0.18
+      experience: 0.35
+
+    ### WARPED WOOD
+
+    warped_planks:
+      income: 0.12
+      points: 0.04
+      experience: 0.12
+    warped_hyphae:
+      income: 0.80
+      points: 0.30
+      experience: 0.70
+    warped_nylium:
+      income: 0.35
+      points: 0.18
+      experience: 0.35
+
+    ### POLISHED BLACKSTONE
+
+    polished_blackstone:
+      income: 0.22
+      points: 0.12
+      experience: 0.26
+    polished_blackstone_slab:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    polished_blackstone_stairs:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    chiseled_polished_blackstone:
+      income: 0.30
+      points: 0.15
+      experience: 0.32
+    polished_blackstone_bricks:
+      income: 0.22
+      points: 0.12
+      experience: 0.26
+    polished_blackstone_brick_slab:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    polished_blackstone_brick_stairs:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    cracked_polished_blackstone_bricks:
+      income: 0.35
+      points: 0.18
+      experience: 0.35
+
+    ### CONCRETE
+
+    concrete-all:
+      income: 0.40
+      points: 0.16
+      experience: 0.24
+
+    ### AMETHYST
+
+    amethyst_block:
+      income: 0.85
+      points: 0.30
+      experience: 0.85
+
+    ### COPPER
+
+    copper_block:
+      income: 0.95
+      points: 0.25
+      experience: 1.00
+    cut_copper:
+      income: 0.95
+      points: 0.25
+      experience: 1.00
+    cut_copper_slab:
+      income: 0.10
+      points: 0.04
+      experience: 0.10
+    cut_copper_stairs:
+      income: 0.10
+      points: 0.04
+      experience: 0.10
+    chiseled_copper:
+      income: 0.80
+      points: 0.35
+      experience: 0.90
+    copper_door:
+      income: 0.80
+      points: 0.35
+      experience: 1.00
+    copper_grate:
+      income: 1.10
+      points: 0.45
+      experience: 1.10
+    copper_trapdoor:
+      income: 0.80
+      points: 0.35
+      experience: 0.90
+
+    ### DEEPSLATE
+
+    cobbled_deepslate:
+      income: 0.05
+      points: 0.03
+      experience: 0.06
+    cobbled_deepslate_slab:
+      income: 0.06
+      points: 0.03
+      experience: 0.07
+    cobbled_deepslate_stairs:
+      income: 0.06
+      points: 0.03
+      experience: 0.07
+    cobbled_deepslate_wall:
+      income: 0.06
+      points: 0.03
+      experience: 0.07
+    polished_deepslate:
+      income: 0.22
+      points: 0.12
+      experience: 0.26
+    polished_deepslate_slab:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    polished_deepslate_stairs:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    polished_deepslate_wall:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    deepslate_tiles:
+      income: 0.22
+      points: 0.12
+      experience: 0.26
+    deepslate_tile_slab:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    deepslate_tile_stairs:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    deepslate_tile_wall:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    cracked_deepslate_tiles:
+      income: 0.35
+      points: 0.18
+      experience: 0.35
+    deepslate_bricks:
+      income: 0.22
+      points: 0.12
+      experience: 0.26
+    deepslate_brick_slab:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    deepslate_brick_stairs:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    deepslate_brick_wall:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    cracked_deepslate_bricks:
+      income: 0.35
+      points: 0.18
+      experience: 0.35
+    chiseled_deepslate:
+      income: 0.30
+      points: 0.15
+      experience: 0.32
+
+    ### CANDLE
+
+    candle-all:
+      income: 0.05
+      points: 0.02
+      experience: 0.05
+
+    ### MANGROVE
+
+    mangrove_planks:
+      income: 0.08
+      points: 0.03
+      experience: 0.10
+    mangrove_slab:
+      income: 0.04
+      points: 0.02
+      experience: 0.03
+    mangrove_stairs:
+      income: 0.04
+      points: 0.02
+      experience: 0.03
+    mangrove_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    mangrove_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    mangrove_door:
+      income: 0.14
+      points: 0.06
+      experience: 0.16
+    mangrove_trapdoor:
+      income: 0.12
+      points: 0.06
+      experience: 0.14
+    mangrove_leaves:
+      income: 0.10
+      points: 0.05
+      experience: 0.10
+
+    ### MUD BRICKS
+
+    mud_bricks:
+      income: 0.12
+      points: 0.05
+      experience: 0.12
+    mud_brick_stairs:
+      income: 0.06
+      points: 0.02
+      experience: 0.07
+
+    ### CHERRY
+
+    stripped_cherry_wood:
+      income: 0.30
+      points: 0.12
+      experience: 0.22
+    cherry_planks:
+      income: 0.08
+      points: 0.03
+      experience: 0.10
+    cherry_slab:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    cherry_stairs:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    cherry_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    cherry_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    cherry_door:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    cherry_trapdoor:
+      income: 0.12
+      points: 0.06
+      experience: 0.14
+    cherry_leaves:
+      income: 0.10
+      points: 0.05
+      experience: 0.10
+
+    ### BAMBOO
+
+    bamboo_planks:
+      income: 0.08
+      points: 0.03
+      experience: 0.10
+    bamboo_slab:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    bamboo_stairs:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    bamboo_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    bamboo_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    bamboo_door:
+      income: 0.14
+      points: 0.06
+      experience: 0.16
+    bamboo_trapdoor:
+      income: 0.12
+      points: 0.06
+      experience: 0.14
+
+    ### TUFF
+
+    tuff_slab:
+      income: 0.18
+      points: 0.10
+      experience: 0.18
+    tuff_stairs:
+      income: 0.18
+      points: 0.10
+      experience: 0.18
+    tuff_wall:
+      income: 0.18
+      points: 0.10
+      experience: 0.18
+    tuff_bricks:
+      income: 0.22
+      points: 0.12
+      experience: 0.22
+    tuff_brick_slab:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    tuff_brick_stairs:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    tuff_brick_wall:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    polished_tuff_slab:
+      income: 0.18
+      points: 0.10
+      experience: 0.18
+    polished_tuff_stairs:
+      income: 0.18
+      points: 0.10
+      experience: 0.18
+    polished_tuff_wall:
+      income: 0.18
+      points: 0.10
+      experience: 0.18
+
+    ### PALE OAK
+
+    stripped_pale_oak_wood:
+      income: 0.30
+      points: 0.12
+      experience: 0.22
+    pale_oak_planks:
+      income: 0.08
+      points: 0.03
+      experience: 0.10
+    pale_oak_slab:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    pale_oak_stairs:
+      income: 0.04
+      points: 0.015
+      experience: 0.05
+    pale_oak_fence:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    pale_oak_fence_gate:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    pale_oak_door:
+      income: 0.08
+      points: 0.04
+      experience: 0.10
+    pale_oak_trapdoor:
+      income: 0.12
+      points: 0.06
+      experience: 0.14
+
+    ### RESIN BRICKS
+
+    resin_bricks:
+      income: 0.16
+      points: 0.06
+      experience: 0.16
+    resin_brick_slab:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    resin_brick_stairs:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    resin_brick_wall:
+      income: 0.08
+      points: 0.03
+      experience: 0.08
+    chiseled_resin_bricks:
+      income: 0.20
+      points: 0.08
+      experience: 0.20
+
+  Break:
+    dirt:
+      income: 0.08
+      points: 0.03
+      experience: 0.06
+    coarse_dirt:
+      income: 0.20
+      points: 0.08
+      experience: 0.15
+    rooted_dirt:
+      income: 0.10
+      points: 0.04
+      experience: 0.08
+    grass_block:
+      income: 0.12
+      points: 0.05
+      experience: 0.12
+    gravel:
+      income: 0.18
+      points: 0.07
+      experience: 0.14
+    sand:
+      income: 0.12
+      points: 0.05
+      experience: 0.12
+    red_sand:
+      income: 0.15
+      points: 0.06
+      experience: 0.12
+    clay:
+      income: 0.18
+      points: 0.09
+      experience: 0.18
+    mud:
+      income: 0.14
+      points: 0.06
+      experience: 0.14
+    soul_sand:
+      income: 0.22
+      points: 0.12
+      experience: 0.30
+    soul_soil:
+      income: 0.22
+      points: 0.12
+      experience: 0.30
+    podzol:
+      income: 0.20
+      points: 0.08
+      experience: 0.15
+    mycelium:
+      income: 0.24
+      points: 0.10
+      experience: 0.22
+    moss_block:
+      income: 0.18
+      points: 0.06
+      experience: 0.18
+
+    ### BLACKLIST: 1.20.4,1.21 ###
+    pale_moss_block:
+      income: 0.18
+      points: 0.06
+      experience: 0.18
+    ###

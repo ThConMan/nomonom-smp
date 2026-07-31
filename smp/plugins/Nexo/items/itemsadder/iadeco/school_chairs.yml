@@ -1,0 +1,30 @@
+school_chair:
+  itemname: display-name-school_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,-1 2,1
+      seats:
+      - 0,0.0,0
+  Pack:
+    model: iadeco:school_chair
+    custom_model_data: 1136
+school_chair_lazy:
+  itemname: display-name-school_chair_lazy
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,-1 2,1
+      seats:
+      - 0,0.0,0
+  Pack:
+    model: iadeco:school_chair_lazy
+    custom_model_data: 1137

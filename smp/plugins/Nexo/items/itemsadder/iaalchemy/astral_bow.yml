@@ -1,0 +1,10 @@
+astral_bow:
+  itemname: display-name-astral_bow
+  material: BOW
+  Pack:
+    texture: iaalchemy:item/astral_bow
+    pulling_textures:
+    - iaalchemy:astral_bow_0
+    - iaalchemy:astral_bow_1
+    - iaalchemy:astral_bow_2
+    custom_model_data: 1000

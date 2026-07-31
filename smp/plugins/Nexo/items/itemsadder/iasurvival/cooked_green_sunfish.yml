@@ -1,0 +1,6 @@
+cooked_green_sunfish:
+  itemname: display-name-cooked_green_sunfish
+  material: COOKED_PORKCHOP
+  Pack:
+    texture: iasurvival:item/food/fishes/cooked_green_sunfish
+    custom_model_data: 1011

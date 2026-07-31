@@ -1,0 +1,240 @@
+white_wood_chair:
+  itemname: display-name-white_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:white_wood_chair
+    custom_model_data: 1150
+orange_wood_chair:
+  itemname: display-name-orange_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:orange_wood_chair
+    custom_model_data: 1151
+magenta_wood_chair:
+  itemname: display-name-magenta_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:magenta_wood_chair
+    custom_model_data: 1152
+light_blue_wood_chair:
+  itemname: display-name-light_blue_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:light_blue_wood_chair
+    custom_model_data: 1153
+yellow_wood_chair:
+  itemname: display-name-yellow_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:yellow_wood_chair
+    custom_model_data: 1154
+lime_wood_chair:
+  itemname: display-name-lime_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:lime_wood_chair
+    custom_model_data: 1155
+pink_wood_chair:
+  itemname: display-name-pink_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:pink_wood_chair
+    custom_model_data: 1156
+gray_wood_chair:
+  itemname: display-name-gray_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:gray_wood_chair
+    custom_model_data: 1157
+light_gray_wood_chair:
+  itemname: display-name-light_gray_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:light_gray_wood_chair
+    custom_model_data: 1158
+cyan_wood_chair:
+  itemname: display-name-cyan_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:cyan_wood_chair
+    custom_model_data: 1159
+purple_wood_chair:
+  itemname: display-name-purple_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:purple_wood_chair
+    custom_model_data: 1160
+blue_wood_chair:
+  itemname: display-name-blue_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:blue_wood_chair
+    custom_model_data: 1161
+brown_wood_chair:
+  itemname: display-name-brown_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:brown_wood_chair
+    custom_model_data: 1162
+green_wood_chair:
+  itemname: display-name-green_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:green_wood_chair
+    custom_model_data: 1163
+red_wood_chair:
+  itemname: display-name-red_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:red_wood_chair
+    custom_model_data: 1164
+black_wood_chair:
+  itemname: display-name-black_wood_chair
+  material: PAPER
+  Mechanics:
+    furniture:
+      properties:
+        display_transform: NONE
+      hitbox:
+        interactions:
+        - 0,0,0 1,1
+      seats:
+      - 0,-0.15,0
+  Pack:
+    model: iadeco:black_wood_chair
+    custom_model_data: 1165

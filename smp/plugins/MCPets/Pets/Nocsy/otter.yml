@@ -1,0 +1,14 @@
+Id: Otter
+MythicMob: NocsyOtter
+Permission: mcpets.otter
+Mountable: false
+DespawnSkill: Nocsy_Otter_Despawn
+Distance: 6
+SpawnRange: 1
+ComingBackRange: 3
+Icon:
+  Name: §bOtter
+  Material: INK_SAC
+  CustomModelData: 77312
+  Description:
+  - §7A cutie that will follow you everywhere!

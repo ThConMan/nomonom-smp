@@ -1,0 +1,358 @@
+menu_title: '&8Command Menu'
+open_command:
+- command_menu
+size: 54
+items:
+  item1:
+    material: COMPASS
+    slot: 0
+    display_name: '&aSpawn'
+    left_click_commands:
+    - '[player] cmi spawn'
+    - '[close]'
+  item2:
+    material: WITHER_ROSE
+    slot: 1
+    display_name: '&eBack'
+    left_click_commands:
+    - '[player] back'
+    - '[close]'
+  item3:
+    material: RECOVERY_COMPASS
+    slot: 2
+    display_name: '&dRandom Teleport'
+    left_click_commands:
+    - '[player] rtp'
+    - '[close]'
+  item4:
+    material: IRON_SWORD
+    slot: 3
+    display_name: '&cWarp Arena'
+    left_click_commands:
+    - '[player] warp arena'
+    - '[close]'
+  item5:
+    material: ENDER_EYE
+    slot: 4
+    display_name: '&5Warp End Farm'
+    left_click_commands:
+    - '[player] warp endfarm'
+    - '[close]'
+  item6:
+    material: RED_BED
+    slot: 5
+    display_name: '&cHome 1'
+    left_click_commands:
+    - '[player] home home1'
+    - '[close]'
+  item7:
+    material: CYAN_BED
+    slot: 6
+    display_name: '&bHome 2'
+    left_click_commands:
+    - '[player] home home2'
+    - '[close]'
+  item8:
+    material: LIME_BED
+    slot: 7
+    display_name: '&aHome 3'
+    left_click_commands:
+    - '[player] home home3'
+    - '[close]'
+  item9:
+    material: YELLOW_BED
+    slot: 8
+    display_name: '&eHome 4'
+    left_click_commands:
+    - '[player] home home4'
+    - '[close]'
+  item10:
+    material: PURPLE_BED
+    slot: 9
+    display_name: '&dHome 5'
+    left_click_commands:
+    - '[player] home home5'
+    - '[close]'
+  item41:
+    material: WHITE_BED
+    slot: 10
+    display_name: '&fHome 6'
+    left_click_commands:
+    - '[player] home home6'
+    - '[close]'
+  item42:
+    material: ORANGE_BED
+    slot: 11
+    display_name: '&6Home 7'
+    left_click_commands:
+    - '[player] home home7'
+    - '[close]'
+  item43:
+    material: MAGENTA_BED
+    slot: 12
+    display_name: '&dHome 8'
+    left_click_commands:
+    - '[player] home home8'
+    - '[close]'
+  item44:
+    material: LIGHT_BLUE_BED
+    slot: 13
+    display_name: '&bHome 9'
+    left_click_commands:
+    - '[player] home home9'
+    - '[close]'
+  item45:
+    material: GREEN_BED
+    slot: 14
+    display_name: '&aHome 10'
+    left_click_commands:
+    - '[player] home home10'
+    - '[close]'
+  item11:
+    material: DIAMOND
+    slot: 15
+    display_name: '&6Shop'
+    left_click_commands:
+    - '[player] shop'
+    - '[close]'
+  item39:
+    material: BOOK
+    slot: 16
+    display_name: '&aBalance Top'
+    left_click_commands:
+    - '[player] baltop'
+    - '[close]'
+  item12:
+    material: EMERALD
+    slot: 17
+    display_name: '&6Sell GUI'
+    left_click_commands:
+    - '[player] sellgui'
+    - '[close]'
+  item16:
+    material: ENDER_CHEST
+    slot: 18
+    display_name: '&dEnder Chest'
+    left_click_commands:
+    - '[player] ec'
+    - '[close]'
+  item13:
+    material: GOLD_INGOT
+    slot: 19
+    display_name: '&6Auction House'
+    left_click_commands:
+    - '[player] ah'
+    - '[close]'
+  item15:
+    material: BOOK
+    slot: 20
+    display_name: '&aJobs Browser'
+    left_click_commands:
+    - '[player] jobs browse'
+    - '[close]'
+  item17:
+    material: PURPLE_DYE
+    slot: 21
+    display_name: '&aAccept TPA'
+    left_click_commands:
+    - '[player] tpaccept'
+    - '[close]'
+  item18:
+    material: GRASS_BLOCK
+    slot: 22
+    display_name: '&aGamemode Survival'
+    left_click_commands:
+    - '[player] gamemode survival'
+    - '[close]'
+  item19:
+    material: DIAMOND_BLOCK
+    slot: 23
+    display_name: '&bGamemode Creative'
+    left_click_commands:
+    - '[player] gamemode creative'
+    - '[close]'
+  item20:
+    material: GLASS
+    slot: 24
+    display_name: '&7Gamemode Spectator'
+    left_click_commands:
+    - '[player] gamemode spectator'
+    - '[close]'
+  item24:
+    material: RED_WOOL
+    slot: 25
+    display_name: '&bTP → Jamindog12'
+    left_click_commands:
+    - '[player] tp Jamindog12'
+    - '[close]'
+  item25:
+    material: GREEN_WOOL
+    slot: 26
+    display_name: '&bTP → Uhmeleo'
+    left_click_commands:
+    - '[player] tp uhmeleo'
+    - '[close]'
+  item26:
+    material: BLUE_WOOL
+    slot: 27
+    display_name: '&bTP → DylanPlaysYT'
+    left_click_commands:
+    - '[player] tp DylanPlaysYT'
+    - '[close]'
+  item31:
+    material: PLAYER_HEAD
+    slot: 28
+    display_name: '&bPull Jamindog12'
+    left_click_commands:
+    - '[player] tp Jamindog12 luke19x'
+    - '[close]'
+  item32:
+    material: PLAYER_HEAD
+    slot: 29
+    display_name: '&bPull Uhmeleo'
+    left_click_commands:
+    - '[player] tp uhmeleo luke19x'
+    - '[close]'
+  item33:
+    material: PLAYER_HEAD
+    slot: 30
+    display_name: '&bPull DylanPlaysYT'
+    left_click_commands:
+    - '[player] tp DylanPlaysYT luke19x'
+    - '[close]'
+  item62:
+    material: ENDER_PEARL
+    slot: 36
+    display_name: '&bTP GUI'
+    left_click_commands:
+    - '[player] /tpgui'
+    - '[close]'
+  item63:
+    material: ENDER_PEARL
+    slot: 37
+    display_name: '&bTPA GUI'
+    left_click_commands:
+    - '[player] /tpagui'
+    - '[close]'
+  item64:
+    material: ENDER_EYE
+    slot: 38
+    display_name: '&bTPAHere GUI'
+    left_click_commands:
+    - '[player] /tpaheregui'
+    - '[close]'
+  item65:
+    material: PAPER
+    slot: 31
+    display_name: '&dMSG GUI'
+    left_click_commands:
+    - '[player] /msggui'
+    - '[close]'
+  item66:
+    material: GOLD_INGOT
+    slot: 32
+    display_name: '&aPAY GUI'
+    left_click_commands:
+    - '[player] /paygui'
+    - '[close]'
+  item67:
+    material: ANVIL
+    slot: 33
+    display_name: '&cBAN GUI'
+    left_click_commands:
+    - '[player] /bangui'
+    - '[close]'
+  item68:
+    material: IRON_BOOTS
+    slot: 34
+    display_name: '&cKICK GUI'
+    left_click_commands:
+    - '[player] /kickgui'
+    - '[close]'
+  item69:
+    material: STRING
+    slot: 35
+    display_name: '&6MUTE GUI'
+    left_click_commands:
+    - '[player] /mutegui'
+    - '[close]'
+  item70:
+    material: WITHER_ROSE
+    slot: 39
+    display_name: '&eBack (Pick Player)'
+    left_click_commands:
+    - '[player] /backgui'
+    - '[close]'
+  item71:
+    material: OAK_DOOR
+    slot: 40
+    display_name: '&aSetHome GUI'
+    left_click_commands:
+    - '[player] /sethomegui'
+    - '[close]'
+  item72:
+    material: BOOKSHELF
+    slot: 41
+    display_name: '&eHomes (Pick Player)'
+    left_click_commands:
+    - '[player] /homesp'
+    - '[close]'
+  item73:
+    material: BOOK
+    slot: 42
+    display_name: '&eHomes (Self)'
+    left_click_commands:
+    - '[player] homes'
+    - '[close]'
+  item74:
+    material: MAP
+    slot: 43
+    display_name: '&dWarps'
+    left_click_commands:
+    - '[player] /warps'
+    - '[close]'
+
+  item75:
+    material: CHEST
+    slot: 44
+    display_name: '&bINV (Pick Player)'
+    left_click_commands:
+    - '[player] /invgui'
+    - '[close]'
+  item76:
+    material: ENDER_CHEST
+    slot: 45
+    display_name: '&5EC Admin (Pick Player)'
+    left_click_commands:
+    - '[player] /ecadmingui'
+    - '[close]'
+  item77:
+    material: LEAD
+    slot: 46
+    display_name: '&bTP Player → Me (Pick Player)'
+    left_click_commands:
+    - '[player] /tptomegui'
+    - '[close]'
+  item78:
+    material: PISTON
+    slot: 47
+    display_name: '&bReload The Shop'
+    left_click_commands:
+    - '[player] economyshopgui-premium:sreload'
+    - '[close]'
+  item79:
+    material: SLIME_BALL
+    slot: 48
+    display_name: '&bSimpleItemPrice Toggle'
+    left_click_commands:
+    - '[player] sip toggle'
+    - '[close]'
+
+
+
+  item38:
+    material: BARRIER
+    slot: 53
+    display_name: '&cClose'
+    left_click_commands:
+    - '[close]'

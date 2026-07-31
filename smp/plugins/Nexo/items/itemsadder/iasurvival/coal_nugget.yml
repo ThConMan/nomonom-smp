@@ -1,0 +1,6 @@
+coal_nugget:
+  itemname: display-name-coal_nugget
+  material: COAL
+  Pack:
+    texture: iasurvival:item/ores/coal_nugget
+    custom_model_data: 1000

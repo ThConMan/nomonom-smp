@@ -1,0 +1,6 @@
+end_shard:
+  itemname: display-name-end_shard
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/end_shard
+    custom_model_data: 1009

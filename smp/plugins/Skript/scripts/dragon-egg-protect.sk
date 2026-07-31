@@ -1,0 +1,64 @@
+# ============================================================
+# Dragon Egg Container Protection
+# Prevents players from storing the Dragon Egg in any container.
+# Covers: click, shift-click, hotbar swap, drag, and hoppers.
+# Bypass permission: nomonom.dragonegg.bypass
+# ============================================================
+
+on inventory click:
+    if player has permission "nomonom.dragonegg.bypass":
+        stop
+
+    set {_action} to "%event-inventoryaction%"
+
+    # Shift-click dragon egg — block regardless of which side it registers on
+    if {_action} is "MOVE_TO_OTHER_INVENTORY":
+        if event-item is dragon egg:
+            cancel event
+            send "&cYou cannot store the Dragon Egg in a container!" to player
+            stop
+
+    # Container side — block any interaction with dragon egg
+    if type of event-inventory is not player inventory:
+        if event-item is dragon egg:
+            cancel event
+            send "&cYou cannot store the Dragon Egg in a container!" to player
+            stop
+        if cursor slot of player is dragon egg:
+            cancel event
+            send "&cYou cannot store the Dragon Egg in a container!" to player
+            stop
+        if {_action} is "HOTBAR_SWAP" or "HOTBAR_MOVE_AND_READD":
+            set {_slot} to hotbar button
+            if slot {_slot} of player is dragon egg:
+                cancel event
+                send "&cYou cannot store the Dragon Egg in a container!" to player
+                stop
+
+# Block drag-distributing dragon egg into containers
+on inventory drag:
+    if player has permission "nomonom.dragonegg.bypass":
+        stop
+    if type of event-inventory is player inventory:
+        stop
+    if event-item is dragon egg:
+        cancel event
+        send "&cYou cannot store the Dragon Egg in a container!" to player
+
+# Safety net — if dragon egg ends up in a container, yank it back on close
+on inventory close:
+    if player has permission "nomonom.dragonegg.bypass":
+        stop
+    if type of event-inventory is player inventory:
+        stop
+    loop items in event-inventory:
+        if loop-item is dragon egg:
+            remove dragon egg from event-inventory
+            give dragon egg to player
+            send "&cDragon Egg returned to your inventory." to player
+            stop
+
+# Block hoppers/droppers moving dragon eggs between inventories
+on inventory move item:
+    if event-item is dragon egg:
+        cancel event

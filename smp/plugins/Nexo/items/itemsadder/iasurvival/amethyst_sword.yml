@@ -1,0 +1,14 @@
+dark_amethyst_sword:
+  itemname: display-name-dark_amethyst_sword
+  material: DIAMOND_SWORD
+  AttributeModifiers:
+  - amount: 6.5
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: 6a4a175e-50d8-4201-8761-fc9c8c805fb8
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iasurvival:item/swords/dark_amethyst_sword
+    custom_model_data: 1000

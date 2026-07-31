@@ -1,0 +1,13 @@
+aqua_aura_block:
+  itemname: display-name-aqua_aura_block
+  material: PAPER
+  Mechanics:
+    custom_block:
+      type: NOTEBLOCK
+      model: aqua_aura_block
+      hardness: 2.0
+      custom_variation: 3
+  Pack:
+    parent_model: block/cube_all
+    texture: iasurvival:block/minerals/aqua_aura_block
+    custom_model_data: 1015

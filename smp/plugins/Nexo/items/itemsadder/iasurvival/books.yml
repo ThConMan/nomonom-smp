@@ -1,0 +1,12 @@
+letter:
+  itemname: display-name-letter
+  material: WRITABLE_BOOK
+  Pack:
+    texture: iasurvival:item/other/letter
+    custom_model_data: 1000
+letter_written_letter:
+  itemname: display-name-letter_written_letter
+  material: WRITTEN_BOOK
+  Pack:
+    texture: iasurvival:item/other/written_letter
+    custom_model_data: 1000

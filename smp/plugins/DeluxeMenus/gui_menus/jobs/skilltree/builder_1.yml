@@ -1,0 +1,1849 @@
+############################
+# 
+# ITSMYSTUDIO - Configuration for Jobs
+# https://itsmy.studio/discord
+#
+############################
+menu_title: Jobs | Builder
+open_command:
+  - jobs skilltree builder
+  - jobs builder
+register_command: true
+size: 54
+items:
+  payouts:
+    material: RAW_GOLD
+    slot: 5
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    display_name: '&ePaid actions'
+    lore:
+      - '%imc_dark-color_c%Find all the actions you can'
+      - '%imc_dark-color_c%perform to get paid through'
+      - '%imc_dark-color_c%this job.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Place'
+      - '%imc_dark-color_c% • %imc_text-color_c%Break'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Get payouts information'
+    click_commands:
+      - '[openguimenu] jobs_payouts_builder_place'
+      - '[sound] UI_BUTTON_CLICK'
+  information_joined:
+    material: BRICKS
+    slot: 4
+    priority: 1
+    dynamic_amount: '%jobsr_user_jlevel_builder%'
+    view_requirement:
+      requirements:
+        joined:
+          type: string contains
+          input: '%jobsr_user_isin_builder%'
+          output: 'True'
+    enchantment_glint_override: true
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    display_name: '&2Builder %imc_f_latin_{jobsr_user_jlevel_builder}%'
+    lore:
+      - '%imc_darkest-color_c%Status: &aWorking'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_builder%'
+      - ''
+      - '%imc_dark-color_c%Construct buildings and sculpt'
+      - '%imc_dark-color_c%terrain block by block.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Place'
+      - '%imc_dark-color_c% • %imc_text-color_c%Break'
+      - ''
+      - '%imc_darkest-color_c%Statistics:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Level: %imc_primary-color_c%%jobsr_user_jlevel_builder%%imc_dark-color_c%/%jobsr_user_jmaxlvl_builder%'
+      - '%imc_dark-color_c% • %imc_text-color_c%Progress:%imc_job-exp-format_c_ %%jobsr_user_jexp_rounded_builder%%imc_dark-color_c%/%jobsr_user_jmaxexp_builder%'
+      - ' %imc_job-progress_{jobsr_user_jexpunf_builder}_{jobsr_user_jmaxexpunf_builder}%'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Leave'
+    click_commands:
+      - '[player] jobs leave builder'
+      - '[sound] BLOCK_COMPOSTER_FILL'
+      - '[refresh]'
+  information_maxjobs:
+    material: BRICKS
+    slot: 4
+    priority: 2
+    view_requirement:
+      requirements:
+        maxjobs:
+          type: '=='
+          input: '%jobsr_user_joinedjobcount%'
+          output: '%jobsr_maxjobs%'
+    item_flags:
+      - HIDE_ENCHANTS
+      - HIDE_ATTRIBUTES
+    display_name: '&2Builder'
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_builder%'
+      - ''
+      - '%imc_dark-color_c%Construct buildings and sculpt'
+      - '%imc_dark-color_c%terrain block by block.'
+      - ''
+      - '&c✘ You can only have %jobsr_maxjobs% jobs.'
+  information:
+    material: BRICKS
+    slot: 4
+    priority: 3
+    display_name: '&2Builder'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_darkest-color_c%Status: &eNot Employed'
+      - '%imc_darkest-color_c%Employees: %imc_secondary-color_c%%jobsr_totalplayers_builder%'
+      - ''
+      - '%imc_dark-color_c%Construct buildings and sculpt'
+      - '%imc_dark-color_c%terrain block by block.'
+      - ''
+      - '%imc_darkest-color_c%Paid Actions:'
+      - '%imc_dark-color_c% • %imc_text-color_c%Place'
+      - '%imc_dark-color_c% • %imc_text-color_c%Break'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Join'
+    click_commands:
+      - '[player] jobs join builder'
+      - '[sound] ENTITY_VILLAGER_WORK_CARTOGRAPHER'
+      - '[refresh]'
+  level_1_claimed:
+    material: LIME_CANDLE
+    amount: 1
+    slot: 9
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level1
+    display_name: '&aLevel 1'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_100}%'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_1_unlocked:
+    material: YELLOW_CANDLE
+    amount: 1
+    slot: 9
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 1
+    display_name: '&eLevel 1'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_100}%'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level1'
+      - '[givemoney] %imc_price-modifier_100%'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_1_locked:
+    material: GRAY_CANDLE
+    amount: 1
+    slot: 9
+    priority: 3
+    display_name: '&cLevel 1'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_100}%'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_2_claimed:
+    material: LIME_CANDLE
+    amount: 2
+    slot: 18
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level2
+    display_name: '&aLevel 2'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_150}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_5% %imc_text-color_c%Points'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_2_unlocked:
+    material: YELLOW_CANDLE
+    amount: 2
+    slot: 18
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 2
+    display_name: '&eLevel 2'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_150}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_5% %imc_text-color_c%Points'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level2'
+      - '[givemoney] %imc_price-modifier_150%'
+      - '[console] jobs editpoints add %player_name% 5'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_2_locked:
+    material: GRAY_CANDLE
+    amount: 2
+    slot: 18
+    priority: 3
+    display_name: '&cLevel 2'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_150}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_5% %imc_text-color_c%Points'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_3_claimed:
+    material: LIME_CANDLE
+    amount: 3
+    slot: 27
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level3
+    display_name: '&aLevel 3'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_200}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_100% %imc_text-color_c%Experiences'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_3_unlocked:
+    material: YELLOW_CANDLE
+    amount: 3
+    slot: 27
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 3
+    display_name: '&eLevel 3'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_200}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_100% %imc_text-color_c%Experiences'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level3'
+      - '[givemoney] %imc_price-modifier_200%'
+      - '[console] minecraft:experience add %player_name% 100'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_3_locked:
+    material: GRAY_CANDLE
+    amount: 3
+    slot: 27
+    priority: 3
+    display_name: '&cLevel 3'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_200}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_100% %imc_text-color_c%Experiences'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_4_claimed:
+    material: LIME_CANDLE
+    amount: 4
+    slot: 36
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level4
+    display_name: '&aLevel 4'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_300}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%1x Iron Pickaxe %imc_dark-color_c%(Unbreaking II)'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_4_unlocked:
+    material: YELLOW_CANDLE
+    amount: 4
+    slot: 36
+    priority: 2
+    click_requirement:
+      requirements:
+        empty_slots:
+          type: '>='
+          input: '%player_empty_slots%'
+          output: 1
+      deny_commands:
+        - '[message] $<p:error-prefix> You don''t have the space in your inventory. <p:dark-color>(1 slots)</p>'
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 4
+    display_name: '&eLevel 4'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_300}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%1x Iron Pickaxe %imc_dark-color_c%(Unbreaking II)'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level4'
+      - '[givemoney] %imc_price-modifier_300%'
+      - '[console] minecraft:give %player_name% iron_pickaxe[enchantments={"minecraft:unbreaking":2}] 1'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_4_locked:
+    material: GRAY_CANDLE
+    amount: 4
+    slot: 36
+    priority: 3
+    display_name: '&cLevel 4'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_300}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%1x Iron Pickaxe %imc_dark-color_c%(Unbreaking II)'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_5_claimed:
+    material: LIME_CANDLE
+    amount: 5
+    slot: 37
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level5
+    display_name: '&aLevel 5'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_400}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_10% %imc_text-color_c%Points'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_5_unlocked:
+    material: YELLOW_CANDLE
+    amount: 5
+    slot: 37
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 5
+    display_name: '&eLevel 5'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_400}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_10% %imc_text-color_c%Points'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level5'
+      - '[givemoney] %imc_price-modifier_400%'
+      - '[console] jobs editpoints add %player_name% 10'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_5_locked:
+    material: GRAY_CANDLE
+    amount: 5
+    slot: 37
+    priority: 3
+    display_name: '&cLevel 5'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_400}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_10% %imc_text-color_c%Points'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_6_claimed:
+    material: LIME_CANDLE
+    amount: 6
+    slot: 38
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level6
+    display_name: '&aLevel 6'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_550}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_150% %imc_text-color_c%Experiences'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_6_unlocked:
+    material: YELLOW_CANDLE
+    amount: 6
+    slot: 38
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 6
+    display_name: '&eLevel 6'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_550}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_150% %imc_text-color_c%Experiences'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level6'
+      - '[givemoney] %imc_price-modifier_550%'
+      - '[console] minecraft:experience add %player_name% 150'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_6_locked:
+    material: GRAY_CANDLE
+    amount: 6
+    slot: 38
+    priority: 3
+    display_name: '&cLevel 6'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_550}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_150% %imc_text-color_c%Experiences'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_7_claimed:
+    material: LIME_CANDLE
+    amount: 7
+    slot: 29
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level7
+    display_name: '&aLevel 7'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_700}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%32x Bottle o'' Enchanting'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_7_unlocked:
+    material: YELLOW_CANDLE
+    amount: 7
+    slot: 29
+    priority: 2
+    click_requirement:
+      requirements:
+        empty_slots:
+          type: '>='
+          input: '%player_empty_slots%'
+          output: 1
+      deny_commands:
+        - '[message] $<p:error-prefix> You don''t have the space in your inventory. <p:dark-color>(1 slots)</p>'
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 7
+    display_name: '&eLevel 7'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_700}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%32x Bottle o'' Enchanting'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level7'
+      - '[givemoney] %imc_price-modifier_700%'
+      - '[console] minecraft:give %player_name% experience_bottle 32'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_7_locked:
+    material: GRAY_CANDLE
+    amount: 7
+    slot: 29
+    priority: 3
+    display_name: '&cLevel 7'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_700}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%32x Bottle o'' Enchanting'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_8_claimed:
+    material: LIME_CANDLE
+    amount: 8
+    slot: 20
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level8
+    display_name: '&aLevel 8'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_850}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_15% %imc_text-color_c%Points'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_8_unlocked:
+    material: YELLOW_CANDLE
+    amount: 8
+    slot: 20
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 8
+    display_name: '&eLevel 8'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_850}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_15% %imc_text-color_c%Points'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level8'
+      - '[givemoney] %imc_price-modifier_850%'
+      - '[console] jobs editpoints add %player_name% 15'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_8_locked:
+    material: GRAY_CANDLE
+    amount: 8
+    slot: 20
+    priority: 3
+    display_name: '&cLevel 8'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_850}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_15% %imc_text-color_c%Points'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_9_claimed:
+    material: LIME_CANDLE
+    amount: 9
+    slot: 11
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level9
+    display_name: '&aLevel 9'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1000}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_200% %imc_text-color_c%Experiences'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_9_unlocked:
+    material: YELLOW_CANDLE
+    amount: 9
+    slot: 11
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 9
+    display_name: '&eLevel 9'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1000}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_200% %imc_text-color_c%Experiences'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level9'
+      - '[givemoney] %imc_price-modifier_1000%'
+      - '[console] minecraft:experience add %player_name% 200'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_9_locked:
+    material: GRAY_CANDLE
+    amount: 9
+    slot: 11
+    priority: 3
+    display_name: '&cLevel 9'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1000}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_200% %imc_text-color_c%Experiences'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_10_claimed:
+    material: LIME_CANDLE
+    amount: 10
+    slot: 12
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level10
+    display_name: '&aLevel 10'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1200}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Stone Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Cobblestone'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_10_unlocked:
+    material: YELLOW_CANDLE
+    amount: 10
+    slot: 12
+    priority: 2
+    click_requirement:
+      requirements:
+        empty_slots:
+          type: '>='
+          input: '%player_empty_slots%'
+          output: 2
+      deny_commands:
+        - '[message] $<p:error-prefix> You don''t have the space in your inventory. <p:dark-color>(2 slots)</p>'
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 10
+    display_name: '&eLevel 10'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1200}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Stone Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Cobblestone'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level10'
+      - '[givemoney] %imc_price-modifier_1200%'
+      - '[console] minecraft:give %player_name% stone_bricks 64'
+      - '[console] minecraft:give %player_name% cobblestone 64'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_10_locked:
+    material: GRAY_CANDLE
+    amount: 10
+    slot: 12
+    priority: 3
+    display_name: '&cLevel 10'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1200}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Stone Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Cobblestone'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_11_claimed:
+    material: LIME_CANDLE
+    amount: 11
+    slot: 13
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level11
+    display_name: '&aLevel 11'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1450}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_20% %imc_text-color_c%Points'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_11_unlocked:
+    material: YELLOW_CANDLE
+    amount: 11
+    slot: 13
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 11
+    display_name: '&eLevel 11'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1450}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_20% %imc_text-color_c%Points'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level11'
+      - '[givemoney] %imc_price-modifier_1450%'
+      - '[console] jobs editpoints add %player_name% 20'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_11_locked:
+    material: GRAY_CANDLE
+    amount: 11
+    slot: 13
+    priority: 3
+    display_name: '&cLevel 11'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1450}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_20% %imc_text-color_c%Points'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_12_claimed:
+    material: LIME_CANDLE
+    amount: 12
+    slot: 22
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level12
+    display_name: '&aLevel 12'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1700}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_250% %imc_text-color_c%Experiences'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_12_unlocked:
+    material: YELLOW_CANDLE
+    amount: 12
+    slot: 22
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 12
+    display_name: '&eLevel 12'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1700}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_250% %imc_text-color_c%Experiences'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level12'
+      - '[givemoney] %imc_price-modifier_1700%'
+      - '[console] minecraft:experience add %player_name% 250'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_12_locked:
+    material: GRAY_CANDLE
+    amount: 12
+    slot: 22
+    priority: 3
+    display_name: '&cLevel 12'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_1700}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_250% %imc_text-color_c%Experiences'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_13_claimed:
+    material: LIME_CANDLE
+    amount: 13
+    slot: 31
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level13
+    display_name: '&aLevel 13'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_2000}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Stone Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Polished Andesite'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_13_unlocked:
+    material: YELLOW_CANDLE
+    amount: 13
+    slot: 31
+    priority: 2
+    click_requirement:
+      requirements:
+        empty_slots:
+          type: '>='
+          input: '%player_empty_slots%'
+          output: 2
+      deny_commands:
+        - '[message] $<p:error-prefix> You don''t have the space in your inventory. <p:dark-color>(2 slots)</p>'
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 13
+    display_name: '&eLevel 13'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_2000}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Stone Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Polished Andesite'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level13'
+      - '[givemoney] %imc_price-modifier_2000%'
+      - '[console] minecraft:give %player_name% stone_bricks 64'
+      - '[console] minecraft:give %player_name% polished_andesite 64'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_13_locked:
+    material: GRAY_CANDLE
+    amount: 13
+    slot: 31
+    priority: 3
+    display_name: '&cLevel 13'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_2000}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Stone Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Polished Andesite'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_14_claimed:
+    material: LIME_CANDLE
+    amount: 14
+    slot: 40
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level14
+    display_name: '&aLevel 14'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_2400}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_25% %imc_text-color_c%Points'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_14_unlocked:
+    material: YELLOW_CANDLE
+    amount: 14
+    slot: 40
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 14
+    display_name: '&eLevel 14'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_2400}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_25% %imc_text-color_c%Points'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level14'
+      - '[givemoney] %imc_price-modifier_2400%'
+      - '[console] jobs editpoints add %player_name% 25'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_14_locked:
+    material: GRAY_CANDLE
+    amount: 14
+    slot: 40
+    priority: 3
+    display_name: '&cLevel 14'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_2400}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_25% %imc_text-color_c%Points'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_15_claimed:
+    material: LIME_CANDLE
+    amount: 15
+    slot: 41
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level15
+    display_name: '&aLevel 15'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_2850}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_300% %imc_text-color_c%Experiences'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_15_unlocked:
+    material: YELLOW_CANDLE
+    amount: 15
+    slot: 41
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 15
+    display_name: '&eLevel 15'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_2850}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_300% %imc_text-color_c%Experiences'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level15'
+      - '[givemoney] %imc_price-modifier_2850%'
+      - '[console] minecraft:experience add %player_name% 300'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_15_locked:
+    material: GRAY_CANDLE
+    amount: 15
+    slot: 41
+    priority: 3
+    display_name: '&cLevel 15'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_2850}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_300% %imc_text-color_c%Experiences'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_16_claimed:
+    material: LIME_CANDLE
+    amount: 16
+    slot: 42
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level16
+    display_name: '&aLevel 16'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_3300}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Smooth Stone'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Cut Sandstone'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Deepslate Tiles'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_16_unlocked:
+    material: YELLOW_CANDLE
+    amount: 16
+    slot: 42
+    priority: 2
+    click_requirement:
+      requirements:
+        empty_slots:
+          type: '>='
+          input: '%player_empty_slots%'
+          output: 3
+      deny_commands:
+        - '[message] $<p:error-prefix> You don''t have the space in your inventory. <p:dark-color>(3 slots)</p>'
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 16
+    display_name: '&eLevel 16'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_3300}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Smooth Stone'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Cut Sandstone'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Deepslate Tiles'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level16'
+      - '[givemoney] %imc_price-modifier_3300%'
+      - '[console] minecraft:give %player_name% smooth_stone 64'
+      - '[console] minecraft:give %player_name% cut_sandstone 64'
+      - '[console] minecraft:give %player_name% deepslate_tiles 64'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_16_locked:
+    material: GRAY_CANDLE
+    amount: 16
+    slot: 42
+    priority: 3
+    display_name: '&cLevel 16'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_3300}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Smooth Stone'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Cut Sandstone'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Deepslate Tiles'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_17_claimed:
+    material: LIME_CANDLE
+    amount: 17
+    slot: 33
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level17
+    display_name: '&aLevel 17'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_3900}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_30% %imc_text-color_c%Points'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_17_unlocked:
+    material: YELLOW_CANDLE
+    amount: 17
+    slot: 33
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 17
+    display_name: '&eLevel 17'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_3900}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_30% %imc_text-color_c%Points'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level17'
+      - '[givemoney] %imc_price-modifier_3900%'
+      - '[console] jobs editpoints add %player_name% 30'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_17_locked:
+    material: GRAY_CANDLE
+    amount: 17
+    slot: 33
+    priority: 3
+    display_name: '&cLevel 17'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_3900}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_30% %imc_text-color_c%Points'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_18_claimed:
+    material: LIME_CANDLE
+    amount: 18
+    slot: 24
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level18
+    display_name: '&aLevel 18'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_4600}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_400% %imc_text-color_c%Experiences'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_18_unlocked:
+    material: YELLOW_CANDLE
+    amount: 18
+    slot: 24
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 18
+    display_name: '&eLevel 18'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_4600}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_400% %imc_text-color_c%Experiences'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level18'
+      - '[givemoney] %imc_price-modifier_4600%'
+      - '[console] minecraft:experience add %player_name% 400'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_18_locked:
+    material: GRAY_CANDLE
+    amount: 18
+    slot: 24
+    priority: 3
+    display_name: '&cLevel 18'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_4600}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_400% %imc_text-color_c%Experiences'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_19_claimed:
+    material: LIME_CANDLE
+    amount: 19
+    slot: 15
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level19
+    display_name: '&aLevel 19'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_5200}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x White Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Terracotta'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_19_unlocked:
+    material: YELLOW_CANDLE
+    amount: 19
+    slot: 15
+    priority: 2
+    click_requirement:
+      requirements:
+        empty_slots:
+          type: '>='
+          input: '%player_empty_slots%'
+          output: 2
+      deny_commands:
+        - '[message] $<p:error-prefix> You don''t have the space in your inventory. <p:dark-color>(2 slots)</p>'
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 19
+    display_name: '&eLevel 19'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_5200}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x White Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Terracotta'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level19'
+      - '[givemoney] %imc_price-modifier_5200%'
+      - '[console] minecraft:give %player_name% white_concrete 64'
+      - '[console] minecraft:give %player_name% terracotta 64'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_19_locked:
+    material: GRAY_CANDLE
+    amount: 19
+    slot: 15
+    priority: 3
+    display_name: '&cLevel 19'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_5200}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x White Concrete'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Terracotta'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_20_claimed:
+    material: LIME_CANDLE
+    amount: 20
+    slot: 16
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level20
+    display_name: '&aLevel 20'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_6000}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_35% %imc_text-color_c%Points'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_20_unlocked:
+    material: YELLOW_CANDLE
+    amount: 20
+    slot: 16
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 20
+    display_name: '&eLevel 20'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_6000}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_35% %imc_text-color_c%Points'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level20'
+      - '[givemoney] %imc_price-modifier_6000%'
+      - '[console] jobs editpoints add %player_name% 35'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_20_locked:
+    material: GRAY_CANDLE
+    amount: 20
+    slot: 16
+    priority: 3
+    display_name: '&cLevel 20'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_6000}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_35% %imc_text-color_c%Points'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_21_claimed:
+    material: LIME_CANDLE
+    amount: 21
+    slot: 17
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level21
+    display_name: '&aLevel 21'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_6900}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_500% %imc_text-color_c%Experiences'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_21_unlocked:
+    material: YELLOW_CANDLE
+    amount: 21
+    slot: 17
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 21
+    display_name: '&eLevel 21'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_6900}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_500% %imc_text-color_c%Experiences'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level21'
+      - '[givemoney] %imc_price-modifier_6900%'
+      - '[console] minecraft:experience add %player_name% 500'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_21_locked:
+    material: GRAY_CANDLE
+    amount: 21
+    slot: 17
+    priority: 3
+    display_name: '&cLevel 21'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_6900}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_500% %imc_text-color_c%Experiences'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_22_claimed:
+    material: LIME_CANDLE
+    amount: 22
+    slot: 26
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level22
+    display_name: '&aLevel 22'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_7800}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Chiseled Stone Bricks'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_22_unlocked:
+    material: YELLOW_CANDLE
+    amount: 22
+    slot: 26
+    priority: 2
+    click_requirement:
+      requirements:
+        empty_slots:
+          type: '>='
+          input: '%player_empty_slots%'
+          output: 2
+      deny_commands:
+        - '[message] $<p:error-prefix> You don''t have the space in your inventory. <p:dark-color>(2 slots)</p>'
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 22
+    display_name: '&eLevel 22'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_7800}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Chiseled Stone Bricks'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level22'
+      - '[givemoney] %imc_price-modifier_7800%'
+      - '[console] minecraft:give %player_name% bricks 64'
+      - '[console] minecraft:give %player_name% chiseled_stone_bricks 64'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_22_locked:
+    material: GRAY_CANDLE
+    amount: 22
+    slot: 26
+    priority: 3
+    display_name: '&cLevel 22'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_7800}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Bricks'
+      - '%imc_dark-color_c% • %imc_text-color_c%64x Chiseled Stone Bricks'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_23_claimed:
+    material: LIME_CANDLE
+    amount: 23
+    slot: 35
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level23
+    display_name: '&aLevel 23'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_8700}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_40% %imc_text-color_c%Points'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_23_unlocked:
+    material: YELLOW_CANDLE
+    amount: 23
+    slot: 35
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 23
+    display_name: '&eLevel 23'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_8700}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_40% %imc_text-color_c%Points'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level23'
+      - '[givemoney] %imc_price-modifier_8700%'
+      - '[console] jobs editpoints add %player_name% 40'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_23_locked:
+    material: GRAY_CANDLE
+    amount: 23
+    slot: 35
+    priority: 3
+    display_name: '&cLevel 23'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_8700}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_job-point-format_c_40% %imc_text-color_c%Points'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  level_24_claimed:
+    material: LIME_CANDLE
+    amount: 24
+    slot: 44
+    priority: 1
+    view_requirement:
+      requirements:
+        claimed:
+          type: has permission
+          permission: jobs.builder.level24
+    display_name: '&aLevel 24'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_9600}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_600% %imc_text-color_c%Experiences'
+      - ''
+      - '&a✔ Reward has been claimed.'
+  level_24_unlocked:
+    material: YELLOW_CANDLE
+    amount: 24
+    slot: 44
+    priority: 2
+    view_requirement:
+      requirements:
+        level:
+          type: '>='
+          input: '%jobsr_user_jlevel_builder%'
+          output: 24
+    display_name: '&eLevel 24'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_9600}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_600% %imc_text-color_c%Experiences'
+      - ''
+      - '%imc_dark-color_c%◆ %imc_primary-color_c%Click:%imc_text-color_c% Claim Rewards'
+    click_commands:
+      - '[givepermission] jobs.builder.level24'
+      - '[givemoney] %imc_price-modifier_9600%'
+      - '[console] minecraft:experience add %player_name% 600'
+      - '[sound] BLOCK_AMETHYST_BLOCK_RESONATE'
+      - '[refresh]'
+  level_24_locked:
+    material: GRAY_CANDLE
+    amount: 24
+    slot: 44
+    priority: 3
+    display_name: '&cLevel 24'
+    item_flags:
+      - HIDE_ATTRIBUTES
+    lore:
+      - '%imc_dark-color_c%Earn more experience to level up'
+      - '%imc_dark-color_c%and earn more rewards.'
+      - ''
+      - '%imc_darkest-color_c%Rewards:'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_eco-format_c_{imc_price-modifier_9600}%'
+      - '%imc_dark-color_c% • %imc_text-color_c%+%imc_exp-format_c_600% %imc_text-color_c%Experiences'
+      - ''
+      - '&c✘ You need to level up to claim this reward.'
+  back:
+    material: REDSTONE
+    slot: 49
+    display_name: '%imc_dark-color_c%Back'
+    click_commands:
+      - '[openguimenu] jobs_main'
+      - '[sound] UI_BUTTON_CLICK'
+  next_page:
+    material: ARROW
+    slot: 50
+    display_name: '%imc_primary-color_c%Next Page'
+    click_commands:
+      - '[openguimenu] jobs_skilltree_builder_2'
+      - '[sound] ITEM_BOOK_PAGE_TURN'
+  background:
+    material: GREEN_STAINED_GLASS_PANE
+    display_name: '&l'
+    slots:
+      - 0
+      - 1
+      - 7
+      - 8
+      - 45
+      - 46
+      - 52
+      - 53

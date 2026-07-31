@@ -1,0 +1,17 @@
+args:
+  name:
+  - kothtospawn
+  triggerblock:
+  - NETHER_PORTAL
+  command:
+  - spawn
+maxLoc:
+  posX: 9030
+  posY: 101
+  posZ: -8046
+  worldName: void
+minLoc:
+  posX: 9026
+  posY: 96
+  posZ: -8046
+  worldName: void

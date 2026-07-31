@@ -1,0 +1,174 @@
+pages:
+  page1:
+    title: "&6&lUtility Shop"
+    gui-rows: 6
+    items:
+
+      # =========================================================
+      # SINGLE ESSENTIALS (FAST ACCESS)
+      # =========================================================
+
+      water-bucket:
+        material: WATER_BUCKET
+        buy: 75
+        sell: -1
+        slot: 13
+
+      lava-bucket:
+        material: LAVA_BUCKET
+        buy: 120
+        sell: -1
+        slot: 14
+
+      lead:
+        material: LEAD
+        buy: 55
+        sell: -1
+        slot: 15
+
+      # =========================================================
+      # LIGHTING (BASIC ONLY)
+      # =========================================================
+      torch:
+        material: TORCH
+        buy: 2
+        sell: -1
+        slot: 19
+
+      lantern:
+        material: LANTERN
+        buy: 18
+        sell: -1
+        slot: 20
+
+      soul-lantern:
+        material: SOUL_LANTERN
+        buy: 20
+        sell: -1
+        slot: 21
+
+      # =========================================================
+      # STORAGE & TRANSPORT
+      # =========================================================
+      chest:
+        material: CHEST
+        buy: 18
+        sell: -1
+        slot: 22
+
+      barrel:
+        material: BARREL
+        buy: 20
+        sell: -1
+        slot: 23
+
+      ender-chest:
+        material: ENDER_CHEST
+        buy: 950
+        sell: -1
+        slot: 24
+
+      shulker-box:
+        material: SHULKER_BOX
+        buy: -1
+        sell: 500
+        slot: 25
+
+      boat:
+        material: OAK_BOAT
+        buy: 25
+        sell: -1
+        slot: 26
+
+      minecart:
+        material: MINECART
+        buy: 40
+        sell: -1
+        slot: 27
+
+      # =========================================================
+      # UTILITY BUNDLES (TIME SAVERS)
+      # =========================================================
+
+      starter-utility-bundle:
+        material: CHEST
+        displayname: "&a&lStarter Utility Bundle"
+        lore:
+          - "&7Core survival items."
+          - "&7Perfect for early game or resets."
+          - ""
+          - "&fIncludes:"
+          - "&f• &e1x &fWater Bucket"
+          - "&f• &e1x &fLava Bucket"
+          - "&f• &e1x &fFlint & Steel"
+          - "&f• &e1x &fShears"
+          - "&f• &e32x &fTorch"
+        buy: 240
+        sell: -1
+        slot: 30
+        giveItem: false
+        buy-commands:
+          - "cmi give %player% water_bucket 1"
+          - "cmi give %player% lava_bucket 1"
+          - "cmi give %player% flint_and_steel 1"
+          - "cmi give %player% shears 1"
+          - "cmi give %player% torch 32"
+
+      miner-utility-bundle:
+        material: TORCH
+        displayname: "&6&lMiner Utility Bundle"
+        lore:
+          - "&7Convenience items for mining runs."
+          - ""
+          - "&fIncludes:"
+          - "&f• &e192x &fTorch"
+          - "&f• &e48x &fLadder"
+          - "&f• &e1x &fWater Bucket"
+        buy: 420
+        sell: -1
+        slot: 31
+        giveItem: false
+        buy-commands:
+          - "cmi give %player% torch 192"
+          - "cmi give %player% ladder 48"
+          - "cmi give %player% water_bucket 1"
+
+      explorer-bundle:
+        material: COMPASS
+        displayname: "&b&lExplorer Bundle"
+        lore:
+          - "&7Travel and exploration essentials."
+          - ""
+          - "&fIncludes:"
+          - "&f• &e1x &fCompass"
+          - "&f• &e1x &fClock"
+          - "&f• &e1x &fBoat"
+          - "&f• &e16x &fCooked Beef"
+        buy: 380
+        sell: -1
+        slot: 32
+        giveItem: false
+        buy-commands:
+          - "cmi give %player% compass 1"
+          - "cmi give %player% clock 1"
+          - "cmi give %player% oak_boat 1"
+          - "cmi give %player% cooked_beef 16"
+
+      storage-bundle:
+        material: BARREL
+        displayname: "&d&lStorage Starter Bundle"
+        lore:
+          - "&7Quick base setup."
+          - ""
+          - "&fIncludes:"
+          - "&f• &e2x &fChest"
+          - "&f• &e1x &fBarrel"
+          - "&f• &e8x &fItem Frame"
+        buy: 260
+        sell: -1
+        slot: 33
+        giveItem: false
+        buy-commands:
+          - "cmi give %player% chest 2"
+          - "cmi give %player% barrel 1"
+          - "cmi give %player% item_frame 8"

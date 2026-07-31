@@ -1,0 +1,64 @@
+items:
+  bottom-filler:
+    slot: 45-53
+    material: BLACK_STAINED_GLASS_PANE
+    amount: 1
+    custom-model-data: 0
+    glow: false
+    hide-attributes: false
+    display-name: '&a'
+    lore: []
+    actions: []
+settings:
+  type: PLAYER_KIT_CATEGORIES
+  title: Player Kit Categories
+  rows: 6
+  refresh:
+    enabled: false
+    rate: 20
+  on-open-actions: []
+pagination:
+  direction-items: HORIZONTAL
+  align-items: LEFT
+  slots: 19-25
+  fill-item:
+    material: AIR
+    custom-model-data: 0
+    glow: false
+    display-name: '&a'
+    lore: []
+    actions: []
+  previous-item:
+    slot: '18'
+    material: ARROW
+    amount: 1
+    custom-model-data: 0
+    glow: false
+    hide-attributes: false
+    display-name: '&aPrevious page'
+    lore:
+    - '&8(Page %page%)'
+    - '&a<&2<&a<&2<&a<&2<&a<&2<&a<&2<&a<&2<&a<&2<&a<&2<&a<&2<'
+    actions: []
+  next-item:
+    slot: '26'
+    material: ARROW
+    amount: 1
+    custom-model-data: 0
+    glow: false
+    hide-attributes: false
+    display-name: '&aNext page'
+    lore:
+    - '&8(Page %page%)'
+    - '&a>&2>&a>&2>&a>&2>&a>&2>&a>&2>&a>&2>&a>&2>&a>&2>&a>&2>'
+    actions: []
+go-back:
+  slot: '49'
+  material: FEATHER
+  amount: 1
+  custom-model-data: 0
+  glow: false
+  hide-attributes: false
+  display-name: '&aGo Back'
+  lore: []
+  actions: []

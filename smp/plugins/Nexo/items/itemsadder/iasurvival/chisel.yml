@@ -1,0 +1,21 @@
+chisel:
+  itemname: display-name-chisel
+  material: WOODEN_SWORD
+  AttributeModifiers:
+  - amount: 1.0
+    attribute: ATTACK_DAMAGE
+    operation: 0
+    slot: MAINHAND
+    uuid: b7ab98ba-758b-4916-a993-77f278ad6abf
+    name: nexo:modifier
+    key: nexo:modifier
+  - amount: 5.0
+    attribute: ATTACK_SPEED
+    operation: 0
+    slot: MAINHAND
+    uuid: e97051f9-b3de-47f5-b3d7-16dedafca30d
+    name: nexo:modifier
+    key: nexo:modifier
+  Pack:
+    texture: iasurvival:item/tools/chisel
+    custom_model_data: 1001

@@ -1,0 +1,6 @@
+turquoise:
+  itemname: display-name-turquoise
+  material: IRON_INGOT
+  Pack:
+    texture: iasurvival:item/ores/turquoise
+    custom_model_data: 1017

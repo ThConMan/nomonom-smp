@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MobGrab - Pick Up Any Mob</title>
+    <meta name="description" content="MobGrab is a Paper plugin that lets players pick up any mob as an item and place them back down with all data preserved.">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav class="navbar">
+    <div class="navbar-inner">
+        <a href="index.html" class="navbar-brand"><img src="logo.png" alt="MobGrab" class="navbar-logo">MobGrab</a>
+        <button class="menu-toggle" onclick="document.querySelector('.navbar-links').classList.toggle('open')">&#9776;</button>
+        <ul class="navbar-links">
+            <li><a href="index.html" class="active">Home</a></li>
+            <li><a href="docs.html">Documentation</a></li>
+            <li><a href="https://github.com/ThConMan/MobGrab">GitHub</a></li>
+        </ul>
+    </div>
+</nav>
+
+<section class="hero">
+    <img src="logo.png" alt="MobGrab" class="hero-logo">
+    <p class="tagline">Pick up any mob as an item. Place them back down. All data preserved.</p>
+    <div class="version-badge" id="version-badge">Paper 1.21.11+</div>
+    <div class="hero-buttons">
+        <a href="https://github.com/ThConMan/MobGrab/releases/latest" class="btn btn-primary" id="download-btn">Download</a>
+        <a href="docs.html" class="btn btn-secondary">Read the Docs</a>
+        <a href="https://github.com/ThConMan/MobGrab" class="btn btn-secondary">View on GitHub</a>
+    </div>
+</section>
+
+<section class="features">
+    <h2>Features</h2>
+    <p class="subtitle">Everything you need for mob management.</p>
+    <div class="feature-grid">
+        <div class="feature-card">
+            <span class="icon">&#x1F43E;</span>
+            <h3>85+ Mobs Supported</h3>
+            <p>Every mob in 1.21.11 can be picked up, each with a custom head texture.</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">&#x1F4BE;</span>
+            <h3>Full Data Preservation</h3>
+            <p>Health, trades, profession, equipment, enchants, name tags, variants &mdash; nothing is lost.</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">&#x1F6E1;&#xFE0F;</span>
+            <h3>Region Protection</h3>
+            <p>Respects WorldGuard, PlotSquared, and GriefPrevention build permissions.</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">&#x1F3AE;</span>
+            <h3>Bedrock Support</h3>
+            <p>Form-based GUI for Bedrock players via Floodgate integration.</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">&#x2699;&#xFE0F;</span>
+            <h3>Fully Configurable</h3>
+            <p>Toggle individual mobs, customize sounds and particles, set cooldowns, whitelist or blacklist mode.</p>
+        </div>
+        <div class="feature-card">
+            <span class="icon">&#x1F512;</span>
+            <h3>Granular Permissions</h3>
+            <p>Per-mob permissions, category bundles, and admin controls. Works great with LuckPerms.</p>
+        </div>
+    </div>
+</section>
+
+<section class="quickstart">
+    <div class="quickstart-inner">
+        <h2>Quick Start</h2>
+        <div class="step">
+            <div class="step-num">1</div>
+            <div class="step-content">
+                <h3>Install</h3>
+                <p>Drop <code>MobGrab.jar</code> into your server's <code>plugins/</code> folder and restart.</p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-num">2</div>
+            <div class="step-content">
+                <h3>Set Permissions</h3>
+                <p>Grant <code>mobgrab.pickup.passive</code> for farm animals, <code>mobgrab.pickup.*</code> for everything, or individual permissions like <code>mobgrab.pickup.cow</code>. Don't forget <code>mobgrab.place</code>.</p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-num">3</div>
+            <div class="step-content">
+                <h3>Enable Mobs</h3>
+                <p>Use <code>/mobgrab gui</code> to toggle which mobs can be picked up, or edit <code>config.yml</code> directly.</p>
+            </div>
+        </div>
+        <div class="step">
+            <div class="step-num">4</div>
+            <div class="step-content">
+                <h3>Grab</h3>
+                <p>Sneak + right-click any enabled mob to pick it up. Right-click a block to place it back down.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="compat">
+    <h2>Compatibility</h2>
+    <div class="compat-grid">
+        <div class="compat-item">
+            <span class="compat-icon">&#x1F6E1;&#xFE0F;</span>
+            <h4>WorldGuard</h4>
+            <p>BUILD flag checks</p>
+        </div>
+        <div class="compat-item">
+            <span class="compat-icon">&#x1F3D7;&#xFE0F;</span>
+            <h4>PlotSquared</h4>
+            <p>Plot ownership checks</p>
+        </div>
+        <div class="compat-item">
+            <span class="compat-icon">&#x26CF;&#xFE0F;</span>
+            <h4>GriefPrevention</h4>
+            <p>Claim build access</p>
+        </div>
+        <div class="compat-item">
+            <span class="compat-icon">&#x1F4DA;</span>
+            <h4>RoseStacker</h4>
+            <p>Single mob from stack</p>
+        </div>
+        <div class="compat-item">
+            <span class="compat-icon">&#x1F3AE;</span>
+            <h4>Floodgate</h4>
+            <p>Bedrock form GUI</p>
+        </div>
+        <div class="compat-item">
+            <span class="compat-icon">&#x1F310;</span>
+            <h4>Geyser</h4>
+            <p>Cross-platform play</p>
+        </div>
+        <div class="compat-item">
+            <span class="compat-icon">&#x1F504;</span>
+            <h4>ClickVillagers</h4>
+            <p>Auto-migration</p>
+        </div>
+        <div class="compat-item">
+            <span class="compat-icon">&#x1F511;</span>
+            <h4>LuckPerms</h4>
+            <p>Full permission support</p>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>MobGrab &mdash; made by <a href="https://nomonom.net">Con</a></p>
+</footer>
+
+<script>
+fetch('https://api.github.com/repos/ThConMan/MobGrab/releases/latest')
+    .then(r => r.json())
+    .then(data => {
+        const badge = document.getElementById('version-badge');
+        const btn = document.getElementById('download-btn');
+        if (data.tag_name) {
+            badge.textContent = 'Paper 1.21.11+ \u2022 ' + data.tag_name;
+        }
+        const jar = data.assets && data.assets.find(a => a.name.endsWith('.jar'));
+        if (jar) {
+            btn.href = jar.browser_download_url;
+            btn.textContent = 'Download ' + data.tag_name;
+        }
+    })
+    .catch(() => {});
+</script>
+</body>
+</html>

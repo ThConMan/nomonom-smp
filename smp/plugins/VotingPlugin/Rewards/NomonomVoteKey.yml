@@ -1,0 +1,6 @@
+Rewards:
+  Commands:
+  - 'phoenixcrates giveKey vote_key %player% 1'
+  - 'cmi money give %player% 100'
+  Messages:
+    Player: '&aYour name echoes beyond the realm. &7Nomonom grows stronger. &8(+1 Vote Key, +$100)'

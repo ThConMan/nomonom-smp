@@ -1,0 +1,1662 @@
+mc_acacia_boat:
+  texture: minecraft:item/acacia_boat
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_acacia_boat
+  char: ꔖ
+mc_acacia_door:
+  texture: minecraft:item/acacia_door
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_acacia_door
+  char: ꔗ
+mc_acacia_sign:
+  texture: minecraft:item/acacia_sign
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_acacia_sign
+  char: ꔘ
+mc_apple:
+  texture: minecraft:item/apple
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_apple
+  char: ꔙ
+mc_armor_stand:
+  texture: minecraft:item/armor_stand
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_armor_stand
+  char: ꔚ
+mc_arrow:
+  texture: minecraft:item/arrow
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_arrow
+  char: ꔛ
+mc_baked_potato:
+  texture: minecraft:item/baked_potato
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_baked_potato
+  char: ꔜ
+mc_bamboo:
+  texture: minecraft:item/bamboo
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bamboo
+  char: ꔝ
+mc_barrier:
+  texture: minecraft:item/barrier
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_barrier
+  char: ꔞ
+mc_beef:
+  texture: minecraft:item/beef
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_beef
+  char: ꔟ
+mc_beetroot:
+  texture: minecraft:item/beetroot
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_beetroot
+  char: ꔠ
+mc_beetroot_seeds:
+  texture: minecraft:item/beetroot_seeds
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_beetroot_seeds
+  char: ꔡ
+mc_beetroot_soup:
+  texture: minecraft:item/beetroot_soup
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_beetroot_soup
+  char: ꔢ
+mc_bell:
+  texture: minecraft:item/bell
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bell
+  char: ꔣ
+mc_birch_boat:
+  texture: minecraft:item/birch_boat
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_birch_boat
+  char: ꔤ
+mc_birch_door:
+  texture: minecraft:item/birch_door
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_birch_door
+  char: ꔥ
+mc_birch_sign:
+  texture: minecraft:item/birch_sign
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_birch_sign
+  char: ꔦ
+mc_black_dye:
+  texture: minecraft:item/black_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_black_dye
+  char: ꔧ
+mc_blaze_powder:
+  texture: minecraft:item/blaze_powder
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_blaze_powder
+  char: ꔨ
+mc_blaze_rod:
+  texture: minecraft:item/blaze_rod
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_blaze_rod
+  char: ꔩ
+mc_blue_dye:
+  texture: minecraft:item/blue_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_blue_dye
+  char: ꔪ
+mc_bone:
+  texture: minecraft:item/bone
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bone
+  char: ꔫ
+mc_bone_meal:
+  texture: minecraft:item/bone_meal
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bone_meal
+  char: ꔬ
+mc_book:
+  texture: minecraft:item/book
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_book
+  char: ꔭ
+mc_bow:
+  texture: minecraft:item/bow
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bow
+  char: ꔮ
+mc_bowl:
+  texture: minecraft:item/bowl
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bowl
+  char: ꔯ
+mc_bow_pulling_0:
+  texture: minecraft:item/bow_pulling_0
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bow_pulling_0
+  char: ꔰ
+mc_bow_pulling_1:
+  texture: minecraft:item/bow_pulling_1
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bow_pulling_1
+  char: ꔱ
+mc_bow_pulling_2:
+  texture: minecraft:item/bow_pulling_2
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bow_pulling_2
+  char: ꔲ
+mc_bread:
+  texture: minecraft:item/bread
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bread
+  char: ꔳ
+mc_brewing_stand:
+  texture: minecraft:item/brewing_stand
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_brewing_stand
+  char: ꔴ
+mc_brick:
+  texture: minecraft:item/brick
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_brick
+  char: ꔵ
+mc_brown_dye:
+  texture: minecraft:item/brown_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_brown_dye
+  char: ꔶ
+mc_bucket:
+  texture: minecraft:item/bucket
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_bucket
+  char: ꔷ
+mc_cake:
+  texture: minecraft:item/cake
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cake
+  char: ꔸ
+mc_campfire:
+  texture: minecraft:item/campfire
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_campfire
+  char: ꔹ
+mc_carrot:
+  texture: minecraft:item/carrot
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_carrot
+  char: ꔺ
+mc_carrot_on_a_stick:
+  texture: minecraft:item/carrot_on_a_stick
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_carrot_on_a_stick
+  char: ꔻ
+mc_cauldron:
+  texture: minecraft:item/cauldron
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cauldron
+  char: ꔼ
+mc_chainmail_boots:
+  texture: minecraft:item/chainmail_boots
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_chainmail_boots
+  char: ꔽ
+mc_chainmail_chestplate:
+  texture: minecraft:item/chainmail_chestplate
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_chainmail_chestplate
+  char: ꔾ
+mc_chainmail_helmet:
+  texture: minecraft:item/chainmail_helmet
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_chainmail_helmet
+  char: ꔿ
+mc_chainmail_leggings:
+  texture: minecraft:item/chainmail_leggings
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_chainmail_leggings
+  char: ꕀ
+mc_charcoal:
+  texture: minecraft:item/charcoal
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_charcoal
+  char: ꕁ
+mc_chest_minecart:
+  texture: minecraft:item/chest_minecart
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_chest_minecart
+  char: ꕂ
+mc_chicken:
+  texture: minecraft:item/chicken
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_chicken
+  char: ꕃ
+mc_chorus_fruit:
+  texture: minecraft:item/chorus_fruit
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_chorus_fruit
+  char: ꕄ
+mc_clay_ball:
+  texture: minecraft:item/clay_ball
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_clay_ball
+  char: ꕅ
+mc_clock:
+  texture: minecraft:item/clock_00
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_clock
+  char: ꕆ
+mc_coal:
+  texture: minecraft:item/coal
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_coal
+  char: ꕇ
+mc_cocoa_beans:
+  texture: minecraft:item/cocoa_beans
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cocoa_beans
+  char: ꕈ
+mc_cod:
+  texture: minecraft:item/cod
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cod
+  char: ꕉ
+mc_cod_bucket:
+  texture: minecraft:item/cod_bucket
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cod_bucket
+  char: ꕊ
+mc_command_block_minecart:
+  texture: minecraft:item/command_block_minecart
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_command_block_minecart
+  char: ꕋ
+mc_comparator:
+  texture: minecraft:item/comparator
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_comparator
+  char: ꕌ
+mc_compass:
+  texture: minecraft:item/compass_00
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_compass
+  char: ꕍ
+mc_cooked_beef:
+  texture: minecraft:item/cooked_beef
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cooked_beef
+  char: ꕎ
+mc_cooked_chicken:
+  texture: minecraft:item/cooked_chicken
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cooked_chicken
+  char: ꕏ
+mc_cooked_cod:
+  texture: minecraft:item/cooked_cod
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cooked_cod
+  char: ꕐ
+mc_cooked_mutton:
+  texture: minecraft:item/cooked_mutton
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cooked_mutton
+  char: ꕑ
+mc_cooked_porkchop:
+  texture: minecraft:item/cooked_porkchop
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cooked_porkchop
+  char: ꕒ
+mc_cooked_rabbit:
+  texture: minecraft:item/cooked_rabbit
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cooked_rabbit
+  char: ꕓ
+mc_cooked_salmon:
+  texture: minecraft:item/cooked_salmon
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cooked_salmon
+  char: ꕔ
+mc_cookie:
+  texture: minecraft:item/cookie
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cookie
+  char: ꕕ
+mc_creeper_banner_pattern:
+  texture: minecraft:item/creeper_banner_pattern
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_creeper_banner_pattern
+  char: ꕖ
+mc_crossbow_arrow:
+  texture: minecraft:item/crossbow_arrow
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_crossbow_arrow
+  char: ꕗ
+mc_crossbow_firework:
+  texture: minecraft:item/crossbow_firework
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_crossbow_firework
+  char: ꕘ
+mc_crossbow_pulling_0:
+  texture: minecraft:item/crossbow_pulling_0
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_crossbow_pulling_0
+  char: ꕙ
+mc_crossbow_pulling_1:
+  texture: minecraft:item/crossbow_pulling_1
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_crossbow_pulling_1
+  char: ꕚ
+mc_crossbow_pulling_2:
+  texture: minecraft:item/crossbow_pulling_2
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_crossbow_pulling_2
+  char: ꕛ
+mc_crossbow_standby:
+  texture: minecraft:item/crossbow_standby
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_crossbow_standby
+  char: ꕜ
+mc_cyan_dye:
+  texture: minecraft:item/cyan_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_cyan_dye
+  char: ꕝ
+mc_dark_oak_boat:
+  texture: minecraft:item/dark_oak_boat
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_dark_oak_boat
+  char: ꕞ
+mc_dark_oak_door:
+  texture: minecraft:item/dark_oak_door
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_dark_oak_door
+  char: ꕟ
+mc_dark_oak_sign:
+  texture: minecraft:item/dark_oak_sign
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_dark_oak_sign
+  char: ꕠ
+mc_diamond:
+  texture: minecraft:item/diamond
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond
+  char: ꕡ
+mc_diamond_axe:
+  texture: minecraft:item/diamond_axe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond_axe
+  char: ꕢ
+mc_diamond_boots:
+  texture: minecraft:item/diamond_boots
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond_boots
+  char: ꕣ
+mc_diamond_chestplate:
+  texture: minecraft:item/diamond_chestplate
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond_chestplate
+  char: ꕤ
+mc_diamond_helmet:
+  texture: minecraft:item/diamond_helmet
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond_helmet
+  char: ꕥ
+mc_diamond_hoe:
+  texture: minecraft:item/diamond_hoe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond_hoe
+  char: ꕦ
+mc_diamond_horse_armor:
+  texture: minecraft:item/diamond_horse_armor
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond_horse_armor
+  char: ꕧ
+mc_diamond_leggings:
+  texture: minecraft:item/diamond_leggings
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond_leggings
+  char: ꕨ
+mc_diamond_pickaxe:
+  texture: minecraft:item/diamond_pickaxe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond_pickaxe
+  char: ꕩ
+mc_diamond_shovel:
+  texture: minecraft:item/diamond_shovel
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond_shovel
+  char: ꕪ
+mc_diamond_sword:
+  texture: minecraft:item/diamond_sword
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_diamond_sword
+  char: ꕫ
+mc_dragon_breath:
+  texture: minecraft:item/dragon_breath
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_dragon_breath
+  char: ꕬ
+mc_dried_kelp:
+  texture: minecraft:item/dried_kelp
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_dried_kelp
+  char: ꕭ
+mc_egg:
+  texture: minecraft:item/egg
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_egg
+  char: ꕮ
+mc_elytra:
+  texture: minecraft:item/elytra
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_elytra
+  char: ꕯ
+mc_emerald:
+  texture: minecraft:item/emerald
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_emerald
+  char: ꕰ
+mc_enchanted_book:
+  texture: minecraft:item/enchanted_book
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_enchanted_book
+  char: ꕱ
+mc_ender_eye:
+  texture: minecraft:item/ender_eye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_ender_eye
+  char: ꕲ
+mc_ender_pearl:
+  texture: minecraft:item/ender_pearl
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_ender_pearl
+  char: ꕳ
+mc_end_crystal:
+  texture: minecraft:item/end_crystal
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_end_crystal
+  char: ꕴ
+mc_experience_bottle:
+  texture: minecraft:item/experience_bottle
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_experience_bottle
+  char: ꕵ
+mc_feather:
+  texture: minecraft:item/feather
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_feather
+  char: ꕶ
+mc_fermented_spider_eye:
+  texture: minecraft:item/fermented_spider_eye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_fermented_spider_eye
+  char: ꕷ
+mc_filled_map:
+  texture: minecraft:item/filled_map
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_filled_map
+  char: ꕸ
+mc_filled_map_markings:
+  texture: minecraft:item/filled_map_markings
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_filled_map_markings
+  char: ꕹ
+mc_firework_rocket:
+  texture: minecraft:item/firework_rocket
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_firework_rocket
+  char: ꕺ
+mc_firework_star:
+  texture: minecraft:item/firework_star
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_firework_star
+  char: ꕻ
+mc_firework_star_overlay:
+  texture: minecraft:item/firework_star_overlay
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_firework_star_overlay
+  char: ꕼ
+mc_fire_charge:
+  texture: minecraft:item/fire_charge
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_fire_charge
+  char: ꕽ
+mc_fishing_rod:
+  texture: minecraft:item/fishing_rod
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_fishing_rod
+  char: ꕾ
+mc_fishing_rod_cast:
+  texture: minecraft:item/fishing_rod_cast
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_fishing_rod_cast
+  char: ꕿ
+mc_flint:
+  texture: minecraft:item/flint
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_flint
+  char: ꖀ
+mc_flint_and_steel:
+  texture: minecraft:item/flint_and_steel
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_flint_and_steel
+  char: ꖁ
+mc_flower_banner_pattern:
+  texture: minecraft:item/flower_banner_pattern
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_flower_banner_pattern
+  char: ꖂ
+mc_flower_pot:
+  texture: minecraft:item/flower_pot
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_flower_pot
+  char: ꖃ
+mc_furnace_minecart:
+  texture: minecraft:item/furnace_minecart
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_furnace_minecart
+  char: ꖄ
+mc_ghast_tear:
+  texture: minecraft:item/ghast_tear
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_ghast_tear
+  char: ꖅ
+mc_glass_bottle:
+  texture: minecraft:item/glass_bottle
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_glass_bottle
+  char: ꖆ
+mc_glistering_melon_slice:
+  texture: minecraft:item/glistering_melon_slice
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_glistering_melon_slice
+  char: ꖇ
+mc_globe_banner_pattern:
+  texture: minecraft:item/globe_banner_pattern
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_globe_banner_pattern
+  char: ꖈ
+mc_glowstone_dust:
+  texture: minecraft:item/glowstone_dust
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_glowstone_dust
+  char: ꖉ
+mc_golden_apple:
+  texture: minecraft:item/golden_apple
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_apple
+  char: ꖊ
+mc_golden_axe:
+  texture: minecraft:item/golden_axe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_axe
+  char: ꖋ
+mc_golden_boots:
+  texture: minecraft:item/golden_boots
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_boots
+  char: ꖌ
+mc_golden_carrot:
+  texture: minecraft:item/golden_carrot
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_carrot
+  char: ꖍ
+mc_golden_chestplate:
+  texture: minecraft:item/golden_chestplate
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_chestplate
+  char: ꖎ
+mc_golden_helmet:
+  texture: minecraft:item/golden_helmet
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_helmet
+  char: ꖏ
+mc_golden_hoe:
+  texture: minecraft:item/golden_hoe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_hoe
+  char: ꖐ
+mc_golden_horse_armor:
+  texture: minecraft:item/golden_horse_armor
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_horse_armor
+  char: ꖑ
+mc_golden_leggings:
+  texture: minecraft:item/golden_leggings
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_leggings
+  char: ꖒ
+mc_golden_pickaxe:
+  texture: minecraft:item/golden_pickaxe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_pickaxe
+  char: ꖓ
+mc_golden_shovel:
+  texture: minecraft:item/golden_shovel
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_shovel
+  char: ꖔ
+mc_golden_sword:
+  texture: minecraft:item/golden_sword
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_golden_sword
+  char: ꖕ
+mc_gold_ingot:
+  texture: minecraft:item/gold_ingot
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_gold_ingot
+  char: ꖖ
+mc_gold_nugget:
+  texture: minecraft:item/gold_nugget
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_gold_nugget
+  char: ꖗ
+mc_gray_dye:
+  texture: minecraft:item/gray_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_gray_dye
+  char: ꖘ
+mc_green_dye:
+  texture: minecraft:item/green_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_green_dye
+  char: ꖙ
+mc_gunpowder:
+  texture: minecraft:item/gunpowder
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_gunpowder
+  char: ꖚ
+mc_heart_of_the_sea:
+  texture: minecraft:item/heart_of_the_sea
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_heart_of_the_sea
+  char: ꖛ
+mc_hopper:
+  texture: minecraft:item/hopper
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_hopper
+  char: ꖜ
+mc_hopper_minecart:
+  texture: minecraft:item/hopper_minecart
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_hopper_minecart
+  char: ꖝ
+mc_ink_sac:
+  texture: minecraft:item/ink_sac
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_ink_sac
+  char: ꖞ
+mc_iron_axe:
+  texture: minecraft:item/iron_axe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_axe
+  char: ꖟ
+mc_iron_boots:
+  texture: minecraft:item/iron_boots
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_boots
+  char: ꖠ
+mc_iron_chestplate:
+  texture: minecraft:item/iron_chestplate
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_chestplate
+  char: ꖡ
+mc_iron_door:
+  texture: minecraft:item/iron_door
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_door
+  char: ꖢ
+mc_iron_helmet:
+  texture: minecraft:item/iron_helmet
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_helmet
+  char: ꖣ
+mc_iron_hoe:
+  texture: minecraft:item/iron_hoe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_hoe
+  char: ꖤ
+mc_iron_horse_armor:
+  texture: minecraft:item/iron_horse_armor
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_horse_armor
+  char: ꖥ
+mc_iron_ingot:
+  texture: minecraft:item/iron_ingot
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_ingot
+  char: ꖦ
+mc_iron_leggings:
+  texture: minecraft:item/iron_leggings
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_leggings
+  char: ꖧ
+mc_iron_nugget:
+  texture: minecraft:item/iron_nugget
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_nugget
+  char: ꖨ
+mc_iron_pickaxe:
+  texture: minecraft:item/iron_pickaxe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_pickaxe
+  char: ꖩ
+mc_iron_shovel:
+  texture: minecraft:item/iron_shovel
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_shovel
+  char: ꖪ
+mc_iron_sword:
+  texture: minecraft:item/iron_sword
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_iron_sword
+  char: ꖫ
+mc_item_frame:
+  texture: minecraft:item/item_frame
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_item_frame
+  char: ꖬ
+mc_jungle_boat:
+  texture: minecraft:item/jungle_boat
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_jungle_boat
+  char: ꖭ
+mc_jungle_door:
+  texture: minecraft:item/jungle_door
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_jungle_door
+  char: ꖮ
+mc_jungle_sign:
+  texture: minecraft:item/jungle_sign
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_jungle_sign
+  char: ꖯ
+mc_kelp:
+  texture: minecraft:item/kelp
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_kelp
+  char: ꖰ
+mc_knowledge_book:
+  texture: minecraft:item/knowledge_book
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_knowledge_book
+  char: ꖱ
+mc_lantern:
+  texture: minecraft:item/lantern
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_lantern
+  char: ꖲ
+mc_lapis_lazuli:
+  texture: minecraft:item/lapis_lazuli
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_lapis_lazuli
+  char: ꖳ
+mc_lava_bucket:
+  texture: minecraft:item/lava_bucket
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_lava_bucket
+  char: ꖴ
+mc_lead:
+  texture: minecraft:item/lead
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_lead
+  char: ꖵ
+mc_leather:
+  texture: minecraft:item/leather
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_leather
+  char: ꖶ
+mc_leather_horse_armor:
+  texture: minecraft:item/leather_horse_armor
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_leather_horse_armor
+  char: ꖷ
+mc_light_blue_dye:
+  texture: minecraft:item/light_blue_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_light_blue_dye
+  char: ꖸ
+mc_light_gray_dye:
+  texture: minecraft:item/light_gray_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_light_gray_dye
+  char: ꖹ
+mc_lime_dye:
+  texture: minecraft:item/lime_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_lime_dye
+  char: ꖺ
+mc_lingering_potion:
+  texture: minecraft:item/lingering_potion
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_lingering_potion
+  char: ꖻ
+mc_magenta_dye:
+  texture: minecraft:item/magenta_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_magenta_dye
+  char: ꖼ
+mc_magma_cream:
+  texture: minecraft:item/magma_cream
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_magma_cream
+  char: ꖽ
+mc_map:
+  texture: minecraft:item/map
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_map
+  char: ꖾ
+mc_melon_seeds:
+  texture: minecraft:item/melon_seeds
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_melon_seeds
+  char: ꖿ
+mc_melon_slice:
+  texture: minecraft:item/melon_slice
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_melon_slice
+  char: ꗀ
+mc_milk_bucket:
+  texture: minecraft:item/milk_bucket
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_milk_bucket
+  char: ꗁ
+mc_minecart:
+  texture: minecraft:item/minecart
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_minecart
+  char: ꗂ
+mc_mojang_banner_pattern:
+  texture: minecraft:item/mojang_banner_pattern
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_mojang_banner_pattern
+  char: ꗃ
+mc_mushroom_stew:
+  texture: minecraft:item/mushroom_stew
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_mushroom_stew
+  char: ꗄ
+mc_music_disc_11:
+  texture: minecraft:item/music_disc_11
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_11
+  char: ꗅ
+mc_music_disc_13:
+  texture: minecraft:item/music_disc_13
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_13
+  char: ꗆ
+mc_music_disc_blocks:
+  texture: minecraft:item/music_disc_blocks
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_blocks
+  char: ꗇ
+mc_music_disc_cat:
+  texture: minecraft:item/music_disc_cat
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_cat
+  char: ꗈ
+mc_music_disc_chirp:
+  texture: minecraft:item/music_disc_chirp
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_chirp
+  char: ꗉ
+mc_music_disc_far:
+  texture: minecraft:item/music_disc_far
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_far
+  char: ꗊ
+mc_music_disc_mall:
+  texture: minecraft:item/music_disc_mall
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_mall
+  char: ꗋ
+mc_music_disc_mellohi:
+  texture: minecraft:item/music_disc_mellohi
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_mellohi
+  char: ꗌ
+mc_music_disc_stal:
+  texture: minecraft:item/music_disc_stal
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_stal
+  char: ꗍ
+mc_music_disc_strad:
+  texture: minecraft:item/music_disc_strad
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_strad
+  char: ꗎ
+mc_music_disc_wait:
+  texture: minecraft:item/music_disc_wait
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_wait
+  char: ꗏ
+mc_music_disc_ward:
+  texture: minecraft:item/music_disc_ward
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_music_disc_ward
+  char: ꗐ
+mc_mutton:
+  texture: minecraft:item/mutton
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_mutton
+  char: ꗑ
+mc_name_tag:
+  texture: minecraft:item/name_tag
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_name_tag
+  char: ꗒ
+mc_nautilus_shell:
+  texture: minecraft:item/nautilus_shell
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_nautilus_shell
+  char: ꗓ
+mc_nether_brick:
+  texture: minecraft:item/nether_brick
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_nether_brick
+  char: ꗔ
+mc_nether_star:
+  texture: minecraft:item/nether_star
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_nether_star
+  char: ꗕ
+mc_nether_wart:
+  texture: minecraft:item/nether_wart
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_nether_wart
+  char: ꗖ
+mc_oak_boat:
+  texture: minecraft:item/oak_boat
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_oak_boat
+  char: ꗗ
+mc_oak_door:
+  texture: minecraft:item/oak_door
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_oak_door
+  char: ꗘ
+mc_oak_sign:
+  texture: minecraft:item/oak_sign
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_oak_sign
+  char: ꗙ
+mc_orange_dye:
+  texture: minecraft:item/orange_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_orange_dye
+  char: ꗚ
+mc_painting:
+  texture: minecraft:item/painting
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_painting
+  char: ꗛ
+mc_paper:
+  texture: minecraft:item/paper
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_paper
+  char: ꗜ
+mc_phantom_membrane:
+  texture: minecraft:item/phantom_membrane
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_phantom_membrane
+  char: ꗝ
+mc_pink_dye:
+  texture: minecraft:item/pink_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_pink_dye
+  char: ꗞ
+mc_poisonous_potato:
+  texture: minecraft:item/poisonous_potato
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_poisonous_potato
+  char: ꗟ
+mc_popped_chorus_fruit:
+  texture: minecraft:item/popped_chorus_fruit
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_popped_chorus_fruit
+  char: ꗠ
+mc_porkchop:
+  texture: minecraft:item/porkchop
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_porkchop
+  char: ꗡ
+mc_potato:
+  texture: minecraft:item/potato
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_potato
+  char: ꗢ
+mc_potion:
+  texture: minecraft:item/potion
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_potion
+  char: ꗣ
+mc_potion_overlay:
+  texture: minecraft:item/potion_overlay
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_potion_overlay
+  char: ꗤ
+mc_prismarine_crystals:
+  texture: minecraft:item/prismarine_crystals
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_prismarine_crystals
+  char: ꗥ
+mc_prismarine_shard:
+  texture: minecraft:item/prismarine_shard
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_prismarine_shard
+  char: ꗦ
+mc_pufferfish:
+  texture: minecraft:item/pufferfish
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_pufferfish
+  char: ꗧ
+mc_pufferfish_bucket:
+  texture: minecraft:item/pufferfish_bucket
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_pufferfish_bucket
+  char: ꗨ
+mc_pumpkin_pie:
+  texture: minecraft:item/pumpkin_pie
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_pumpkin_pie
+  char: ꗩ
+mc_pumpkin_seeds:
+  texture: minecraft:item/pumpkin_seeds
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_pumpkin_seeds
+  char: ꗪ
+mc_purple_dye:
+  texture: minecraft:item/purple_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_purple_dye
+  char: ꗫ
+mc_quartz:
+  texture: minecraft:item/quartz
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_quartz
+  char: ꗬ
+mc_rabbit:
+  texture: minecraft:item/rabbit
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_rabbit
+  char: ꗭ
+mc_rabbit_foot:
+  texture: minecraft:item/rabbit_foot
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_rabbit_foot
+  char: ꗮ
+mc_rabbit_hide:
+  texture: minecraft:item/rabbit_hide
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_rabbit_hide
+  char: ꗯ
+mc_rabbit_stew:
+  texture: minecraft:item/rabbit_stew
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_rabbit_stew
+  char: ꗰ
+mc_redstone:
+  texture: minecraft:item/redstone
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_redstone
+  char: ꗱ
+mc_red_dye:
+  texture: minecraft:item/red_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_red_dye
+  char: ꗲ
+mc_repeater:
+  texture: minecraft:item/repeater
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_repeater
+  char: ꗳ
+mc_rotten_flesh:
+  texture: minecraft:item/rotten_flesh
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_rotten_flesh
+  char: ꗴ
+mc_ruby:
+  texture: mcemojis:mc_ruby
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_ruby
+  char: ꗵ
+mc_saddle:
+  texture: minecraft:item/saddle
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_saddle
+  char: ꗶ
+mc_salmon:
+  texture: minecraft:item/salmon
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_salmon
+  char: ꗷ
+mc_salmon_bucket:
+  texture: minecraft:item/salmon_bucket
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_salmon_bucket
+  char: ꗸ
+mc_armadillo_scute:
+  texture: minecraft:item/armadillo_scute
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_armadillo_scute
+  char: ꗹ
+mc_turtle_scute:
+  texture: minecraft:item/turtle_scute
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_turtle_scute
+  char: ꗺ
+mc_seagrass:
+  texture: minecraft:item/seagrass
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_seagrass
+  char: ꗻ
+mc_sea_pickle:
+  texture: minecraft:item/sea_pickle
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_sea_pickle
+  char: ꗼ
+mc_shears:
+  texture: minecraft:item/shears
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_shears
+  char: ꗽ
+mc_shulker_shell:
+  texture: minecraft:item/shulker_shell
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_shulker_shell
+  char: ꗾ
+mc_skull_banner_pattern:
+  texture: minecraft:item/skull_banner_pattern
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_skull_banner_pattern
+  char: ꗿ
+mc_slime_ball:
+  texture: minecraft:item/slime_ball
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_slime_ball
+  char: ꘀ
+mc_snowball:
+  texture: minecraft:item/snowball
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_snowball
+  char: ꘁ
+mc_spawn_egg:
+  texture: minecraft:item/spawn_egg
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_spawn_egg
+  char: ꘂ
+mc_spawn_egg_overlay:
+  texture: minecraft:item/spawn_egg_overlay
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_spawn_egg_overlay
+  char: ꘃ
+mc_spectral_arrow:
+  texture: minecraft:item/spectral_arrow
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_spectral_arrow
+  char: ꘄ
+mc_spider_eye:
+  texture: minecraft:item/spider_eye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_spider_eye
+  char: ꘅ
+mc_splash_potion:
+  texture: minecraft:item/splash_potion
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_splash_potion
+  char: ꘆ
+mc_spruce_boat:
+  texture: minecraft:item/spruce_boat
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_spruce_boat
+  char: ꘇ
+mc_spruce_door:
+  texture: minecraft:item/spruce_door
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_spruce_door
+  char: ꘈ
+mc_spruce_sign:
+  texture: minecraft:item/spruce_sign
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_spruce_sign
+  char: ꘉ
+mc_stick:
+  texture: minecraft:item/stick
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_stick
+  char: ꘊ
+mc_stone_axe:
+  texture: minecraft:item/stone_axe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_stone_axe
+  char: ꘋ
+mc_stone_hoe:
+  texture: minecraft:item/stone_hoe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_stone_hoe
+  char: ꘌ
+mc_stone_pickaxe:
+  texture: minecraft:item/stone_pickaxe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_stone_pickaxe
+  char: ꘍
+mc_stone_shovel:
+  texture: minecraft:item/stone_shovel
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_stone_shovel
+  char: ꘎
+mc_stone_sword:
+  texture: minecraft:item/stone_sword
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_stone_sword
+  char: ꘏
+mc_string:
+  texture: minecraft:item/string
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_string
+  char: ꘐ
+mc_structure_void:
+  texture: minecraft:item/structure_void
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_structure_void
+  char: ꘑ
+mc_sugar:
+  texture: minecraft:item/sugar
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_sugar
+  char: ꘒ
+mc_sugar_cane:
+  texture: minecraft:item/sugar_cane
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_sugar_cane
+  char: ꘓ
+mc_suspicious_stew:
+  texture: minecraft:item/suspicious_stew
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_suspicious_stew
+  char: ꘔ
+mc_sweet_berries:
+  texture: minecraft:item/sweet_berries
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_sweet_berries
+  char: ꘕ
+mc_tipped_arrow_base:
+  texture: minecraft:item/tipped_arrow_base
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_tipped_arrow_base
+  char: ꘖ
+mc_tipped_arrow_helmet:
+  texture: minecraft:item/tipped_arrow_head
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_tipped_arrow_head
+  char: ꘗ
+mc_tnt_minecart:
+  texture: minecraft:item/tnt_minecart
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_tnt_minecart
+  char: ꘘ
+mc_totem_of_undying:
+  texture: minecraft:item/totem_of_undying
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_totem_of_undying
+  char: ꘙ
+mc_trident:
+  texture: minecraft:item/trident
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_trident
+  char: ꘚ
+mc_tropical_fish:
+  texture: minecraft:item/tropical_fish
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_tropical_fish
+  char: ꘛ
+mc_tropical_fish_bucket:
+  texture: minecraft:item/tropical_fish_bucket
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_tropical_fish_bucket
+  char: ꘜ
+mc_turtle_egg:
+  texture: minecraft:item/turtle_egg
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_turtle_egg
+  char: ꘝ
+mc_turtle_helmet:
+  texture: minecraft:item/turtle_helmet
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_turtle_helmet
+  char: ꘞ
+mc_water_bucket:
+  texture: minecraft:item/water_bucket
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_water_bucket
+  char: ꘟ
+mc_wheat:
+  texture: minecraft:item/wheat
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_wheat
+  char: ꘠
+mc_wheat_seeds:
+  texture: minecraft:item/wheat_seeds
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_wheat_seeds
+  char: ꘡
+mc_white_dye:
+  texture: minecraft:item/white_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_white_dye
+  char: ꘢
+mc_wooden_axe:
+  texture: minecraft:item/wooden_axe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_wooden_axe
+  char: ꘣
+mc_wooden_hoe:
+  texture: minecraft:item/wooden_hoe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_wooden_hoe
+  char: ꘤
+mc_wooden_pickaxe:
+  texture: minecraft:item/wooden_pickaxe
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_wooden_pickaxe
+  char: ꘥
+mc_wooden_shovel:
+  texture: minecraft:item/wooden_shovel
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_wooden_shovel
+  char: ꘦
+mc_wooden_sword:
+  texture: minecraft:item/wooden_sword
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_wooden_sword
+  char: ꘧
+mc_writable_book:
+  texture: minecraft:item/writable_book
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_writable_book
+  char: ꘨
+mc_written_book:
+  texture: minecraft:item/written_book
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_written_book
+  char: ꘩
+mc_yellow_dye:
+  texture: minecraft:item/yellow_dye
+  height: 9
+  ascent: 8
+  permission: mcemojis.mc_yellow_dye
+  char: ꘪ

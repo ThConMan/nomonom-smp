@@ -1,0 +1,40 @@
+Stamina:
+  # Stamina definitions for specific dungeon groups
+  Ruins:
+    # Permission-based stamina configuration. If no permission matches, fallback to 'default'
+    '0':
+      # Permission required
+      Permission: 'MythicDungeons.VIP'
+      # Maximum stamina points a player can have
+      Limit: 200
+      # Duration of one recovery cycle (in seconds)
+      Time: 1
+      # Stamina points recovered per cycle
+      Recover: 1
+      # Whether stamina continues recovering if the player is offline
+      RecoverIfOffline: true
+    # Fallback branch for players without permissions
+    default:
+      Limit: 100
+      Time: 1
+      Recover: 1
+      RecoverIfOffline: true
+  RuinsSimplified:
+    '0':
+      Permission: 'MythicDungeons.VIP'
+      Limit: 200
+      Time: 60
+      Recover: 50
+      RecoverIfOffline: true
+    default:
+      Limit: 100
+      Time: 60
+      Recover: 10
+      RecoverIfOffline: true
+  # Default configuration for any dungeon group not defined
+  default:
+    default:
+      Limit: 0
+      Time: 1
+      Recover: 0
+      RecoverIfOffline: true
